@@ -140,9 +140,12 @@ export default async function LeadDetailPage({
   const prospectStatus = (crm?.["prospect_status"] ?? crm?.["status"] ?? "") as string;
   const optOut = !!(crm?.["opt_out"] ?? crm?.["has_opted_out"]);
 
-  // Intent
-  const intentScore = (clay?.["intent_score"] ?? null) as number | null;
-  const intentStage = (clay?.["intent_stage"] ?? "") as string;
+  // Intent (from Clay mock payload)
+  const intentData = (clay?.["intent"] ?? {}) as Record<string, unknown>;
+  const intentScore = (intentData["intentScore"] ?? null) as number | null;
+  const intentTier = (intentData["intentTier"] ?? "") as string;
+  const intentSource = (intentData["source"] ?? "clay") as string;
+  const intentStage = intentTier === "high" ? "Decision" : intentTier === "medium" ? "Consideration" : intentTier === "low" ? "Awareness" : "";
   const segments = (clay?.["segments"] ?? []) as string[];
   const topics = (clay?.["topics"] ?? clay?.["intent_topics"] ?? []) as string[];
 
@@ -319,12 +322,12 @@ export default async function LeadDetailPage({
         </Card>
       </div>
 
-      {/* ======= Demandbase Intent + Channel Permissions ======= */}
+      {/* ======= Intent Surge Details + Channel Permissions ======= */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <Card className="card-accent-metrics">
           <CardHeader>
             <CardTitle>
-              <SectionLabel>Demandbase Intent</SectionLabel>
+              <SectionLabel>Intent Surge Details</SectionLabel>
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
@@ -333,7 +336,19 @@ export default async function LeadDetailPage({
               {intentStage && (
                 <Badge variant="outline">{intentStage}</Badge>
               )}
+              {intentTier && (
+                <Badge variant="secondary" className={
+                  intentTier === "high" ? "bg-green-900/40 text-green-400" :
+                  intentTier === "medium" ? "bg-yellow-900/40 text-yellow-400" :
+                  "bg-zinc-800 text-zinc-400"
+                }>{intentTier} activity</Badge>
+              )}
             </div>
+            {intentSource && (
+              <span className="text-[0.6rem] uppercase tracking-wider text-muted-foreground">
+                Source: {intentSource === "internal" ? "Internal Records (BQ)" : "Clay Enrichment"}
+              </span>
+            )}
             {segments.length > 0 && (
               <div className="flex flex-col gap-1">
                 <span className="text-[0.6rem] uppercase tracking-wider text-muted-foreground">Segments</span>
