@@ -1,0 +1,1796 @@
+lead_id,deterministic_tier,routing_decision,needs_review,review_reasons
+L1517,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1480,tier2,human_review,true,EU / Consent Verification Needed
+L2362,tier2,nurture,false,
+L2778,tier3,self_serve_newsletter,false,
+L1210,tier3,self_serve_newsletter,false,
+L1762,tier3,self_serve_newsletter,false,
+L1819,tier3,self_serve_newsletter,false,
+L1181,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1841,tier3,self_serve_newsletter,false,
+L1415,tier3,human_review,true,missing job title
+L2631,tier2,nurture,false,
+L1912,tier3,human_review,true,missing job title
+L2417,tier3,self_serve_newsletter,false,
+L1138,tier3,self_serve_newsletter,false,
+L1705,tier3,self_serve_newsletter,false,
+L1964,tier3,self_serve_newsletter,false,
+L1025,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2245,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2732,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2772,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1680,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1672,tier3,self_serve_newsletter,false,
+L1563,tier3,self_serve_newsletter,false,
+L2583,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1616,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1121,tier3,self_serve_newsletter,false,
+L2813,tier3,self_serve_newsletter,false,
+L1959,tier3,self_serve_newsletter,false,
+L2598,tier3,self_serve_newsletter,false,
+L1892,tier1,sales_queue,false,
+L1694,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2572,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1445,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L1155,tier3,self_serve_newsletter,false,
+L2517,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1323,tier2,nurture,false,
+L1078,tier2,nurture,false,
+L2698,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2838,tier2,nurture,false,
+L2063,tier3,self_serve_newsletter,false,
+L2900,tier3,human_review,true,Duplicate record with conflicting fields
+L1010,tier3,self_serve_newsletter,false,
+L2021,tier3,self_serve_newsletter,false,
+L2092,tier2,nurture,false,
+L2504,tier2,nurture,false,
+L2426,tier3,self_serve_newsletter,false,
+L1586,tier3,human_review,true,missing job title
+L2191,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2344,tier3,self_serve_newsletter,false,
+L2409,tier2,nurture,false,
+L2657,tier2,nurture,false,
+L2215,tier2,nurture,false,
+L1100,tier2,nurture,false,
+L1351,tier3,self_serve_newsletter,false,
+L2715,tier3,self_serve_newsletter,false,
+L2744,tier3,human_review,true,missing job title
+L1491,tier3,self_serve_newsletter,false,
+L1148,tier3,self_serve_newsletter,false,
+L2413,tier1,sales_queue,false,
+L1050,tier3,self_serve_newsletter,false,
+L1321,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2337,tier3,self_serve_newsletter,false,
+L2756,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2326,tier2,nurture,false,
+L1803,tier2,nurture,false,
+L1011,tier3,self_serve_newsletter,false,
+L1483,tier2,nurture,false,
+L1838,tier3,self_serve_newsletter,false,
+L1416,tier3,self_serve_newsletter,false,
+L2070,tier2,nurture,false,
+L1030,tier2,nurture,false,
+L2435,tier2,human_review,true,EU / Consent Verification Needed
+L1630,tier3,self_serve_newsletter,false,
+L2274,tier3,human_review,true,missing job title
+L1288,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2192,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2666,tier3,self_serve_newsletter,false,
+L1722,tier3,self_serve_newsletter,false,
+L1826,tier3,self_serve_newsletter,false,
+L1811,tier2,nurture,false,
+L2363,tier3,self_serve_newsletter,false,
+L1378,tier3,self_serve_newsletter,false,
+L1055,tier1,sales_queue,false,
+L2491,tier2,nurture,false,
+L2879,tier2,human_review,true,Duplicate record with conflicting fields
+L1044,tier3,self_serve_newsletter,false,
+L2478,tier3,self_serve_newsletter,false,
+L1123,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1211,tier3,human_review,true,Duplicate record with conflicting fields
+L2328,tier2,nurture,false,
+L1412,tier3,human_review,true,missing job title
+L1898,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1644,tier3,self_serve_newsletter,false,
+L2396,tier3,self_serve_newsletter,false,
+L1431,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2135,tier3,self_serve_newsletter,false,
+L1027,tier3,self_serve_newsletter,false,
+L1263,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1569,tier3,self_serve_newsletter,false,
+L1293,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1567,tier2,nurture,false,
+L1265,tier3,self_serve_newsletter,false,
+L1242,tier3,self_serve_newsletter,false,
+L1226,tier3,self_serve_newsletter,false,
+L1404,tier3,self_serve_newsletter,false,
+L1607,tier3,self_serve_newsletter,false,
+L2456,tier3,self_serve_newsletter,false,
+L1751,tier3,self_serve_newsletter,false,
+L1889,tier3,self_serve_newsletter,false,
+L1631,tier2,nurture,false,
+L2628,tier2,nurture,false,
+L1506,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2809,tier3,self_serve_newsletter,false,
+L1407,tier1,sales_queue,false,
+L1133,tier3,self_serve_newsletter,false,
+L1346,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1593,tier1,sales_queue,false,
+L1588,tier2,nurture,false,
+L1105,tier2,nurture,false,
+L2659,tier3,self_serve_newsletter,false,
+L1469,tier3,self_serve_newsletter,false,
+L1254,tier3,human_review,true,missing job title
+L2775,tier2,nurture,false,
+L1716,tier3,self_serve_newsletter,false,
+L2255,tier3,self_serve_newsletter,false,
+L1117,tier1,sales_queue,false,
+L2319,tier3,self_serve_newsletter,false,
+L1932,tier2,nurture,false,
+L1047,tier2,nurture,false,
+L1306,tier2,nurture,false,
+L1446,tier2,nurture,false,
+L1865,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2369,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2400,tier3,self_serve_newsletter,false,
+L1303,tier3,self_serve_newsletter,false,
+L1859,tier3,self_serve_newsletter,false,
+L2431,tier3,self_serve_newsletter,false,
+L2916,tier1,human_review,true,Duplicate record with conflicting fields
+L1766,tier2,nurture,false,
+L1405,tier3,self_serve_newsletter,false,
+L2912,tier3,self_serve_newsletter,false,
+L2126,tier2,human_review,true,decision-maker title but company missing or unverifiable | Duplicate record with conflicting fields
+L2076,tier3,self_serve_newsletter,false,
+L1740,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1620,tier1,sales_queue,false,
+L2812,tier2,nurture,false,
+L1666,tier3,self_serve_newsletter,false,
+L2292,tier3,human_review,true,EU / Consent Verification Needed
+L2074,tier2,nurture,false,
+L1919,tier2,nurture,false,
+L2113,tier3,self_serve_newsletter,false,
+L1982,tier2,human_review,true,EU / Consent Verification Needed
+L2883,tier3,self_serve_newsletter,false,
+L2351,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2280,tier3,self_serve_newsletter,false,
+L1409,tier2,nurture,false,
+L1687,tier2,nurture,false,
+L1561,tier2,nurture,false,
+L1243,tier2,nurture,false,
+L2750,tier3,self_serve_newsletter,false,
+L2318,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2071,tier2,nurture,false,
+L2668,tier3,self_serve_newsletter,false,
+L1783,tier3,self_serve_newsletter,false,
+L1261,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1039,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2520,tier2,nurture,false,
+L2425,tier3,human_review,true,EU / Consent Verification Needed
+L2340,tier3,self_serve_newsletter,false,
+L2645,tier2,nurture,false,
+L1702,tier1,sales_queue,false,
+L1088,tier3,human_review,true,missing job title
+L2640,tier3,self_serve_newsletter,false,
+L1249,tier1,sales_queue,false,
+L1339,tier1,sales_queue,false,
+L2914,tier3,human_review,true,Duplicate record with conflicting fields
+L1594,tier3,self_serve_newsletter,false,
+L2116,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1145,tier2,nurture,false,
+L1452,tier2,nurture,false,
+L1706,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1553,tier3,self_serve_newsletter,false,
+L2271,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2479,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1981,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1124,tier3,self_serve_newsletter,false,
+L2268,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1455,tier2,nurture,false,
+L1216,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1818,tier2,nurture,false,
+L1381,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2742,tier2,nurture,false,
+L2194,tier2,nurture,false,
+L1143,tier2,nurture,false,
+L1849,tier2,nurture,false,
+L2156,tier3,self_serve_newsletter,false,
+L2115,tier1,sales_queue,false,
+L2332,tier3,self_serve_newsletter,false,
+L2446,tier2,nurture,false,
+L1869,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1092,tier3,self_serve_newsletter,false,
+L1014,suppress,suppressed,false,
+L1403,tier2,nurture,false,
+L1846,tier3,self_serve_newsletter,false,
+L2272,tier3,self_serve_newsletter,false,
+L1743,tier3,self_serve_newsletter,false,
+L2439,tier3,self_serve_newsletter,false,
+L1598,tier2,nurture,false,
+L1257,tier3,self_serve_newsletter,false,
+L1995,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2175,tier3,self_serve_newsletter,false,
+L1363,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1971,tier2,nurture,false,
+L1106,tier3,self_serve_newsletter,false,
+L1509,tier3,self_serve_newsletter,false,
+L1191,tier2,nurture,false,
+L2726,tier3,self_serve_newsletter,false,
+L2755,tier2,nurture,false,
+L1815,tier3,self_serve_newsletter,false,
+L2903,tier2,nurture,false,
+L2828,tier2,nurture,false,
+L2082,tier2,nurture,false,
+L2257,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1720,tier3,self_serve_newsletter,false,
+L1373,tier2,nurture,false,
+L2696,tier3,self_serve_newsletter,false,
+L1795,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1916,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2414,tier1,sales_queue,false,
+L2429,tier3,self_serve_newsletter,false,
+L2219,tier2,nurture,false,
+L2109,tier3,self_serve_newsletter,false,
+L1998,tier1,sales_queue,false,
+L2475,tier2,nurture,false,
+L1152,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1723,tier2,nurture,false,
+L1876,tier3,self_serve_newsletter,false,
+L2137,tier3,self_serve_newsletter,false,
+L2748,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1792,tier2,nurture,false,
+L2164,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1902,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1218,tier3,self_serve_newsletter,false,
+L2692,tier3,human_review,true,missing job title
+L1901,tier3,self_serve_newsletter,false,
+L1299,tier2,nurture,false,
+L1848,tier3,self_serve_newsletter,false,
+L2167,tier3,self_serve_newsletter,false,
+L1118,tier3,self_serve_newsletter,false,
+L1761,tier3,self_serve_newsletter,false,
+L2770,tier2,nurture,false,
+L2829,tier3,self_serve_newsletter,false,
+L2766,tier2,nurture,false,
+L2687,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1547,tier3,self_serve_newsletter,false,
+L2173,suppress,suppressed,false,
+L1946,tier2,nurture,false,
+L1533,tier3,self_serve_newsletter,false,
+L1879,tier3,self_serve_newsletter,false,
+L2623,tier3,self_serve_newsletter,false,
+L2571,tier2,nurture,false,
+L1085,tier3,human_review,true,missing job title
+L2870,tier2,human_review,true,Duplicate record with conflicting fields
+L2131,tier1,sales_queue,false,
+L2625,tier2,nurture,false,
+L2676,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2457,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1670,tier1,sales_queue,false,
+L1899,tier3,self_serve_newsletter,false,
+L2617,tier3,self_serve_newsletter,false,
+L2313,tier2,nurture,false,
+L2415,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2359,tier3,self_serve_newsletter,false,
+L1695,tier1,sales_queue,false,
+L1292,tier3,human_review,true,missing job title
+L2193,tier3,self_serve_newsletter,false,
+L2128,tier2,nurture,false,
+L2002,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1519,tier2,nurture,false,
+L2488,tier3,self_serve_newsletter,false,
+L1019,tier3,human_review,true,missing job title
+L2421,tier3,self_serve_newsletter,false,
+L1987,tier2,human_review,true,"EU / Consent Verification Needed | decision-maker title, technical company, but company size unverifiable"
+L1434,tier1,human_review,true,Duplicate record with conflicting fields
+L2391,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1623,tier3,self_serve_newsletter,false,
+L1032,tier2,nurture,false,
+L1945,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2069,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2716,tier1,sales_queue,false,
+L2465,tier3,self_serve_newsletter,false,
+L2286,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1062,tier2,human_review,true,EU / Consent Verification Needed | decision-maker title but company missing or unverifiable
+L1948,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2641,tier3,self_serve_newsletter,false,
+L2153,tier3,self_serve_newsletter,false,
+L1675,tier3,self_serve_newsletter,false,
+L2288,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2622,tier2,nurture,false,
+L1308,tier3,human_review,true,EU / Consent Verification Needed | missing job title
+L1572,tier3,self_serve_newsletter,false,
+L2584,tier3,self_serve_newsletter,false,
+L1518,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2693,tier3,self_serve_newsletter,false,
+L1020,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1173,tier3,self_serve_newsletter,false,
+L1208,tier3,self_serve_newsletter,false,
+L1713,tier3,self_serve_newsletter,false,
+L2681,tier1,sales_queue,false,
+L2174,tier2,nurture,false,
+L1355,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2658,tier3,self_serve_newsletter,false,
+L2253,tier3,self_serve_newsletter,false,
+L1375,tier3,self_serve_newsletter,false,
+L2352,tier2,nurture,false,
+L1496,tier3,self_serve_newsletter,false,
+L1847,tier2,nurture,false,
+L2602,tier2,nurture,false,
+L1941,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2315,tier3,human_review,true,EU / Consent Verification Needed
+L1753,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2525,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1940,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2404,tier1,sales_queue,false,
+L2008,tier1,sales_queue,false,
+L1529,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1621,tier3,self_serve_newsletter,false,
+L1711,tier3,self_serve_newsletter,false,
+L1046,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1776,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2058,tier3,self_serve_newsletter,false,
+L1920,tier3,self_serve_newsletter,false,
+L2760,tier3,self_serve_newsletter,false,
+L1234,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1922,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2102,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2061,tier2,nurture,false,
+L1038,tier3,self_serve_newsletter,false,
+L1204,tier3,human_review,true,EU / Consent Verification Needed
+L2346,tier3,self_serve_newsletter,false,
+L1453,tier2,nurture,false,
+L2334,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2632,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable | Score divergence: deterministic vs. probabilistic"
+L1960,tier3,human_review,true,missing job title
+L1001,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1755,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1532,tier3,self_serve_newsletter,false,
+L1359,tier3,human_review,true,missing job title
+L1114,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1548,tier3,self_serve_newsletter,false,
+L2581,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2146,tier1,sales_queue,false,
+L2377,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1310,tier3,self_serve_newsletter,false,
+L2051,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2037,tier3,self_serve_newsletter,false,
+L2311,tier3,self_serve_newsletter,false,
+L2090,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1737,tier3,human_review,true,missing job title
+L2118,tier1,sales_queue,false,
+L1269,tier2,human_review,true,EU / Consent Verification Needed | Score divergence: deterministic vs. probabilistic
+L1068,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1083,tier2,nurture,false,
+L1605,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1214,tier3,self_serve_newsletter,false,
+L1550,tier3,self_serve_newsletter,false,
+L1656,tier3,self_serve_newsletter,false,
+L2149,tier3,human_review,true,EU / Consent Verification Needed
+L2836,tier2,human_review,true,EU / Consent Verification Needed | decision-maker title but company missing or unverifiable
+L2892,tier3,human_review,true,Duplicate record with conflicting fields
+L1992,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1821,tier3,self_serve_newsletter,false,
+L2618,tier3,human_review,true,missing job title
+L1635,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1441,tier2,nurture,false,
+L2620,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2724,tier3,human_review,true,EU / Consent Verification Needed
+L1284,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1717,tier2,nurture,false,
+L1636,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2144,tier3,human_review,true,EU / Consent Verification Needed
+L2331,tier3,self_serve_newsletter,false,
+L2294,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2270,tier3,human_review,true,missing job title
+L1500,tier1,sales_queue,false,
+L2913,tier3,self_serve_newsletter,false,
+L1864,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2342,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1575,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1330,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2034,tier2,nurture,false,
+L2388,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1983,tier2,nurture,false,
+L1016,tier3,self_serve_newsletter,false,
+L1374,tier2,nurture,false,
+L2639,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2514,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1332,tier3,self_serve_newsletter,false,
+L2281,tier3,human_review,true,missing job title
+L1322,tier2,nurture,false,
+L1794,tier3,human_review,true,missing job title
+L2860,tier2,human_review,true,technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L2029,tier3,human_review,true,EU / Consent Verification Needed
+L2777,tier3,self_serve_newsletter,false,
+L1425,tier3,self_serve_newsletter,false,
+L1688,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1836,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1683,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1856,tier3,self_serve_newsletter,false,
+L2857,tier2,human_review,true,decision-maker title but company missing or unverifiable | Duplicate record with conflicting fields
+L1256,tier1,sales_queue,false,
+L2190,tier2,nurture,false,
+L1149,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1508,tier3,self_serve_newsletter,false,
+L2181,tier3,self_serve_newsletter,false,
+L1472,tier3,self_serve_newsletter,false,
+L1719,tier1,sales_queue,false,
+L2592,tier2,nurture,false,
+L1985,tier2,nurture,false,
+L2455,tier2,nurture,false,
+L2089,tier3,self_serve_newsletter,false,
+L1393,tier2,nurture,false,
+L1467,tier2,nurture,false,
+L1413,tier3,human_review,true,missing job title
+L1089,tier2,nurture,false,
+L1398,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1890,tier3,human_review,true,missing job title
+L1075,tier1,sales_queue,false,
+L2161,tier2,nurture,false,
+L1781,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1238,tier3,self_serve_newsletter,false,
+L2317,tier3,human_review,true,EU / Consent Verification Needed
+L2662,tier3,human_review,true,missing job title
+L2497,tier1,sales_queue,false,
+L2139,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1779,tier2,nurture,false,
+L2365,tier3,human_review,true,missing job title
+L1957,tier2,nurture,false,
+L1814,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1835,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1830,tier3,self_serve_newsletter,false,
+L2361,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1131,tier3,self_serve_newsletter,false,
+L1102,tier2,nurture,false,
+L2655,tier2,nurture,false,
+L2243,tier2,nurture,false,
+L2867,tier2,human_review,true,Duplicate record with conflicting fields
+L2537,tier2,nurture,false,
+L1756,tier2,nurture,false,
+L2550,tier3,self_serve_newsletter,false,
+L1944,tier3,self_serve_newsletter,false,
+L2721,tier1,sales_queue,false,
+L2249,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2629,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1707,tier2,nurture,false,
+L1177,tier3,self_serve_newsletter,false,
+L2041,tier3,human_review,true,Duplicate record with conflicting fields
+L2179,tier3,self_serve_newsletter,false,
+L1816,tier3,self_serve_newsletter,false,
+L1772,tier3,self_serve_newsletter,false,
+L1883,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L1502,tier3,self_serve_newsletter,false,
+L1840,tier3,self_serve_newsletter,false,
+L2412,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1165,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1882,tier3,self_serve_newsletter,false,
+L2095,tier3,self_serve_newsletter,false,
+L2463,tier2,nurture,false,
+L1305,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2637,tier2,nurture,false,
+L2086,tier2,nurture,false,
+L1213,tier2,nurture,false,
+L2727,tier3,human_review,true,missing job title
+L1253,tier3,self_serve_newsletter,false,
+L1366,tier1,sales_queue,false,
+L1741,tier3,self_serve_newsletter,false,
+L1132,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2212,tier2,human_review,true,EU / Consent Verification Needed
+L1641,tier2,nurture,false,
+L2499,tier3,self_serve_newsletter,false,
+L1521,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2690,tier1,human_review,true,personal email but Tier-1 title and company signals | Score divergence: deterministic vs. probabilistic
+L2712,tier2,nurture,false,
+L2897,suppress,suppressed,false,
+L1860,tier3,self_serve_newsletter,false,
+L2093,tier3,self_serve_newsletter,false,
+L1223,tier1,sales_queue,false,
+L2223,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable | Duplicate record with conflicting fields"
+L2320,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1364,tier1,sales_queue,false,
+L2901,tier3,self_serve_newsletter,false,
+L1486,tier3,self_serve_newsletter,false,
+L1081,tier3,self_serve_newsletter,false,
+L1587,tier2,nurture,false,
+L1845,tier2,nurture,false,
+L1958,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2343,tier3,self_serve_newsletter,false,
+L1179,tier3,self_serve_newsletter,false,
+L1877,tier3,self_serve_newsletter,false,
+L2208,tier3,self_serve_newsletter,false,
+L2180,tier3,human_review,true,missing job title
+L1033,tier2,nurture,false,
+L2470,tier2,nurture,false,
+L1443,tier2,human_review,true,EU / Consent Verification Needed | decision-maker title but company missing or unverifiable
+L1307,tier1,sales_queue,false,
+L2044,tier3,self_serve_newsletter,false,
+L2111,tier3,self_serve_newsletter,false,
+L2830,tier3,self_serve_newsletter,false,
+L1012,tier3,self_serve_newsletter,false,
+L1501,tier3,self_serve_newsletter,false,
+L2597,tier3,self_serve_newsletter,false,
+L2881,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1854,tier3,self_serve_newsletter,false,
+L2097,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1315,suppress,suppressed,false,
+L2091,tier3,self_serve_newsletter,false,
+L1678,tier3,self_serve_newsletter,false,
+L1615,tier2,nurture,false,
+L1974,tier3,self_serve_newsletter,false,
+L2024,tier2,nurture,false,
+L1802,tier3,self_serve_newsletter,false,
+L1703,tier2,nurture,false,
+L1939,tier1,sales_queue,false,
+L2222,tier3,self_serve_newsletter,false,
+L1134,tier3,self_serve_newsletter,false,
+L1212,tier3,self_serve_newsletter,false,
+L1093,tier3,self_serve_newsletter,false,
+L2214,tier1,human_review,true,personal email but Tier-1 title and company signals
+L2445,tier2,nurture,false,
+L2565,tier2,nurture,false,
+L2389,tier3,human_review,true,missing job title
+L2129,tier2,nurture,false,
+L2259,tier1,sales_queue,false,
+L1128,tier2,nurture,false,
+L1510,tier3,human_review,true,EU / Consent Verification Needed | Score divergence: deterministic vs. probabilistic
+L1684,tier2,nurture,false,
+L2671,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2590,tier2,nurture,false,
+L2160,tier3,self_serve_newsletter,false,
+L1909,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1119,tier1,human_review,true,EU / Consent Verification Needed | personal email but Tier-1 title and company signals
+L1233,tier3,self_serve_newsletter,false,
+L1613,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1384,tier3,self_serve_newsletter,false,
+L2856,tier3,human_review,true,Duplicate record with conflicting fields
+L1745,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1429,tier1,sales_queue,false,
+L1142,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2375,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1875,tier2,nurture,false,
+L1989,tier3,human_review,true,missing job title
+L1986,tier2,nurture,false,
+L1003,tier2,nurture,false,
+L2300,tier2,nurture,false,
+L2518,tier3,self_serve_newsletter,false,
+L1478,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1340,tier3,self_serve_newsletter,false,
+L1052,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1905,tier2,nurture,false,
+L1884,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review | Duplicate record with conflicting fields
+L2530,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1146,tier2,nurture,false,
+L2461,tier1,sales_queue,false,
+L1967,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1584,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1283,tier2,nurture,false,
+L1161,tier3,self_serve_newsletter,false,
+L1639,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1591,tier3,self_serve_newsletter,false,
+L1324,tier2,nurture,false,
+L2532,tier3,human_review,true,missing job title
+L1309,tier3,self_serve_newsletter,false,
+L1260,tier3,self_serve_newsletter,false,
+L2665,tier3,self_serve_newsletter,false,
+L2399,tier2,nurture,false,
+L1915,tier2,nurture,false,
+L2433,tier3,human_review,true,EU / Consent Verification Needed
+L1676,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1947,tier1,sales_queue,false,
+L1150,tier1,sales_queue,false,
+L2474,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2277,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1785,tier1,human_review,true,EU / Consent Verification Needed
+L1396,tier3,self_serve_newsletter,false,
+L1520,tier1,sales_queue,false,
+L1338,tier3,human_review,true,missing job title
+L1264,tier2,nurture,false,
+L2405,tier3,self_serve_newsletter,false,
+L1893,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1643,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1156,tier3,self_serve_newsletter,false,
+L1651,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2796,tier3,self_serve_newsletter,false,
+L2763,tier3,self_serve_newsletter,false,
+L2483,tier2,nurture,false,
+L1436,tier2,nurture,false,
+L2559,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1082,tier3,self_serve_newsletter,false,
+L2621,tier2,nurture,false,
+L2386,tier1,sales_queue,false,
+L2380,tier2,nurture,false,
+L1872,tier2,nurture,false,
+L2035,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2680,tier1,sales_queue,false,
+L2648,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1447,tier3,self_serve_newsletter,false,
+L1475,tier3,self_serve_newsletter,false,
+L1392,tier2,nurture,false,
+L1954,tier2,nurture,false,
+L1115,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2000,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2722,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2293,tier2,nurture,false,
+L1936,tier3,self_serve_newsletter,false,
+L2254,tier3,self_serve_newsletter,false,
+L1070,tier3,self_serve_newsletter,false,
+L1560,tier3,self_serve_newsletter,false,
+L2014,tier3,self_serve_newsletter,false,
+L2239,tier2,nurture,false,
+L1037,tier3,self_serve_newsletter,false,
+L2054,tier3,self_serve_newsletter,false,
+L2260,tier2,nurture,false,
+L2551,tier3,self_serve_newsletter,false,
+L1629,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1224,tier3,self_serve_newsletter,false,
+L1574,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1406,tier3,self_serve_newsletter,false,
+L1809,tier3,self_serve_newsletter,false,
+L1120,tier3,self_serve_newsletter,false,
+L2733,tier3,self_serve_newsletter,false,
+L1144,tier3,self_serve_newsletter,false,
+L1154,tier1,sales_queue,false,
+L1923,tier2,nurture,false,
+L2197,tier2,nurture,false,
+L1022,tier3,self_serve_newsletter,false,
+L2099,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1512,tier1,human_review,true,personal email but Tier-1 title and company signals | Score divergence: deterministic vs. probabilistic
+L1007,tier3,self_serve_newsletter,false,
+L1042,tier3,self_serve_newsletter,false,
+L2084,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable
+L2307,tier3,self_serve_newsletter,false,
+L1896,tier2,nurture,false,
+L2298,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2464,tier3,self_serve_newsletter,false,
+L1387,tier2,human_review,true,Duplicate record with conflicting fields
+L2401,tier3,self_serve_newsletter,false,
+L1558,tier3,self_serve_newsletter,false,
+L2754,tier1,sales_queue,false,
+L1391,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2638,tier3,self_serve_newsletter,false,
+L2493,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable
+L1136,tier3,self_serve_newsletter,false,
+L2717,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2394,tier1,sales_queue,false,
+L2814,tier2,nurture,false,
+L2408,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1474,tier3,human_review,true,missing job title
+L2036,tier3,human_review,true,missing job title
+L2720,tier2,nurture,false,
+L2683,tier2,nurture,false,
+L2182,tier3,self_serve_newsletter,false,
+L2432,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1624,tier2,nurture,false,
+L1704,tier3,self_serve_newsletter,false,
+L1410,tier2,nurture,false,
+L1017,tier3,self_serve_newsletter,false,
+L2172,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1087,tier3,self_serve_newsletter,false,
+L1049,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1424,tier3,self_serve_newsletter,false,
+L1317,tier3,self_serve_newsletter,false,
+L2418,tier3,human_review,true,EU / Consent Verification Needed
+L1174,tier2,nurture,false,
+L2358,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2549,tier3,self_serve_newsletter,false,
+L2557,tier2,nurture,false,
+L2279,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2220,tier2,human_review,true,technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L2586,tier2,nurture,false,
+L1653,tier1,sales_queue,false,
+L1793,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2891,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2114,tier2,nurture,false,
+L2333,tier2,nurture,false,
+L2790,suppress,suppressed,false,
+L2177,tier2,nurture,false,
+L2454,tier2,nurture,false,
+L2066,tier3,self_serve_newsletter,false,
+L1271,tier3,self_serve_newsletter,false,
+L1542,tier2,nurture,false,
+L2198,tier2,nurture,false,
+L2462,tier3,self_serve_newsletter,false,
+L2876,tier3,human_review,true,missing job title
+L1029,tier2,human_review,true,Duplicate record with conflicting fields
+L1497,tier1,sales_queue,false,
+L2501,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2515,tier3,self_serve_newsletter,false,
+L1195,tier2,nurture,false,
+L1080,tier3,self_serve_newsletter,false,
+L1468,tier3,self_serve_newsletter,false,
+L1094,tier3,self_serve_newsletter,false,
+L2531,tier3,self_serve_newsletter,false,
+L1961,tier3,self_serve_newsletter,false,
+L2611,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1606,tier2,nurture,false,
+L1727,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2039,tier2,nurture,false,
+L1810,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2206,tier3,self_serve_newsletter,false,
+L2075,tier3,self_serve_newsletter,false,
+L2843,tier2,nurture,false,
+L2387,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1843,tier1,sales_queue,false,
+L2004,tier2,human_review,true,EU / Consent Verification Needed
+L2430,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2437,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1829,tier3,self_serve_newsletter,false,
+L2905,tier3,self_serve_newsletter,false,
+L1804,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2734,tier2,nurture,false,
+L2027,tier3,self_serve_newsletter,false,
+L2028,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1162,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1805,tier2,nurture,false,
+L1812,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2438,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2878,tier2,human_review,true,technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L2460,tier2,nurture,false,
+L1976,tier3,self_serve_newsletter,false,
+L1067,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2502,tier3,self_serve_newsletter,false,
+L1647,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1701,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2677,tier3,self_serve_newsletter,false,
+L1079,tier2,nurture,false,
+L2863,tier3,human_review,true,Duplicate record with conflicting fields
+L1252,tier3,self_serve_newsletter,false,
+L1894,tier3,self_serve_newsletter,false,
+L1800,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2120,tier3,self_serve_newsletter,false,
+L1833,tier3,self_serve_newsletter,false,
+L2798,suppress,suppressed,false,
+L2624,tier2,nurture,false,
+L1057,tier3,self_serve_newsletter,false,
+L2685,tier3,human_review,true,missing job title
+L2450,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1573,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2005,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2130,tier3,self_serve_newsletter,false,
+L2183,tier2,nurture,false,
+L2468,tier3,self_serve_newsletter,false,
+L1878,tier2,nurture,false,
+L1377,tier3,self_serve_newsletter,false,
+L1952,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2276,tier3,self_serve_newsletter,false,
+L1988,tier3,human_review,true,missing job title
+L1009,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2434,tier1,sales_queue,false,
+L1109,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1820,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1222,tier1,sales_queue,false,
+L1176,tier1,human_review,true,personal email but Tier-1 title and company signals
+L2774,tier3,self_serve_newsletter,false,
+L1476,tier3,self_serve_newsletter,false,
+L1159,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2751,tier1,sales_queue,false,
+L1632,tier3,self_serve_newsletter,false,
+L2046,tier2,nurture,false,
+L1658,tier3,human_review,true,missing job title
+L1732,tier3,self_serve_newsletter,false,
+L1662,tier3,self_serve_newsletter,false,
+L1073,tier2,nurture,false,
+L1968,tier3,self_serve_newsletter,false,
+L2032,tier2,nurture,false,
+L2833,tier1,sales_queue,false,
+L2612,tier3,self_serve_newsletter,false,
+L2689,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2360,tier3,self_serve_newsletter,false,
+L1813,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2543,tier1,sales_queue,false,
+L2273,tier2,nurture,false,
+L2134,tier2,nurture,false,
+L2282,tier2,nurture,false,
+L2407,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1691,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2635,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1450,tier3,human_review,true,Duplicate record with conflicting fields
+L1850,tier3,human_review,true,missing job title
+L2847,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L2921,tier3,human_review,true,Duplicate record with conflicting fields
+L1342,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2033,tier2,nurture,false,
+L2574,tier3,self_serve_newsletter,false,
+L2700,tier2,human_review,true,EU / Consent Verification Needed
+L2874,tier2,nurture,false,
+L2616,tier3,self_serve_newsletter,false,
+L1925,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1782,tier2,nurture,false,
+L1186,tier2,nurture,false,
+L2888,tier1,human_review,true,Duplicate record with conflicting fields
+L1822,tier3,self_serve_newsletter,false,
+L2101,tier2,nurture,false,
+L2757,tier2,nurture,false,
+L2633,tier3,self_serve_newsletter,false,
+L2247,tier2,nurture,false,
+L2236,tier2,nurture,false,
+L1827,tier2,nurture,false,
+L1064,tier3,self_serve_newsletter,false,
+L1336,tier2,nurture,false,
+L1541,tier3,self_serve_newsletter,false,
+L1689,tier1,sales_queue,false,
+L1507,tier3,human_review,true,missing job title
+L1600,tier2,nurture,false,
+L1921,tier3,self_serve_newsletter,false,
+L2302,tier2,nurture,false,
+L2427,tier3,self_serve_newsletter,false,
+L2495,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1817,tier3,self_serve_newsletter,false,
+L2011,tier3,human_review,true,missing job title
+L1543,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2015,tier3,self_serve_newsletter,false,
+L1913,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2428,tier2,nurture,false,
+L1788,tier2,human_review,true,EU / Consent Verification Needed
+L2795,tier3,self_serve_newsletter,false,
+L1060,tier1,sales_queue,false,
+L2915,tier2,human_review,true,Duplicate record with conflicting fields
+L1595,tier2,nurture,false,
+L1648,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2406,tier3,self_serve_newsletter,false,
+L2759,tier2,nurture,false,
+L2052,tier3,self_serve_newsletter,false,
+L2865,tier3,self_serve_newsletter,false,
+L1979,tier3,human_review,true,missing job title
+L1495,tier3,self_serve_newsletter,false,
+L2062,tier3,self_serve_newsletter,false,
+L2204,tier2,nurture,false,
+L1579,tier2,nurture,false,
+L1881,tier3,self_serve_newsletter,false,
+L2709,tier2,human_review,true,EU / Consent Verification Needed
+L1784,tier2,nurture,false,
+L2761,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2487,tier3,self_serve_newsletter,false,
+L2670,tier3,self_serve_newsletter,false,
+L1649,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2682,suppress,suppressed,false,
+L1329,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1914,tier3,self_serve_newsletter,false,
+L1980,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2534,tier3,self_serve_newsletter,false,
+L1661,tier2,nurture,false,
+L2305,tier3,self_serve_newsletter,false,
+L1361,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1379,tier2,nurture,false,
+L1767,tier2,nurture,false,
+L1736,tier2,nurture,false,
+L2907,tier2,human_review,true,decision-maker title but company missing or unverifiable | Duplicate record with conflicting fields
+L1347,tier2,nurture,false,
+L1247,tier2,nurture,false,
+L2410,tier3,self_serve_newsletter,false,
+L2719,tier2,nurture,false,
+L1544,tier3,human_review,true,missing job title
+L1028,tier3,self_serve_newsletter,false,
+L1562,tier2,nurture,false,
+L1858,tier3,self_serve_newsletter,false,
+L2782,suppress,suppressed,false,
+L2704,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2492,tier3,self_serve_newsletter,false,
+L1063,tier3,self_serve_newsletter,false,
+L1808,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2542,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2060,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1928,tier3,self_serve_newsletter,false,
+L1861,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1268,tier3,self_serve_newsletter,false,
+L1929,tier3,self_serve_newsletter,false,
+L2087,tier2,nurture,false,
+L1024,tier3,human_review,true,missing job title
+L1096,tier3,self_serve_newsletter,false,
+L2218,tier2,nurture,false,
+L2482,tier2,nurture,false,
+L2902,tier2,nurture,false,
+L1832,tier2,nurture,false,
+L1287,tier3,self_serve_newsletter,false,
+L2078,tier3,self_serve_newsletter,false,
+L1699,tier3,self_serve_newsletter,false,
+L2252,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1655,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1760,tier2,nurture,false,
+L2100,tier2,nurture,false,
+L2125,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1095,tier3,self_serve_newsletter,false,
+L2609,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2684,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1618,tier3,self_serve_newsletter,false,
+L1580,tier3,human_review,true,EU / Consent Verification Needed
+L2577,tier3,self_serve_newsletter,false,
+L1910,tier3,self_serve_newsletter,false,
+L1241,tier2,nurture,false,
+L2627,tier3,self_serve_newsletter,false,
+L1390,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2296,tier3,self_serve_newsletter,false,
+L1126,tier3,self_serve_newsletter,false,
+L1048,tier1,sales_queue,false,
+L1439,tier3,self_serve_newsletter,false,
+L1112,tier1,sales_queue,false,
+L2522,tier3,self_serve_newsletter,false,
+L1228,tier3,self_serve_newsletter,false,
+L2614,tier2,nurture,false,
+L1638,tier3,human_review,true,missing job title
+L2527,tier1,sales_queue,false,
+L1823,tier2,nurture,false,
+L1769,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1871,tier2,nurture,false,
+L1298,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1194,tier2,nurture,false,
+L1663,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2472,tier3,self_serve_newsletter,false,
+L1041,tier3,human_review,true,missing job title
+L1408,tier3,self_serve_newsletter,false,
+L2136,tier3,human_review,true,missing job title
+L1671,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1863,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2403,tier2,human_review,true,EU / Consent Verification Needed
+L1086,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1235,tier3,human_review,true,missing job title
+L1279,tier2,nurture,false,
+L2207,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1546,tier2,nurture,false,
+L2186,tier3,self_serve_newsletter,false,
+L1296,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1376,tier2,nurture,false,
+L1151,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1267,tier3,self_serve_newsletter,false,
+L1438,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1801,tier2,nurture,false,
+L1612,tier2,nurture,false,
+L1369,tier2,nurture,false,
+L1045,tier1,sales_queue,false,
+L2630,tier1,sales_queue,false,
+L2266,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2310,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2306,tier3,self_serve_newsletter,false,
+L1302,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1147,tier2,nurture,false,
+L2917,tier2,human_review,true,Duplicate record with conflicting fields
+L1171,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1963,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1344,tier2,nurture,false,
+L1770,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2664,tier3,self_serve_newsletter,false,
+L1825,tier3,human_review,true,missing job title
+L1285,tier2,nurture,false,
+L2765,tier3,self_serve_newsletter,false,
+L1451,tier2,nurture,false,
+L1312,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L1505,tier3,self_serve_newsletter,false,
+L2056,tier2,nurture,false,
+L1400,tier3,self_serve_newsletter,false,
+L1494,tier2,human_review,true,Duplicate record with conflicting fields
+L2098,tier3,self_serve_newsletter,false,
+L2701,tier3,human_review,true,EU / Consent Verification Needed
+L2165,tier2,nurture,false,
+L1129,tier3,self_serve_newsletter,false,
+L1866,tier3,self_serve_newsletter,false,
+L2314,tier3,self_serve_newsletter,false,
+L2077,tier2,nurture,false,
+L2864,tier3,human_review,true,Duplicate record with conflicting fields
+L1463,tier2,nurture,false,
+L1435,tier2,nurture,false,
+L1448,tier3,self_serve_newsletter,false,
+L2526,tier3,human_review,true,Score divergence: deterministic vs. probabilistic | Duplicate record with conflicting fields
+L2001,tier2,nurture,false,
+L1164,tier3,self_serve_newsletter,false,
+L2308,tier2,nurture,false,
+L1418,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1325,suppress,suppressed,false,
+L1728,tier1,sales_queue,false,
+L2656,tier3,human_review,true,missing job title
+L1693,tier3,self_serve_newsletter,false,
+L1789,tier3,human_review,true,missing job title
+L1423,tier2,nurture,false,
+L1725,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1759,tier2,nurture,false,
+L1609,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2613,tier3,self_serve_newsletter,false,
+L1886,tier2,nurture,false,
+L2330,tier3,self_serve_newsletter,false,
+L2816,tier3,self_serve_newsletter,false,
+L2184,tier2,nurture,false,
+L2494,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1571,tier2,nurture,false,
+L1690,tier2,nurture,false,
+L1806,tier2,nurture,false,
+L1577,tier2,nurture,false,
+L2589,tier3,self_serve_newsletter,false,
+L2731,tier3,human_review,true,missing job title
+L2422,tier1,sales_queue,false,
+L2349,tier2,nurture,false,
+L1718,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1358,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2384,tier2,human_review,true,EU / Consent Verification Needed | decision-maker title but company missing or unverifiable
+L1931,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2643,tier2,nurture,false,
+L1076,tier1,sales_queue,false,
+L2356,tier3,self_serve_newsletter,false,
+L2104,tier3,self_serve_newsletter,false,
+L2145,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2469,tier3,self_serve_newsletter,false,
+L1314,tier3,self_serve_newsletter,false,
+L1780,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1316,tier2,nurture,false,
+L2124,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1178,tier3,self_serve_newsletter,false,
+L1422,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1065,tier2,nurture,false,
+L2068,tier2,nurture,false,
+L1286,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L2634,tier3,human_review,true,missing job title
+L2605,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1677,tier3,self_serve_newsletter,false,
+L1972,tier2,nurture,false,
+L1397,tier2,nurture,false,
+L2758,tier3,self_serve_newsletter,false,
+L2552,tier3,self_serve_newsletter,false,
+L2246,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2159,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L2749,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1220,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2147,tier3,self_serve_newsletter,false,
+L1098,tier1,sales_queue,false,
+L1153,tier1,sales_queue,false,
+L2163,tier3,self_serve_newsletter,false,
+L2594,tier3,human_review,true,missing job title
+L1924,tier3,human_review,true,missing job title
+L2199,tier3,human_review,true,missing job title
+L1485,tier3,self_serve_newsletter,false,
+L2170,tier3,self_serve_newsletter,false,
+L1640,tier1,sales_queue,false,
+L2702,tier2,nurture,false,
+L1715,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1842,tier3,self_serve_newsletter,false,
+L1791,tier1,sales_queue,false,
+L2660,tier3,self_serve_newsletter,false,
+L1069,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2189,tier2,nurture,false,
+L1189,tier3,self_serve_newsletter,false,
+L2453,tier2,nurture,false,
+L2516,tier3,self_serve_newsletter,false,
+L2289,tier3,self_serve_newsletter,false,
+L2423,tier3,self_serve_newsletter,false,
+L2505,tier2,nurture,false,
+L1456,tier3,self_serve_newsletter,false,
+L1259,tier3,human_review,true,Duplicate record with conflicting fields
+L1240,tier3,self_serve_newsletter,false,
+L2486,tier3,self_serve_newsletter,false,
+L1799,tier3,self_serve_newsletter,false,
+L1897,tier3,self_serve_newsletter,false,
+L1956,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable | Score divergence: deterministic vs. probabilistic"
+L1295,tier3,self_serve_newsletter,false,
+L2764,tier3,self_serve_newsletter,false,
+L1608,tier2,human_review,true,EU / Consent Verification Needed
+L1566,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review | Score divergence: deterministic vs. probabilistic
+L1763,tier3,human_review,true,missing job title
+L1108,tier2,nurture,false,
+L2738,tier2,nurture,false,
+L2096,tier3,self_serve_newsletter,false,
+L2132,tier2,nurture,false,
+L1116,tier3,self_serve_newsletter,false,
+L1734,tier3,self_serve_newsletter,false,
+L1831,tier3,human_review,true,missing job title
+L1873,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1219,tier2,nurture,false,
+L1731,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2038,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2010,tier2,nurture,false,
+L1950,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1185,tier3,human_review,true,missing job title
+L2703,tier3,self_serve_newsletter,false,
+L2512,tier1,sales_queue,false,
+L2107,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2853,tier3,self_serve_newsletter,false,
+L1729,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2654,tier3,self_serve_newsletter,false,
+L2364,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1903,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1077,tier3,self_serve_newsletter,false,
+L1362,tier3,self_serve_newsletter,false,
+L2695,tier3,self_serve_newsletter,false,
+L2521,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2739,tier2,nurture,false,
+L1965,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1367,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2568,tier3,self_serve_newsletter,false,
+L2566,tier3,self_serve_newsletter,false,
+L1622,tier3,self_serve_newsletter,false,
+L2382,tier2,nurture,false,
+L1103,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1160,tier3,human_review,true,missing job title
+L1885,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2106,tier3,self_serve_newsletter,false,
+L2016,tier3,self_serve_newsletter,false,
+L1750,tier3,self_serve_newsletter,false,
+L1343,tier3,self_serve_newsletter,false,
+L1172,tier3,self_serve_newsletter,false,
+L1278,tier3,self_serve_newsletter,false,
+L1244,tier2,nurture,false,
+L1996,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2669,tier2,nurture,false,
+L2536,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2030,tier2,nurture,false,
+L1984,suppress,suppressed,false,
+L1522,tier3,self_serve_newsletter,false,
+L1627,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2481,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2476,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2232,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1008,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1466,tier3,self_serve_newsletter,false,
+L2852,tier2,human_review,true,technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L1454,tier3,self_serve_newsletter,false,
+L1395,tier3,self_serve_newsletter,false,
+L1771,tier1,sales_queue,false,
+L2523,tier2,nurture,false,
+L1461,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1942,tier2,nurture,false,
+L1166,tier3,human_review,true,missing job title
+L1066,tier3,self_serve_newsletter,false,
+L1402,tier3,self_serve_newsletter,false,
+L1568,tier2,nurture,false,
+L1304,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1597,tier3,self_serve_newsletter,false,
+L1380,tier3,self_serve_newsletter,false,
+L1442,tier2,nurture,false,
+L2158,tier3,self_serve_newsletter,false,
+L2547,tier1,sales_queue,false,
+L2679,tier3,self_serve_newsletter,false,
+L2576,tier1,human_review,true,personal email but Tier-1 title and company signals
+L2686,tier3,human_review,true,missing job title
+L2283,tier1,human_review,true,personal email but Tier-1 title and company signals
+L1203,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2234,tier2,nurture,false,
+L1582,tier3,self_serve_newsletter,false,
+L1385,tier2,human_review,true,EU / Consent Verification Needed
+L1401,tier3,self_serve_newsletter,false,
+L1633,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable
+L1386,tier1,sales_queue,false,
+L1654,tier3,self_serve_newsletter,false,
+L2694,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L2626,tier2,nurture,false,
+L1389,tier1,human_review,true,personal email but Tier-1 title and company signals
+L1523,tier3,self_serve_newsletter,false,
+L2575,tier2,nurture,false,
+L2729,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1277,tier2,nurture,false,
+L2869,tier3,self_serve_newsletter,false,
+L2582,tier3,self_serve_newsletter,false,
+L2338,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable
+L2018,tier3,self_serve_newsletter,false,
+L2595,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2604,tier3,human_review,true,missing job title
+L1372,tier1,human_review,true,personal email but Tier-1 title and company signals | Score divergence: deterministic vs. probabilistic
+L1554,tier3,self_serve_newsletter,false,
+L2827,tier3,self_serve_newsletter,false,
+L2824,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1192,tier2,nurture,false,
+L2603,tier2,nurture,false,
+L2185,tier3,self_serve_newsletter,false,
+L2155,tier1,sales_queue,false,
+L2546,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1710,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2072,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1125,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1205,tier1,sales_queue,false,
+L1757,tier2,human_review,true,EU / Consent Verification Needed | ambiguous title defaults to Tier 2 for human review
+L1576,tier3,human_review,true,missing job title
+L2081,tier1,human_review,true,personal email but Tier-1 title and company signals
+L2596,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1326,tier2,nurture,false,
+L2262,tier3,human_review,true,EU / Consent Verification Needed
+L1368,tier2,nurture,false,
+L2886,tier3,self_serve_newsletter,false,
+L2393,tier3,self_serve_newsletter,false,
+L2647,tier1,sales_queue,false,
+L1943,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1388,tier2,nurture,false,
+L2573,tier3,human_review,true,missing job title
+L2088,tier2,nurture,false,
+L1002,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1199,tier3,self_serve_newsletter,false,
+L1327,tier3,self_serve_newsletter,false,
+L1764,tier2,nurture,false,
+L1464,tier1,sales_queue,false,
+L2490,tier2,nurture,false,
+L1934,tier2,nurture,false,
+L2673,tier3,self_serve_newsletter,false,
+L2138,tier2,nurture,false,
+L2141,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2238,tier2,nurture,false,
+L2325,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1481,tier3,self_serve_newsletter,false,
+L1331,tier3,self_serve_newsletter,false,
+L1484,tier3,self_serve_newsletter,false,
+L1880,tier3,human_review,true,missing job title
+L1107,tier3,human_review,true,Duplicate record with conflicting fields
+L1101,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable | Score divergence: deterministic vs. probabilistic"
+L1978,tier3,self_serve_newsletter,false,
+L1444,tier3,self_serve_newsletter,false,
+L1708,tier3,self_serve_newsletter,false,
+L1990,tier2,nurture,false,
+L2228,tier1,sales_queue,false,
+L2553,tier3,self_serve_newsletter,false,
+L1610,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1911,tier3,self_serve_newsletter,false,
+L2416,tier1,sales_queue,false,
+L1300,tier2,nurture,false,
+L1933,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1370,tier2,nurture,false,
+L2652,tier3,human_review,true,EU / Consent Verification Needed
+L1973,tier1,sales_queue,false,
+L2452,tier3,human_review,true,missing job title
+L2511,tier2,nurture,false,
+L2324,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2506,tier2,nurture,false,
+L1432,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2316,tier3,human_review,true,missing job title
+L1417,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2366,tier3,self_serve_newsletter,false,
+L2653,tier3,self_serve_newsletter,false,
+L2513,tier3,self_serve_newsletter,false,
+L1237,tier3,self_serve_newsletter,false,
+L2489,tier2,nurture,false,
+L1311,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2788,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L1250,tier3,self_serve_newsletter,false,
+L1904,tier1,sales_queue,false,
+L2402,tier3,self_serve_newsletter,false,
+L1991,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2355,tier2,nurture,false,
+L1999,tier2,nurture,false,
+L1440,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1449,tier3,self_serve_newsletter,false,
+L2080,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1534,tier1,sales_queue,false,
+L1697,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2023,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2265,tier3,self_serve_newsletter,false,
+L1895,tier2,nurture,false,
+L1459,tier3,self_serve_newsletter,false,
+L2529,tier1,sales_queue,false,
+L2221,tier3,self_serve_newsletter,false,
+L1487,tier3,self_serve_newsletter,false,
+L1157,tier3,self_serve_newsletter,false,
+L1318,tier3,self_serve_newsletter,false,
+L2143,tier2,nurture,false,
+L2524,tier3,self_serve_newsletter,false,
+L1169,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1488,tier2,nurture,false,
+L1513,tier3,self_serve_newsletter,false,
+L1051,tier3,self_serve_newsletter,false,
+L1470,tier3,human_review,true,missing job title
+L2251,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1036,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2381,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2723,tier3,self_serve_newsletter,false,
+L1611,tier3,self_serve_newsletter,false,
+L1807,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2094,tier3,self_serve_newsletter,false,
+L2688,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2909,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1650,tier2,nurture,false,
+L2587,tier3,self_serve_newsletter,false,
+L2535,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1599,suppress,suppressed,false,
+L1140,tier2,nurture,false,
+L2059,tier3,self_serve_newsletter,false,
+L1634,tier3,human_review,true,missing job title
+L2560,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1744,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1862,tier3,self_serve_newsletter,false,
+L1625,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1530,tier3,self_serve_newsletter,false,
+L1617,tier3,self_serve_newsletter,false,
+L1581,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1207,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1667,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1787,tier3,self_serve_newsletter,false,
+L1539,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1004,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2202,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1527,tier2,nurture,false,
+L2166,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2644,tier1,sales_queue,false,
+L1844,tier2,nurture,false,
+L1739,tier1,sales_queue,false,
+L1221,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1258,tier2,nurture,false,
+L1628,tier1,human_review,true,EU / Consent Verification Needed
+L1514,tier2,nurture,false,
+L2569,tier2,human_review,true,EU / Consent Verification Needed
+L1592,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1113,tier2,nurture,false,
+L2538,tier3,self_serve_newsletter,false,
+L1301,tier3,self_serve_newsletter,false,
+L2730,tier3,self_serve_newsletter,false,
+L2548,tier2,nurture,false,
+L1721,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1289,tier2,nurture,false,
+L1900,tier3,self_serve_newsletter,false,
+L2217,tier3,self_serve_newsletter,false,
+L1570,tier3,human_review,true,EU / Consent Verification Needed
+L2642,tier1,sales_queue,false,
+L2519,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1557,tier3,human_review,true,missing job title
+L1730,tier3,self_serve_newsletter,false,
+L1526,tier3,self_serve_newsletter,false,
+L2216,tier2,nurture,false,
+L2200,tier3,self_serve_newsletter,false,
+L2042,tier1,sales_queue,false,
+L1585,tier3,human_review,true,missing job title
+L2079,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1170,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2706,tier2,nurture,false,
+L2436,tier1,sales_queue,false,
+L2651,tier2,nurture,false,
+L1669,tier1,sales_queue,false,
+L2188,tier3,self_serve_newsletter,false,
+L2705,tier3,self_serve_newsletter,false,
+L1773,tier3,self_serve_newsletter,false,
+L2241,tier2,nurture,false,
+L1525,tier1,sales_queue,false,
+L1555,tier3,self_serve_newsletter,false,
+L2564,tier2,nurture,false,
+L1215,tier3,human_review,true,EU / Consent Verification Needed | Duplicate record with conflicting fields
+L2708,tier1,sales_queue,false,
+L2297,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2440,tier3,self_serve_newsletter,false,
+L1682,tier2,nurture,false,
+L1503,tier3,self_serve_newsletter,false,
+L1239,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1262,tier3,self_serve_newsletter,false,
+L1313,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1797,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1437,tier2,nurture,false,
+L1692,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2303,tier2,nurture,false,
+L2304,tier3,self_serve_newsletter,false,
+L1583,tier3,self_serve_newsletter,false,
+L1887,tier2,nurture,false,
+L1774,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2678,tier2,nurture,false,
+L1021,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1549,tier3,self_serve_newsletter,false,
+L1272,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1217,tier3,self_serve_newsletter,false,
+L1281,tier3,self_serve_newsletter,false,
+L2762,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2503,tier3,self_serve_newsletter,false,
+L2508,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1855,tier1,sales_queue,false,
+L1110,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L2299,tier3,self_serve_newsletter,false,
+L1018,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1926,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review | Duplicate record with conflicting fields
+L1790,tier3,self_serve_newsletter,false,
+L2718,tier1,sales_queue,false,
+L2579,tier2,human_review,true,EU / Consent Verification Needed
+L1360,tier3,self_serve_newsletter,false,
+L1828,tier3,self_serve_newsletter,false,
+L1590,tier2,nurture,false,
+L1754,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2133,tier3,human_review,true,missing job title
+L1857,tier1,sales_queue,false,
+L2711,tier3,self_serve_newsletter,false,
+L2599,tier3,self_serve_newsletter,false,
+L2256,tier3,self_serve_newsletter,false,
+L1320,tier3,self_serve_newsletter,false,
+L2741,tier3,self_serve_newsletter,false,
+L2287,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1168,tier2,nurture,false,
+L1097,tier3,self_serve_newsletter,false,
+L1333,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1335,tier2,nurture,false,
+L2026,tier3,human_review,true,EU / Consent Verification Needed
+L1837,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1477,tier1,human_review,true,EU / Consent Verification Needed | personal email but Tier-1 title and company signals
+L1236,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2067,tier2,nurture,false,
+L2862,tier2,human_review,true,technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L2649,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2498,suppress,suppressed,false,
+L2607,tier3,human_review,true,EU / Consent Verification Needed
+L1187,tier3,human_review,true,missing job title
+L2309,tier2,nurture,false,
+L2449,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1681,tier3,self_serve_newsletter,false,
+L1350,tier3,self_serve_newsletter,false,
+L2737,tier3,self_serve_newsletter,false,
+L1969,tier3,self_serve_newsletter,false,
+L2368,tier2,nurture,false,
+L1122,tier2,nurture,false,
+L1460,tier2,nurture,false,
+L2746,tier3,self_serve_newsletter,false,
+L1528,tier3,human_review,true,missing job title
+L2580,tier2,nurture,false,
+L2767,tier1,human_review,true,personal email but Tier-1 title and company signals
+L2918,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2013,tier3,self_serve_newsletter,false,
+L1489,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1196,tier3,human_review,true,missing job title
+L2284,tier3,self_serve_newsletter,false,
+L2339,tier1,sales_queue,false,
+L2105,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2661,tier3,self_serve_newsletter,false,
+L2745,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1090,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L2022,tier3,self_serve_newsletter,false,
+L1564,tier1,sales_queue,false,
+L1273,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1337,tier2,nurture,false,
+L1604,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2047,tier3,human_review,true,EU / Consent Verification Needed
+L1382,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2882,tier2,nurture,false,
+L2441,tier1,human_review,true,personal email but Tier-1 title and company signals
+L1031,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2768,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2211,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2275,tier3,human_review,true,missing job title
+L1698,tier1,sales_queue,false,
+L2588,tier3,self_serve_newsletter,false,
+L1290,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2779,tier2,nurture,false,
+L1071,tier1,sales_queue,false,
+L1229,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1975,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1724,tier3,self_serve_newsletter,false,
+L2646,tier2,nurture,false,
+L1524,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1851,tier2,nurture,false,
+L1201,tier3,self_serve_newsletter,false,
+L2151,tier2,nurture,false,
+L2055,tier3,self_serve_newsletter,false,
+L2237,tier2,nurture,false,
+L1652,tier2,human_review,true,EU / Consent Verification Needed
+L2771,tier3,self_serve_newsletter,false,
+L2350,tier3,self_serve_newsletter,false,
+L2910,tier2,human_review,true,decision-maker title but company missing or unverifiable | Duplicate record with conflicting fields
+L2064,tier2,human_review,true,EU / Consent Verification Needed
+L1626,tier1,human_review,true,personal email but Tier-1 title and company signals
+L1371,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1291,tier3,self_serve_newsletter,false,
+L2040,tier2,nurture,false,
+L1104,tier3,self_serve_newsletter,false,
+L2509,tier3,self_serve_newsletter,false,
+L1354,tier3,human_review,true,missing job title
+L1353,tier2,nurture,false,
+L2383,tier3,human_review,true,missing job title
+L1394,tier3,self_serve_newsletter,false,
+L1141,tier3,self_serve_newsletter,false,
+L2485,tier1,sales_queue,false,
+L2050,tier2,nurture,false,
+L1084,tier2,nurture,false,
+L2323,tier3,human_review,true,missing job title
+L2263,tier2,nurture,false,
+L2556,tier2,nurture,false,
+L2567,tier2,nurture,false,
+L2045,tier2,nurture,false,
+L2528,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1504,tier3,self_serve_newsletter,false,
+L1492,tier1,sales_queue,false,
+L1853,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2233,tier2,nurture,false,
+L1994,tier3,self_serve_newsletter,false,
+L2031,tier1,sales_queue,false,
+L2003,tier3,self_serve_newsletter,false,
+L1297,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L1202,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2859,tier1,human_review,true,Duplicate record with conflicting fields
+L2554,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2752,tier2,nurture,false,
+L2371,tier3,human_review,true,missing job title
+L1026,tier2,nurture,false,
+L1906,tier3,self_serve_newsletter,false,
+L2601,tier3,self_serve_newsletter,false,
+L1167,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2714,tier3,human_review,true,EU / Consent Verification Needed
+L1341,tier3,self_serve_newsletter,false,
+L1482,tier3,self_serve_newsletter,false,
+L1545,tier2,nurture,false,
+L1193,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1414,tier3,self_serve_newsletter,false,
+L1427,tier3,self_serve_newsletter,false,
+L2691,tier2,nurture,false,
+L2370,tier3,self_serve_newsletter,false,
+L1668,tier3,self_serve_newsletter,false,
+L2610,tier3,self_serve_newsletter,false,
+L1479,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1473,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2619,tier1,sales_queue,false,
+L1246,tier2,nurture,false,
+L1180,tier2,nurture,false,
+L2395,tier2,nurture,false,
+L2411,tier2,nurture,false,
+L2357,tier3,self_serve_newsletter,false,
+L2290,tier3,self_serve_newsletter,false,
+L1182,tier3,human_review,true,EU / Consent Verification Needed
+L2057,tier3,human_review,true,missing job title
+L2150,tier3,self_serve_newsletter,false,
+L1232,tier3,self_serve_newsletter,false,
+L2808,tier1,sales_queue,false,
+L2020,tier1,human_review,true,EU / Consent Verification Needed
+L2083,tier2,nurture,false,
+L2448,tier3,self_serve_newsletter,false,
+L2776,tier2,nurture,false,
+L2108,tier3,self_serve_newsletter,false,
+L2500,tier2,nurture,false,
+L1498,tier3,self_serve_newsletter,false,
+L1175,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2213,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1551,tier3,self_serve_newsletter,false,
+L2477,tier2,nurture,false,
+L2424,tier3,self_serve_newsletter,false,
+L2049,tier3,human_review,true,missing job title
+L2162,tier3,self_serve_newsletter,false,
+L1735,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1977,tier2,nurture,false,
+L1419,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1411,tier2,nurture,false,
+L2353,tier3,human_review,true,EU / Consent Verification Needed
+L1709,tier3,self_serve_newsletter,false,
+L2152,tier3,self_serve_newsletter,false,
+L1399,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1536,tier2,human_review,true,EU / Consent Verification Needed | Score divergence: deterministic vs. probabilistic
+L2699,tier3,self_serve_newsletter,false,
+L1535,tier3,self_serve_newsletter,false,
+L2442,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable | Score divergence: deterministic vs. probabilistic"
+L1421,tier1,sales_queue,false,
+L1962,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2600,tier1,sales_queue,false,
+L1685,tier1,sales_queue,false,
+L1225,tier3,self_serve_newsletter,false,
+L2196,tier3,self_serve_newsletter,false,
+L1786,tier2,nurture,false,
+L2451,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2201,tier3,self_serve_newsletter,false,
+L1749,tier3,self_serve_newsletter,false,
+L1531,tier3,self_serve_newsletter,false,
+L2563,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2278,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1056,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1282,tier3,self_serve_newsletter,false,
+L2348,tier3,self_serve_newsletter,false,
+L1158,tier3,self_serve_newsletter,false,
+L1726,tier3,human_review,true,missing job title
+L1462,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2458,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1348,tier3,self_serve_newsletter,false,
+L1023,tier3,self_serve_newsletter,false,
+L1040,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1255,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1870,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L2019,tier2,nurture,false,
+L1365,tier1,sales_queue,false,
+L2321,tier3,self_serve_newsletter,false,
+L2073,tier2,nurture,false,
+L1043,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1891,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1059,tier3,self_serve_newsletter,false,
+L2225,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1516,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L2376,tier2,nurture,false,
+L2780,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2154,tier1,sales_queue,false,
+L1796,tier2,nurture,false,
+L1768,tier3,human_review,true,missing job title
+L1227,tier3,self_serve_newsletter,false,
+L2345,tier3,self_serve_newsletter,false,
+L2227,tier3,self_serve_newsletter,false,
+L1852,tier2,nurture,false,
+L1280,tier3,self_serve_newsletter,false,
+L2269,tier2,nurture,false,
+L2195,tier2,nurture,false,
+L1839,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2510,tier3,self_serve_newsletter,false,
+L1993,tier3,human_review,true,missing job title
+L1328,tier3,human_review,true,Duplicate record with conflicting fields
+L2103,tier3,self_serve_newsletter,false,
+L1747,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2205,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1738,tier3,self_serve_newsletter,false,
+L2608,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2231,tier2,nurture,false,
+L1778,tier3,self_serve_newsletter,false,
+L2736,tier2,nurture,false,
+L2140,tier3,self_serve_newsletter,false,
+L2615,tier2,nurture,false,
+L1538,tier3,self_serve_newsletter,false,
+L2110,tier2,nurture,false,
+L2674,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1352,tier3,self_serve_newsletter,false,
+L1206,tier3,self_serve_newsletter,false,
+L2672,tier2,human_review,true,decision-maker title but company missing or unverifiable | Score divergence: deterministic vs. probabilistic
+L1748,tier3,self_serve_newsletter,false,
+L2558,tier2,nurture,false,
+L1433,tier2,nurture,false,
+L1231,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2203,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L2374,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1190,tier3,self_serve_newsletter,false,
+L1824,tier3,self_serve_newsletter,false,
+L2397,tier3,human_review,true,EU / Consent Verification Needed
+L1061,tier2,nurture,false,
+L2347,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1777,tier3,human_review,true,EU / Consent Verification Needed
+L2187,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2606,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2697,tier3,self_serve_newsletter,false,
+L1907,tier2,nurture,false,
+L2871,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1005,tier2,nurture,false,
+L2555,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1917,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2710,tier3,self_serve_newsletter,false,
+L2893,tier2,nurture,false,
+L1938,tier2,nurture,false,
+L1420,tier1,sales_queue,false,
+L1099,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2242,tier2,nurture,false,
+L1248,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1686,tier2,nurture,false,
+L1245,tier3,self_serve_newsletter,false,
+L1637,tier3,self_serve_newsletter,false,
+L1765,tier2,nurture,false,
+L2447,tier3,self_serve_newsletter,false,
+L1072,tier3,self_serve_newsletter,false,
+L2895,tier3,self_serve_newsletter,false,
+L1665,tier3,self_serve_newsletter,false,
+L1357,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1908,tier3,self_serve_newsletter,false,
+L2121,tier3,self_serve_newsletter,false,
+L1953,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2707,tier3,self_serve_newsletter,false,
+L1074,tier1,sales_queue,false,
+L2168,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1657,tier2,nurture,false,
+L1834,tier2,nurture,false,
+L2872,tier2,human_review,true,Duplicate record with conflicting fields
+L2117,tier3,human_review,true,EU / Consent Verification Needed
+L1383,tier3,self_serve_newsletter,false,
+L2053,tier2,nurture,false,
+L2667,tier3,self_serve_newsletter,false,
+L1603,tier3,self_serve_newsletter,false,
+L2043,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable
+L2385,tier2,nurture,false,
+L1035,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1334,tier3,human_review,true,missing job title
+L1614,tier3,self_serve_newsletter,false,
+L2467,tier3,self_serve_newsletter,false,
+L1034,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1183,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1345,tier2,nurture,false,
+L1559,tier3,self_serve_newsletter,false,
+L2507,tier3,self_serve_newsletter,false,
+L2230,tier3,human_review,true,missing job title
+L1733,tier2,nurture,false,
+L1596,tier3,self_serve_newsletter,false,
+L1537,tier3,self_serve_newsletter,false,
+L2065,tier2,nurture,false,
+L2591,tier2,human_review,true,EU / Consent Verification Needed | decision-maker title but company missing or unverifiable
+L1752,tier3,self_serve_newsletter,false,
+L2006,suppress,suppressed,false,
+L2264,tier3,self_serve_newsletter,false,
+L2444,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2735,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1058,tier3,self_serve_newsletter,false,
+L1127,tier3,self_serve_newsletter,false,
+L1552,tier3,self_serve_newsletter,false,
+L2329,tier2,nurture,false,
+L1927,tier1,sales_queue,false,
+L2341,tier3,self_serve_newsletter,false,
+L2267,tier2,nurture,false,
+L1209,tier1,sales_queue,false,
+L2301,tier3,self_serve_newsletter,false,
+L1798,tier2,human_review,true,EU / Consent Verification Needed
+L2540,tier3,self_serve_newsletter,false,
+L2240,tier3,human_review,true,Score divergence: deterministic vs. probabilistic
+L1660,tier1,sales_queue,false,
+L2539,tier3,self_serve_newsletter,false,
+L2378,tier2,nurture,false,
+L1578,tier3,self_serve_newsletter,false,
+L1006,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L2372,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1645,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1111,tier2,nurture,false,
+L1198,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2471,tier3,self_serve_newsletter,false,
+L2250,tier2,nurture,false,
+L2112,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2157,tier2,nurture,false,
+L1053,tier3,self_serve_newsletter,false,
+L2743,tier3,self_serve_newsletter,false,
+L1868,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1430,tier2,nurture,false,
+L1490,tier1,human_review,true,personal email but Tier-1 title and company signals
+L1867,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1589,tier3,human_review,true,missing job title
+L2845,tier3,self_serve_newsletter,false,
+L1251,tier2,nurture,false,
+L1130,tier2,nurture,false,
+L2570,tier3,self_serve_newsletter,false,
+L1511,tier2,nurture,false,
+L1937,tier3,self_serve_newsletter,false,
+L2545,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1619,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L2367,tier2,nurture,false,
+L2017,tier2,human_review,true,technical IC title but company/industry unverifiable | Score divergence: deterministic vs. probabilistic
+L1184,tier3,self_serve_newsletter,false,
+L2123,tier3,self_serve_newsletter,false,
+L1135,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1091,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2420,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2171,tier2,human_review,true,ambiguous title defaults to Tier 2 for human review
+L1015,tier3,self_serve_newsletter,false,
+L1266,tier3,human_review,true,missing job title | Score divergence: deterministic vs. probabilistic
+L1163,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1659,tier3,self_serve_newsletter,false,
+L2392,tier2,nurture,false,
+L2336,tier2,nurture,false,
+L1970,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2466,tier1,human_review,true,Score divergence: deterministic vs. probabilistic
+L2127,tier3,self_serve_newsletter,false,
+L1274,tier3,self_serve_newsletter,false,
+L1294,tier2,human_review,true,EU / Consent Verification Needed
+L1696,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2459,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2229,tier3,self_serve_newsletter,false,
+L2327,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2322,tier2,nurture,false,
+L2561,tier3,self_serve_newsletter,false,
+L1714,tier3,self_serve_newsletter,false,
+L1457,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1712,tier3,self_serve_newsletter,false,
+L2210,tier3,self_serve_newsletter,false,
+L1888,tier2,nurture,false,
+L1137,tier3,self_serve_newsletter,false,
+L2728,tier3,self_serve_newsletter,false,
+L2258,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2235,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2713,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2248,tier3,self_serve_newsletter,false,
+L2169,tier2,nurture,false,
+L1601,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2354,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2769,tier1,human_review,true,EU / Consent Verification Needed
+L2025,tier3,human_review,true,missing job title
+L1679,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1465,tier3,self_serve_newsletter,false,
+L2773,tier2,nurture,false,
+L2295,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L1458,tier2,human_review,true,EU / Consent Verification Needed
+L1642,tier3,self_serve_newsletter,false,
+L2119,tier2,human_review,true,technical IC title but company/industry unverifiable
+L2496,tier3,self_serve_newsletter,false,
+L1493,tier3,self_serve_newsletter,false,
+L2226,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L2148,tier2,nurture,false,
+L2650,tier2,nurture,false,
+L2544,tier2,human_review,true,EU / Consent Verification Needed
+L1758,tier3,self_serve_newsletter,false,
+L1565,tier3,self_serve_newsletter,false,
+L1674,tier1,sales_queue,false,
+L2224,tier2,human_review,true,EU / Consent Verification Needed | technical IC title but company/industry unverifiable | Duplicate record with conflicting fields
+L2379,tier2,nurture,false,
+L1270,tier3,self_serve_newsletter,false,
+L1200,tier2,nurture,false,
+L2373,tier3,self_serve_newsletter,false,
+L1646,tier2,nurture,false,
+L1188,tier3,human_review,true,EU / Consent Verification Needed | missing job title
+L2291,tier2,human_review,true,technical IC title but company/industry unverifiable
+L1966,tier3,human_review,true,missing job title
+L2747,tier1,sales_queue,false,
+L2209,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1540,tier2,nurture,false,
+L1951,tier3,self_serve_newsletter,false,
+L2048,tier2,human_review,true,decision-maker title but company missing or unverifiable
+L1602,tier2,nurture,false,
+L2785,tier3,self_serve_newsletter,false,
+L1197,tier2,human_review,true,Score divergence: deterministic vs. probabilistic
+L2473,tier2,human_review,true,"decision-maker title, technical company, but company size unverifiable"
+L1664,tier2,nurture,false,
+L1499,tier3,self_serve_newsletter,false,
+L1775,tier3,self_serve_newsletter,false,
+L2009,tier2,nurture,false,
+L2725,tier2,human_review,true,technical IC title but company/industry unverifiable

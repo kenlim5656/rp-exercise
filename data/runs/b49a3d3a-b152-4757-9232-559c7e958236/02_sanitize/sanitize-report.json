@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "input_file": "/Users/ken/rp/data/runs/b49a3d3a-b152-4757-9232-559c7e958236/00_raw/original-upload.csv",
+    "row_count_in": 1922,
+    "generated_at": "2026-07-29T19:25:35.658742+00:00"
+  },
+  "row_count_out": 1795,
+  "transformations_applied": {
+    "first_name_normalized": 541,
+    "last_name_normalized": 528,
+    "company_normalized": 170,
+    "job_title_normalized": 163,
+    "country_normalized": 1312,
+    "country_suspicious": 11,
+    "consent_normalized": 1617,
+    "utm_source_placeholder": 230,
+    "utm_medium_placeholder": 239,
+    "utm_campaign_placeholder": 360,
+    "email_competitor_domain": 11,
+    "email_disposable_domain": 1,
+    "email_malformed": 0,
+    "email_suspicious_fake": 9,
+    "company_website_normalized": 1414,
+    "duplicate_groups_found": 116,
+    "duplicate_conflict_groups": 42
+  },
+  "instructions_applied": [],
+  "instructions_notes": "",
+  "sanitized_csv_path": "/Users/ken/rp/data/runs/b49a3d3a-b152-4757-9232-559c7e958236/02_sanitize/sanitized.csv"
+}

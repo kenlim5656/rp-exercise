@@ -1,0 +1,1363 @@
+{
+  "bqResponse": {
+    "jobReference": {
+      "jobId": "job_c29041a8-a2be-4204-bd09-a5cfcb42ab99"
+    },
+    "jobComplete": true,
+    "schema": {
+      "fields": [
+        {
+          "name": "email_normalized",
+          "type": "STRING"
+        },
+        {
+          "name": "customer_id",
+          "type": "STRING"
+        },
+        {
+          "name": "match_method",
+          "type": "STRING"
+        }
+      ]
+    },
+    "rows": [
+      {
+        "email_normalized": "laura.green@tensorloop.io",
+        "customer_id": "CUST-06771b6f2d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kevin_green@outlook.com",
+        "customer_id": "CUST-3677aed52b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "alexander.johansson@gmail.com",
+        "customer_id": "CUST-424579814e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ganderson@cascade-ai.com",
+        "customer_id": "CUST-f5f09bc30d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "brandonw@opsfleet.com",
+        "customer_id": "CUST-e9b609fd64",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "green.debra@evalhouse.ai",
+        "customer_id": "CUST-a1da8f02b3",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kenneth_schulz@greenleaflandscaping.com",
+        "customer_id": "CUST-07c4e2e1f1",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stephaniek@axonresearch.ai",
+        "customer_id": "CUST-9968d7d5d7",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "margaret_smith@tensorloop.io",
+        "customer_id": "CUST-fc83f48216",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "timothy_roberts@stacklinesoftware.com",
+        "customer_id": "CUST-526d8f9c5e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "zara.miller@stateuniv.edu",
+        "customer_id": "CUST-c1f6c20ec4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "scott.thomas@tensorloop.io",
+        "customer_id": "CUST-e21d7d3d03",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kenneth_jackson@ridgewayconstruction.com",
+        "customer_id": "CUST-8b50d767db",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "aroberts@deepharbor.ai",
+        "customer_id": "CUST-9fd9f0ff11",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sanchez.betty@stateuniv.edu",
+        "customer_id": "CUST-d3834a983d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stephanie_singh@icloud.com",
+        "customer_id": "CUST-a698e832b0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "michelle.weber@stateuniv.edu",
+        "customer_id": "CUST-3c926e706f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jennifer_becker@vectorly.ai",
+        "customer_id": "CUST-5e4254c424",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "janet.becker@evalhouse.ai",
+        "customer_id": "CUST-87fa01b6ca",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stephanie_martinez@yahoo.com",
+        "customer_id": "CUST-c77438c5a4",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "kgonzalez@pipelinelabs.io",
+        "customer_id": "CUST-41847193c3",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "tnovak@formcraft.com",
+        "customer_id": "CUST-1da2d76f47",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "gregoryk@proton.me",
+        "customer_id": "CUST-562a61d323",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "hoffmann.samuel@modelry.ai",
+        "customer_id": "CUST-8e5be019c8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "benjamin_garcia@nimbuserp.com",
+        "customer_id": "CUST-973f5ebf6c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "park.andrew@ledgerworks.com",
+        "customer_id": "CUST-82d63c60b2",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "frank.perez@ledgerworks.com",
+        "customer_id": "CUST-e8eb99c554",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mary.rodriguez@quantavision.io",
+        "customer_id": "CUST-b36c632ce8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sofia_mitchell@agentstack.dev",
+        "customer_id": "CUST-71515b322b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fanderson@voxeldynamics.ai",
+        "customer_id": "CUST-3378059c15",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "taylor.stephanie@ledgerworks.com",
+        "customer_id": "CUST-7135e6c750",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ingridm@centralpoly.edu",
+        "customer_id": "CUST-2cee4a3ba6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jgonzalez@inferralabs.com",
+        "customer_id": "CUST-12ca217eb5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "arivera@agentstack.dev",
+        "customer_id": "CUST-3548e37e62",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ryanc@yahoo.com",
+        "customer_id": "CUST-aaec1ad235",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "schulz.ashley@codewharf.dev",
+        "customer_id": "CUST-f47ad7c25d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "garyr@proton.me",
+        "customer_id": "CUST-b3c339557d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "larsen.scott@pipelinelabs.io",
+        "customer_id": "CUST-a2176f4a1e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sharonm@pipelinelabs.io",
+        "customer_id": "CUST-94178f5c05",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mei_fischer@yahoo.com",
+        "customer_id": "CUST-ef9b87bbcf",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "debra_baker@stacklinesoftware.com",
+        "customer_id": "CUST-6d08931d7b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "nancy_flores@tokenworks.io",
+        "customer_id": "CUST-3dbaca7783",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lars_williams@securexsystems.com",
+        "customer_id": "CUST-52c6dcc88a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lopez.amara@proton.me",
+        "customer_id": "CUST-74f5935350",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "cynthial@tensorloop.io",
+        "customer_id": "CUST-b2f1406c61",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dwagner@metricshub.com",
+        "customer_id": "CUST-af13b173f9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "carter.karen@gradientpeak.ai",
+        "customer_id": "CUST-3b4be564d0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "frank_kowalski@quantavision.io",
+        "customer_id": "CUST-c1fbdb60a2",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ganderson@tensorloop.io",
+        "customer_id": "CUST-ad3a94bf87",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sofia.williams@outlook.com",
+        "customer_id": "CUST-0e1ec77e4d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sharon_sharma@pipelinelabs.io",
+        "customer_id": "CUST-cf0c88361c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dpark@gridbase.dev",
+        "customer_id": "CUST-b88d4605a6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "david_becker@summitdentalgroup.com",
+        "customer_id": "CUST-e97ced8f65",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "skumar@neuralight.io",
+        "customer_id": "CUST-562a61d323",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "astridw@deepharbor.ai",
+        "customer_id": "CUST-a7e341d25c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "richardr@gmail.com",
+        "customer_id": "CUST-783957f74b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "samanthan@harborviewlogistics.com",
+        "customer_id": "CUST-3cff722f47",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "roberts.gary@proton.me",
+        "customer_id": "CUST-1c132847ef",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sharonf@promptline.ai",
+        "customer_id": "CUST-70e13bd10c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "robinson.nicole@diffusia.io",
+        "customer_id": "CUST-6080406fea",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jacoba@embediq.ai",
+        "customer_id": "CUST-742ddb0771",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "carol.fischer@fieldstonetech.com",
+        "customer_id": "CUST-ed3364854b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ghernandez@gmail.com",
+        "customer_id": "CUST-a4e7ef7ef7",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ronaldt@evalhouse.ai",
+        "customer_id": "CUST-1eb465f7ef",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fflores@cascade-ai.com",
+        "customer_id": "CUST-da627629a5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "amanda_kowalski@yahoo.com",
+        "customer_id": "CUST-fdabd20132",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ramirez.paul@cascade-ai.com",
+        "customer_id": "CUST-1519f9507a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ttaylor@cascade-ai.com",
+        "customer_id": "CUST-e31ea35224",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "athomas@paytrellis.com",
+        "customer_id": "CUST-107c98c69c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "okafor.hans@voxeldynamics.ai",
+        "customer_id": "CUST-d1a5dd07f9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sandram@proton.me",
+        "customer_id": "CUST-9d0ecd1012",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "smith.donna@neuralmarketing.co",
+        "customer_id": "CUST-fd95907d30",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "smiller@synapsefoundry.com",
+        "customer_id": "CUST-3046996769",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "thomas.mateo@outlook.com",
+        "customer_id": "CUST-7e200dc992",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "johnson.kevin@orbitalmind.ai",
+        "customer_id": "CUST-6d01e1245e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "white.zara@promptline.ai",
+        "customer_id": "CUST-13ed884ad8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "okafor.richard@proton.me",
+        "customer_id": "CUST-4bdc04040d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dorothyg@outlook.com",
+        "customer_id": "CUST-41847193c3",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "gmartin@diffusia.io",
+        "customer_id": "CUST-8c7385c916",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mark.park@bellavistarealty.com",
+        "customer_id": "CUST-f178d4da51",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sking@codewharf.dev",
+        "customer_id": "CUST-18f3c8cc50",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sofia_martinez@luminaml.com",
+        "customer_id": "CUST-27c46087c4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kevin_thomas@vectorly.ai",
+        "customer_id": "CUST-4cdea1f940",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "joshuaw@outlook.com",
+        "customer_id": "CUST-ce6da40f46",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "helen.johnson@paytrellis.com",
+        "customer_id": "CUST-18626b92e5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "deborah.robinson@evalhouse.ai",
+        "customer_id": "CUST-f582741f29",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "robertk@gradientpeak.ai",
+        "customer_id": "CUST-3fbf517d81",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fischer.melissa@ledgerworks.com",
+        "customer_id": "CUST-4bff9270c0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "qwerty123@gmail.com",
+        "customer_id": "CUST-d36d64a468",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "gsanchez@centralpoly.edu",
+        "customer_id": "CUST-efe5f55e07",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "anthony_wright@instech.edu",
+        "customer_id": "CUST-004512201f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "yuki.patel@shipmate.io",
+        "customer_id": "CUST-51b61300cb",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "scott.katherine@greenleaflandscaping.com",
+        "customer_id": "CUST-984c3a66de",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lewis.brandon@copilothealth.ai",
+        "customer_id": "CUST-18d4417bc7",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "harris.elizabeth@gmail.com",
+        "customer_id": "CUST-10c451e49a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "weij@orbitalmind.ai",
+        "customer_id": "CUST-ead4486b0c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stevenh@streamlyne.io",
+        "customer_id": "CUST-ffafa358d5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "rivera.debra@gmail.com",
+        "customer_id": "CUST-8e4c274033",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "bharris@formcraft.com",
+        "customer_id": "CUST-4c283714fa",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "james.weber@yahoo.com",
+        "customer_id": "CUST-fbc05d08b5",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "ashley_ali@fieldstonetech.com",
+        "customer_id": "CUST-7c5c9bec0d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "robertm@formcraft.com",
+        "customer_id": "CUST-5876e198c9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "cynthia.becker@voxeldynamics.ai",
+        "customer_id": "CUST-d1b8d7aab5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "garym@streamlyne.io",
+        "customer_id": "CUST-58e0f1573e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "diegoy@gmail.com",
+        "customer_id": "CUST-393c1102c4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ajohansson@northernuni.edu",
+        "customer_id": "CUST-9a1f32d6f7",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "johansson.edward@neuralmarketing.co",
+        "customer_id": "CUST-fff8500b13",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "snovak@centralpoly.edu",
+        "customer_id": "CUST-86f2820e85",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "allen.frank@icloud.com",
+        "customer_id": "CUST-22668d900d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "johna@evalhouse.ai",
+        "customer_id": "CUST-abc66839b0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jchen@neuralmarketing.co",
+        "customer_id": "CUST-93dd29b706",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "andrews@modelry.ai",
+        "customer_id": "CUST-bb32fce908",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dhoffmann@diffusia.io",
+        "customer_id": "CUST-fa8af35a5c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "larryj@hotmail.com",
+        "customer_id": "CUST-9b84ac9624",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "kumar.edward@hotmail.com",
+        "customer_id": "CUST-7e64424595",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fsharma@stacklinesoftware.com",
+        "customer_id": "CUST-5ea57dd3d4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "becker.edward@neuralight.io",
+        "customer_id": "CUST-3cd5682c30",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "alexander_smith@relaymesh.io",
+        "customer_id": "CUST-c5346602cd",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "diego_lopez@vectorly.ai",
+        "customer_id": "CUST-cc683d1cfa",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stephen.green@quantumnails.com",
+        "customer_id": "CUST-b971548428",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "patel.stephanie@promptline.ai",
+        "customer_id": "CUST-5104f6d440",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "angelah@brightqueue.io",
+        "customer_id": "CUST-39711fdf21",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "frankt@relaymesh.io",
+        "customer_id": "CUST-fbde8cf076",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fatimaf@inferralabs.com",
+        "customer_id": "CUST-eaa832fed7",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "scott_allen@pipelinelabs.io",
+        "customer_id": "CUST-a38c05f3e3",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "wright.donald@roboticsone.ai",
+        "customer_id": "CUST-e6d0319828",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "diegom@pipelinelabs.io",
+        "customer_id": "CUST-0e0520665b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "robertr@cloudspan.dev",
+        "customer_id": "CUST-92bb759a00",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "pweber@instech.edu",
+        "customer_id": "CUST-ff0b25f50f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "samantha.schulz@quantumnails.com",
+        "customer_id": "CUST-4140c308b0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "elizabeth_wagner@roboticsone.ai",
+        "customer_id": "CUST-e5c54502f4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lisa_schulz@centralpoly.edu",
+        "customer_id": "CUST-2c1aac45fc",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jeffrey_patel@yahoo.com",
+        "customer_id": "CUST-1c013391c2",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "pweber@vectorly.ai",
+        "customer_id": "CUST-7d654d9145",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "smartinez@gmail.com",
+        "customer_id": "CUST-c77438c5a4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dallen@deepharbor.ai",
+        "customer_id": "CUST-625ffa9d43",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kathleenw@harborviewlogistics.com",
+        "customer_id": "CUST-f797c4730d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "pbaker@corticon.ai",
+        "customer_id": "CUST-26d52353e9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "nicole_allen@summitdentalgroup.com",
+        "customer_id": "CUST-c3e9153a66",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "donaldr@synapsefoundry.com",
+        "customer_id": "CUST-27f6bef289",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "timothy.meyer@ragpipe.dev",
+        "customer_id": "CUST-9fa41848d9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jacob_weber@synapsefoundry.com",
+        "customer_id": "CUST-fbc05d08b5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "white.janet@mistletoeml.com",
+        "customer_id": "CUST-20e13113ac",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ywright@outlook.com",
+        "customer_id": "CUST-e6d0319828",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "gregory.chen@codewharf.dev",
+        "customer_id": "CUST-ba74548ed4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jackson.raymond@gmail.com",
+        "customer_id": "CUST-df1197c868",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jamest@proton.me",
+        "customer_id": "CUST-6c4951e4b2",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "king.george@cornerstoneins.com",
+        "customer_id": "CUST-8c40875fbc",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "gmuller@opsfleet.com",
+        "customer_id": "CUST-c99c20e8f9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "susanh@hotmail.com",
+        "customer_id": "CUST-2fd82c08fc",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jessica_williams@outlook.com",
+        "customer_id": "CUST-5b0cc151f5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mary_green@summitdentalgroup.com",
+        "customer_id": "CUST-66630557dd",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "meyer.sandra@proton.me",
+        "customer_id": "CUST-3af949a33e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ewilson@bellavistarealty.com",
+        "customer_id": "CUST-02517cbaf9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lewis.paul@orbitalmind.ai",
+        "customer_id": "CUST-12fbaa7010",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "timothy.patel@evalhouse.ai",
+        "customer_id": "CUST-0ddee08827",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "wilson.elena@opsfleet.com",
+        "customer_id": "CUST-8ae1fe5571",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kimberly_schulz@ledgerworks.com",
+        "customer_id": "CUST-6a26b5f927",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "gary_wilson@hotmail.com",
+        "customer_id": "CUST-24010828b9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "adams.edward@promptline.ai",
+        "customer_id": "CUST-a9d5d4dec6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "michaelm@yahoo.com",
+        "customer_id": "CUST-93f86e9382",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hall.christine@stateuniv.edu",
+        "customer_id": "CUST-5cfe771b05",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "richard_okafor@maplegrovebakery.com",
+        "customer_id": "CUST-07b7dfa2ef",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kim.linda@quantavision.io",
+        "customer_id": "CUST-d4ba75821a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "park.stephen@stateuniv.edu",
+        "customer_id": "CUST-8f0759be4b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ryan.wilson@signalfold.com",
+        "customer_id": "CUST-5cb97c1b71",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hans.hassan@cornerstoneins.com",
+        "customer_id": "CUST-bc71302635",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "torres.william@agentstack.dev",
+        "customer_id": "CUST-29e1b08eaa",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "tmoore@copilothealth.ai",
+        "customer_id": "CUST-f401d34307",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mcarter@pipelinelabs.io",
+        "customer_id": "CUST-05ebd3738b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dfischer@neuralmarketing.co",
+        "customer_id": "CUST-0174fa90b1",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "asmith@greenleaflandscaping.com",
+        "customer_id": "CUST-0899187fe8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "campbell.jack@databarn.io",
+        "customer_id": "CUST-807cd69d0a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "johns@paytrellis.com",
+        "customer_id": "CUST-65bd7343a5",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lisa_tanaka@axonresearch.ai",
+        "customer_id": "CUST-8d82cb8d18",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lars.schulz@gmail.com",
+        "customer_id": "CUST-5c8d17085c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "samantha.johnson@icloud.com",
+        "customer_id": "CUST-1224937a84",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "elewis@northernuni.edu",
+        "customer_id": "CUST-c6f2f66567",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "clark.donna@formcraft.com",
+        "customer_id": "CUST-d654d6ff14",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kwame.park@deepharbor.ai",
+        "customer_id": "CUST-13fca58d3f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "carol_patel@nimbuserp.com",
+        "customer_id": "CUST-0020db8da8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jscott@orbitalmind.ai",
+        "customer_id": "CUST-8851a7d243",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sato.emily@inferralabs.com",
+        "customer_id": "CUST-b65960e6e6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "laurat@gridbase.dev",
+        "customer_id": "CUST-704cbb8f87",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "bgonzalez@finetunelabs.com",
+        "customer_id": "CUST-f5a8466133",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "gonzalez.anna@mistletoeml.com",
+        "customer_id": "CUST-726c80ff71",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "margaretj@fieldstonetech.com",
+        "customer_id": "CUST-cfb2fbf7b8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ronald.smith@quantumnails.com",
+        "customer_id": "CUST-e28f10c393",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "chernandez@modelry.ai",
+        "customer_id": "CUST-20e30cec61",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "frank.johansson@axonresearch.ai",
+        "customer_id": "CUST-5d7cf61bc6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mary_becker@yahoo.com",
+        "customer_id": "CUST-05b643c025",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "edward.harris@pipelinelabs.io",
+        "customer_id": "CUST-d12b72ff3a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hill.rebecca@orbitalmind.ai",
+        "customer_id": "CUST-4ad706a453",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "zarap@outlook.com",
+        "customer_id": "CUST-1e17cbf84a",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "ronalda@modelry.ai",
+        "customer_id": "CUST-5653b9d0d4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "edward_harris@roboticsone.ai",
+        "customer_id": "CUST-e9f4eb966d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "pamelam@roboticsone.ai",
+        "customer_id": "CUST-4620e6ce8c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sandra.sanchez@copilothealth.ai",
+        "customer_id": "CUST-6ddd8d7ebc",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "wright.nicole@paytrellis.com",
+        "customer_id": "CUST-5f9b01aae0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "stephen.ali@ledgerworks.com",
+        "customer_id": "CUST-6bfb6f2b6c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "kwame.brown@peakfitnessstudios.com",
+        "customer_id": "CUST-0558dde133",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "samuel.wright@signalfold.com",
+        "customer_id": "CUST-70c39b801b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "edward.hernandez@proton.me",
+        "customer_id": "CUST-a143b40d06",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "rebecca_wilson@promptline.ai",
+        "customer_id": "CUST-4026040c19",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "brian_smith@shipmate.io",
+        "customer_id": "CUST-4ae35d645c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "frankt@shipmate.io",
+        "customer_id": "CUST-31f09609ab",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "meif@instech.edu",
+        "customer_id": "CUST-1a73d37c0c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "emily_muller@quantumnails.com",
+        "customer_id": "CUST-6a94dea50f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ktaylor@ledgerworks.com",
+        "customer_id": "CUST-a8761e3f3e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "harris.michelle@hotmail.com",
+        "customer_id": "CUST-d12b72ff3a",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "johnson.emily@streamlyne.io",
+        "customer_id": "CUST-b12f4a0e5f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "okafor.nicole@pipelinelabs.io",
+        "customer_id": "CUST-2732e0584e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "nicole_jackson@tensorhive.ai",
+        "customer_id": "CUST-2723a1df32",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "larry.ali@vectorly.ai",
+        "customer_id": "CUST-05b860f8ba",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "perez.carol@bellavistarealty.com",
+        "customer_id": "CUST-c80678b374",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hans_tanaka@neuralight.io",
+        "customer_id": "CUST-06f198a6cd",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "rnguyen@hotmail.com",
+        "customer_id": "CUST-a950552540",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "richard_torres@legalmind.ai",
+        "customer_id": "CUST-9e7159f270",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "fatimap@tokenworks.io",
+        "customer_id": "CUST-bd929b9fea",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "brian.anderson@ridgewayconstruction.com",
+        "customer_id": "CUST-2a7ede9958",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "ronald_gonzalez@neuralight.io",
+        "customer_id": "CUST-1130ce4a4d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lopez.alexander@yahoo.com",
+        "customer_id": "CUST-aae5c43169",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "william_nelson@opsfleet.com",
+        "customer_id": "CUST-d4e31184b4",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "steven.becker@promptline.ai",
+        "customer_id": "CUST-e5599c1f47",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "rodriguez.jason@apexautoparts.com",
+        "customer_id": "CUST-e1288dc56b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "carol_flores@loopware.io",
+        "customer_id": "CUST-7cfd6b7742",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "linda.kumar@axonresearch.ai",
+        "customer_id": "CUST-1e808ffdc3",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "smoore@vectorly.ai",
+        "customer_id": "CUST-4c807fc317",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "znguyen@securexsystems.com",
+        "customer_id": "CUST-fa90ea09ab",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "larrym@opsfleet.com",
+        "customer_id": "CUST-ee2b876e3a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "martin.amanda@peakfitnessstudios.com",
+        "customer_id": "CUST-28738e939d",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "park.steven@quantumnails.com",
+        "customer_id": "CUST-1e17cbf84a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sjackson@copilothealth.ai",
+        "customer_id": "CUST-85a1e6f6cf",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "richardt@gmail.com",
+        "customer_id": "CUST-e49c74da25",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "becker.sandra@apptide.com",
+        "customer_id": "CUST-ba48292f90",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jackson.sandra@proton.me",
+        "customer_id": "CUST-9b84ac9624",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dhansen@orbitalmind.ai",
+        "customer_id": "CUST-e826daecfd",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "emma.wagner@icloud.com",
+        "customer_id": "CUST-82c2529fce",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sandraw@mistletoeml.com",
+        "customer_id": "CUST-c2419a3971",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "smith.jacob@loopware.io",
+        "customer_id": "CUST-c809d15004",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "wchen@hotmail.com",
+        "customer_id": "CUST-f6beedbf2f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "sandra.sanchez+signup@copilothealth.ai",
+        "customer_id": "CUST-b7369bf147",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hall.olaf@relaymesh.io",
+        "customer_id": "CUST-719c75b775",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "jrivera@northernuni.edu",
+        "customer_id": "CUST-d88502dbd3",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "wei_lopez@gridbase.dev",
+        "customer_id": "CUST-3bda40ce8b",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hoffmann.helen@mistletoeml.com",
+        "customer_id": "CUST-94118767bf",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "rweber@embediq.ai",
+        "customer_id": "CUST-c5e4e4b976",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "krodriguez@databarn.io",
+        "customer_id": "CUST-9ba63843cd",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "schmidt.daniel@hotmail.com",
+        "customer_id": "CUST-d138e1eb4c",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "olafr@bellavistarealty.com",
+        "customer_id": "CUST-35c284553f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "lisa_becker@cascade-ai.com",
+        "customer_id": "CUST-eb2a32e0d0",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "alexander_andersson@promptline.ai",
+        "customer_id": "CUST-9f99a76700",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "carol.mitchell@diffusia.io",
+        "customer_id": "CUST-6d4669b8d8",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "cwilson@formcraft.com",
+        "customer_id": "CUST-8aeb74d5d6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "yuki_andersson@stacklinesoftware.com",
+        "customer_id": "CUST-91011c0a81",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "mark.weber@promptline.ai",
+        "customer_id": "CUST-b0a17e51af",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "hansm@hotmail.com",
+        "customer_id": "CUST-28738e939d",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "nelson.kwame@icloud.com",
+        "customer_id": "CUST-7c549cd9c9",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "becker.janet@yahoo.com",
+        "customer_id": "CUST-d1b8d7aab5",
+        "match_method": "company_name_match"
+      },
+      {
+        "email_normalized": "patricia_carter@cascade-ai.com",
+        "customer_id": "CUST-6e02acc914",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "karenm@quantavision.io",
+        "customer_id": "CUST-e1a1affcf6",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "okafor.helen@securexsystems.com",
+        "customer_id": "CUST-8296fedb49",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "debra.walker@finetunelabs.com",
+        "customer_id": "CUST-60b70be82e",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "williams.betty@loopware.io",
+        "customer_id": "CUST-0cd7fa124f",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "nicholasc@neuralight.io",
+        "customer_id": "CUST-844058fc8a",
+        "match_method": "exact_email"
+      },
+      {
+        "email_normalized": "dennis_patel@opsfleet.com",
+        "customer_id": "CUST-c181b1de7c",
+        "match_method": "exact_email"
+      }
+    ],
+    "totalRows": "266"
+  },
+  "existing_count": 266,
+  "new_count": 1529,
+  "method_breakdown": {
+    "exact_email": 256,
+    "company_name_match": 10
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "input_file": "/Users/ken/rp/data/runs/b49a3d3a-b152-4757-9232-559c7e958236/00_raw/original-upload.csv",
+    "row_count": 1922,
+    "column_count": 15,
+    "generated_at": "2026-07-29T19:23:33.008273+00:00"
+  },
+  "columns": [
+    {
+      "name": "lead_id",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 1922
+    },
+    {
+      "name": "created_date",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 91
+    },
+    {
+      "name": "first_name",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 452
+    },
+    {
+      "name": "last_name",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 351
+    },
+    {
+      "name": "email",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 1819
+    },
+    {
+      "name": "job_title",
+      "dtype": "string",
+      "null_count": 125,
+      "null_pct": 6.5,
+      "distinct_count": 201
+    },
+    {
+      "name": "company",
+      "dtype": "string",
+      "null_count": 142,
+      "null_pct": 7.39,
+      "distinct_count": 310
+    },
+    {
+      "name": "company_website",
+      "dtype": "string",
+      "null_count": 508,
+      "null_pct": 26.43,
+      "distinct_count": 137
+    },
+    {
+      "name": "company_size",
+      "dtype": "string",
+      "null_count": 447,
+      "null_pct": 23.26,
+      "distinct_count": 7
+    },
+    {
+      "name": "industry",
+      "dtype": "string",
+      "null_count": 617,
+      "null_pct": 32.1,
+      "distinct_count": 16
+    },
+    {
+      "name": "country",
+      "dtype": "string",
+      "null_count": 92,
+      "null_pct": 4.79,
+      "distinct_count": 61
+    },
+    {
+      "name": "utm_source",
+      "dtype": "string",
+      "null_count": 0,
+      "null_pct": 0.0,
+      "distinct_count": 21
+    },
+    {
+      "name": "utm_medium",
+      "dtype": "string",
+      "null_count": 24,
+      "null_pct": 1.25,
+      "distinct_count": 17
+    },
+    {
+      "name": "utm_campaign",
+      "dtype": "string",
+      "null_count": 229,
+      "null_pct": 11.91,
+      "distinct_count": 21
+    },
+    {
+      "name": "marketing_consent",
+      "dtype": "string",
+      "null_count": 641,
+      "null_pct": 33.35,
+      "distinct_count": 17
+    }
+  ],
+  "duplicates": {
+    "exact_email_dupes": 103,
+    "normalized_email_dupes": 127,
+    "sample_groups": [
+      {
+        "email_normalized": "aaa@bbb.cc",
+        "lead_ids": [
+          "L2802",
+          "L2791",
+          "L2798",
+          "L2783"
+        ],
+        "created_dates": [
+          "2026-06-06",
+          "2026-05-15",
+          "2026-06-19",
+          "2026-06-12"
+        ]
+      },
+      {
+        "email_normalized": "afischer@cascade-ai.com",
+        "lead_ids": [
+          "L2687",
+          "L2849"
+        ],
+        "created_dates": [
+          "2026-05-29",
+          "2026-05-29"
+        ]
+      },
+      {
+        "email_normalized": "alexander.johansson@gmail.com",
+        "lead_ids": [
+          "L2838",
+          "L2007"
+        ],
+        "created_dates": [
+          "2026-04-17",
+          "2026-04-17"
+        ]
+      },
+      {
+        "email_normalized": "alexander_schulz@northernuni.edu",
+        "lead_ids": [
+          "L1211",
+          "L2858"
+        ],
+        "created_dates": [
+          "2026-06-22",
+          "2026-06-21"
+        ]
+      },
+      {
+        "email_normalized": "amanda.larsen@gmail.com",
+        "lead_ids": [
+          "L1151",
+          "L2821"
+        ],
+        "created_dates": [
+          "2026-05-16",
+          "2026-05-16"
+        ]
+      },
+      {
+        "email_normalized": "amanda_singh@yahoo.com",
+        "lead_ids": [
+          "L2867",
+          "L1275"
+        ],
+        "created_dates": [
+          "2026-06-25",
+          "2026-06-25"
+        ]
+      },
+      {
+        "email_normalized": "amandac@synthworks.ai",
+        "lead_ids": [
+          "L1115",
+          "L2911"
+        ],
+        "created_dates": [
+          "2026-04-13",
+          "2026-04-13"
+        ]
+      },
+      {
+        "email_normalized": "amara.clark@mistletoeml.com",
+        "lead_ids": [
+          "L2910",
+          "L1949"
+        ],
+        "created_dates": [
+          "2026-05-01",
+          "2026-05-01"
+        ]
+      },
+      {
+        "email_normalized": "amaraw@promptline.ai",
+        "lead_ids": [
+          "L1670",
+          "L2904"
+        ],
+        "created_dates": [
+          "2026-06-24",
+          "2026-06-24"
+        ]
+      },
+      {
+        "email_normalized": "amy.lopez@brightqueue.io",
+        "lead_ids": [
+          "L1434",
+          "L2920"
+        ],
+        "created_dates": [
+          "2026-06-27",
+          "2026-06-26"
+        ]
+      },
+      {
+        "email_normalized": "anderson.angela@ridgewayconstruction.com",
+        "lead_ids": [
+          "L2393",
+          "L2823"
+        ],
+        "created_dates": [
+          "2026-06-23",
+          "2026-06-23"
+        ]
+      },
+      {
+        "email_normalized": "asdf@asdf.com",
+        "lead_ids": [
+          "L2795",
+          "L2804",
+          "L2786"
+        ],
+        "created_dates": [
+          "2026-04-29",
+          "2026-04-23",
+          "2026-04-20"
+        ]
+      },
+      {
+        "email_normalized": "ashley_ramirez@paytrellis.com",
+        "lead_ids": [
+          "L2416",
+          "L2850"
+        ],
+        "created_dates": [
+          "2026-05-07",
+          "2026-05-07"
+        ]
+      },
+      {
+        "email_normalized": "astrid_martinez@gradientpeak.ai",
+        "lead_ids": [
+          "L2816",
+          "L2484"
+        ],
+        "created_dates": [
+          "2026-06-20",
+          "2026-06-20"
+        ]
+      },
+      {
+        "email_normalized": "astrids@gridforge.cloud",
+        "lead_ids": [
+          "L2897",
+          "L1930"
+        ],
+        "created_dates": [
+          "2026-04-09",
+          "2026-04-09"
+        ]
+      }
+    ]
+  },
+  "anomalies": {
+    "country": {
+      "distinct_raw_values": 61,
+      "grouped_variants": {
+        "SG": [
+          "SG",
+          "Singapore",
+          "singapore"
+        ],
+        "NL": [
+          "NL",
+          "Netherlands",
+          "The Netherlands",
+          "netherlands"
+        ],
+        "AU": [
+          "AU",
+          "Australia",
+          "australia"
+        ],
+        "US": [
+          "U.S.",
+          "US",
+          "USA",
+          "United States",
+          "united states",
+          "usa"
+        ],
+        "IN": [
+          "IN",
+          "India",
+          "india"
+        ],
+        "CA": [
+          "CA",
+          "Canada",
+          "canada"
+        ],
+        "BR": [
+          "BR",
+          "Brazil",
+          "brazil"
+        ],
+        "DE": [
+          "DE",
+          "DEU",
+          "Deutschland",
+          "Germany",
+          "germany"
+        ],
+        "JP": [
+          "JP",
+          "Japan",
+          "japan"
+        ],
+        "GB": [
+          "GB",
+          "UK",
+          "United Kingdom",
+          "uk"
+        ],
+        "SE": [
+          "SE",
+          "Sweden",
+          "sweden"
+        ],
+        "IT": [
+          "IT",
+          "Italia",
+          "Italy",
+          "italy"
+        ],
+        "ES": [
+          "ES",
+          "Espa\u00f1a",
+          "Spain",
+          "spain"
+        ],
+        "PL": [
+          "PL",
+          "Poland",
+          "poland"
+        ],
+        "IE": [
+          "IE",
+          "Ireland",
+          "ireland"
+        ],
+        "FR": [
+          "FR",
+          "FRA",
+          "France",
+          "france"
+        ]
+      },
+      "suspicious_value_count": 11,
+      "unmapped_values": []
+    },
+    "utm": {
+      "utm_source": {
+        "placeholder_counts": {
+          "null": 53,
+          "{{utm_source}}": 38,
+          "(direct)": 34,
+          "undefined": 50,
+          "test": 55
+        },
+        "placeholder_total": 230,
+        "distinct_real_values_after_normalization": 12
+      },
+      "utm_medium": {
+        "placeholder_counts": {
+          "null": 47,
+          "{{utm_medium}}": 36,
+          "(none)": 34,
+          "undefined": 50,
+          "test": 48,
+          "": 24
+        },
+        "placeholder_total": 239,
+        "distinct_real_values_after_normalization": 8
+      },
+      "utm_campaign": {
+        "placeholder_counts": {
+          "null": 47,
+          "{{utm_campaign}}": 36,
+          "": 229,
+          "test-campaign-DELETE": 48
+        },
+        "placeholder_total": 360,
+        "distinct_real_values_after_normalization": 16
+      }
+    },
+    "marketing_consent": {
+      "distinct_spellings": 17,
+      "value_counts": {
+        "": 641,
+        "unknown": 218,
+        "pending": 218,
+        "NULL": 218,
+        "granted": 95,
+        "TRUE": 87,
+        "yes": 81,
+        "1": 81,
+        "true": 79,
+        "Yes": 70,
+        "opted_in": 65,
+        "unsubscribed": 18,
+        "opted_out": 14,
+        "0": 11,
+        "no": 9,
+        "FALSE": 9,
+        "false": 8
+      },
+      "proposed_boolean_mapping": {
+        "": "unknown",
+        "unknown": "unknown",
+        "pending": "unknown",
+        "NULL": "unknown",
+        "granted": "true",
+        "TRUE": "true",
+        "yes": "true",
+        "1": "true",
+        "true": "true",
+        "Yes": "true",
+        "opted_in": "true",
+        "unsubscribed": "false",
+        "opted_out": "false",
+        "0": "false",
+        "no": "false",
+        "FALSE": "false",
+        "false": "false"
+      }
+    },
+    "job_title": {
+      "null_count": 125,
+      "whitespace_issue_count": 163,
+      "case_issue_count": 209
+    },
+    "company": {
+      "whitespace_issue_count": 170,
+      "variant_groups": [
+        {
+          "normalized": "neuralight",
+          "variants": [
+            " NEURALIGHT",
+            " Neuralight",
+            "NEURALIGHT",
+            "Neuralight",
+            "Neuralight  "
+          ]
+        },
+        {
+          "normalized": "fieldstone tech",
+          "variants": [
+            "FIELDSTONE TECH",
+            "Fieldstone Tech",
+            "Fieldstone Tech  ",
+            "fieldstone tech"
+          ]
+        },
+        {
+          "normalized": "voxel dynamics",
+          "variants": [
+            " Voxel Dynamics",
+            "VOXEL DYNAMICS",
+            "Voxel Dynamics",
+            "Voxel Dynamics  ",
+            "voxel dynamics"
+          ]
+        },
+        {
+          "normalized": "gradient peak",
+          "variants": [
+            " Gradient Peak",
+            "Gradient Peak",
+            "gradient peak"
+          ]
+        },
+        {
+          "normalized": "gridbase",
+          "variants": [
+            " Gridbase",
+            "Gridbase",
+            "Gridbase  ",
+            "gridbase"
+          ]
+        },
+        {
+          "normalized": "opsfleet",
+          "variants": [
+            " Opsfleet",
+            "OPSFLEET",
+            "Opsfleet",
+            "Opsfleet  ",
+            "opsfleet"
+          ]
+        },
+        {
+          "normalized": "cornerstone insurance",
+          "variants": [
+            " Cornerstone Insurance",
+            "CORNERSTONE INSURANCE",
+            "Cornerstone Insurance",
+            "cornerstone insurance"
+          ]
+        },
+        {
+          "normalized": "agentstack",
+          "variants": [
+            "AGENTSTACK",
+            "AgentStack",
+            "agentstack"
+          ]
+        },
+        {
+          "normalized": "pipeline labs",
+          "variants": [
+            " Pipeline Labs",
+            "PIPELINE LABS",
+            "PIPELINE LABS  ",
+            "Pipeline Labs",
+            "Pipeline Labs  ",
+            "pipeline labs"
+          ]
+        },
+        {
+          "normalized": "bella vista realty",
+          "variants": [
+            "BELLA VISTA REALTY",
+            "Bella Vista Realty"
+          ]
+        },
+        {
+          "normalized": "corticon ai",
+          "variants": [
+            " Corticon AI",
+            "CORTICON AI",
+            "Corticon AI",
+            "Corticon AI  ",
+            "corticon ai"
+          ]
+        },
+        {
+          "normalized": "peak fitness studios",
+          "variants": [
+            " Peak Fitness Studios",
+            "PEAK FITNESS STUDIOS",
+            "Peak Fitness Studios",
+            "Peak Fitness Studios  "
+          ]
+        },
+        {
+          "normalized": "shipmate",
+          "variants": [
+            " Shipmate",
+            "SHIPMATE",
+            "SHIPMATE  ",
+            "Shipmate",
+            "Shipmate  ",
+            "shipmate"
+          ]
+        },
+        {
+          "normalized": "synthworks ai",
+          "variants": [
+            " SynthWorks AI",
+            "SYNTHWORKS AI",
+            "SynthWorks AI",
+            "synthworks ai"
+          ]
+        },
+        {
+          "normalized": "loopware",
+          "variants": [
+            " Loopware",
+            "LOOPWARE",
+            "Loopware",
+            "loopware"
+          ]
+        },
+        {
+          "normalized": "embediq",
+          "variants": [
+            " EmbedIQ",
+            " embediq",
+            "EMBEDIQ",
+            "EmbedIQ",
+            "EmbedIQ  ",
+            "embediq"
+          ]
+        },
+        {
+          "normalized": "databarn",
+          "variants": [
+            " DATABARN",
+            " DataBarn",
+            "DATABARN",
+            "DataBarn",
+            "DataBarn  ",
+            "databarn"
+          ]
+        },
+        {
+          "normalized": "tensorloop",
+          "variants": [
+            " TensorLoop",
+            "TENSORLOOP",
+            "TensorLoop",
+            "TensorLoop  ",
+            "tensorloop"
+          ]
+        },
+        {
+          "normalized": "voiceforge",
+          "variants": [
+            " VoiceForge",
+            "VOICEFORGE",
+            "VoiceForge",
+            "voiceforge"
+          ]
+        },
+        {
+          "normalized": "bluebird travel",
+          "variants": [
+            " bluebird travel",
+            "BLUEBIRD TRAVEL",
+            "Bluebird Travel",
+            "Bluebird Travel  ",
+            "bluebird travel"
+          ]
+        }
+      ]
+    },
+    "email": {
+      "malformed_count": 0,
+      "competitor_domain_hits": 11,
+      "disposable_domain_hits": 1,
+      "suspicious_fake_hits": 9,
+      "freemail_count": 308,
+      "work_domain_count": 1614
+    },
+    "company_website": {
+      "missing_count": 508,
+      "protocol_missing_count": 684,
+      "malformed_count": 0
+    }
+  },
+  "recommendations": [
+    {
+      "field": "email",
+      "issue": "duplicate records (case/whitespace variants of the same address)",
+      "proposed_fix": "normalize to lowercase/trimmed and dedupe, keeping the most recent created_date per group",
+      "affected_rows": 127
+    },
+    {
+      "field": "country",
+      "issue": "same country spelled multiple ways (name vs. ISO code vs. casing)",
+      "proposed_fix": "map to ISO 3166-1 alpha-2 via an alias table",
+      "affected_rows": 58
+    },
+    {
+      "field": "country",
+      "issue": "junk/unusable values ('??', 'earth', blank)",
+      "proposed_fix": "null out and flag as suspicious rather than guess",
+      "affected_rows": 11
+    },
+    {
+      "field": "marketing_consent",
+      "issue": "17 distinct spellings of what should be a boolean-ish field",
+      "proposed_fix": "map to a tri-state true/false/unknown via an alias table",
+      "affected_rows": 1281
+    },
+    {
+      "field": "utm_source/utm_medium/utm_campaign",
+      "issue": "placeholder/test values (null, undefined, {{...}}, (direct), test)",
+      "proposed_fix": "normalize placeholders to null and flag with is_placeholder_utm",
+      "affected_rows": 829
+    },
+    {
+      "field": "job_title/company",
+      "issue": "leading/trailing/doubled whitespace",
+      "proposed_fix": "trim and collapse internal whitespace",
+      "affected_rows": 333
+    },
+    {
+      "field": "company_website",
+      "issue": "inconsistent scheme/www formatting or missing values",
+      "proposed_fix": "normalize to a canonical bare-domain form",
+      "affected_rows": 1192
+    },
+    {
+      "field": "email",
+      "issue": "leads from named competitor domains",
+      "proposed_fix": "suppress at routing time per the ICP memo",
+      "affected_rows": 11
+    },
+    {
+      "field": "email/first_name/last_name/company",
+      "issue": "clearly fake/spam test records (e.g. aaa@bbb.cc with blank company/title/industry)",
+      "proposed_fix": "suppress at routing time per the ICP memo's 'spam and clearly fake records' rule",
+      "affected_rows": 9
+    }
+  ]
+}

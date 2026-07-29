@@ -1,0 +1,1446 @@
+{
+  "status": "completed",
+  "workflow": "firmographic_enrichment",
+  "matches": [
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1517",
+        "company_size": "201-500",
+        "industry": "Software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1964",
+        "company_size": "51-200",
+        "industry": "Fitness",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2426",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1491",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2756",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1838",
+        "company_size": "11-50",
+        "industry": "Insurance",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1751",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1889",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1346",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1105",
+        "company_size": "201-500",
+        "industry": "AI/ML software",
+        "geo": "IE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1740",
+        "company_size": "1-10",
+        "industry": "Software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2071",
+        "company_size": "1-10",
+        "industry": "Software",
+        "geo": "NL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1257",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1363",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "ES"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1509",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2755",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2429",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1723",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2625",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "IE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2465",
+        "company_size": "11-50",
+        "industry": "Construction",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2658",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2061",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2346",
+        "company_size": "201-500",
+        "industry": "Automotive",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1083",
+        "company_size": "501-1000",
+        "industry": "AI/ML software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2724",
+        "company_size": "201-500",
+        "industry": "Education",
+        "geo": "ES"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2455",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2867",
+        "company_size": "1-10",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2550",
+        "company_size": "201-500",
+        "industry": "Automotive",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2463",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2214",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2565",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1909",
+        "company_size": "201-500",
+        "industry": "Data infrastructure",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1989",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1052",
+        "company_size": "11-50",
+        "industry": "Data infrastructure",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1161",
+        "company_size": "1-10",
+        "industry": "Education",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2277",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1338",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1264",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1629",
+        "company_size": "501-1000",
+        "industry": "AI/ML software",
+        "geo": "PL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1512",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2307",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "FR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2401",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2720",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1174",
+        "company_size": "501-1000",
+        "industry": "AI/ML software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1195",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2004",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2438",
+        "company_size": "201-500",
+        "industry": "Data infrastructure",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1176",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2774",
+        "company_size": "1-10",
+        "industry": "Food and beverage",
+        "geo": "IT"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2427",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1817",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1648",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1329",
+        "company_size": "501-1000",
+        "industry": "Software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2907",
+        "company_size": "51-200",
+        "industry": "Data infrastructure",
+        "geo": "NL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1247",
+        "company_size": "501-1000",
+        "industry": "Software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1063",
+        "company_size": "1-10",
+        "industry": "Marketing agency",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1928",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1929",
+        "company_size": "1000+",
+        "industry": "Data infrastructure",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2218",
+        "company_size": "201-500",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1580",
+        "company_size": "501-1000",
+        "industry": "Education",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1241",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2522",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1344",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "SE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1505",
+        "company_size": "11-50",
+        "industry": "Construction",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2056",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2656",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1806",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2349",
+        "company_size": "201-500",
+        "industry": "Software",
+        "geo": "PL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2068",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2634",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2552",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2749",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2453",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2289",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1259",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1831",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1077",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2695",
+        "company_size": "1-10",
+        "industry": "Food and beverage",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2030",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1522",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1066",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2576",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2686",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2283",
+        "company_size": "501-1000",
+        "industry": "AI/ML software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1582",
+        "company_size": "51-200",
+        "industry": "Fitness",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1389",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "PL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2081",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1990",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1300",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2513",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "SE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2489",
+        "company_size": "201-500",
+        "industry": "Software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1697",
+        "company_size": "201-500",
+        "industry": "Data infrastructure",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1895",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2221",
+        "company_size": "1-10",
+        "industry": "Data infrastructure",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1301",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2730",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1555",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1797",
+        "company_size": "201-500",
+        "industry": "AI/ML software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2303",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2711",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1477",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "NL"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2449",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2746",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2767",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2013",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2661",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2745",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2441",
+        "company_size": "201-500",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1201",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1652",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "ES"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1626",
+        "company_size": "201-500",
+        "industry": "Software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1906",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1167",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1182",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "FR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2108",
+        "company_size": "11-50",
+        "industry": "Healthcare",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2424",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2162",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1735",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2201",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1749",
+        "company_size": "51-200",
+        "industry": "Fitness",
+        "geo": "AU"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1531",
+        "company_size": "11-50",
+        "industry": "Insurance",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1462",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2321",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2376",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2103",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1778",
+        "company_size": "1000+",
+        "industry": "Education",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2736",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1917",
+        "company_size": "1000+",
+        "industry": "Software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1334",
+        "company_size": "11-50",
+        "industry": "Software",
+        "geo": "SE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2467",
+        "company_size": "1-10",
+        "industry": "Food and beverage",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1537",
+        "company_size": "1000+",
+        "industry": "Data infrastructure",
+        "geo": "JP"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1058",
+        "company_size": "51-200",
+        "industry": "Software",
+        "geo": "GB"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2329",
+        "company_size": "1-10",
+        "industry": "Software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1490",
+        "company_size": "51-200",
+        "industry": "AI/ML software",
+        "geo": "SE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1130",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "CA"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L2017",
+        "company_size": "11-50",
+        "industry": "Data infrastructure",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1015",
+        "company_size": "51-200",
+        "industry": "Beauty",
+        "geo": "IN"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1601",
+        "company_size": "1000+",
+        "industry": "AI/ML software",
+        "geo": "US"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1642",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1493",
+        "company_size": "1-10",
+        "industry": "AI/ML software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1565",
+        "company_size": "1-10",
+        "industry": "Software",
+        "geo": "DE"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1200",
+        "company_size": "11-50",
+        "industry": "AI/ML software",
+        "geo": "SG"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1966",
+        "company_size": "501-1000",
+        "industry": "AI/ML software",
+        "geo": "BR"
+      }
+    },
+    {
+      "provider": "clay_firmographics",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1499",
+        "company_size": "201-500",
+        "industry": "AI/ML software",
+        "geo": "JP"
+      }
+    }
+  ]
+}

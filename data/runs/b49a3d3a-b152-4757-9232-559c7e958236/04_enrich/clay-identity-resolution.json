@@ -1,0 +1,2580 @@
+{
+  "status": "completed",
+  "workflow": "identity_resolution",
+  "matches": [
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L1517",
+        "email_normalized": "joseph.johnson@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Neuralight",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2631",
+        "email_normalized": "samanthaa@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.65
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.82,
+      "data": {
+        "lead_id": "L1964",
+        "email_normalized": "scottk@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Peak Fitness Studios",
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1672",
+        "email_normalized": "ashley.keller@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.81,
+      "data": {
+        "lead_id": "L2426",
+        "email_normalized": "christine_larsen@proton.me",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1491",
+        "email_normalized": "bettya@proton.me",
+        "resolved": true,
+        "resolved_account_company": "state university",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2337",
+        "email_normalized": "lhall@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.9,
+      "data": {
+        "lead_id": "L2756",
+        "email_normalized": "ssharma@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "EmbedIQ",
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L1838",
+        "email_normalized": "wright.mark@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Cornerstone Insurance",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1378",
+        "email_normalized": "jonathanj@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1265",
+        "email_normalized": "lars.hall@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.77,
+      "data": {
+        "lead_id": "L1751",
+        "email_normalized": "larsen.james@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "databarn",
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.82,
+      "data": {
+        "lead_id": "L1889",
+        "email_normalized": "jamesa@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "TensorLoop",
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L1346",
+        "email_normalized": "whansen@proton.me",
+        "resolved": true,
+        "resolved_account_company": "LOOPWARE",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.79,
+      "data": {
+        "lead_id": "L1105",
+        "email_normalized": "lali@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Orbital Mind",
+        "confidence": 0.79
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1469",
+        "email_normalized": "jclark@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2400",
+        "email_normalized": "amanda_hoffmann@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L1740",
+        "email_normalized": "dennis.anderson@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "copilot health ai",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.77,
+      "data": {
+        "lead_id": "L2071",
+        "email_normalized": "elenaj@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Securex Systems",
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2742",
+        "email_normalized": "flores.michelle@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.75
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1143",
+        "email_normalized": "steven.ramirez@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L1257",
+        "email_normalized": "samuel.harris@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Streamlyne",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.75,
+      "data": {
+        "lead_id": "L1363",
+        "email_normalized": "jonathanr@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Vectorly AI",
+        "confidence": 0.75
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.77,
+      "data": {
+        "lead_id": "L1509",
+        "email_normalized": "samantha_rodriguez@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.78,
+      "data": {
+        "lead_id": "L2755",
+        "email_normalized": "jason.johnson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "EmbedIQ",
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.7,
+      "data": {
+        "lead_id": "L2429",
+        "email_normalized": "scott.nancy@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Synapse Foundry",
+        "confidence": 0.7
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L1723",
+        "email_normalized": "alopez@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "VOXEL DYNAMICS",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1879",
+        "email_normalized": "novak.donna@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.93
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.89,
+      "data": {
+        "lead_id": "L2625",
+        "email_normalized": "markw@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "TokenWorks",
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1292",
+        "email_normalized": "hall.brenda@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.7,
+      "data": {
+        "lead_id": "L2465",
+        "email_normalized": "ali.fatima@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "RIDGEWAY CONSTRUCTION",
+        "confidence": 0.7
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1308",
+        "email_normalized": "trivera@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.79
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1572",
+        "email_normalized": "yandersson@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2584",
+        "email_normalized": "kwame.sanchez@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.79
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.9,
+      "data": {
+        "lead_id": "L2658",
+        "email_normalized": "michael.johansson@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "GreenLeaf Landscaping",
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2058",
+        "email_normalized": "kevin_kowalski@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.94,
+      "data": {
+        "lead_id": "L2061",
+        "email_normalized": "jclark@proton.me",
+        "resolved": true,
+        "resolved_account_company": "diffusia",
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.94,
+      "data": {
+        "lead_id": "L2346",
+        "email_normalized": "badams@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Apex Auto Parts",
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2581",
+        "email_normalized": "bettya@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L1083",
+        "email_normalized": "sperez@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "corticon ai",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1214",
+        "email_normalized": "edward_gonzalez@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2620",
+        "email_normalized": "pamela.campbell@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L2724",
+        "email_normalized": "dwright@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2913",
+        "email_normalized": "stephanie.carter@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L2455",
+        "email_normalized": "sandra_anderson@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Pipeline Labs",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L2867",
+        "email_normalized": "amanda_singh@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Securex Systems, Inc.",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L2550",
+        "email_normalized": "jwagner@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Apex Auto Parts",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1772",
+        "email_normalized": "lisa.white@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2095",
+        "email_normalized": "mateo.lewis@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.79
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.81,
+      "data": {
+        "lead_id": "L2463",
+        "email_normalized": "wein@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "EmbedIQ",
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2499",
+        "email_normalized": "hassan.deborah@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.75
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2690",
+        "email_normalized": "singh.elizabeth@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2901",
+        "email_normalized": "johansson.amara@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2044",
+        "email_normalized": "harris.yuki@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1012",
+        "email_normalized": "dhassan@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1703",
+        "email_normalized": "johansson.nicholas@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.65
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L2214",
+        "email_normalized": "alexanderw@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Synapse Foundry",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.75,
+      "data": {
+        "lead_id": "L2565",
+        "email_normalized": "weil@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Codewharf",
+        "confidence": 0.75
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2671",
+        "email_normalized": "jamesk@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L1909",
+        "email_normalized": "kimberly.robinson@icloud.com",
+        "resolved": true,
+        "resolved_account_company": null,
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1875",
+        "email_normalized": "justinm@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1989",
+        "email_normalized": "richard.novak@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Stackline Software",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1052",
+        "email_normalized": "justin.schmidt@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "LUMINA ML",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1161",
+        "email_normalized": "kanderson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2532",
+        "email_normalized": "bettyk@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.83,
+      "data": {
+        "lead_id": "L2277",
+        "email_normalized": "ericj@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Opsfleet",
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.78,
+      "data": {
+        "lead_id": "L1338",
+        "email_normalized": "michelle.smith@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L1264",
+        "email_normalized": "debra_jackson@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Finetune Labs",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1560",
+        "email_normalized": "fatimal@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.68,
+      "data": {
+        "lead_id": "L1629",
+        "email_normalized": "daniel_nelson@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Corticon AI",
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1144",
+        "email_normalized": "danielt@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L1512",
+        "email_normalized": "sofia.green@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "DataBarn",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L2307",
+        "email_normalized": "annaf@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.66,
+      "data": {
+        "lead_id": "L2401",
+        "email_normalized": "ramirez.patricia@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Institute of Technology",
+        "confidence": 0.66
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.66,
+      "data": {
+        "lead_id": "L2720",
+        "email_normalized": "christine_ali@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Lumina ML",
+        "confidence": 0.66
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.89,
+      "data": {
+        "lead_id": "L1174",
+        "email_normalized": "martin.emma@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "RoboticsOne",
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2454",
+        "email_normalized": "patrick.schmidt@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.93
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1271",
+        "email_normalized": "barbara_baker@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.83,
+      "data": {
+        "lead_id": "L1195",
+        "email_normalized": "amy.singh@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Pipeline Labs",
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1080",
+        "email_normalized": "sbaker@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2387",
+        "email_normalized": "sallen@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2004",
+        "email_normalized": "mary.walker@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Diffusia",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L2438",
+        "email_normalized": "robinson.robert@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "LegalMind AI",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1647",
+        "email_normalized": "mateo_baker@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2183",
+        "email_normalized": "daniel.brown@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L1176",
+        "email_normalized": "zara_nelson@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "TokenWorks",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L2774",
+        "email_normalized": "edward_sanchez@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Maple Grove Bakery",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.71,
+      "data": {
+        "lead_id": "L2427",
+        "email_normalized": "rossi.elena@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "TokenWorks",
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.67,
+      "data": {
+        "lead_id": "L1817",
+        "email_normalized": "kwame_green@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Copilot Health AI",
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L1648",
+        "email_normalized": "patricia_mitchell@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Opsfleet",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1495",
+        "email_normalized": "schulz.astrid@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.95
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.75,
+      "data": {
+        "lead_id": "L1329",
+        "email_normalized": "wilson.sharon@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "RagPipe",
+        "confidence": 0.75
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2305",
+        "email_normalized": "larryw@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L2907",
+        "email_normalized": "laural@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "BrightQueue",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.69,
+      "data": {
+        "lead_id": "L1247",
+        "email_normalized": "andrewc@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "LedgerWorks",
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1544",
+        "email_normalized": "ywagner@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1858",
+        "email_normalized": "erics@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.66
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L1063",
+        "email_normalized": "rnovak@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Neural Marketing Co",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1928",
+        "email_normalized": "kumar.nicole@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Institute of Technology",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.86,
+      "data": {
+        "lead_id": "L1929",
+        "email_normalized": "jessicaw@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.83,
+      "data": {
+        "lead_id": "L2218",
+        "email_normalized": "kadams@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Orbital Mind",
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.89,
+      "data": {
+        "lead_id": "L1580",
+        "email_normalized": "torres.mei@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L1241",
+        "email_normalized": "helen_weber@proton.me",
+        "resolved": true,
+        "resolved_account_company": "SynthWorks AI",
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L2522",
+        "email_normalized": "phassan@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Bluebird Travel",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1151",
+        "email_normalized": "amanda.larsen@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L1344",
+        "email_normalized": "olaf.martinez@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Nimbus ERP",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1505",
+        "email_normalized": "angelaa@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Ridgeway Construction",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L2056",
+        "email_normalized": "fatimap@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Quanta Vision",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1463",
+        "email_normalized": "carolh@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2656",
+        "email_normalized": "alexandera@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2494",
+        "email_normalized": "gary.andersson@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L1806",
+        "email_normalized": "chris.garcia@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Modelry",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.82,
+      "data": {
+        "lead_id": "L2349",
+        "email_normalized": "lars.rossi@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Shipmate",
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L2068",
+        "email_normalized": "kevin.mitchell@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Lumina ML",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L2634",
+        "email_normalized": "heleno@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "INSTITUTE OF TECHNOLOGY",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.83,
+      "data": {
+        "lead_id": "L2552",
+        "email_normalized": "rcarter@outlook.com",
+        "resolved": true,
+        "resolved_account_company": null,
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.86,
+      "data": {
+        "lead_id": "L2749",
+        "email_normalized": "jeffreyh@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "TensorLoop",
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1485",
+        "email_normalized": "samuel.keller@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1715",
+        "email_normalized": "brandonn@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2453",
+        "email_normalized": "timothy_williams@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Finetune Labs",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.82,
+      "data": {
+        "lead_id": "L2289",
+        "email_normalized": "joshuac@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Central Polytechnic",
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2423",
+        "email_normalized": "sharma.priya@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1259",
+        "email_normalized": "jessicaf@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "AgentStack",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L1831",
+        "email_normalized": "lee.raymond@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "axon research",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.78,
+      "data": {
+        "lead_id": "L1077",
+        "email_normalized": "dennis_king@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Institute of Technology",
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.68,
+      "data": {
+        "lead_id": "L2695",
+        "email_normalized": "gregory.novak@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Maple Grove Bakery",
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.69,
+      "data": {
+        "lead_id": "L2030",
+        "email_normalized": "samantha_hassan@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "TensorLoop",
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.68,
+      "data": {
+        "lead_id": "L1522",
+        "email_normalized": "sarah_lewis@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Cloudspan",
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1466",
+        "email_normalized": "samuelo@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1461",
+        "email_normalized": "jackson.emily@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.91,
+      "data": {
+        "lead_id": "L1066",
+        "email_normalized": "rperez@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1442",
+        "email_normalized": "rajesh.rodriguez@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.82,
+      "data": {
+        "lead_id": "L2576",
+        "email_normalized": "keller.chris@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "synthworks ai",
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.89,
+      "data": {
+        "lead_id": "L2686",
+        "email_normalized": "justin.sharma@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Diffusia",
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.69,
+      "data": {
+        "lead_id": "L2283",
+        "email_normalized": "james.hill@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "RoboticsOne",
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L1582",
+        "email_normalized": "patricia.wilson@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Peak Fitness Studios",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.9,
+      "data": {
+        "lead_id": "L1389",
+        "email_normalized": "hans.andersson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "signalfold",
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1523",
+        "email_normalized": "jsmith@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1372",
+        "email_normalized": "carolynh@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2827",
+        "email_normalized": "dorothy.miller@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L2081",
+        "email_normalized": "joshuaa@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Lumina ML",
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1764",
+        "email_normalized": "donald.carter@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2673",
+        "email_normalized": "jasonw@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1880",
+        "email_normalized": "ryan_martin@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.93
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1708",
+        "email_normalized": "mark.nelson@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.71,
+      "data": {
+        "lead_id": "L1990",
+        "email_normalized": "debra_robinson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Axon Research",
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1300",
+        "email_normalized": "krodriguez@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "PayTrellis",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2316",
+        "email_normalized": "john.roberts@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2653",
+        "email_normalized": "donald.king@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2513",
+        "email_normalized": "rajesh.davis@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Streamlyne",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L2489",
+        "email_normalized": "astridf@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "CLOUDSPAN",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L1697",
+        "email_normalized": "brian_robinson@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "ORBITAL MIND",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.8,
+      "data": {
+        "lead_id": "L1895",
+        "email_normalized": "rebecca.ramirez@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Voxel Dynamics",
+        "confidence": 0.8
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.91,
+      "data": {
+        "lead_id": "L2221",
+        "email_normalized": "laura_adams@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Diffusia",
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1318",
+        "email_normalized": "kimberly_miller@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.65
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1488",
+        "email_normalized": "kowalski.amy@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1470",
+        "email_normalized": "ascott@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1514",
+        "email_normalized": "jennifer.flores@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2538",
+        "email_normalized": "zaram@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.93,
+      "data": {
+        "lead_id": "L1301",
+        "email_normalized": "rebeccaa@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Nimbus ERP",
+        "confidence": 0.93
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L2730",
+        "email_normalized": "nicole.larsen@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1730",
+        "email_normalized": "rebecca_hernandez@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L1555",
+        "email_normalized": "lwilson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "metricshub",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.7,
+      "data": {
+        "lead_id": "L1797",
+        "email_normalized": "pwright@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Neuralight",
+        "confidence": 0.7
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.81,
+      "data": {
+        "lead_id": "L2303",
+        "email_normalized": "rajesh.baker@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "DIFFUSIA",
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1583",
+        "email_normalized": "rivera.patrick@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L2711",
+        "email_normalized": "josephh@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "NORTHERN UNIVERSITY",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1097",
+        "email_normalized": "dorothy_kowalski@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2026",
+        "email_normalized": "mateo_walker@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.67,
+      "data": {
+        "lead_id": "L1477",
+        "email_normalized": "bschulz@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Loopware",
+        "confidence": 0.67
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.78,
+      "data": {
+        "lead_id": "L2449",
+        "email_normalized": "hassan.kathleen@proton.me",
+        "resolved": true,
+        "resolved_account_company": "VoiceForge",
+        "confidence": 0.78
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.92,
+      "data": {
+        "lead_id": "L2746",
+        "email_normalized": "patriciaw@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Streamlyne",
+        "confidence": 0.92
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L2767",
+        "email_normalized": "ronaldr@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Cloudspan",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L2013",
+        "email_normalized": "brians@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.71,
+      "data": {
+        "lead_id": "L2661",
+        "email_normalized": "nicole_nelson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "PayTrellis",
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.77,
+      "data": {
+        "lead_id": "L2745",
+        "email_normalized": "eschmidt@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Apptide",
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2022",
+        "email_normalized": "sharma.stephen@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1337",
+        "email_normalized": "thomas.patel@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L2441",
+        "email_normalized": "jbecker@proton.me",
+        "resolved": true,
+        "resolved_account_company": "DeepHarbor",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L1201",
+        "email_normalized": "bwalker@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L1652",
+        "email_normalized": "king.wei@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Modelry",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1626",
+        "email_normalized": "brandon.hansen@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Shipmate",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2045",
+        "email_normalized": "david.ali@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.8
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2233",
+        "email_normalized": "hoffmann.elena@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.81,
+      "data": {
+        "lead_id": "L1906",
+        "email_normalized": "margaretf@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.86,
+      "data": {
+        "lead_id": "L1167",
+        "email_normalized": "davidl@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "Mistletoe ML",
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2691",
+        "email_normalized": "karenr@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.69
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2290",
+        "email_normalized": "ckumar@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.91,
+      "data": {
+        "lead_id": "L1182",
+        "email_normalized": "scott_andersson@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Institute of Technology",
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1232",
+        "email_normalized": "tanaka.yuki@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L2108",
+        "email_normalized": "clark.amara@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Summit Dental Group",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.9,
+      "data": {
+        "lead_id": "L2424",
+        "email_normalized": "emily_rossi@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Northern University",
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.73,
+      "data": {
+        "lead_id": "L2162",
+        "email_normalized": "zara.andersson@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Institute of Technology",
+        "confidence": 0.73
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L1735",
+        "email_normalized": "rachel.sanchez@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "Harborview Logistics",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2201",
+        "email_normalized": "thomas_ali@proton.me",
+        "resolved": true,
+        "resolved_account_company": "State University",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.89,
+      "data": {
+        "lead_id": "L1749",
+        "email_normalized": "sjones@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Peak Fitness Studios",
+        "confidence": 0.89
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.72,
+      "data": {
+        "lead_id": "L1531",
+        "email_normalized": "jferrari@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Cornerstone Insurance",
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.94,
+      "data": {
+        "lead_id": "L1462",
+        "email_normalized": "ronald_muller@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "LedgerWorks",
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L2321",
+        "email_normalized": "rtaylor@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Central Polytechnic",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.84,
+      "data": {
+        "lead_id": "L2376",
+        "email_normalized": "becker.kwame@proton.me",
+        "resolved": true,
+        "resolved_account_company": "VoiceForge",
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1796",
+        "email_normalized": "debral@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.86,
+      "data": {
+        "lead_id": "L2103",
+        "email_normalized": "hill.mark@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "DataBarn",
+        "confidence": 0.86
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.68,
+      "data": {
+        "lead_id": "L1778",
+        "email_normalized": "michael_clark@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "state university",
+        "confidence": 0.68
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.9,
+      "data": {
+        "lead_id": "L2736",
+        "email_normalized": "chen.sandra@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Stackline Software",
+        "confidence": 0.9
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1352",
+        "email_normalized": "adams.alexander@hotmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2374",
+        "email_normalized": "storres@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.7
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1917",
+        "email_normalized": "paul_scott@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "OPSFLEET",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2242",
+        "email_normalized": "angela.hernandez@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2895",
+        "email_normalized": "pwright@gmail.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1603",
+        "email_normalized": "wei_robinson@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1035",
+        "email_normalized": "sharon.meyer@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L1334",
+        "email_normalized": "ingridn@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Vectorly AI",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.85,
+      "data": {
+        "lead_id": "L2467",
+        "email_normalized": "joshua_martinez@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "maple grove bakery",
+        "confidence": 0.85
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L1537",
+        "email_normalized": "john_martinez@proton.me",
+        "resolved": true,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.83,
+      "data": {
+        "lead_id": "L1058",
+        "email_normalized": "fatima.adams@proton.me",
+        "resolved": true,
+        "resolved_account_company": "Peak Fitness Studios",
+        "confidence": 0.83
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.76,
+      "data": {
+        "lead_id": "L2329",
+        "email_normalized": "sharon.moore@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Securex Systems",
+        "confidence": 0.76
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2743",
+        "email_normalized": "jack_hill@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.7
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.66,
+      "data": {
+        "lead_id": "L1490",
+        "email_normalized": "benjamin_hansen@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "TensorLoop",
+        "confidence": 0.66
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2845",
+        "email_normalized": "larsen.james+test@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.71
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.88,
+      "data": {
+        "lead_id": "L1130",
+        "email_normalized": "rscott@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "RoboticsOne",
+        "confidence": 0.88
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.66,
+      "data": {
+        "lead_id": "L2017",
+        "email_normalized": "gonzalez.michelle@proton.me",
+        "resolved": true,
+        "resolved_account_company": null,
+        "confidence": 0.66
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1135",
+        "email_normalized": "mary_rodriguez@icloud.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.84
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L1015",
+        "email_normalized": "mbrown@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Quantum Nails Salon",
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1163",
+        "email_normalized": "lsharma@proton.me",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.87
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1712",
+        "email_normalized": "jason.moore@yahoo.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.72
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L1601",
+        "email_normalized": "ferrari.stephen@hotmail.com",
+        "resolved": true,
+        "resolved_account_company": "Mistletoe ML",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.81,
+      "data": {
+        "lead_id": "L1642",
+        "email_normalized": "stevenm@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "Promptline",
+        "confidence": 0.81
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.91,
+      "data": {
+        "lead_id": "L1493",
+        "email_normalized": "edwardp@outlook.com",
+        "resolved": true,
+        "resolved_account_company": "quanta vision",
+        "confidence": 0.91
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L2544",
+        "email_normalized": "carolyn.sato@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.77,
+      "data": {
+        "lead_id": "L1565",
+        "email_normalized": "timothy_green@icloud.com",
+        "resolved": true,
+        "resolved_account_company": null,
+        "confidence": 0.77
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.94,
+      "data": {
+        "lead_id": "L1200",
+        "email_normalized": "emilyh@gmail.com",
+        "resolved": true,
+        "resolved_account_company": "SynthWorks AI",
+        "confidence": 0.94
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.74,
+      "data": {
+        "lead_id": "L1966",
+        "email_normalized": "janet.young@icloud.com",
+        "resolved": true,
+        "resolved_account_company": "DEEPHARBOR",
+        "confidence": 0.74
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0,
+      "data": {
+        "lead_id": "L1540",
+        "email_normalized": "jjohansson@outlook.com",
+        "resolved": false,
+        "resolved_account_company": null,
+        "confidence": 0.82
+      }
+    },
+    {
+      "provider": "clay_identity_graph",
+      "confidence": 0.87,
+      "data": {
+        "lead_id": "L1499",
+        "email_normalized": "campbell.eric@yahoo.com",
+        "resolved": true,
+        "resolved_account_company": "Neuralight",
+        "confidence": 0.87
+      }
+    }
+  ]
+}

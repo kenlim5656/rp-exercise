@@ -1,0 +1,6997 @@
+{
+  "results": [
+    {
+      "id": "HS-6ce00fa9b1",
+      "properties": {
+        "email": "raymond_nguyen@orbitalmind.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8622b6b23c",
+      "properties": {
+        "email": "samanthaa@hotmail.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cce83fa4d8",
+      "properties": {
+        "email": "anthony.anderson@shipmate.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-99734150b2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-06771b6f2d",
+      "properties": {
+        "email": "laura.green@tensorloop.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-01d675c4e5",
+      "properties": {
+        "email": "kevin_muller@cornerstoneins.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cd555b545b",
+      "properties": {
+        "email": "zarak@tokenworks.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-24eb641595",
+      "properties": {
+        "email": "rthomas@voiceforge.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9f1f7cf35"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7c17a929fb",
+      "properties": {
+        "email": "james.baker@bluebirdtravel.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7c8fac3d7c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c64c34ce92",
+      "properties": {
+        "email": "chen.david@stacklinesoftware.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3f1a44c8a8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d13ddb1b9f",
+      "properties": {
+        "email": "lauras@greenleaflandscaping.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c0b0d7ac51",
+      "properties": {
+        "email": "elizabethg@copilothealth.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b247ad04cc",
+      "properties": {
+        "email": "stephen_young@neuralmarketing.co",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-424579814e",
+      "properties": {
+        "email": "alexander.johansson@gmail.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d4a44657f6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-366aefdb83",
+      "properties": {
+        "email": "walker.kimberly@quantumnails.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f10636b85b",
+      "properties": {
+        "email": "fatima_martin@orbitalmind.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cae4f0f6cf",
+      "properties": {
+        "email": "adams.katherine@ragpipe.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d86ee7ecac"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b8d143dc64",
+      "properties": {
+        "email": "donaldf@finetunelabs.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c59c1cd430"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-139b6aa3e2",
+      "properties": {
+        "email": "cmuller@quantumnails.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-668a8cbd39",
+      "properties": {
+        "email": "lhall@gmail.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-41993ccd9a",
+      "properties": {
+        "email": "ssharma@outlook.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8485ef7d1f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-07c4e2e1f1",
+      "properties": {
+        "email": "kenneth_schulz@greenleaflandscaping.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-930d1e0f05",
+      "properties": {
+        "email": "wright.mark@proton.me",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8f70f7a85d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ca207ceeac",
+      "properties": {
+        "email": "ramirez.edward@evalhouse.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ed8e7ad2b4",
+      "properties": {
+        "email": "debra.schmidt@tensorloop.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3fc59971cb",
+      "properties": {
+        "email": "matthewc@stateuniv.edu",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-eb819cd974",
+      "properties": {
+        "email": "michael.moore@voxeldynamics.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a709c1f56f",
+      "properties": {
+        "email": "carolyn_hansen@databarn.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f5ce0e9cd7",
+      "properties": {
+        "email": "edwardj@roboticsone.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f27e8acb1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-bdb0c12cf7",
+      "properties": {
+        "email": "sarah_carter@instech.edu",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9fd9f0ff11",
+      "properties": {
+        "email": "aroberts@deepharbor.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d5684637dc",
+      "properties": {
+        "email": "lars.hall@hotmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-99f6f9c7a1",
+      "properties": {
+        "email": "jack_singh@loopware.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3b40e1da16",
+      "properties": {
+        "email": "johnson.frank@cornerstoneins.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8f70f7a85d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-508b86be61",
+      "properties": {
+        "email": "olafj@loopware.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-883eef3b57",
+      "properties": {
+        "email": "betty_keller@inferralabs.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6fc48f5a8d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3b4bbabebe",
+      "properties": {
+        "email": "dferrari@codewharf.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-03900c05f2",
+      "properties": {
+        "email": "tanaka.melissa@tensorloop.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1f806ab49b",
+      "properties": {
+        "email": "mnguyen@finetunelabs.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c59c1cd430"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-65510cca03",
+      "properties": {
+        "email": "jonathana@bellavistarealty.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-980df9e0ba"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-70b7efa810",
+      "properties": {
+        "email": "cynthiaf@synthworks.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e9d6a08642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-afb2d041f8",
+      "properties": {
+        "email": "eric.kumar@bellavistarealty.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-980df9e0ba"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d68b2f8e72",
+      "properties": {
+        "email": "adams.carolyn@vectorly.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-04a7ed62d3",
+      "properties": {
+        "email": "williams.samantha@synthworks.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e9d6a08642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9b755d4625",
+      "properties": {
+        "email": "wei_williams@databarn.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4735eac4f7",
+      "properties": {
+        "email": "ali.jack@roboticsone.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f27e8acb1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fca04ffbfb",
+      "properties": {
+        "email": "joshua_sanchez@voxeldynamics.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7984e3b356",
+      "properties": {
+        "email": "kennethg@roboticsone.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f27e8acb1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-09f6f73096",
+      "properties": {
+        "email": "egarcia@gridforge.cloud",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c85767aee0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-71515b322b",
+      "properties": {
+        "email": "sofia_mitchell@agentstack.dev",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1bc7f4bbd5",
+      "properties": {
+        "email": "ericc@greenleaflandscaping.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c013538d99",
+      "properties": {
+        "email": "melissa.sato@loopware.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fe69b410a5",
+      "properties": {
+        "email": "wei.park@centralpoly.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fa6e0bcc8e",
+      "properties": {
+        "email": "brandon_flores@ragpipe.dev",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d86ee7ecac"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a4d0a2ee8c",
+      "properties": {
+        "email": "samantha.flores@loopware.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3960cb0eba",
+      "properties": {
+        "email": "kwame.andersson@corticon.ai",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d4a44657f6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2cee4a3ba6",
+      "properties": {
+        "email": "ingridm@centralpoly.edu",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d97fc3ab5a",
+      "properties": {
+        "email": "king.deborah@shipmate.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-99734150b2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c56450e966",
+      "properties": {
+        "email": "john_harris@pipelinelabs.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-00c48fcca6",
+      "properties": {
+        "email": "dennis_schmidt@ledgerworks.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c3dd0984c4",
+      "properties": {
+        "email": "thomas.donna@ridgewayconstruction.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-520293dcd4",
+      "properties": {
+        "email": "nguyen.chris@quantumnails.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b5a8ee58c7",
+      "properties": {
+        "email": "aandersson@apexautoparts.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f1ab40d2f2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f4446f8244",
+      "properties": {
+        "email": "jessicak@finetunelabs.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c59c1cd430"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ef9b87bbcf",
+      "properties": {
+        "email": "mei_fischer@yahoo.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f27e8acb1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-331708b189",
+      "properties": {
+        "email": "katherine_clark@ledgerworks.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-838a54e620",
+      "properties": {
+        "email": "kwame.sanchez@hotmail.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-af13b173f9",
+      "properties": {
+        "email": "dwagner@metricshub.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-edadd5b061",
+      "properties": {
+        "email": "christiner@formcraft.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-de12a54014",
+      "properties": {
+        "email": "margaretp@mistletoeml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-df3990a722",
+      "properties": {
+        "email": "brenda.larsen@apptide.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3478dba2ad",
+      "properties": {
+        "email": "janet_sato@neuralmarketing.co",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1c125acfe6",
+      "properties": {
+        "email": "rroberts@loopware.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9d8bf06dea",
+      "properties": {
+        "email": "young.raymond@databarn.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-882d7ad415",
+      "properties": {
+        "email": "michael.flores@tokenworks.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8c10691cb0",
+      "properties": {
+        "email": "margaret_scott@embediq.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8485ef7d1f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-21f0cba051",
+      "properties": {
+        "email": "donna_nguyen@signalfold.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-895946f9b6",
+      "properties": {
+        "email": "cbaker@diffusia.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b77fed4137",
+      "properties": {
+        "email": "frodriguez@maplegrovebakery.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ad3a94bf87",
+      "properties": {
+        "email": "ganderson@tensorloop.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b6e28dd88d",
+      "properties": {
+        "email": "dclark@greenleaflandscaping.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b1d48ea17f",
+      "properties": {
+        "email": "priya.smith@ridgewayconstruction.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0108b50ed6",
+      "properties": {
+        "email": "edward_gonzalez@icloud.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5fc6f91367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6080406fea",
+      "properties": {
+        "email": "robinson.nicole@diffusia.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c2164594ab",
+      "properties": {
+        "email": "pamela.campbell@outlook.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-742ddb0771",
+      "properties": {
+        "email": "jacoba@embediq.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8485ef7d1f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3e68de4583",
+      "properties": {
+        "email": "william_roberts@opsfleet.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a39c624c4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ed3364854b",
+      "properties": {
+        "email": "carol.fischer@fieldstonetech.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3e06b66679"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ac32819641",
+      "properties": {
+        "email": "okafor.donald@tokenworks.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-81824d24d1",
+      "properties": {
+        "email": "alexander.mitchell@codewharf.dev",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1eb465f7ef",
+      "properties": {
+        "email": "ronaldt@evalhouse.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9bd3786d44",
+      "properties": {
+        "email": "janet.andersson@embediq.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-107c98c69c",
+      "properties": {
+        "email": "athomas@paytrellis.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3950ee5be8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-87bc16f2e8",
+      "properties": {
+        "email": "rivera.nicole@opsfleet.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a39c624c4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e324ca78ff",
+      "properties": {
+        "email": "thompson.lars@evalhouse.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d1a5dd07f9",
+      "properties": {
+        "email": "okafor.hans@voxeldynamics.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6a0ed49a39",
+      "properties": {
+        "email": "brandon_johansson@legalmind.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6b0c639654"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ddea9e84c9",
+      "properties": {
+        "email": "alexander_jackson@tokenworks.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3d02a77065",
+      "properties": {
+        "email": "jmoore@tensorloop.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3046996769",
+      "properties": {
+        "email": "smiller@synapsefoundry.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-23a428e500"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a3040c1e86",
+      "properties": {
+        "email": "apatel@diffusia.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-610a8d4b42",
+      "properties": {
+        "email": "schulz.debra@agentstack.dev",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7c15708da2",
+      "properties": {
+        "email": "wadams@harborviewlogistics.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6dff9e9a4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-59853120f3",
+      "properties": {
+        "email": "jsato@quantavision.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5571deae14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f685326656",
+      "properties": {
+        "email": "hall.matthew@maplegrovebakery.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f6ede39cc1",
+      "properties": {
+        "email": "kwilson@northernuni.edu",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-dd3a301f03",
+      "properties": {
+        "email": "jason_meyer@gradientpeak.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6319368eb4",
+      "properties": {
+        "email": "hassan.deborah@yahoo.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f0e96340ba",
+      "properties": {
+        "email": "pamelay@streamlyne.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-dbd006f1b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2880f7e514",
+      "properties": {
+        "email": "kathleen.meyer@neuralmarketing.co",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-02e2de122a",
+      "properties": {
+        "email": "johansson.amara@gmail.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ecef6defb8",
+      "properties": {
+        "email": "chen.hans@formcraft.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c142b68837",
+      "properties": {
+        "email": "sofia_taylor@opsfleet.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a39c624c4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-456c2df84b",
+      "properties": {
+        "email": "harris.yuki@icloud.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5444349519",
+      "properties": {
+        "email": "kevin_tanaka@northernuni.edu",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5cd9c72cf2",
+      "properties": {
+        "email": "hans.rivera@apexautoparts.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f1ab40d2f2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f178d4da51",
+      "properties": {
+        "email": "mark.park@bellavistarealty.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-980df9e0ba"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-91d8f97d86",
+      "properties": {
+        "email": "karen.davis@instech.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-27c46087c4",
+      "properties": {
+        "email": "sofia_martinez@luminaml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-00a58fc9c9",
+      "properties": {
+        "email": "elizabeth.mitchell@instech.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5160228691",
+      "properties": {
+        "email": "mark_lee@maplegrovebakery.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-66b28a517d",
+      "properties": {
+        "email": "ronaldg@northernuni.edu",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5c6c0cc4a4",
+      "properties": {
+        "email": "martinez.kenneth@diffusia.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-de853b81ff",
+      "properties": {
+        "email": "sato.justin@axonresearch.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0096126b75",
+      "properties": {
+        "email": "rgarcia@brightqueue.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-03277cc9d0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e3f96e8c42",
+      "properties": {
+        "email": "thomas_green@opsfleet.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a39c624c4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7d1e0b599d",
+      "properties": {
+        "email": "ashleyt@orbitalmind.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-130a471587",
+      "properties": {
+        "email": "bettyk@yahoo.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c560662f4d",
+      "properties": {
+        "email": "bbaker@agentstack.dev",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1598016ff9",
+      "properties": {
+        "email": "jonathan.lopez@greenleaflandscaping.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-76fa2dc82f",
+      "properties": {
+        "email": "patricia.mitchell@signalfold.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b487e1756d",
+      "properties": {
+        "email": "smith.anna@cloudspan.dev",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7d5375d5e2",
+      "properties": {
+        "email": "michelle.smith@proton.me",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d36d64a468",
+      "properties": {
+        "email": "qwerty123@gmail.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-43ee593205",
+      "properties": {
+        "email": "skim@formcraft.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6fe35773dc",
+      "properties": {
+        "email": "young.sandra@axonresearch.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-64b20af65b",
+      "properties": {
+        "email": "daniel_roberts@neuralmarketing.co",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3321be13f7",
+      "properties": {
+        "email": "jones.stephanie@nimbuserp.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-80057d60df"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b2b048e987",
+      "properties": {
+        "email": "fatimal@icloud.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a4d483d382",
+      "properties": {
+        "email": "msharma@ledgerworks.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2e0fd231c4",
+      "properties": {
+        "email": "jessica.garcia@vectorly.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-680980dbea",
+      "properties": {
+        "email": "tferrari@neuralmarketing.co",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5a89e50594",
+      "properties": {
+        "email": "ryan_flores@centralpoly.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-aa3af942ba",
+      "properties": {
+        "email": "michael.lewis@apptide.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0771b0d1ed",
+      "properties": {
+        "email": "scottn@luminaml.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cd4e2edb9e",
+      "properties": {
+        "email": "sofia.green@gmail.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-984c3a66de",
+      "properties": {
+        "email": "scott.katherine@greenleaflandscaping.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2f53c9ec7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-aab7e85f8d",
+      "properties": {
+        "email": "joseph_king@apexautoparts.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f1ab40d2f2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ead4486b0c",
+      "properties": {
+        "email": "weij@orbitalmind.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ad0e2ecb9c",
+      "properties": {
+        "email": "benjamin_muller@codewharf.dev",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ffafa358d5",
+      "properties": {
+        "email": "stevenh@streamlyne.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-dbd006f1b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6a0ebe7cf7",
+      "properties": {
+        "email": "jkim@codewharf.dev",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4b8e57cb08",
+      "properties": {
+        "email": "johnson.christine@ragpipe.dev",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d86ee7ecac"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2413da7084",
+      "properties": {
+        "email": "christine_ali@gmail.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-397fb37441",
+      "properties": {
+        "email": "daniel.clark@copilothealth.ai",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f2db4f68f7",
+      "properties": {
+        "email": "daniel_sanchez@deepharbor.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d53d8e1e61",
+      "properties": {
+        "email": "khall@neuralmarketing.co",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3ff08d0ca4",
+      "properties": {
+        "email": "chen.sofia@centralpoly.edu",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5361b53635",
+      "properties": {
+        "email": "hill.samuel@codewharf.dev",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d21b3a5bbb",
+      "properties": {
+        "email": "walker.edward@orbitalmind.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-46429820ee",
+      "properties": {
+        "email": "sofia_carter@relaymesh.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-69be871895",
+      "properties": {
+        "email": "amanda_ramirez@luminaml.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a3bb3b2f99",
+      "properties": {
+        "email": "kathleen.jones@copilothealth.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7d3dd98d73",
+      "properties": {
+        "email": "paul.clark@vectorly.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7c6484ee5c",
+      "properties": {
+        "email": "sbaker@yahoo.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-45b9239ac9",
+      "properties": {
+        "email": "sofia_miller@relaymesh.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-36a42c1ee3",
+      "properties": {
+        "email": "justin.wilson@orbitalmind.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fc84c0bfeb",
+      "properties": {
+        "email": "sallen@yahoo.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d59a8c00a5",
+      "properties": {
+        "email": "ghernandez@cloudspan.dev",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3de2fc7132",
+      "properties": {
+        "email": "olafh@legalmind.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6b0c639654"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4ce49282bd",
+      "properties": {
+        "email": "perez.david@evalhouse.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-02415d56e9",
+      "properties": {
+        "email": "sallen@ledgerworks.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fef3f261ed",
+      "properties": {
+        "email": "kperez@axonresearch.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-bb32fce908",
+      "properties": {
+        "email": "andrews@modelry.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ea5ab0516"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cead3894cf",
+      "properties": {
+        "email": "sofia.allen@finetunelabs.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c59c1cd430"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fa8af35a5c",
+      "properties": {
+        "email": "dhoffmann@diffusia.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-30a45b1aa0",
+      "properties": {
+        "email": "amy_okafor@modelry.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ea5ab0516"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a9959e4a64",
+      "properties": {
+        "email": "ischulz@modelry.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ea5ab0516"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e861db4e68",
+      "properties": {
+        "email": "ronaldj@gridbase.dev",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7ba5372ac6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fff3fa015f",
+      "properties": {
+        "email": "brandon_fischer@formcraft.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b6bbf8a164",
+      "properties": {
+        "email": "jacob.ferrari@codewharf.dev",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a04da7c398",
+      "properties": {
+        "email": "zara_nelson@outlook.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-06c384bd15",
+      "properties": {
+        "email": "mary_taylor@signalfold.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3cd5682c30",
+      "properties": {
+        "email": "becker.edward@neuralight.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-40ea3551a4",
+      "properties": {
+        "email": "scott.kimberly@northernuni.edu",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2c6ec0868b",
+      "properties": {
+        "email": "melissac@tensorloop.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7094953bbb",
+      "properties": {
+        "email": "nicolef@corticon.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d4a44657f6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e7452a2466",
+      "properties": {
+        "email": "rodriguez.joshua@ragpipe.dev",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d86ee7ecac"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-08cb58d79d",
+      "properties": {
+        "email": "mei.moore@ledgerworks.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9718d8ede1",
+      "properties": {
+        "email": "justin.harris@copilothealth.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-30f8499769",
+      "properties": {
+        "email": "nguyen.deborah@luminaml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a8a9769464",
+      "properties": {
+        "email": "miller.amara@synapsefoundry.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-23a428e500"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a62db6345b",
+      "properties": {
+        "email": "briang@embediq.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b971548428",
+      "properties": {
+        "email": "stephen.green@quantumnails.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-61c1220ea8",
+      "properties": {
+        "email": "ryan_andersson@neuralight.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f84c6deb1f",
+      "properties": {
+        "email": "lisa_jackson@streamlyne.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-dbd006f1b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0b394bfb81",
+      "properties": {
+        "email": "sharonf@ledgerworks.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f0f66a19b8",
+      "properties": {
+        "email": "sandra_lewis@finetunelabs.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c59c1cd430"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7b7ffe61f2",
+      "properties": {
+        "email": "alexander_chen@stateuniv.edu",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-eaa832fed7",
+      "properties": {
+        "email": "fatimaf@inferralabs.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6fc48f5a8d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a38c05f3e3",
+      "properties": {
+        "email": "scott_allen@pipelinelabs.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e9436858f1",
+      "properties": {
+        "email": "rossi.elena@hotmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d3a96bed03",
+      "properties": {
+        "email": "justin.park@bluebirdtravel.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7c8fac3d7c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b738a17c8c",
+      "properties": {
+        "email": "pschmidt@apptide.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-58fc25ced9",
+      "properties": {
+        "email": "asdf@asdf.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f0e4c2f76c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ff0b25f50f",
+      "properties": {
+        "email": "pweber@instech.edu",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0dcb8adc4f",
+      "properties": {
+        "email": "mhoffmann@relaymesh.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-03954f4a5b",
+      "properties": {
+        "email": "rrobinson@evalhouse.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3002406d6a",
+      "properties": {
+        "email": "park.fatima@peakfitnessstudios.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-52d200c68c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-341af68cc3",
+      "properties": {
+        "email": "lee.benjamin@orbitalmind.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d528697835",
+      "properties": {
+        "email": "jnguyen@neuralmarketing.co",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b128affbc7",
+      "properties": {
+        "email": "swalker@neuralmarketing.co",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7025484fde",
+      "properties": {
+        "email": "cynthiaw@metricshub.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-47eb4a19b2",
+      "properties": {
+        "email": "fbrown@luminaml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9eb01e29dd",
+      "properties": {
+        "email": "jennifer.perez@embediq.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8485ef7d1f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a2589405c6",
+      "properties": {
+        "email": "rachelm@fieldstonetech.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3e06b66679"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a3cd740aea",
+      "properties": {
+        "email": "andrewc@gmail.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-87c45fb08f",
+      "properties": {
+        "email": "ali.jonathan@securexsystems.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2b18ba9e4c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1c013391c2",
+      "properties": {
+        "email": "jeffrey_patel@yahoo.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c77438c5a4",
+      "properties": {
+        "email": "smartinez@gmail.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7c8fac3d7c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c984127ad0",
+      "properties": {
+        "email": "kadams@outlook.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-19c4d61d85",
+      "properties": {
+        "email": "perez.linda@corticon.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d4a44657f6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e2153e52b9",
+      "properties": {
+        "email": "pamelaw@voxeldynamics.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-26235dfc82",
+      "properties": {
+        "email": "sharon.campbell@mistletoeml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-078ce677e7",
+      "properties": {
+        "email": "diego_young@evalhouse.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d84c488380",
+      "properties": {
+        "email": "jackson.jacob@databarn.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-45337cfa56",
+      "properties": {
+        "email": "scott_lewis@orbitalmind.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6eb9faafc6",
+      "properties": {
+        "email": "baker.lisa@voxeldynamics.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7b9d1db1c0",
+      "properties": {
+        "email": "yuki.kim@apptide.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-340db28edc",
+      "properties": {
+        "email": "dnelson@deepharbor.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6a0926564a",
+      "properties": {
+        "email": "amanda.larsen@gmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c8fd3930b4",
+      "properties": {
+        "email": "karen.thomas@orbitalmind.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-50bc32bf73",
+      "properties": {
+        "email": "thomasf@promptline.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8885526d0f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2f6385067c",
+      "properties": {
+        "email": "zara.roberts@databarn.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-271294143a",
+      "properties": {
+        "email": "brandons@formcraft.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-85bc95b475",
+      "properties": {
+        "email": "kferrari@centralpoly.edu",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e5ef22aa45",
+      "properties": {
+        "email": "dorothy.muller@stateuniv.edu",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2e585bb4ce",
+      "properties": {
+        "email": "king.jessica@luminaml.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-82beb0e54d",
+      "properties": {
+        "email": "robertt@pipelinelabs.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d8077bb486",
+      "properties": {
+        "email": "brandon_martinez@metricshub.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e32aebd32b",
+      "properties": {
+        "email": "kevin.mitchell@hotmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-12fbaa7010",
+      "properties": {
+        "email": "lewis.paul@orbitalmind.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5d7b562190",
+      "properties": {
+        "email": "fischer.jennifer@maplegrovebakery.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-bbc5fad8eb",
+      "properties": {
+        "email": "brian.walker@shipmate.io",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2d308a8a7d",
+      "properties": {
+        "email": "flores.ronald@luminaml.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-66aabc225f",
+      "properties": {
+        "email": "olaf.rossi@axonresearch.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6a26b5f927",
+      "properties": {
+        "email": "kimberly_schulz@ledgerworks.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-38716bf312",
+      "properties": {
+        "email": "sarah_perez@cornerstoneins.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8f70f7a85d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a9d5d4dec6",
+      "properties": {
+        "email": "adams.edward@promptline.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8885526d0f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5cfe771b05",
+      "properties": {
+        "email": "hall.christine@stateuniv.edu",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-639e9b971f",
+      "properties": {
+        "email": "carolyn.meyer@summitdentalgroup.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-afab04a727"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-07b7dfa2ef",
+      "properties": {
+        "email": "richard_okafor@maplegrovebakery.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-18c375c9b2",
+      "properties": {
+        "email": "debras@gradientpeak.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3e25d21932",
+      "properties": {
+        "email": "meik@relaymesh.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8f0759be4b",
+      "properties": {
+        "email": "park.stephen@stateuniv.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-567772bd05",
+      "properties": {
+        "email": "fatima.baker@copilothealth.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8184791517",
+      "properties": {
+        "email": "lee.raymond@hotmail.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a68f1659a6",
+      "properties": {
+        "email": "nancyk@embediq.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8485ef7d1f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2c851d8500",
+      "properties": {
+        "email": "kgonzalez@instech.edu",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-38be1c949d",
+      "properties": {
+        "email": "wwilliams@voxeldynamics.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3c6d6ffd5a",
+      "properties": {
+        "email": "dennis_king@outlook.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-df23d81d70"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-86a59ee0aa",
+      "properties": {
+        "email": "fatimah@gradientpeak.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-489e3daba1",
+      "properties": {
+        "email": "priya_flores@modelry.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ea5ab0516"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-59da48453a",
+      "properties": {
+        "email": "jali@brightqueue.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-03277cc9d0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9b5c96bca1",
+      "properties": {
+        "email": "yuki.williams@cloudspan.dev",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-807cd69d0a",
+      "properties": {
+        "email": "campbell.jack@databarn.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7ffb221b67",
+      "properties": {
+        "email": "lmuller@quantavision.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5571deae14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-94c86f4aec",
+      "properties": {
+        "email": "samuelo@outlook.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-65bd7343a5",
+      "properties": {
+        "email": "johns@paytrellis.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3950ee5be8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c35acac706",
+      "properties": {
+        "email": "jhoffmann@formcraft.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ba853ae44f",
+      "properties": {
+        "email": "rperez@proton.me",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d97d65a7d4",
+      "properties": {
+        "email": "rajesh.rodriguez@proton.me",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fd2b1a686d",
+      "properties": {
+        "email": "novak.olaf@relaymesh.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0835a3fd1d",
+      "properties": {
+        "email": "keller.chris@icloud.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e9d6a08642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-29c3749111",
+      "properties": {
+        "email": "daniel.weber@mistletoeml.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-eb22755ab8",
+      "properties": {
+        "email": "matthewl@voxeldynamics.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c6f2f66567",
+      "properties": {
+        "email": "elewis@northernuni.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-4f20554db3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f81a23f81f",
+      "properties": {
+        "email": "jeffrey.anderson@promptline.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8885526d0f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d654d6ff14",
+      "properties": {
+        "email": "clark.donna@formcraft.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f10cfd217e",
+      "properties": {
+        "email": "hans.andersson@proton.me",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c33018a8d8",
+      "properties": {
+        "email": "mateor@centralpoly.edu",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1d5940cdf8",
+      "properties": {
+        "email": "raymond.hoffmann@inferralabs.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f3728ce07b",
+      "properties": {
+        "email": "nancy_rodriguez@luminaml.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8b7c0446e6",
+      "properties": {
+        "email": "zbecker@summitdentalgroup.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-afab04a727"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5e395be176",
+      "properties": {
+        "email": "mmartin@neuralmarketing.co",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ad67193918",
+      "properties": {
+        "email": "priyah@maplegrovebakery.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cee3fa5b21",
+      "properties": {
+        "email": "nwilson@peakfitnessstudios.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-52d200c68c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-31791be3aa",
+      "properties": {
+        "email": "hernandez.amanda@neuralight.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-cdff44001e",
+      "properties": {
+        "email": "lee.jason@tokenworks.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-89f32ac863",
+      "properties": {
+        "email": "dtaylor@loopware.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-22336f9289",
+      "properties": {
+        "email": "elena.williams@quantumnails.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-44a951e7b7",
+      "properties": {
+        "email": "gregoryn@peakfitnessstudios.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-52d200c68c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e28f10c393",
+      "properties": {
+        "email": "ronald.smith@quantumnails.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6645b5903e",
+      "properties": {
+        "email": "stephaniej@gradientpeak.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ca9ff57a03",
+      "properties": {
+        "email": "joseph_rivera@summitdentalgroup.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-afab04a727"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-611f3a501a",
+      "properties": {
+        "email": "mroberts@formcraft.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9b3079a522",
+      "properties": {
+        "email": "donald_wagner@stateuniv.edu",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f02899dac8",
+      "properties": {
+        "email": "ashley_ramirez@paytrellis.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3950ee5be8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7754cc0db4",
+      "properties": {
+        "email": "kmoore@harborviewlogistics.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6dff9e9a4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c1bc7b06d6",
+      "properties": {
+        "email": "patricia.lopez@brightqueue.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-03277cc9d0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9ab54b6f89",
+      "properties": {
+        "email": "rajesh.davis@proton.me",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-dbd006f1b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a20f329f69",
+      "properties": {
+        "email": "davids@pipelinelabs.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8b74ae5b4f",
+      "properties": {
+        "email": "patrick.johnson@diffusia.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f340dc121c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e0c7d72c02",
+      "properties": {
+        "email": "williamb@shipmate.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-99734150b2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e23aa8c8c7",
+      "properties": {
+        "email": "jessicat@bluebirdtravel.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7c8fac3d7c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8e6b5c1895",
+      "properties": {
+        "email": "kimberly_miller@gmail.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d12b72ff3a",
+      "properties": {
+        "email": "edward.harris@pipelinelabs.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-bc36b58565",
+      "properties": {
+        "email": "kowalski.amy@gmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-77966d9298",
+      "properties": {
+        "email": "matthew.hoffmann@legalmind.ai",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6b0c639654"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-053145e943",
+      "properties": {
+        "email": "christinek+1@securexsystems.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2b18ba9e4c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-780c496016",
+      "properties": {
+        "email": "chris_rivera@tensorloop.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-71f7760a07",
+      "properties": {
+        "email": "gregory_jones@quantavision.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5571deae14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-893fccd200",
+      "properties": {
+        "email": "lindaj@synthworks.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e9d6a08642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-56946a8d76",
+      "properties": {
+        "email": "robert.miller@harborviewlogistics.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6dff9e9a4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1f4531c95b",
+      "properties": {
+        "email": "hweber@legalmind.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6b0c639654"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-86ff4a8f23",
+      "properties": {
+        "email": "laura.rossi@relaymesh.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5d1bc6ae20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-94a4eb8155",
+      "properties": {
+        "email": "zaram@icloud.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3b79ecb32f",
+      "properties": {
+        "email": "brivera@roboticsone.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f27e8acb1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c0f387e1a4",
+      "properties": {
+        "email": "pharris@cloudspan.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7355ee3824",
+      "properties": {
+        "email": "muller.david@signalfold.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-359883d733",
+      "properties": {
+        "email": "george.green@agentstack.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4026040c19",
+      "properties": {
+        "email": "rebecca_wilson@promptline.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8885526d0f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-af8261e18c",
+      "properties": {
+        "email": "lwilson@proton.me",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2e1aca54b6",
+      "properties": {
+        "email": "bettyl@luminaml.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4ae35d645c",
+      "properties": {
+        "email": "brian_smith@shipmate.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-99734150b2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-435d13e86b",
+      "properties": {
+        "email": "amaraa@apptide.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8c0ac681e3",
+      "properties": {
+        "email": "aschmidt@evalhouse.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2fc0f89d62"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-872081e806",
+      "properties": {
+        "email": "michaels@deepharbor.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-887265db17",
+      "properties": {
+        "email": "rivera.patrick@gmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d661624b05",
+      "properties": {
+        "email": "nicole_clark@ledgerworks.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1b6851561a",
+      "properties": {
+        "email": "patel.david@gradientpeak.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-94a79a1504",
+      "properties": {
+        "email": "daniel.white@nimbuserp.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-80057d60df"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-671c205160",
+      "properties": {
+        "email": "donna.lewis@ridgewayconstruction.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8c17073aa8",
+      "properties": {
+        "email": "donald.sharma@tokenworks.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-1cb84cf9f4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-27b3819fa1",
+      "properties": {
+        "email": "park.rachel@pipelinelabs.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-49d5cf6461",
+      "properties": {
+        "email": "asingh@metricshub.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a11d3e1590",
+      "properties": {
+        "email": "dorothy.rodriguez@tensorloop.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4c2e54b9f1",
+      "properties": {
+        "email": "katherine_robinson@nimbuserp.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-80057d60df"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-19fee050a2",
+      "properties": {
+        "email": "dorothy_kowalski@hotmail.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6dff9e9a4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8735291acb",
+      "properties": {
+        "email": "gary.rivera@agentstack.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a534b52eb2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7ecd493105",
+      "properties": {
+        "email": "ali.raymond@cloudspan.dev",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2732e0584e",
+      "properties": {
+        "email": "okafor.nicole@pipelinelabs.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9b7235e33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2729072044",
+      "properties": {
+        "email": "hassan.kathleen@proton.me",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9f1f7cf35"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b8079e1fba",
+      "properties": {
+        "email": "lars.thomas@orbitalmind.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d2cebfef66",
+      "properties": {
+        "email": "deborah_kim@luminaml.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f6a35525ec",
+      "properties": {
+        "email": "chansen@mistletoeml.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-07e8a5e4d3",
+      "properties": {
+        "email": "thomas.patel@outlook.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-18bfa750a5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-363e7359da",
+      "properties": {
+        "email": "stephenf@ridgewayconstruction.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-06f198a6cd",
+      "properties": {
+        "email": "hans_tanaka@neuralight.io",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-5c31145562",
+      "properties": {
+        "email": "kathleenb@formcraft.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1b3b63fb7b",
+      "properties": {
+        "email": "bwalker@yahoo.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-366196b234",
+      "properties": {
+        "email": "amara.clark@mistletoeml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5407c19826"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-97ca842173",
+      "properties": {
+        "email": "clark.emily@nimbuserp.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-80057d60df"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-faa0cfdcd2",
+      "properties": {
+        "email": "torres.cynthia@ridgewayconstruction.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-19a33d2f5e",
+      "properties": {
+        "email": "llopez@stateuniv.edu",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-aae5c43169",
+      "properties": {
+        "email": "lopez.alexander@yahoo.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a40103ab82",
+      "properties": {
+        "email": "larrym@brightqueue.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-03277cc9d0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-25fcf9ff95",
+      "properties": {
+        "email": "kwamea@voxeldynamics.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0b68da8000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a04083efa1",
+      "properties": {
+        "email": "andrewj@streamlyne.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-dbd006f1b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b7dc42d061",
+      "properties": {
+        "email": "scott.kimberly@opsfleet.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a39c624c4b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-752d0f8e7d",
+      "properties": {
+        "email": "davidl@gmail.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e3ad074cc7",
+      "properties": {
+        "email": "diegot@loopware.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8b35588a8a",
+      "properties": {
+        "email": "tanaka.yuki@icloud.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f1ab40d2f2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8d0a1f8723",
+      "properties": {
+        "email": "kathleen_hernandez@fieldstonetech.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3e06b66679"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-886b38fcb2",
+      "properties": {
+        "email": "chrish@luminaml.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e796e5abc2",
+      "properties": {
+        "email": "angela.baker@opsfleet.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-916c783094",
+      "properties": {
+        "email": "kowalski.shirley@summitdentalgroup.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-afab04a727"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4ccf90dd6d",
+      "properties": {
+        "email": "frank.roberts@orbitalmind.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-24cc9f9e06",
+      "properties": {
+        "email": "stephen_ferrari@inferralabs.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6fc48f5a8d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-06872fe36e",
+      "properties": {
+        "email": "carter.karen@quantumnails.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-85a1e6f6cf",
+      "properties": {
+        "email": "sjackson@copilothealth.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-38dd5df175"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4906b863aa",
+      "properties": {
+        "email": "snelson@codewharf.dev",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-6fefd824ac",
+      "properties": {
+        "email": "larry_wagner@vectorly.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-57c1ecc796",
+      "properties": {
+        "email": "patrick.flores@bluebirdtravel.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7c8fac3d7c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8214c1fdf8",
+      "properties": {
+        "email": "rtaylor@icloud.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-ba48292f90",
+      "properties": {
+        "email": "becker.sandra@apptide.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c4f748212d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-9de39b4103",
+      "properties": {
+        "email": "gregorya@loopware.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-00b9ab7ba4",
+      "properties": {
+        "email": "becker.kwame@proton.me",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b9f1f7cf35"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4442477228",
+      "properties": {
+        "email": "justing@metricshub.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-a6b989558b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2844b43c81",
+      "properties": {
+        "email": "hill.mark@yahoo.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d1b752ae87"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c2419a3971",
+      "properties": {
+        "email": "sandraw@mistletoeml.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c2c5672022",
+      "properties": {
+        "email": "michael_clark@gmail.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e8108ccb98"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1bb72ec769",
+      "properties": {
+        "email": "amandag@gradientpeak.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0c3e689854"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7b021edcd5",
+      "properties": {
+        "email": "alexander_lee@cornerstoneins.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8f70f7a85d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f3b8accc0e",
+      "properties": {
+        "email": "hans_novak@inferralabs.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6fc48f5a8d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b8d83f6405",
+      "properties": {
+        "email": "edward_muller@securexsystems.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2b18ba9e4c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c67322761b",
+      "properties": {
+        "email": "storres@gmail.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d16311b701",
+      "properties": {
+        "email": "hansen.gregory@formcraft.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-70850a236b",
+      "properties": {
+        "email": "campbell.olaf@cloudspan.dev",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-27a4ce5bbd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-014c7d086a",
+      "properties": {
+        "email": "kevin.wright@apexautoparts.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f1ab40d2f2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2eb4351026",
+      "properties": {
+        "email": "kathleenw@axonresearch.ai",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-fc767b2b4e",
+      "properties": {
+        "email": "scott_ali@vectorly.ai",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-94118767bf",
+      "properties": {
+        "email": "hoffmann.helen@mistletoeml.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1f844a5421",
+      "properties": {
+        "email": "wei_robinson@icloud.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-adce95d532",
+      "properties": {
+        "email": "johnson.carol@neuralight.io",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-0fbc1bf912",
+      "properties": {
+        "email": "ingridn@hotmail.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b2e28311a3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8a48a15a88",
+      "properties": {
+        "email": "brandonw@modelry.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ea5ab0516"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f825d346bd",
+      "properties": {
+        "email": "jpark@orbitalmind.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-339bab52d8",
+      "properties": {
+        "email": "amarat@maplegrovebakery.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2ccdc99b7a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-988692c2b5",
+      "properties": {
+        "email": "bjohnson@tensorhive.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d138e1eb4c",
+      "properties": {
+        "email": "schmidt.daniel@hotmail.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f08fd8c7f2",
+      "properties": {
+        "email": "michaelm@brightqueue.io",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-03277cc9d0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-566d56fa51",
+      "properties": {
+        "email": "yuki.martin@deepharbor.ai",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1228843413",
+      "properties": {
+        "email": "margaret.jones@orbitalmind.ai",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a230f62f35",
+      "properties": {
+        "email": "stephanie.jones@paytrellis.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3950ee5be8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-86e9ccd60e",
+      "properties": {
+        "email": "cchen@quantumnails.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-024701d484"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-bff3767538",
+      "properties": {
+        "email": "mateob@ragpipe.dev",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-075f8f9607",
+      "properties": {
+        "email": "benjamin_hansen@yahoo.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bfff00a8cd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-dd295ea048",
+      "properties": {
+        "email": "dorothy.ferrari@gridbase.dev",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-7ba5372ac6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-739a632427",
+      "properties": {
+        "email": "ramirez.sarah@centralpoly.edu",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-1292c75b74",
+      "properties": {
+        "email": "ramirez.elizabeth@mistletoeml.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64d455ea1b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-8aeb74d5d6",
+      "properties": {
+        "email": "cwilson@formcraft.com",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-f93d7c0ad1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-05c1bcd45d",
+      "properties": {
+        "email": "lars.andersson@signalfold.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-df9ddc7277",
+      "properties": {
+        "email": "allen.kimberly@orbitalmind.ai",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-be73b69021"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-f31e8de80d",
+      "properties": {
+        "email": "lsharma@proton.me",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-d86ee7ecac"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c017a0a344",
+      "properties": {
+        "email": "pamelam@northernuni.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-e3b0c44298"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b93b59494c",
+      "properties": {
+        "email": "patrick_rossi@inferralabs.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-6fc48f5a8d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4987b1d7aa",
+      "properties": {
+        "email": "katherinet@synapsefoundry.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-23a428e500"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7ef4182084",
+      "properties": {
+        "email": "jtanaka@signalfold.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb9b3231ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c6d0c3ac52",
+      "properties": {
+        "email": "rhill@ridgewayconstruction.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-fb08695321"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4c8ad7c7a6",
+      "properties": {
+        "email": "shirleym@luminaml.com",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5f4b96d0b0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-b0a17e51af",
+      "properties": {
+        "email": "mark.weber@promptline.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-8885526d0f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-38f2a89a66",
+      "properties": {
+        "email": "daniel.walker@deepharbor.ai",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-adfa68a8a8",
+      "properties": {
+        "email": "emma.hall@neuralmarketing.co",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-c24ae9674c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-588434449f",
+      "properties": {
+        "email": "wnovak@centralpoly.edu",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-de42471dd3",
+      "properties": {
+        "email": "jason.moore@yahoo.com",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "IN_PROGRESS",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c8a9d68a2f",
+      "properties": {
+        "email": "anthony_smith@deepharbor.ai",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ac9c8e28e7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-7a36a25b9d",
+      "properties": {
+        "email": "angela_schmidt@shipmate.io",
+        "lifecyclestage": "opportunity",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-99734150b2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-65e53be835",
+      "properties": {
+        "email": "kowalski.justin@loopware.io",
+        "lifecyclestage": "other",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-bf3c95bda2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-e1a1affcf6",
+      "properties": {
+        "email": "karenm@quantavision.io",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5571deae14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-3849155569",
+      "properties": {
+        "email": "edwardp@outlook.com",
+        "lifecyclestage": "customer",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-5571deae14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2bbc499a8c",
+      "properties": {
+        "email": "steven.wright@securexsystems.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-2b18ba9e4c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-2bc6dede8c",
+      "properties": {
+        "email": "mnelson@codewharf.dev",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": true
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-64215e75da"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-a36606617a",
+      "properties": {
+        "email": "laural@fieldstonetech.com",
+        "lifecyclestage": "other",
+        "hs_lead_status": "NEW",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-3e06b66679"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-4c1bcdd9ca",
+      "properties": {
+        "email": "campbell.eric@yahoo.com",
+        "lifecyclestage": "subscriber",
+        "hs_lead_status": "OPEN",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-ec16c93367"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-d93e10dff6",
+      "properties": {
+        "email": "flores.jeffrey@centralpoly.edu",
+        "lifecyclestage": "other",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-b203a28814"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-c1f22b7373",
+      "properties": {
+        "email": "randerson@synapsefoundry.com",
+        "lifecyclestage": "salesqualifiedlead",
+        "hs_lead_status": "OPEN_DEAL",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-23a428e500"
+          }
+        ]
+      }
+    },
+    {
+      "id": "HS-411d17ac42",
+      "properties": {
+        "email": "helen_miller@axonresearch.ai",
+        "lifecyclestage": "marketingqualifiedlead",
+        "hs_lead_status": "UNQUALIFIED",
+        "hs_email_optout": false
+      },
+      "associations": {
+        "companies": [
+          {
+            "id": "HSCO-0feb6e8794"
+          }
+        ]
+      }
+    }
+  ],
+  "total": 437
+}

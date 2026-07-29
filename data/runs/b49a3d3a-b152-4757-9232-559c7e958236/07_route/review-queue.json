@@ -1,0 +1,7341 @@
+[
+  {
+    "lead_id": "L1517",
+    "email": "joseph.johnson@icloud.com",
+    "job_title": "VP Engineering",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1480",
+    "email": "deborah.hansen@fieldstonetech.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1181",
+    "email": "raymond_nguyen@orbitalmind.ai",
+    "job_title": "DevOps Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1415",
+    "email": "zaraa@bellavistarealty.com",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1912",
+    "email": "katherine.weber@pipelinelabs.io",
+    "job_title": "",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1025",
+    "email": "anthony.anderson@shipmate.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2245",
+    "email": "sarah.wilson@shipmate.io",
+    "job_title": "sre",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2732",
+    "email": "jadams@synthworks.ai",
+    "job_title": "Head of Data Science",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2772",
+    "email": "thomas.carter@loopware.io",
+    "job_title": "MLOps Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1680",
+    "email": "williams.lisa@embediq.ai",
+    "job_title": "Chief AI Officer",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2583",
+    "email": "kevin_muller@cornerstoneins.com",
+    "job_title": "vp, engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1616",
+    "email": "zarak@tokenworks.io",
+    "job_title": "SVP Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1694",
+    "email": "ngonzalez@databarn.io",
+    "job_title": "Infrastructure Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2572",
+    "email": "kowalski.debra@tensorloop.io",
+    "job_title": "Head of Platform",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1445",
+    "email": "zcampbell@databarn.io",
+    "job_title": "vp, engineering",
+    "company": "DataBarn",
+    "deterministic_tier": "tier1",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2517",
+    "email": "elizabethg@copilothealth.ai",
+    "job_title": "Backend Engineer",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 15,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2698",
+    "email": "stephen_young@neuralmarketing.co",
+    "job_title": "Head of MLOps",
+    "company": "Neural Marketing Co",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2900",
+    "email": "johansson.robert@greenleaflandscaping.com",
+    "job_title": "Staff Engineer",
+    "company": "GreenLeaf Landscaping",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1586",
+    "email": "rali@deepharbor.ai",
+    "job_title": "",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2191",
+    "email": "brenda.hassan@luminaml.com",
+    "job_title": "ML Engineer",
+    "company": "LUMINA ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2744",
+    "email": "nallen@synthworks.ai",
+    "job_title": "",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1321",
+    "email": "brandonw@opsfleet.com",
+    "job_title": "Applied Scientist",
+    "company": "opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 52,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2756",
+    "email": "ssharma@outlook.com",
+    "job_title": "Data Scientist",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2435",
+    "email": "stephaniek@axonresearch.ai",
+    "job_title": "Computer Vision Engineer",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2274",
+    "email": "sofia_meyer@gradientpeak.ai",
+    "job_title": "",
+    "company": "Gradient Peak",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1288",
+    "email": "jkeller@promptline.ai",
+    "job_title": "Research Engineer",
+    "company": "Promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2192",
+    "email": "debra.schmidt@tensorloop.io",
+    "job_title": "Co-Founder & CTO",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2879",
+    "email": "scott_flores@roboticsone.ai",
+    "job_title": "Platform Engineer",
+    "company": "RoboticsOne (formerly RoboticsOne Labs)",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1123",
+    "email": "dennisj@cloudspan.dev",
+    "job_title": "Director of Infrastructure",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1211",
+    "email": "alexander_schulz@northernuni.edu",
+    "job_title": "Freelancer",
+    "company": "Northern University",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1412",
+    "email": "margaret_rivera@summitdentalgroup.com",
+    "job_title": "",
+    "company": "summit dental group",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1898",
+    "email": "brenda_park@inferralabs.com",
+    "job_title": "",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 85,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1431",
+    "email": "carolyn_hansen@databarn.io",
+    "job_title": "Director of Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1263",
+    "email": "edwardj@roboticsone.ai",
+    "job_title": "Senior ML Engineer",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1293",
+    "email": "aroberts@deepharbor.ai",
+    "job_title": "",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier3",
+    "llm_score": 75,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1506",
+    "email": "janet_garcia@cascade-ai.com",
+    "job_title": "sre",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1346",
+    "email": "whansen@proton.me",
+    "job_title": "Data Scientist",
+    "company": "LOOPWARE",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1254",
+    "email": "jennifer_becker@vectorly.ai",
+    "job_title": "",
+    "company": "vectorly ai",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1865",
+    "email": "dorothy.martin@quantavision.io",
+    "job_title": "Applied Scientist",
+    "company": "QUANTA VISION",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2369",
+    "email": "jhansen@vectorly.ai",
+    "job_title": "VP Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2916",
+    "email": "betty_keller@inferralabs.com",
+    "job_title": "Head of ML",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier1",
+    "llm_score": 90,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2126",
+    "email": "ryanl@agentstack.dev",
+    "job_title": "CTO",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1740",
+    "email": "dennis.anderson@hotmail.com",
+    "job_title": "Research Engineer",
+    "company": "copilot health ai",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2292",
+    "email": "karenf@instech.edu",
+    "job_title": "Indie hacker",
+    "company": "Institute of Technology",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1982",
+    "email": "kgonzalez@pipelinelabs.io",
+    "job_title": "NLP Engineer",
+    "company": "PIPELINE LABS",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2351",
+    "email": "david.wilson@promptline.ai",
+    "job_title": "SWE",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2318",
+    "email": "nicholasp@databarn.io",
+    "job_title": "NLP Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1261",
+    "email": "cynthiaf@synthworks.ai",
+    "job_title": "sre",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1039",
+    "email": "benjamin_garcia@nimbuserp.com",
+    "job_title": "Deep Learning Engineer",
+    "company": "NIMBUS ERP",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2425",
+    "email": "jjones@corticon.ai",
+    "job_title": "Technologist",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1088",
+    "email": "phassan@greenleaflandscaping.com",
+    "job_title": "",
+    "company": "GreenLeaf Landscaping",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2914",
+    "email": "timothy.mitchell@finetunelabs.com",
+    "job_title": "Managing Partner",
+    "company": "Finetune Labs Inc",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2116",
+    "email": "wei_williams@databarn.io",
+    "job_title": "Senior Software Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1706",
+    "email": "dorothy_walker@quantumnails.com",
+    "job_title": "Chief Technology Officer",
+    "company": "quantum nails salon",
+    "deterministic_tier": "tier2",
+    "llm_score": 25,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2271",
+    "email": "joshua_sanchez@voxeldynamics.ai",
+    "job_title": "Infrastructure Engineer",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2479",
+    "email": "deborah.weber@axonresearch.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1981",
+    "email": "patricia.harris@quantumnails.com",
+    "job_title": "AI Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2268",
+    "email": "mfischer@nimbuserp.com",
+    "job_title": "vp, engineering",
+    "company": "Nimbus ERP",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1216",
+    "email": "katherine_jackson@databarn.io",
+    "job_title": "Research Engineer",
+    "company": "DATABARN",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1381",
+    "email": "johna@gridbase.dev",
+    "job_title": "Computer Vision Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1869",
+    "email": "nicholas_nguyen@brightqueue.io",
+    "job_title": "Founder",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1995",
+    "email": "madams@mistletoeml.com",
+    "job_title": "Chief AI Officer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1363",
+    "email": "jonathanr@icloud.com",
+    "job_title": "Independent Consultant",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2257",
+    "email": "zaraa@brightqueue.io",
+    "job_title": "Director of Infrastructure",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1795",
+    "email": "brandon.perez@tensorloop.io",
+    "job_title": "Consultant",
+    "company": "tensorloop",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1916",
+    "email": "sandra.okafor@modelry.ai",
+    "job_title": "Sr. Data Scientist",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1152",
+    "email": "rbecker@inferralabs.com",
+    "job_title": "Director of Infrastructure",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2748",
+    "email": "lee.jacob@pipelinelabs.io",
+    "job_title": "Head of Data Science",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2164",
+    "email": "arivera@agentstack.dev",
+    "job_title": "Senior ML Engineer",
+    "company": "AGENTSTACK",
+    "deterministic_tier": "tier2",
+    "llm_score": 48,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1902",
+    "email": "ali.carolyn@synthworks.ai",
+    "job_title": "Senior Software Engineer",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2692",
+    "email": "anthony_williams@tokenworks.io",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2687",
+    "email": "afischer@cascade-ai.com",
+    "job_title": "Advisor",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1085",
+    "email": "schulz.ashley@codewharf.dev",
+    "job_title": "",
+    "company": "CODEWHARF",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2870",
+    "email": "garyr@proton.me",
+    "job_title": "Research Scientist",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2676",
+    "email": "jhoffmann@copilothealth.ai",
+    "job_title": "SVP Engineering",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 72,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2457",
+    "email": "priya_muller@ledgerworks.com",
+    "job_title": "Head of ML",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2415",
+    "email": "larsen.scott@pipelinelabs.io",
+    "job_title": "",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 80,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1292",
+    "email": "hall.brenda@hotmail.com",
+    "job_title": "",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2002",
+    "email": "carol.young@cascade-ai.com",
+    "job_title": "Head of AI",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1019",
+    "email": "mschmidt@voiceforge.ai",
+    "job_title": "",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1987",
+    "email": "debra_baker@stacklinesoftware.com",
+    "job_title": "Chief Technology Officer",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1434",
+    "email": "amy.lopez@brightqueue.io",
+    "job_title": "Director, Machine Learning",
+    "company": "BRIGHTQUEUE",
+    "deterministic_tier": "tier1",
+    "llm_score": 92,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2391",
+    "email": "yallen@opsfleet.com",
+    "job_title": "Platform Engineer",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1945",
+    "email": "katherine_clark@ledgerworks.com",
+    "job_title": "Head of Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2069",
+    "email": "wjohnson@copilothealth.ai",
+    "job_title": "Head of AI",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2286",
+    "email": "clopez@relaymesh.io",
+    "job_title": "Principal",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1062",
+    "email": "dorothy.park@agentstack.dev",
+    "job_title": "Head of ML",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1948",
+    "email": "allen.sofia@ledgerworks.com",
+    "job_title": "Head of Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2288",
+    "email": "jennifers@tensorloop.io",
+    "job_title": "ml engineer",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1308",
+    "email": "trivera@hotmail.com",
+    "job_title": "",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1518",
+    "email": "cynthial@tensorloop.io",
+    "job_title": "ml engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1020",
+    "email": "dwagner@metricshub.com",
+    "job_title": "NLP Engineer",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 10,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1355",
+    "email": "carter.karen@gradientpeak.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "Gradient Peak",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1941",
+    "email": "yuki_ramirez@synapsefoundry.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2315",
+    "email": "debra_roberts@brightqueue.io",
+    "job_title": "Social Media Manager",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier3",
+    "llm_score": 12,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1753",
+    "email": "awilliams@bellavistarealty.com",
+    "job_title": "Chief Technology Officer",
+    "company": "Bella Vista Realty",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2525",
+    "email": "michael.flores@tokenworks.io",
+    "job_title": "Head of ML",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1940",
+    "email": "margaret_scott@embediq.ai",
+    "job_title": "sre",
+    "company": "EMBEDIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1529",
+    "email": "park.samantha@promptline.ai",
+    "job_title": "VP of Engineering",
+    "company": "promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1046",
+    "email": "donna_nguyen@signalfold.com",
+    "job_title": "Director, Machine Learning",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1776",
+    "email": "amandaj@cascade-ai.com",
+    "job_title": "Head of Machine Learning",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1234",
+    "email": "cbaker@diffusia.io",
+    "job_title": "Director of Infrastructure",
+    "company": "DIFFUSIA",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1922",
+    "email": "frank_kowalski@quantavision.io",
+    "job_title": "PhD Candidate",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2102",
+    "email": "barbarah@voiceforge.ai",
+    "job_title": "",
+    "company": "VOICEFORGE",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1204",
+    "email": "gregory.white@apptide.com",
+    "job_title": "Office Manager",
+    "company": "Apptide",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2334",
+    "email": "christines@stacklinesoftware.com",
+    "job_title": "",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2632",
+    "email": "ganderson@tensorloop.io",
+    "job_title": "Head of MLOps",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1960",
+    "email": "debra_hernandez@quantumnails.com",
+    "job_title": "",
+    "company": "Quantum Nails Salon",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1001",
+    "email": "fatima_fischer@formcraft.com",
+    "job_title": "software engineer",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1755",
+    "email": "singh.daniel@neuralight.io",
+    "job_title": "Data Scientist",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1359",
+    "email": "emma.mitchell@northernuni.edu",
+    "job_title": "",
+    "company": "Northern University",
+    "deterministic_tier": "tier3",
+    "llm_score": 18,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1114",
+    "email": "wei.kim@modelry.ai",
+    "job_title": "Owner",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2581",
+    "email": "bettya@gmail.com",
+    "job_title": "Backend Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2377",
+    "email": "mei.baker@signalfold.com",
+    "job_title": "",
+    "company": "Signalfold",
+    "deterministic_tier": "tier3",
+    "llm_score": 68,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2051",
+    "email": "dclark@greenleaflandscaping.com",
+    "job_title": "CTO",
+    "company": "GreenLeaf Landscaping",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2090",
+    "email": "astridw@deepharbor.ai",
+    "job_title": "Staff Engineer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1737",
+    "email": "priya.smith@ridgewayconstruction.com",
+    "job_title": "",
+    "company": "Ridgeway Construction",
+    "deterministic_tier": "tier3",
+    "llm_score": 12,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1269",
+    "email": "richardr@gmail.com",
+    "job_title": "Applied Scientist",
+    "company": "EMBEDIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1068",
+    "email": "samanthan@harborviewlogistics.com",
+    "job_title": "Project Manager",
+    "company": "harborview logistics",
+    "deterministic_tier": "tier3",
+    "llm_score": 72,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1605",
+    "email": "allen.jennifer@opsfleet.com",
+    "job_title": "Financial Analyst",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier3",
+    "llm_score": 68,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2149",
+    "email": "katherine.garcia@northernuni.edu",
+    "job_title": "MS Student",
+    "company": "NORTHERN UNIVERSITY",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2836",
+    "email": "sharonf@promptline.ai",
+    "job_title": "VP of Engineering",
+    "company": "Promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2892",
+    "email": "jkumar@summitdentalgroup.com",
+    "job_title": "Technical Consultant",
+    "company": "the Summit Dental Group",
+    "deterministic_tier": "tier3",
+    "llm_score": 12,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1992",
+    "email": "robinson.nicole@diffusia.io",
+    "job_title": "Backend Engineer",
+    "company": "DIFFUSIA",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2618",
+    "email": "williams.daniel@centralpoly.edu",
+    "job_title": "",
+    "company": "Central Polytechnic",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1635",
+    "email": "plopez@metricshub.com",
+    "job_title": "Director, Machine Learning",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2620",
+    "email": "pamela.campbell@outlook.com",
+    "job_title": "Independent Consultant",
+    "company": "TENSORLOOP",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2724",
+    "email": "dwright@yahoo.com",
+    "job_title": "Hobbyist",
+    "company": "Northern University",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1284",
+    "email": "ali.debra@shipmate.io",
+    "job_title": "Applied Scientist",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1636",
+    "email": "diego.taylor@modelry.ai",
+    "job_title": "",
+    "company": "MODELRY",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2144",
+    "email": "daniel.moore@summitdentalgroup.com",
+    "job_title": "Content Writer",
+    "company": "Summit Dental Group",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2294",
+    "email": "jperez@signalfold.com",
+    "job_title": "Staff Engineer",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2270",
+    "email": "carol.fischer@fieldstonetech.com",
+    "job_title": "",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1864",
+    "email": "okafor.donald@tokenworks.io",
+    "job_title": "Enthusiast",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2342",
+    "email": "fnelson@neuralight.io",
+    "job_title": "Research Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1575",
+    "email": "ghernandez@gmail.com",
+    "job_title": "Co-founder",
+    "company": "diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1330",
+    "email": "lisa.kowalski@streamlyne.io",
+    "job_title": "Staff Engineer",
+    "company": "Streamlyne",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2388",
+    "email": "donaldp@gridbase.dev",
+    "job_title": "Independent Consultant",
+    "company": "Gridbase",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2639",
+    "email": "christine.young@ragpipe.dev",
+    "job_title": "Staff Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2514",
+    "email": "fischer.james@voxeldynamics.ai",
+    "job_title": "",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier3",
+    "llm_score": 68,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2281",
+    "email": "gonzalez.john@voxeldynamics.ai",
+    "job_title": "",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1794",
+    "email": "ronaldt@evalhouse.ai",
+    "job_title": "",
+    "company": "EVALHOUSE",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2860",
+    "email": "kenneth.garcia@signalfold.com",
+    "job_title": "software engineer",
+    "company": "Signalfold Co",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2029",
+    "email": "ronald.becker@cascade-ai.com",
+    "job_title": "HR Manager",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1688",
+    "email": "becker.edward@agentstack.dev",
+    "job_title": "DevOps Engineer",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1836",
+    "email": "laura.hassan@promptline.ai",
+    "job_title": "MLOps Engineer",
+    "company": "Promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1683",
+    "email": "mark_kowalski@streamlyne.io",
+    "job_title": "AI Engineer",
+    "company": "Streamlyne",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2857",
+    "email": "mmoore@copilothealth.ai",
+    "job_title": "Chief AI Officer",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1149",
+    "email": "janet.andersson@embediq.ai",
+    "job_title": "Head of Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1413",
+    "email": "rivera.nicole@opsfleet.com",
+    "job_title": "",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1398",
+    "email": "amandan@bluebirdtravel.com",
+    "job_title": "Director of Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1890",
+    "email": "samuel_hoffmann@paytrellis.com",
+    "job_title": "",
+    "company": "paytrellis",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1781",
+    "email": "timothy.young@ledgerworks.com",
+    "job_title": "Head of ML",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2317",
+    "email": "sandram@proton.me",
+    "job_title": "PhD Student",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2662",
+    "email": "jonathan_smith@legalmind.ai",
+    "job_title": "",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2139",
+    "email": "ericm@harborviewlogistics.com",
+    "job_title": "CTO",
+    "company": "Harborview Logistics",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2365",
+    "email": "smith.donna@neuralmarketing.co",
+    "job_title": "",
+    "company": "NEURAL MARKETING CO",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1814",
+    "email": "brandon_johansson@legalmind.ai",
+    "job_title": "Director, Machine Learning",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1835",
+    "email": "elizabeth.smith@modelry.ai",
+    "job_title": "MLOps Engineer",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2361",
+    "email": "david.larsen@axonresearch.ai",
+    "job_title": "Head of ML",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2867",
+    "email": "amanda_singh@yahoo.com",
+    "job_title": "Data Scientist",
+    "company": "Securex Systems, Inc.",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2249",
+    "email": "whoffmann@shipmate.io",
+    "job_title": "ML Engineer",
+    "company": "SHIPMATE",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2629",
+    "email": "schulz.debra@agentstack.dev",
+    "job_title": "founder/ceo",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 30,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2041",
+    "email": "thomas.mateo@outlook.com",
+    "job_title": "Founder",
+    "company": "Ridgeway Construction",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1883",
+    "email": "raymond.davis@deepharbor.ai",
+    "job_title": "Chief Technology Officer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2412",
+    "email": "johnson.kevin@orbitalmind.ai",
+    "job_title": "Infrastructure Engineer",
+    "company": "Orbital Mind",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1165",
+    "email": "amy_martin@ledgerworks.com",
+    "job_title": "Owner",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1305",
+    "email": "john_walker@finetunelabs.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2727",
+    "email": "hall.matthew@maplegrovebakery.com",
+    "job_title": "",
+    "company": "maple grove bakery",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1132",
+    "email": "jason_meyer@gradientpeak.ai",
+    "job_title": "Founder",
+    "company": "Gradient Peak",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2212",
+    "email": "novak.sarah@pipelinelabs.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1521",
+    "email": "dorothyg@outlook.com",
+    "job_title": "Staff Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2690",
+    "email": "singh.elizabeth@proton.me",
+    "job_title": "Head of Engineering",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier1",
+    "llm_score": 45,
+    "reasons": [
+      "personal email but Tier-1 title and company signals",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2223",
+    "email": "michaels@shipmate.io",
+    "job_title": "Head of Platform",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2320",
+    "email": "hansen.dorothy@securexsystems.com",
+    "job_title": "Founder",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1958",
+    "email": "donnal@promptline.ai",
+    "job_title": "VP of AI Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2180",
+    "email": "ramirez.cynthia@neuralight.io",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1443",
+    "email": "david.lewis@brightqueue.io",
+    "job_title": "founder/ceo",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2881",
+    "email": "sking@codewharf.dev",
+    "job_title": "Independent Consultant",
+    "company": "Codewharf",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2097",
+    "email": "benjamin.king@opsfleet.com",
+    "job_title": "SWE",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2214",
+    "email": "alexanderw@hotmail.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "Synapse Foundry",
+    "deterministic_tier": "tier1",
+    "llm_score": 90,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L2389",
+    "email": "kevin_thomas@vectorly.ai",
+    "job_title": "",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1510",
+    "email": "amaral@harborviewlogistics.com",
+    "job_title": "Head of ML",
+    "company": "Harborview Logistics",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2671",
+    "email": "jamesk@hotmail.com",
+    "job_title": "CTO",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1909",
+    "email": "kimberly.robinson@icloud.com",
+    "job_title": "software engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1119",
+    "email": "joshuaw@outlook.com",
+    "job_title": "vp, engineering",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier1",
+    "llm_score": 95,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1613",
+    "email": "sato.justin@axonresearch.ai",
+    "job_title": "Head of MLOps",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2856",
+    "email": "christine.rossi@agentstack.dev",
+    "job_title": "Social Media Manager",
+    "company": "AgentStack",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1745",
+    "email": "kimberlyc@gridbase.dev",
+    "job_title": "Independent Consultant",
+    "company": "Gridbase",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1142",
+    "email": "rgarcia@brightqueue.io",
+    "job_title": "Advisor",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2375",
+    "email": "rodriguez.larry@agentstack.dev",
+    "job_title": "",
+    "company": "AgentStack",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1989",
+    "email": "richard.novak@outlook.com",
+    "job_title": "",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1478",
+    "email": "frank_mitchell@fieldstonetech.com",
+    "job_title": "VP Engineering",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1052",
+    "email": "justin.schmidt@gmail.com",
+    "job_title": "Founder & CEO",
+    "company": "LUMINA ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1884",
+    "email": "helen.johnson@paytrellis.com",
+    "job_title": "Independent Consultant",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2530",
+    "email": "thomas_green@opsfleet.com",
+    "job_title": "Co-founder",
+    "company": "opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1967",
+    "email": "amy_johnson@synapsefoundry.com",
+    "job_title": "Infrastructure Engineer",
+    "company": "Synapse Foundry",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1584",
+    "email": "robertj@shipmate.io",
+    "job_title": "Senior Software Engineer",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1639",
+    "email": "deborah.robinson@evalhouse.ai",
+    "job_title": "Head of MLOps",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2532",
+    "email": "bettyk@yahoo.com",
+    "job_title": "",
+    "company": "Formcraft",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2433",
+    "email": "bjohansson@apexautoparts.com",
+    "job_title": "Sales Development Rep",
+    "company": "Apex Auto Parts",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1676",
+    "email": "patricia.mitchell@signalfold.com",
+    "job_title": "",
+    "company": "Signalfold",
+    "deterministic_tier": "tier3",
+    "llm_score": 75,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2474",
+    "email": "smith.anna@cloudspan.dev",
+    "job_title": "Fractional CTO",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2277",
+    "email": "ericj@outlook.com",
+    "job_title": "MLOps Engineer",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1785",
+    "email": "fischer.melissa@ledgerworks.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "LEDGERWORKS",
+    "deterministic_tier": "tier1",
+    "llm_score": 95,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1338",
+    "email": "michelle.smith@proton.me",
+    "job_title": "",
+    "company": "Northern University",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1893",
+    "email": "deborahy@voiceforge.ai",
+    "job_title": "NLP Engineer",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1643",
+    "email": "mitchell.sharon@nimbuserp.com",
+    "job_title": "Fractional CTO",
+    "company": "Nimbus ERP",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1651",
+    "email": "daniel.sanchez@voxeldynamics.ai",
+    "job_title": "Owner",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2559",
+    "email": "donna.flores@legalmind.ai",
+    "job_title": "VP of Engineering",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2035",
+    "email": "young.sandra@axonresearch.ai",
+    "job_title": "VP Engineering",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 10,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2648",
+    "email": "ali.hans@ledgerworks.com",
+    "job_title": "SWE",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1115",
+    "email": "amandac@synthworks.ai",
+    "job_title": "Staff Engineer",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 5,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2000",
+    "email": "sandra_allen@finetunelabs.com",
+    "job_title": "AI Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2722",
+    "email": "djackson@axonresearch.ai",
+    "job_title": "Applied Scientist",
+    "company": "axon research",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1629",
+    "email": "daniel_nelson@yahoo.com",
+    "job_title": "Owner",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1574",
+    "email": "lee.fatima@cloudspan.dev",
+    "job_title": "sre",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2099",
+    "email": "scottn@luminaml.com",
+    "job_title": "VP Data & AI",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1512",
+    "email": "sofia.green@gmail.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "DataBarn",
+    "deterministic_tier": "tier1",
+    "llm_score": 30,
+    "reasons": [
+      "personal email but Tier-1 title and company signals",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2084",
+    "email": "lewis.brandon@copilothealth.ai",
+    "job_title": "Sr. Data Scientist",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2298",
+    "email": "harris.elizabeth@gmail.com",
+    "job_title": "AI Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1387",
+    "email": "laura_kowalski@codewharf.dev",
+    "job_title": "Staff Engineer",
+    "company": "CODEWHARF",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1391",
+    "email": "adams.robert@greenleaflandscaping.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2493",
+    "email": "moore.paul@metricshub.com",
+    "job_title": "Staff Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2717",
+    "email": "jkim@codewharf.dev",
+    "job_title": "Research Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2408",
+    "email": "johnson.christine@ragpipe.dev",
+    "job_title": "Platform Engineer",
+    "company": "RagPipe",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1474",
+    "email": "robert.brown@embediq.ai",
+    "job_title": "",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2036",
+    "email": "kwame.jones@stateuniv.edu",
+    "job_title": "",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2432",
+    "email": "daniel_sanchez@deepharbor.ai",
+    "job_title": "AI Engineer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2172",
+    "email": "amy_muller@voiceforge.ai",
+    "job_title": "Backend Engineer",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1049",
+    "email": "smuller@apexautoparts.com",
+    "job_title": "VP of Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2418",
+    "email": "larsen.chris@apptide.com",
+    "job_title": "Project Manager",
+    "company": "Apptide",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2358",
+    "email": "hill.samuel@codewharf.dev",
+    "job_title": "Independent Consultant",
+    "company": "Codewharf",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2279",
+    "email": "hfischer@modelry.ai",
+    "job_title": "Director, Machine Learning",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2220",
+    "email": "lrodriguez@ledgerworks.com",
+    "job_title": "DevOps Engineer",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1793",
+    "email": "ashley_ali@fieldstonetech.com",
+    "job_title": "Principal",
+    "company": "fieldstone tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2891",
+    "email": "emma.hall+test@neuralmarketing.co",
+    "job_title": "Head of Machine Learning",
+    "company": "Neural Marketing Co",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2876",
+    "email": "chris.miller@bluebirdtravel.com",
+    "job_title": "",
+    "company": "Bluebird Travel",
+    "deterministic_tier": "tier3",
+    "llm_score": 12,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1029",
+    "email": "justinl@stacklinesoftware.com",
+    "job_title": "ML Engineer",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2501",
+    "email": "elewis@orbitalmind.ai",
+    "job_title": "ml engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 48,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2611",
+    "email": "sofia_miller@relaymesh.io",
+    "job_title": "Senior ML Engineer",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1727",
+    "email": "hall.donald@apptide.com",
+    "job_title": "ML Engineer",
+    "company": "apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1810",
+    "email": "stephanie_king@neuralight.io",
+    "job_title": "sre",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 86,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2387",
+    "email": "sallen@yahoo.com",
+    "job_title": "Chief AI Officer",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2004",
+    "email": "mary.walker@outlook.com",
+    "job_title": "Head of Engineering",
+    "company": "Diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2430",
+    "email": "ghernandez@cloudspan.dev",
+    "job_title": "ml engineer",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2437",
+    "email": "olafh@legalmind.ai",
+    "job_title": "Head of Engineering",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1804",
+    "email": "jchen@neuralmarketing.co",
+    "job_title": "ML Engineer",
+    "company": "Neural Marketing Co",
+    "deterministic_tier": "tier3",
+    "llm_score": 68,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2028",
+    "email": "frank_scott@harborviewlogistics.com",
+    "job_title": "Research Scientist",
+    "company": "harborview logistics",
+    "deterministic_tier": "tier2",
+    "llm_score": 15,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1162",
+    "email": "awright@synapsefoundry.com",
+    "job_title": "Senior ML Engineer",
+    "company": "Synapse Foundry",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1812",
+    "email": "sallen@ledgerworks.com",
+    "job_title": "ML Engineer",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2438",
+    "email": "robinson.robert@yahoo.com",
+    "job_title": "Deep Learning Engineer",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2878",
+    "email": "larsw@paytrellis.com",
+    "job_title": "Backend Engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1067",
+    "email": "kperez@axonresearch.ai",
+    "job_title": "Head of AI",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1647",
+    "email": "mateo_baker@hotmail.com",
+    "job_title": "software engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1701",
+    "email": "nelson.nicholas@mistletoeml.com",
+    "job_title": "NLP Engineer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2863",
+    "email": "ingrid.lewis@instech.edu",
+    "job_title": "Student",
+    "company": "institute of technology",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1800",
+    "email": "andrews@modelry.ai",
+    "job_title": "Owner",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2685",
+    "email": "jason_ali@mistletoeml.com",
+    "job_title": "",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2450",
+    "email": "dhoffmann@diffusia.io",
+    "job_title": "",
+    "company": "DIFFUSIA",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1573",
+    "email": "gclark@bluebirdtravel.com",
+    "job_title": "SVP Engineering",
+    "company": "Bluebird Travel",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2005",
+    "email": "amy_okafor@modelry.ai",
+    "job_title": "Consultant",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1952",
+    "email": "larryj@hotmail.com",
+    "job_title": "",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1988",
+    "email": "anna_clark@maplegrovebakery.com",
+    "job_title": "",
+    "company": "Maple Grove Bakery",
+    "deterministic_tier": "tier3",
+    "llm_score": 12,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1009",
+    "email": "kumar.edward@hotmail.com",
+    "job_title": "SWE",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1109",
+    "email": "brandon_fischer@formcraft.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "FORMCRAFT",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1820",
+    "email": "brianf@metricshub.com",
+    "job_title": "Applied Scientist",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1176",
+    "email": "zara_nelson@outlook.com",
+    "job_title": "Chief Technology Officer",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier1",
+    "llm_score": 85,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1159",
+    "email": "priya.hill@tokenworks.io",
+    "job_title": "SWE",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1658",
+    "email": "brown.dorothy@gradientpeak.ai",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2689",
+    "email": "cadams@shipmate.io",
+    "job_title": "Founder & CEO",
+    "company": "SHIPMATE",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1813",
+    "email": "clark.thomas@apptide.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2407",
+    "email": "mei.moore@ledgerworks.com",
+    "job_title": "Owner",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 30,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1691",
+    "email": "justin.harris@copilothealth.ai",
+    "job_title": "Director of Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2635",
+    "email": "kimberly.meyer@luminaml.com",
+    "job_title": "Head of Machine Learning",
+    "company": "lumina ml",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1450",
+    "email": "sato.christine@luminaml.com",
+    "job_title": "Operations Manager",
+    "company": "LUMINA ML",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1850",
+    "email": "nguyen.deborah@luminaml.com",
+    "job_title": "",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2847",
+    "email": "miller.amara@synapsefoundry.com",
+    "job_title": "SVP Engineering",
+    "company": "synapse foundry",
+    "deterministic_tier": "tier1",
+    "llm_score": 40,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2921",
+    "email": "briang@embediq.ai",
+    "job_title": "Content Writer",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1342",
+    "email": "amara.walker@harborviewlogistics.com",
+    "job_title": "Sr. Data Scientist",
+    "company": "Harborview Logistics",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2700",
+    "email": "patel.stephanie@promptline.ai",
+    "job_title": "SWE",
+    "company": "Promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1925",
+    "email": "lisa_jackson@streamlyne.io",
+    "job_title": "Senior ML Engineer",
+    "company": "streamlyne",
+    "deterministic_tier": "tier2",
+    "llm_score": 72,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2888",
+    "email": "kathleenk@orbitalmind.ai",
+    "job_title": "SVP Engineering",
+    "company": "ORBITAL MIND",
+    "deterministic_tier": "tier1",
+    "llm_score": 70,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1507",
+    "email": "scott_allen@pipelinelabs.io",
+    "job_title": "",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2495",
+    "email": "james.lopez@bluebirdtravel.com",
+    "job_title": "Product Marketing Manager",
+    "company": "Bluebird Travel",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2011",
+    "email": "wright.donald@roboticsone.ai",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1543",
+    "email": "justin.park@bluebirdtravel.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "Bluebird Travel",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1913",
+    "email": "pschmidt@apptide.com",
+    "job_title": "software engineer",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1788",
+    "email": "diegom@pipelinelabs.io",
+    "job_title": "Infrastructure Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2915",
+    "email": "emilyw@shipmate.io",
+    "job_title": "ML Engineer",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1648",
+    "email": "patricia_mitchell@yahoo.com",
+    "job_title": "Deep Learning Engineer",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1979",
+    "email": "park.fatima@peakfitnessstudios.com",
+    "job_title": "",
+    "company": "Peak Fitness Studios",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2709",
+    "email": "gregorys@gridbase.dev",
+    "job_title": "NLP Engineer",
+    "company": "Gridbase",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2761",
+    "email": "lisa_schulz@centralpoly.edu",
+    "job_title": "Indie hacker",
+    "company": "Central Polytechnic",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1649",
+    "email": "jones.nancy@diffusia.io",
+    "job_title": "Consultant",
+    "company": "Diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1329",
+    "email": "wilson.sharon@gmail.com",
+    "job_title": "ml engineer",
+    "company": "RagPipe",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1980",
+    "email": "cynthiaw@metricshub.com",
+    "job_title": "Head of MLOps",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1361",
+    "email": "fbrown@luminaml.com",
+    "job_title": "Head of Machine Learning",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2907",
+    "email": "laural@outlook.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1544",
+    "email": "ywagner@yahoo.com",
+    "job_title": "",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2704",
+    "email": "ali.jonathan@securexsystems.com",
+    "job_title": "Owner",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1808",
+    "email": "elizabeths@voiceforge.ai",
+    "job_title": "SVP Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2542",
+    "email": "pweber@vectorly.ai",
+    "job_title": "Executive Assistant",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2060",
+    "email": "smeyer@nimbuserp.com",
+    "job_title": "Infrastructure Engineer",
+    "company": "Nimbus ERP",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1861",
+    "email": "james.wright@formcraft.com",
+    "job_title": "ml engineer",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1024",
+    "email": "rhernandez@instech.edu",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2252",
+    "email": "mdavis@deepharbor.ai",
+    "job_title": "Senior ML Engineer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1655",
+    "email": "pbaker@corticon.ai",
+    "job_title": "Research Engineer",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2125",
+    "email": "brandonr@synthworks.ai",
+    "job_title": "Platform Engineer",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2609",
+    "email": "rharris@neuralight.io",
+    "job_title": "Director of AI",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2684",
+    "email": "ryan_torres@cascade-ai.com",
+    "job_title": "Founder & CEO",
+    "company": "cascade ai",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1580",
+    "email": "torres.mei@hotmail.com",
+    "job_title": "Graduate Student",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1390",
+    "email": "diego_young@evalhouse.ai",
+    "job_title": "ml engineer",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1638",
+    "email": "hscott@harborviewlogistics.com",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1769",
+    "email": "scott_lewis@orbitalmind.ai",
+    "job_title": "Infrastructure Engineer",
+    "company": "Orbital Mind",
+    "deterministic_tier": "tier2",
+    "llm_score": 72,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1298",
+    "email": "chriss@databarn.io",
+    "job_title": "ML Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1663",
+    "email": "yuki.kim@apptide.com",
+    "job_title": "vp, engineering",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1041",
+    "email": "dnelson@deepharbor.ai",
+    "job_title": "",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2136",
+    "email": "benjaminw@axonresearch.ai",
+    "job_title": "",
+    "company": "Axon Research",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1671",
+    "email": "brandon_white@metricshub.com",
+    "job_title": "ml engineer",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1863",
+    "email": "ktorres@loopware.io",
+    "job_title": "Infrastructure Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2403",
+    "email": "timothy.meyer@ragpipe.dev",
+    "job_title": "MLOps Engineer",
+    "company": "RagPipe",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1086",
+    "email": "jacob_weber@synapsefoundry.com",
+    "job_title": "SWE",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1235",
+    "email": "elena.carter@copilothealth.ai",
+    "job_title": "",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2207",
+    "email": "hill.melissa@diffusia.io",
+    "job_title": "Research Scientist",
+    "company": "diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1296",
+    "email": "white.janet@mistletoeml.com",
+    "job_title": "Technical Consultant",
+    "company": "MISTLETOE ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1151",
+    "email": "amanda.larsen@gmail.com",
+    "job_title": "ml engineer",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 20,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1438",
+    "email": "davis.rachel@quantavision.io",
+    "job_title": "ml engineer",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier2",
+    "llm_score": 30,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2266",
+    "email": "johnw@deepharbor.ai",
+    "job_title": "Computer Vision Engineer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2310",
+    "email": "sarahw@agentstack.dev",
+    "job_title": "CEO",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1302",
+    "email": "jackson.raymond@gmail.com",
+    "job_title": "Marketing Manager",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2917",
+    "email": "stevens@shipmate.io",
+    "job_title": "software engineer",
+    "company": "Shipmate, Inc.",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1171",
+    "email": "aclark@metricshub.com",
+    "job_title": "ml engineer",
+    "company": "metricshub",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1963",
+    "email": "sferrari@voxeldynamics.ai",
+    "job_title": "",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1770",
+    "email": "zara.roberts@databarn.io",
+    "job_title": "Head of MLOps",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1825",
+    "email": "roberts.carolyn@bellavistarealty.com",
+    "job_title": "",
+    "company": "Bella Vista Realty",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1312",
+    "email": "brandons@formcraft.com",
+    "job_title": "SVP Engineering",
+    "company": "Formcraft",
+    "deterministic_tier": "tier1",
+    "llm_score": 40,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1494",
+    "email": "ryan_allen@loopware.io",
+    "job_title": "AI Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2701",
+    "email": "gregory_jones@bellavistarealty.com",
+    "job_title": "Independent Consultant",
+    "company": "Bella Vista Realty",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2864",
+    "email": "jamest@proton.me",
+    "job_title": "Social Media Manager",
+    "company": "Signalfold",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2526",
+    "email": "king.george@cornerstoneins.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "Cornerstone Insurance",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1418",
+    "email": "dennis.jones@bluebirdtravel.com",
+    "job_title": "Head of Platform",
+    "company": "Bluebird Travel",
+    "deterministic_tier": "tier3",
+    "llm_score": 75,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2656",
+    "email": "alexandera@icloud.com",
+    "job_title": "",
+    "company": "Northern University",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1789",
+    "email": "jessical@corticon.ai",
+    "job_title": "",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1725",
+    "email": "samanthak@apexautoparts.com",
+    "job_title": "CTO",
+    "company": "Apex Auto Parts",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1609",
+    "email": "mperez@modelry.ai",
+    "job_title": "VP Engineering",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2494",
+    "email": "gary.andersson@icloud.com",
+    "job_title": "Staff Engineer",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2731",
+    "email": "mary_green@summitdentalgroup.com",
+    "job_title": "",
+    "company": "Summit Dental Group",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1718",
+    "email": "garyw@voxeldynamics.ai",
+    "job_title": "Founder",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1358",
+    "email": "steven.nguyen@inferralabs.com",
+    "job_title": "MLOps Engineer",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2384",
+    "email": "ronald_davis@tensorloop.io",
+    "job_title": "VP of AI Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1931",
+    "email": "lisah@voxeldynamics.ai",
+    "job_title": "Head of Platform",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2145",
+    "email": "linda.roberts@signalfold.com",
+    "job_title": "Backend Engineer",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1780",
+    "email": "kimberlys@finetunelabs.com",
+    "job_title": "Software Engineer",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2124",
+    "email": "kwame_jones@quantumnails.com",
+    "job_title": "Platform Engineer",
+    "company": "Quantum Nails Salon",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1422",
+    "email": "daniely@voxeldynamics.ai",
+    "job_title": "Sr. Data Scientist",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 94,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1286",
+    "email": "lewis.paul@orbitalmind.ai",
+    "job_title": "Head of MLOps",
+    "company": "Orbital Mind",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2634",
+    "email": "heleno@hotmail.com",
+    "job_title": "",
+    "company": "INSTITUTE OF TECHNOLOGY",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2605",
+    "email": "hans.singh@cascade-ai.com",
+    "job_title": "",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 70,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2246",
+    "email": "mhansen@securexsystems.com",
+    "job_title": "Head of AI",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2159",
+    "email": "flores.ronald@luminaml.com",
+    "job_title": "Chief AI Officer",
+    "company": "LUMINA ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2749",
+    "email": "jeffreyh@icloud.com",
+    "job_title": "Head of MLOps",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1220",
+    "email": "olaf.rossi@axonresearch.ai",
+    "job_title": "Co-founder",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2594",
+    "email": "christine_campbell@loopware.io",
+    "job_title": "",
+    "company": "Loopware",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1924",
+    "email": "kimberly_schulz@ledgerworks.com",
+    "job_title": "",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2199",
+    "email": "paul_thompson@tensorloop.io",
+    "job_title": "",
+    "company": "tensorloop",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1715",
+    "email": "brandonn@proton.me",
+    "job_title": "",
+    "company": "DATABARN",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1069",
+    "email": "sandra_hansen@summitdentalgroup.com",
+    "job_title": "AI Engineer",
+    "company": "summit dental group",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1259",
+    "email": "jessicaf@hotmail.com",
+    "job_title": "Accountant",
+    "company": "AgentStack",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1956",
+    "email": "kim.linda@quantavision.io",
+    "job_title": "VP of AI Infrastructure",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1608",
+    "email": "rallen@synthworks.ai",
+    "job_title": "Senior Software Engineer",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1566",
+    "email": "zara.anderson@opsfleet.com",
+    "job_title": "Advisor",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 20,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1763",
+    "email": "fatima.baker@copilothealth.ai",
+    "job_title": "",
+    "company": "copilot health ai",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1831",
+    "email": "lee.raymond@hotmail.com",
+    "job_title": "",
+    "company": "axon research",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1873",
+    "email": "yukis@formcraft.com",
+    "job_title": "Data Scientist",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1731",
+    "email": "elizabetho@apptide.com",
+    "job_title": "Research Engineer",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2038",
+    "email": "ryan.wilson@signalfold.com",
+    "job_title": "NLP Engineer",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1950",
+    "email": "patrick.taylor@securexsystems.com",
+    "job_title": "Head of AI",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1185",
+    "email": "priya.campbell@quantumnails.com",
+    "job_title": "",
+    "company": "Quantum Nails Salon",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2107",
+    "email": "mark.thomas@voxeldynamics.ai",
+    "job_title": "ML Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1729",
+    "email": "aking@relaymesh.io",
+    "job_title": "AI Engineer",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2364",
+    "email": "mrossi@relaymesh.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1903",
+    "email": "wwilliams@voxeldynamics.ai",
+    "job_title": "Computer Vision Engineer",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2521",
+    "email": "robinson.rachel@synapsefoundry.com",
+    "job_title": "Deep Learning Engineer",
+    "company": "Synapse Foundry",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1965",
+    "email": "tmoore@copilothealth.ai",
+    "job_title": "Indie hacker",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1367",
+    "email": "sandray@shipmate.io",
+    "job_title": "Director, Machine Learning",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1103",
+    "email": "mcarter@pipelinelabs.io",
+    "job_title": "Advisor",
+    "company": "pipeline labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1160",
+    "email": "jali@brightqueue.io",
+    "job_title": "",
+    "company": "BrightQueue",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1885",
+    "email": "deborah_muller@synapsefoundry.com",
+    "job_title": "Platform Engineer",
+    "company": "Synapse Foundry",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1996",
+    "email": "anna.scott@fieldstonetech.com",
+    "job_title": "",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2536",
+    "email": "johnson.edward@synthworks.ai",
+    "job_title": "Co-Founder & CTO",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1627",
+    "email": "elizabethl@embediq.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2481",
+    "email": "mmiller@inferralabs.com",
+    "job_title": "Independent Consultant",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2476",
+    "email": "larryp@corticon.ai",
+    "job_title": "Platform Engineer",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2232",
+    "email": "lmuller@quantavision.io",
+    "job_title": "ML Engineer",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1008",
+    "email": "anna.nguyen@voiceforge.ai",
+    "job_title": "VP of AI Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2852",
+    "email": "johns@paytrellis.com",
+    "job_title": "Senior ML Engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 52,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1461",
+    "email": "jackson.emily@outlook.com",
+    "job_title": "ml engineer",
+    "company": "PEAK FITNESS STUDIOS",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1166",
+    "email": "gregoryl@luminaml.com",
+    "job_title": "",
+    "company": "lumina ml",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1304",
+    "email": "lisa_tanaka@axonresearch.ai",
+    "job_title": "Machine Learning Engineer",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2576",
+    "email": "keller.chris@icloud.com",
+    "job_title": "Chief Technology Officer",
+    "company": "synthworks ai",
+    "deterministic_tier": "tier1",
+    "llm_score": 78,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L2686",
+    "email": "justin.sharma@outlook.com",
+    "job_title": "",
+    "company": "Diffusia",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2283",
+    "email": "james.hill@hotmail.com",
+    "job_title": "Head of Platform",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier1",
+    "llm_score": 82,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1203",
+    "email": "daniel.weber@mistletoeml.com",
+    "job_title": "MLOps Engineer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1385",
+    "email": "brown.emma@agentstack.dev",
+    "job_title": "Applied Scientist",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1633",
+    "email": "amara.anderson@quantavision.io",
+    "job_title": "Research Engineer",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2694",
+    "email": "jeffrey.anderson@promptline.ai",
+    "job_title": "CTO",
+    "company": "Promptline",
+    "deterministic_tier": "tier1",
+    "llm_score": 50,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1389",
+    "email": "hans.andersson@proton.me",
+    "job_title": "Fractional CTO",
+    "company": "signalfold",
+    "deterministic_tier": "tier1",
+    "llm_score": 88,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L2729",
+    "email": "timothy_martin@formcraft.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2338",
+    "email": "james_schmidt@bellavistarealty.com",
+    "job_title": "Sr. Data Scientist",
+    "company": "BELLA VISTA REALTY",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2595",
+    "email": "cynthia_clark@finetunelabs.com",
+    "job_title": "Chief AI Officer",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2604",
+    "email": "kumar.ryan@cloudspan.dev",
+    "job_title": "",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1372",
+    "email": "carolynh@gmail.com",
+    "job_title": "Head of Data Science",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier1",
+    "llm_score": 50,
+    "reasons": [
+      "personal email but Tier-1 title and company signals",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2824",
+    "email": "carol_patel@nimbuserp.com",
+    "job_title": "ml engineer",
+    "company": "Nimbus ERP",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2546",
+    "email": "zbecker@summitdentalgroup.com",
+    "job_title": "Head of Engineering",
+    "company": "Summit Dental Group",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1710",
+    "email": "diego.walker@copilothealth.ai",
+    "job_title": "Advisor",
+    "company": "COPILOT HEALTH AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 25,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2072",
+    "email": "glee@paytrellis.com",
+    "job_title": "AI Engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1125",
+    "email": "janet_harris@vectorly.ai",
+    "job_title": "NLP Engineer",
+    "company": "vectorly ai",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1757",
+    "email": "jscott@orbitalmind.ai",
+    "job_title": "Advisor",
+    "company": "Orbital Mind",
+    "deterministic_tier": "tier2",
+    "llm_score": 25,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1576",
+    "email": "jessica_okafor@stateuniv.edu",
+    "job_title": "",
+    "company": "State University",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2081",
+    "email": "joshuaa@icloud.com",
+    "job_title": "Head of Engineering",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier1",
+    "llm_score": 70,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L2596",
+    "email": "sato.emily@inferralabs.com",
+    "job_title": "founder/ceo",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2262",
+    "email": "jmitchell@stateuniv.edu",
+    "job_title": "Hobbyist",
+    "company": "state university",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1943",
+    "email": "matthew.tanaka@securexsystems.com",
+    "job_title": "Machine Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2573",
+    "email": "frank_robinson@inferralabs.com",
+    "job_title": "",
+    "company": "inferra labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1002",
+    "email": "mmartin@neuralmarketing.co",
+    "job_title": "SVP Engineering",
+    "company": "Neural Marketing Co",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2141",
+    "email": "richardl@neuralmarketing.co",
+    "job_title": "Head of Data Science",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2325",
+    "email": "jason_young@cloudspan.dev",
+    "job_title": "Senior Software Engineer",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1880",
+    "email": "ryan_martin@hotmail.com",
+    "job_title": "",
+    "company": "shipmate",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1107",
+    "email": "kumar.anna@finetunelabs.com",
+    "job_title": "Managing Partner",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1101",
+    "email": "margaretj@fieldstonetech.com",
+    "job_title": "Director, Machine Learning",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1610",
+    "email": "mroberts@formcraft.com",
+    "job_title": "DevOps Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1933",
+    "email": "kmoore@harborviewlogistics.com",
+    "job_title": "Staff Engineer",
+    "company": "Harborview Logistics",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2652",
+    "email": "brandon_flores@bellavistarealty.com",
+    "job_title": "Accountant",
+    "company": "Bella Vista Realty",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2452",
+    "email": "donnak@codewharf.dev",
+    "job_title": "",
+    "company": "Codewharf",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2324",
+    "email": "chernandez@modelry.ai",
+    "job_title": "DevOps Engineer",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1432",
+    "email": "paul_brown@streamlyne.io",
+    "job_title": "VP Data & AI",
+    "company": "Streamlyne",
+    "deterministic_tier": "tier3",
+    "llm_score": 85,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2316",
+    "email": "john.roberts@proton.me",
+    "job_title": "",
+    "company": "Peak Fitness Studios",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1417",
+    "email": "fatima.kim@cloudspan.dev",
+    "job_title": "Data Scientist",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1311",
+    "email": "davids@pipelinelabs.io",
+    "job_title": "Machine Learning Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2788",
+    "email": "mickey@mouse.com",
+    "job_title": "CEO",
+    "company": "Disney",
+    "deterministic_tier": "tier2",
+    "llm_score": 15,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1991",
+    "email": "mary_becker@yahoo.com",
+    "job_title": "Sr. Data Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1440",
+    "email": "christinek@securexsystems.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2080",
+    "email": "patrickt@streamlyne.io",
+    "job_title": "Staff Engineer",
+    "company": "Streamlyne",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1697",
+    "email": "brian_robinson@yahoo.com",
+    "job_title": "Platform Engineer",
+    "company": "ORBITAL MIND",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2023",
+    "email": "kathleen.thompson@quantavision.io",
+    "job_title": "Owner",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1169",
+    "email": "mateo_ramirez@summitdentalgroup.com",
+    "job_title": "SWE",
+    "company": "SUMMIT DENTAL GROUP",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1470",
+    "email": "ascott@yahoo.com",
+    "job_title": "",
+    "company": "Central Polytechnic",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2251",
+    "email": "muller.kevin@paytrellis.com",
+    "job_title": "Senior ML Engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1036",
+    "email": "hill.rebecca@orbitalmind.ai",
+    "job_title": "Machine Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2381",
+    "email": "andrew.jones@synapsefoundry.com",
+    "job_title": "Research Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1807",
+    "email": "baker.andrew@modelry.ai",
+    "job_title": "AI Engineer",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2688",
+    "email": "matthew.hoffmann@legalmind.ai",
+    "job_title": "Senior ML Engineer",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2909",
+    "email": "christinek+1@securexsystems.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2535",
+    "email": "chris_rivera@tensorloop.io",
+    "job_title": "CTO",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1634",
+    "email": "ronalda@modelry.ai",
+    "job_title": "",
+    "company": "Modelry",
+    "deterministic_tier": "tier3",
+    "llm_score": 50,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2560",
+    "email": "debra.singh@evalhouse.ai",
+    "job_title": "MLOps Engineer",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1744",
+    "email": "hkowalski@apptide.com",
+    "job_title": "Senior ML Engineer",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1625",
+    "email": "lindaj@synthworks.ai",
+    "job_title": "Head of AI",
+    "company": "synthworks ai",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1581",
+    "email": "fischer.cynthia@vectorly.ai",
+    "job_title": "Senior ML Engineer",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 86,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1207",
+    "email": "adams.sarah@evalhouse.ai",
+    "job_title": "",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier3",
+    "llm_score": 52,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1667",
+    "email": "barbarak@cascade-ai.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "Cascade AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1539",
+    "email": "pamelat@paytrellis.com",
+    "job_title": "Infrastructure Engineer",
+    "company": "paytrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1004",
+    "email": "samuel.white@stacklinesoftware.com",
+    "job_title": "Consultant",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2202",
+    "email": "jcampbell@inferralabs.com",
+    "job_title": "software engineer",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2166",
+    "email": "edward_harris@roboticsone.ai",
+    "job_title": "NLP Engineer",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1221",
+    "email": "richard_martin@mistletoeml.com",
+    "job_title": "Advisor",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1628",
+    "email": "pamelam@roboticsone.ai",
+    "job_title": "Founder & CEO",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier1",
+    "llm_score": 82,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2569",
+    "email": "bjackson@promptline.ai",
+    "job_title": "AI Engineer",
+    "company": "promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1592",
+    "email": "laura.rossi@relaymesh.io",
+    "job_title": "vp, engineering",
+    "company": "Relaymesh",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1721",
+    "email": "afischer@cornerstoneins.com",
+    "job_title": "Fractional CTO",
+    "company": "CORNERSTONE INSURANCE",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1570",
+    "email": "kwame.brown@peakfitnessstudios.com",
+    "job_title": "Principal",
+    "company": "Peak Fitness Studios",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2519",
+    "email": "sanchez.benjamin@shipmate.io",
+    "job_title": "CEO",
+    "company": "shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1557",
+    "email": "brivera@roboticsone.ai",
+    "job_title": "",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier3",
+    "llm_score": 40,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1585",
+    "email": "samuel.wright@signalfold.com",
+    "job_title": "",
+    "company": "Signalfold",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2079",
+    "email": "edward.hernandez@proton.me",
+    "job_title": "Chief Technology Officer",
+    "company": "Apex Auto Parts",
+    "deterministic_tier": "tier2",
+    "llm_score": 25,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1170",
+    "email": "ahoffmann@evalhouse.ai",
+    "job_title": "vp, engineering",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1215",
+    "email": "kimberly_wilson@maplegrovebakery.com",
+    "job_title": "Marketing Manager",
+    "company": "maple grove bakery",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2297",
+    "email": "rodriguez.scott@stacklinesoftware.com",
+    "job_title": "Deep Learning Engineer",
+    "company": "STACKLINE SOFTWARE",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1239",
+    "email": "ryan_gonzalez@apexautoparts.com",
+    "job_title": "Director of Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1313",
+    "email": "aschmidt@evalhouse.ai",
+    "job_title": "",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1797",
+    "email": "pwright@hotmail.com",
+    "job_title": "Head of Platform",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1692",
+    "email": "frankt@shipmate.io",
+    "job_title": "",
+    "company": "Shipmate",
+    "deterministic_tier": "tier3",
+    "llm_score": 58,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1774",
+    "email": "patel.david@gradientpeak.ai",
+    "job_title": "Sr. Data Scientist",
+    "company": "Gradient Peak",
+    "deterministic_tier": "tier2",
+    "llm_score": 48,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1021",
+    "email": "walker.timothy@tensorloop.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1272",
+    "email": "donna.lewis@ridgewayconstruction.com",
+    "job_title": "Fractional CTO",
+    "company": "ridgeway construction",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2762",
+    "email": "larsr@neuralight.io",
+    "job_title": "ML Engineer",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2508",
+    "email": "donald.sharma@tokenworks.io",
+    "job_title": "",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier3",
+    "llm_score": 85,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1110",
+    "email": "john_campbell@databarn.io",
+    "job_title": "founder/ceo",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 92,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1018",
+    "email": "drobinson@tensorloop.io",
+    "job_title": "VP Engineering",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1926",
+    "email": "park.rachel@pipelinelabs.io",
+    "job_title": "Owner",
+    "company": "pipeline labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2579",
+    "email": "timothys@copilothealth.ai",
+    "job_title": "Head of Platform",
+    "company": "Copilot Health AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1754",
+    "email": "dorothy.rodriguez@tensorloop.io",
+    "job_title": "Data Scientist",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2133",
+    "email": "patrickw@relaymesh.io",
+    "job_title": "",
+    "company": "RELAYMESH",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2287",
+    "email": "elopez@finetunelabs.com",
+    "job_title": "Principal",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1333",
+    "email": "harris.michelle@hotmail.com",
+    "job_title": "CEO",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2026",
+    "email": "mateo_walker@yahoo.com",
+    "job_title": "Financial Analyst",
+    "company": "Summit Dental Group",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1837",
+    "email": "srivera@tokenworks.io",
+    "job_title": "Independent Consultant",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1477",
+    "email": "bschulz@yahoo.com",
+    "job_title": "Director of AI",
+    "company": "Loopware",
+    "deterministic_tier": "tier1",
+    "llm_score": 90,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1236",
+    "email": "ali.raymond@cloudspan.dev",
+    "job_title": "ML Engineer",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2862",
+    "email": "johnson.emily@streamlyne.io",
+    "job_title": "Applied Scientist",
+    "company": "streamlyne",
+    "deterministic_tier": "tier2",
+    "llm_score": 30,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2649",
+    "email": "okafor.nicole@pipelinelabs.io",
+    "job_title": "MLOps Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 15,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2607",
+    "email": "williamw@maplegrovebakery.com",
+    "job_title": "Product Marketing Manager",
+    "company": "Maple Grove Bakery",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1187",
+    "email": "mateo.tanaka@streamlyne.io",
+    "job_title": "",
+    "company": "STREAMLYNE",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2449",
+    "email": "hassan.kathleen@proton.me",
+    "job_title": "SWE",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1528",
+    "email": "elizabethm@tokenworks.io",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2767",
+    "email": "ronaldr@outlook.com",
+    "job_title": "Head of Engineering",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier1",
+    "llm_score": 88,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L2918",
+    "email": "fnelson+test@neuralight.io",
+    "job_title": "Research Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1489",
+    "email": "deborah_kim@luminaml.com",
+    "job_title": "Backend Engineer",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1196",
+    "email": "perez.amanda@vectorly.ai",
+    "job_title": "",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2105",
+    "email": "brenda_clark@paytrellis.com",
+    "job_title": "Research Scientist",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2745",
+    "email": "eschmidt@yahoo.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1090",
+    "email": "chansen@mistletoeml.com",
+    "job_title": "Managing Partner",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier3",
+    "llm_score": 62,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1273",
+    "email": "dmiller@roboticsone.ai",
+    "job_title": "Principal",
+    "company": "roboticsone",
+    "deterministic_tier": "tier3",
+    "llm_score": 55,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1604",
+    "email": "elenah@cascade-ai.com",
+    "job_title": "Research Scientist",
+    "company": "CASCADE AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2047",
+    "email": "perez.carol@bellavistarealty.com",
+    "job_title": "Operations Manager",
+    "company": "Bella Vista Realty",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1382",
+    "email": "becker.daniel@fieldstonetech.com",
+    "job_title": "Principal",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2441",
+    "email": "jbecker@proton.me",
+    "job_title": "Chief Technology Officer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier1",
+    "llm_score": 78,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1031",
+    "email": "sharont@paytrellis.com",
+    "job_title": "VP Engineering",
+    "company": "paytrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2768",
+    "email": "paulb@gradientpeak.ai",
+    "job_title": "Infrastructure Engineer",
+    "company": "Gradient Peak",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2211",
+    "email": "taylor.patricia@roboticsone.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "ROBOTICSONE",
+    "deterministic_tier": "tier2",
+    "llm_score": 84,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2275",
+    "email": "stephenf@ridgewayconstruction.com",
+    "job_title": "",
+    "company": "Ridgeway Construction",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1290",
+    "email": "margaret_torres@orbitalmind.ai",
+    "job_title": "Senior Software Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1229",
+    "email": "brown.nancy@signalfold.com",
+    "job_title": "Technical Consultant",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1975",
+    "email": "kathleenb@formcraft.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 86,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1524",
+    "email": "clark.hans@diffusia.io",
+    "job_title": "Data Scientist",
+    "company": "diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 91,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1652",
+    "email": "king.wei@yahoo.com",
+    "job_title": "Data Scientist",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2910",
+    "email": "amara.clark@mistletoeml.com",
+    "job_title": "Head of Engineering",
+    "company": "Mistletoe ML Inc",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2064",
+    "email": "fatimap@tokenworks.io",
+    "job_title": "Research Engineer",
+    "company": "TokenWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1626",
+    "email": "brandon.hansen@yahoo.com",
+    "job_title": "Director of Platform Engineering",
+    "company": "Shipmate",
+    "deterministic_tier": "tier1",
+    "llm_score": 68,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1371",
+    "email": "larrys@voxeldynamics.ai",
+    "job_title": "ML Engineer",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1354",
+    "email": "chrisb@peakfitnessstudios.com",
+    "job_title": "",
+    "company": "Peak Fitness Studios",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2383",
+    "email": "ryoung@loopware.io",
+    "job_title": "",
+    "company": "Loopware",
+    "deterministic_tier": "tier3",
+    "llm_score": 45,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2323",
+    "email": "scott.helen@northernuni.edu",
+    "job_title": "",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2528",
+    "email": "william_nelson@opsfleet.com",
+    "job_title": "Staff Engineer",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1853",
+    "email": "brown.amara@shipmate.io",
+    "job_title": "Technical Consultant",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1297",
+    "email": "andrewj@streamlyne.io",
+    "job_title": "CTO",
+    "company": "Streamlyne",
+    "deterministic_tier": "tier1",
+    "llm_score": 45,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1202",
+    "email": "gali@tensorloop.io",
+    "job_title": "SVP Engineering",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2859",
+    "email": "scott.kimberly@opsfleet.com",
+    "job_title": "Director of Platform Engineering",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier1",
+    "llm_score": 88,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2554",
+    "email": "justin.okafor@voxeldynamics.ai",
+    "job_title": "Owner",
+    "company": "voxel dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2371",
+    "email": "dbrown@quantavision.io",
+    "job_title": "",
+    "company": "Quanta Vision",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1167",
+    "email": "davidl@gmail.com",
+    "job_title": "DevOps Engineer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2714",
+    "email": "michelle_wright@instech.edu",
+    "job_title": "MS Student",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 5,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1193",
+    "email": "smoore@vectorly.ai",
+    "job_title": "VP Engineering",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1479",
+    "email": "mateow@signalfold.com",
+    "job_title": "Research Engineer",
+    "company": "Signalfold",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1473",
+    "email": "jonathan.chen@databarn.io",
+    "job_title": "CEO",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1182",
+    "email": "scott_andersson@proton.me",
+    "job_title": "MS Student",
+    "company": "Institute of Technology",
+    "deterministic_tier": "tier3",
+    "llm_score": 22,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2057",
+    "email": "larrym@opsfleet.com",
+    "job_title": "",
+    "company": "Opsfleet",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2020",
+    "email": "tscott@neuralight.io",
+    "job_title": "Director of AI",
+    "company": "NEURALIGHT",
+    "deterministic_tier": "tier1",
+    "llm_score": 92,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1175",
+    "email": "dwagner@legalmind.ai",
+    "job_title": "SWE",
+    "company": "LegalMind AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2213",
+    "email": "sanchez.laura@mistletoeml.com",
+    "job_title": "MLOps Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2049",
+    "email": "thompson.edward@pipelinelabs.io",
+    "job_title": "",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier3",
+    "llm_score": 42,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1735",
+    "email": "rachel.sanchez@outlook.com",
+    "job_title": "Founder",
+    "company": "Harborview Logistics",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1419",
+    "email": "angela.baker@opsfleet.com",
+    "job_title": "Sr. Data Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2353",
+    "email": "harris.katherine@summitdentalgroup.com",
+    "job_title": "Builder",
+    "company": "Summit Dental Group",
+    "deterministic_tier": "tier3",
+    "llm_score": 26,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1399",
+    "email": "karen.taylor@modelry.ai",
+    "job_title": "Applied Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1536",
+    "email": "paul.singh@corticon.ai",
+    "job_title": "NLP Engineer",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2442",
+    "email": "sharon_thomas@diffusia.io",
+    "job_title": "Director of Platform Engineering",
+    "company": "Diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1962",
+    "email": "sanchez.raymond@synthworks.ai",
+    "job_title": "vp, engineering",
+    "company": "SynthWorks AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2451",
+    "email": "hans_adams@voiceforge.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "VoiceForge",
+    "deterministic_tier": "tier2",
+    "llm_score": 89,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2563",
+    "email": "mark.hoffmann@codewharf.dev",
+    "job_title": "ML Engineer",
+    "company": "Codewharf",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2278",
+    "email": "snelson@codewharf.dev",
+    "job_title": "AI Engineer",
+    "company": "CODEWHARF",
+    "deterministic_tier": "tier2",
+    "llm_score": 1,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1056",
+    "email": "larry_wagner@vectorly.ai",
+    "job_title": "Backend Engineer",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 72,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1726",
+    "email": "larsen.amara@roboticsone.ai",
+    "job_title": "",
+    "company": "RoboticsOne",
+    "deterministic_tier": "tier3",
+    "llm_score": 1,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1462",
+    "email": "ronald_muller@icloud.com",
+    "job_title": "DevOps Engineer",
+    "company": "LedgerWorks",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2458",
+    "email": "andersson.kevin@apptide.com",
+    "job_title": "Co-Founder & CTO",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1040",
+    "email": "janet_jackson@codewharf.dev",
+    "job_title": "DevOps Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1255",
+    "email": "richardt@gmail.com",
+    "job_title": "VP Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 42,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1870",
+    "email": "daniel.kowalski@tensorloop.io",
+    "job_title": "",
+    "company": "TENSORLOOP",
+    "deterministic_tier": "tier3",
+    "llm_score": 75,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1043",
+    "email": "jeffreyw@orbitalmind.ai",
+    "job_title": "Deep Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1891",
+    "email": "debra.campbell@diffusia.io",
+    "job_title": "Head of Engineering",
+    "company": "diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2225",
+    "email": "justin.davis@evalhouse.ai",
+    "job_title": "MLOps Engineer",
+    "company": "EvalHouse",
+    "deterministic_tier": "tier2",
+    "llm_score": 35,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1516",
+    "email": "gregorya@loopware.io",
+    "job_title": "ML Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2780",
+    "email": "allen.stephanie@ragpipe.dev",
+    "job_title": "SVP Engineering",
+    "company": "RAGPIPE",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1768",
+    "email": "justing@metricshub.com",
+    "job_title": "",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1839",
+    "email": "emma.wagner@icloud.com",
+    "job_title": "Platform Engineer",
+    "company": "Gridbase",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1993",
+    "email": "lopez.rajesh@modelry.ai",
+    "job_title": "",
+    "company": "MODELRY",
+    "deterministic_tier": "tier3",
+    "llm_score": 48,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1328",
+    "email": "priyaa@instech.edu",
+    "job_title": "Student",
+    "company": "Institute of Technology",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1747",
+    "email": "carols@apptide.com",
+    "job_title": "Head of AI",
+    "company": "Apptide",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2205",
+    "email": "sandraw@mistletoeml.com",
+    "job_title": "Director of Platform Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2608",
+    "email": "schmidt.lisa@vectorly.ai",
+    "job_title": "Director of Platform Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2674",
+    "email": "alexander_lee@cornerstoneins.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "Cornerstone Insurance",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2672",
+    "email": "donna.white@shipmate.io",
+    "job_title": "Director, Machine Learning",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1231",
+    "email": "deborah.gonzalez@corticon.ai",
+    "job_title": "Data Scientist",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2203",
+    "email": "edward_muller@securexsystems.com",
+    "job_title": "Advisor",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2374",
+    "email": "storres@gmail.com",
+    "job_title": "Technical Consultant",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L2397",
+    "email": "wchen@hotmail.com",
+    "job_title": "founder/ceo",
+    "company": "Cornerstone Insurance",
+    "deterministic_tier": "tier3",
+    "llm_score": 35,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2347",
+    "email": "betty_weber@databarn.io",
+    "job_title": "DevOps Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 62,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1777",
+    "email": "panderson@opsfleet.com",
+    "job_title": "Account Executive",
+    "company": "",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2187",
+    "email": "mmitchell@opsfleet.com",
+    "job_title": "Platform Engineer",
+    "company": "opsfleet",
+    "deterministic_tier": "tier2",
+    "llm_score": 86,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2606",
+    "email": "elizabethj@loopware.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2871",
+    "email": "susanf@pipelinelabs.io",
+    "job_title": "Backend Engineer",
+    "company": "Pipeline Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 89,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2555",
+    "email": "chen.dennis@deepharbor.ai",
+    "job_title": "Computer Vision Engineer",
+    "company": "DeepHarbor",
+    "deterministic_tier": "tier2",
+    "llm_score": 72,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1917",
+    "email": "paul_scott@icloud.com",
+    "job_title": "Chief Technology Officer",
+    "company": "OPSFLEET",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1099",
+    "email": "hansen.gregory@formcraft.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 85,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1248",
+    "email": "sarah_larsen@metricshub.com",
+    "job_title": "ML Engineer",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1357",
+    "email": "eric.jackson@signalfold.com",
+    "job_title": "VP Data & AI",
+    "company": "Signalfold",
+    "deterministic_tier": "tier3",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1953",
+    "email": "kathleenw@axonresearch.ai",
+    "job_title": "Infrastructure Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2168",
+    "email": "scott_ali@vectorly.ai",
+    "job_title": "Machine Learning Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2872",
+    "email": "justinm@securexsystems.com",
+    "job_title": "Head of ML",
+    "company": "the Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 82,
+    "reasons": [
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L2117",
+    "email": "william.hoffmann@codewharf.dev",
+    "job_title": "Accountant",
+    "company": "Codewharf",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2043",
+    "email": "matthew.roberts@tensorloop.io",
+    "job_title": "ML Engineer",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1035",
+    "email": "sharon.meyer@proton.me",
+    "job_title": "Founder & CEO",
+    "company": "Fieldstone Tech",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1334",
+    "email": "ingridn@hotmail.com",
+    "job_title": "",
+    "company": "Vectorly AI",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1034",
+    "email": "keller.laura@agentstack.dev",
+    "job_title": "Backend Engineer",
+    "company": "AgentStack",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1183",
+    "email": "rweber@embediq.ai",
+    "job_title": "Sr. Data Scientist",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2230",
+    "email": "nicholas.moore@promptline.ai",
+    "job_title": "",
+    "company": "Promptline",
+    "deterministic_tier": "tier3",
+    "llm_score": 10,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2591",
+    "email": "krodriguez@databarn.io",
+    "job_title": "VP of AI Infrastructure",
+    "company": "databarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2444",
+    "email": "kumar.zara@stacklinesoftware.com",
+    "job_title": "Fractional CTO",
+    "company": "Stackline Software",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2735",
+    "email": "keller.priya@cornerstoneins.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1798",
+    "email": "elena.miller@voxeldynamics.ai",
+    "job_title": "software engineer",
+    "company": "voxel dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2240",
+    "email": "jkim@cornerstoneins.com",
+    "job_title": "Data Scientist",
+    "company": "Cornerstone Insurance",
+    "deterministic_tier": "tier3",
+    "llm_score": 60,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1006",
+    "email": "sdavis@formcraft.com",
+    "job_title": "Co-founder",
+    "company": "Formcraft",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2372",
+    "email": "nicholas_perez@paytrellis.com",
+    "job_title": "ml engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1645",
+    "email": "rebecca_anderson@embediq.ai",
+    "job_title": "MLOps Engineer",
+    "company": "embediq",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1198",
+    "email": "agreen@diffusia.io",
+    "job_title": "Research Engineer",
+    "company": "Diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2112",
+    "email": "stephanie.jones@paytrellis.com",
+    "job_title": "Senior Software Engineer",
+    "company": "PayTrellis",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1868",
+    "email": "mateob@ragpipe.dev",
+    "job_title": "Founder",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1490",
+    "email": "benjamin_hansen@yahoo.com",
+    "job_title": "Director, Machine Learning",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier1",
+    "llm_score": 72,
+    "reasons": [
+      "personal email but Tier-1 title and company signals"
+    ]
+  },
+  {
+    "lead_id": "L1867",
+    "email": "jacob_taylor@embediq.ai",
+    "job_title": "Senior ML Engineer",
+    "company": "EmbedIQ",
+    "deterministic_tier": "tier2",
+    "llm_score": 52,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1589",
+    "email": "dorothy.ferrari@gridbase.dev",
+    "job_title": "",
+    "company": "Gridbase",
+    "deterministic_tier": "tier3",
+    "llm_score": 25,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2545",
+    "email": "ramirez.elizabeth@mistletoeml.com",
+    "job_title": "DevOps Engineer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 10,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1619",
+    "email": "cwilson@formcraft.com",
+    "job_title": "Head of Data Science",
+    "company": "Formcraft",
+    "deterministic_tier": "tier1",
+    "llm_score": 40,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2017",
+    "email": "gonzalez.michelle@proton.me",
+    "job_title": "Data Scientist",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 20,
+    "reasons": [
+      "technical IC title but company/industry unverifiable",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1135",
+    "email": "mary_rodriguez@icloud.com",
+    "job_title": "Computer Vision Engineer",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1091",
+    "email": "ronaldj@tensorloop.io",
+    "job_title": "Computer Vision Engineer",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2420",
+    "email": "allen.kimberly@orbitalmind.ai",
+    "job_title": "Head of AI",
+    "company": "Orbital Mind",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2171",
+    "email": "ghansen@neuralight.io",
+    "job_title": "Consultant",
+    "company": "Neuralight",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "ambiguous title defaults to Tier 2 for human review"
+    ]
+  },
+  {
+    "lead_id": "L1266",
+    "email": "kimberly_kumar@cascade-ai.com",
+    "job_title": "",
+    "company": "cascade ai",
+    "deterministic_tier": "tier3",
+    "llm_score": 65,
+    "reasons": [
+      "missing job title",
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1163",
+    "email": "lsharma@proton.me",
+    "job_title": "Software Engineer",
+    "company": "RagPipe",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1970",
+    "email": "katherinet@synapsefoundry.com",
+    "job_title": "Founder",
+    "company": "SYNAPSE FOUNDRY",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2466",
+    "email": "jtanaka@signalfold.com",
+    "job_title": "Chief AI Officer",
+    "company": "Signalfold",
+    "deterministic_tier": "tier1",
+    "llm_score": 30,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1294",
+    "email": "emily.moore@finetunelabs.com",
+    "job_title": "Head of Platform",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L1696",
+    "email": "shirleym@luminaml.com",
+    "job_title": "VP of AI Infrastructure",
+    "company": "Lumina ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2459",
+    "email": "mark.weber@promptline.ai",
+    "job_title": "sre",
+    "company": "promptline",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2327",
+    "email": "john_park@databarn.io",
+    "job_title": "Research Engineer",
+    "company": "DataBarn",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1457",
+    "email": "sbecker@apptide.com",
+    "job_title": "Director of Infrastructure",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 60,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2258",
+    "email": "andrew.brown@metricshub.com",
+    "job_title": "ml engineer",
+    "company": "MetricsHub",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2235",
+    "email": "michelleb@inferralabs.com",
+    "job_title": "Co-founder",
+    "company": "Inferra Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 80,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2713",
+    "email": "becker.janet@yahoo.com",
+    "job_title": "NLP Engineer",
+    "company": "Voxel Dynamics",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1601",
+    "email": "ferrari.stephen@hotmail.com",
+    "job_title": "AI Engineer",
+    "company": "Mistletoe ML",
+    "deterministic_tier": "tier2",
+    "llm_score": 95,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2354",
+    "email": "angela_schmidt@shipmate.io",
+    "job_title": "Head of Data Science",
+    "company": "Shipmate",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2769",
+    "email": "bettyr@gridbase.dev",
+    "job_title": "Head of AI",
+    "company": "gridbase",
+    "deterministic_tier": "tier1",
+    "llm_score": 98,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2025",
+    "email": "dorothyf@tensorloop.io",
+    "job_title": "",
+    "company": "TensorLoop",
+    "deterministic_tier": "tier3",
+    "llm_score": 30,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L1679",
+    "email": "kowalski.justin@loopware.io",
+    "job_title": "Director of Infrastructure",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 45,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2295",
+    "email": "debra.walker@finetunelabs.com",
+    "job_title": "founder/ceo",
+    "company": "Finetune Labs",
+    "deterministic_tier": "tier2",
+    "llm_score": 90,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L1458",
+    "email": "williams.betty@loopware.io",
+    "job_title": "AI Engineer",
+    "company": "Loopware",
+    "deterministic_tier": "tier2",
+    "llm_score": 75,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2119",
+    "email": "myoung@corticon.ai",
+    "job_title": "NLP Engineer",
+    "company": "Corticon AI",
+    "deterministic_tier": "tier2",
+    "llm_score": 70,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2226",
+    "email": "diego.perez@securexsystems.com",
+    "job_title": "Head of Data Science",
+    "company": "Securex Systems",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2544",
+    "email": "carolyn.sato@outlook.com",
+    "job_title": "Platform Engineer",
+    "company": "Modelry",
+    "deterministic_tier": "tier2",
+    "llm_score": 65,
+    "reasons": [
+      "EU / Consent Verification Needed"
+    ]
+  },
+  {
+    "lead_id": "L2224",
+    "email": "shirley.nelson@finetunelabs.com",
+    "job_title": "Senior ML Engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 55,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "technical IC title but company/industry unverifiable",
+      "Duplicate record with conflicting fields"
+    ]
+  },
+  {
+    "lead_id": "L1188",
+    "email": "sandra.flores@modelry.ai",
+    "job_title": "",
+    "company": "modelry",
+    "deterministic_tier": "tier3",
+    "llm_score": 15,
+    "reasons": [
+      "EU / Consent Verification Needed",
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2291",
+    "email": "nicholasc@neuralight.io",
+    "job_title": "ml engineer",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 68,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1966",
+    "email": "janet.young@icloud.com",
+    "job_title": "",
+    "company": "DEEPHARBOR",
+    "deterministic_tier": "tier3",
+    "llm_score": 20,
+    "reasons": [
+      "missing job title"
+    ]
+  },
+  {
+    "lead_id": "L2209",
+    "email": "william_carter@axonresearch.ai",
+    "job_title": "Head of Engineering",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 40,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2048",
+    "email": "rhall@quantumnails.com",
+    "job_title": "Co-founder",
+    "company": "",
+    "deterministic_tier": "tier2",
+    "llm_score": 50,
+    "reasons": [
+      "decision-maker title but company missing or unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L1197",
+    "email": "timothy.fischer@cloudspan.dev",
+    "job_title": "Staff Engineer",
+    "company": "Cloudspan",
+    "deterministic_tier": "tier2",
+    "llm_score": 88,
+    "reasons": [
+      "Score divergence: deterministic vs. probabilistic"
+    ]
+  },
+  {
+    "lead_id": "L2473",
+    "email": "ryan.ferrari@diffusia.io",
+    "job_title": "Fractional CTO",
+    "company": "Diffusia",
+    "deterministic_tier": "tier2",
+    "llm_score": 78,
+    "reasons": [
+      "decision-maker title, technical company, but company size unverifiable"
+    ]
+  },
+  {
+    "lead_id": "L2725",
+    "email": "helen_miller@axonresearch.ai",
+    "job_title": "Machine Learning Engineer",
+    "company": "Axon Research",
+    "deterministic_tier": "tier2",
+    "llm_score": 58,
+    "reasons": [
+      "technical IC title but company/industry unverifiable"
+    ]
+  }
+]
