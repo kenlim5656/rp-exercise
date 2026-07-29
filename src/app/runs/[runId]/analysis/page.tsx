@@ -1,12 +1,8 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 interface AnalysisReport {
   meta: { row_count: number; column_count: number };
@@ -29,36 +25,13 @@ interface AnalysisReport {
 
 export default function AnalysisPage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = use(params);
-  const router = useRouter();
   const [report, setReport] = useState<AnalysisReport | null>(null);
-  const [notes, setNotes] = useState("");
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/runs/${runId}/analyze`)
       .then((r) => r.json())
       .then((d) => setReport(d.report ?? null));
   }, [runId]);
-
-  async function approveAndSanitize() {
-    setBusy(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/runs/${runId}/sanitize`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ approved: true, instructions: notes ? { notes } : undefined }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
-      router.push(`/runs/${runId}/sanitize`);
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
 
   if (!report) return <p className="text-muted-foreground">Loading analysis...</p>;
 
@@ -149,34 +122,6 @@ export default function AnalysisPage({ params }: { params: Promise<{ runId: stri
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Approve & sanitize (2.1)</CardTitle>
-          <CardDescription>Add any additional cleaning instructions before sanitizing, or leave blank to use the defaults above.</CardDescription>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-3">
-          <Textarea
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-            placeholder="e.g. also treat 'n/a' as a placeholder UTM value"
-          />
-          {error && (
-            <Alert variant="destructive">
-              <AlertTitle>Sanitize failed</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
-          <Button onClick={approveAndSanitize} disabled={busy} className="inline-flex items-center gap-2">
-            {busy && (
-              <svg className="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-              </svg>
-            )}
-            {busy ? "Sanitizing..." : "Approve & Sanitize"}
-          </Button>
-        </CardContent>
-      </Card>
     </div>
   );
 }

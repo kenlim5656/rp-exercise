@@ -36,6 +36,7 @@ export async function runCrmStage(runId: string) {
 
     let euAmbiguousCount = 0;
     const merged: CsvRecord[] = [];
+    const crmUpdates: Array<{ lead_id: string; crm_json: string; is_eu: number; consent_verified: string; eu_consent_flag: string | null }> = [];
 
     for (const lead of leads) {
       const sfRec: SalesforceRecord | undefined = sfByEmail.get(lead.email_normalized);
@@ -79,15 +80,13 @@ export async function runCrmStage(runId: string) {
         dncFlag: sfOptOut === true || hsOptOut === true,
       };
 
-      await upsertLeads(runId, [
-        {
-          lead_id: lead.lead_id,
-          crm_json: JSON.stringify(crmJson),
-          is_eu: isEu ? 1 : 0,
-          consent_verified: consentVerified,
-          eu_consent_flag: euConsentFlag,
-        },
-      ]);
+      crmUpdates.push({
+        lead_id: lead.lead_id,
+        crm_json: JSON.stringify(crmJson),
+        is_eu: isEu ? 1 : 0,
+        consent_verified: consentVerified,
+        eu_consent_flag: euConsentFlag,
+      });
 
       merged.push({
         ...lead,
@@ -97,6 +96,10 @@ export async function runCrmStage(runId: string) {
         is_existing_customer: String(!!isExistingCustomer),
         is_churned: String(!!isChurned),
       });
+    }
+
+    if (crmUpdates.length > 0) {
+      await upsertLeads(runId, crmUpdates);
     }
 
     try { writeCsv(path.join(outDir, "crm-merged.csv"), merged); } catch { /* read-only fs */ }

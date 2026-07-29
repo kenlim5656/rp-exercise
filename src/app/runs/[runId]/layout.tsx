@@ -3,6 +3,8 @@ import { getRun, getStages, getLeads } from "@/lib/runs";
 import { RunStepper } from "@/components/RunStepper";
 import { CopilotPanel } from "@/components/CopilotPanel";
 import { RunScorecard } from "@/components/RunScorecard";
+import { StageProgress } from "@/components/StageProgress";
+import { StageActions } from "@/components/StageActions";
 
 export const dynamic = "force-dynamic";
 
@@ -53,8 +55,10 @@ export default async function RunLayout({
       {/* Side-by-side: main content + copilot */}
       <div className="mx-auto flex w-full max-w-[1600px] gap-6 px-6 py-6">
         <main className="min-w-0 flex-1">{children}</main>
-        <aside className="hidden w-[340px] shrink-0 lg:block">
+        <aside className="hidden w-[340px] shrink-0 lg:flex lg:flex-col lg:gap-4">
+          <StageProgress stages={stages} />
           <CopilotPanel runId={runId} />
+          <StageActions runId={runId} />
         </aside>
       </div>
       {/* Mobile: copilot as bottom button */}

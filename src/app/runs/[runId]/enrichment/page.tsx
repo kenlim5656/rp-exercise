@@ -1,9 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -20,31 +18,13 @@ interface EnrichedLead {
 
 export default function EnrichmentPage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = use(params);
-  const router = useRouter();
   const [leads, setLeads] = useState<EnrichedLead[] | null>(null);
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/runs/${runId}/enrich`)
       .then((r) => r.json())
       .then((d) => setLeads(d.leads ?? null));
   }, [runId]);
-
-  async function proceedToCrm() {
-    setBusy(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/runs/${runId}/crm`, { method: "POST" });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
-      router.push(`/runs/${runId}/crm`);
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
 
   if (!leads) return <p className="text-muted-foreground">Loading enrichment...</p>;
   if (leads.length === 0) {
@@ -63,17 +43,6 @@ export default function EnrichmentPage({ params }: { params: Promise<{ runId: st
           <CardTitle>Identity resolution, enrichment, intent scoring (4.0)</CardTitle>
           <CardDescription>{leads.length} leads processed via simulated Clay workflows</CardDescription>
         </CardHeader>
-        <CardContent>
-          <Button onClick={proceedToCrm} disabled={busy}>
-            {busy ? "Looking up CRM..." : "Proceed to CRM/MAP Lookup (5.0)"}
-          </Button>
-          {error && (
-            <Alert variant="destructive" className="mt-3">
-              <AlertTitle>Failed</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
-        </CardContent>
       </Card>
 
       <Card>

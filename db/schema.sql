@@ -83,6 +83,11 @@ CREATE TABLE IF NOT EXISTS audit_log (
   created_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS settings (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_leads_run ON leads(run_id);
 CREATE INDEX IF NOT EXISTS idx_leads_review ON leads(run_id, needs_review, review_status);
 CREATE INDEX IF NOT EXISTS idx_audit_run ON audit_log(run_id, created_at);

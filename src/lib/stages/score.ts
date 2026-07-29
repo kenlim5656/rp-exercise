@@ -21,6 +21,13 @@ export async function runScoreStage(runId: string) {
 
     const deterministicResults = new Map<string, DeterministicScoringResult>();
     const llmContexts: LlmScoringContext[] = [];
+    const detUpdates: Array<{
+      lead_id: string;
+      deterministic_tier: string;
+      deterministic_reasons_json: string;
+      deterministic_review_flag: number;
+      deterministic_review_reason: string | null | undefined;
+    }> = [];
 
     for (const row of rows) {
       const lead = JSON.parse(row.sanitized_json!) as CsvRecord;
@@ -36,15 +43,13 @@ export async function runScoreStage(runId: string) {
         isSuspiciousFake: lead.is_suspicious_fake === "True",
       });
       deterministicResults.set(row.lead_id, det);
-      await upsertLeads(runId, [
-        {
-          lead_id: row.lead_id,
-          deterministic_tier: det.tier,
-          deterministic_reasons_json: JSON.stringify(det.reasons),
-          deterministic_review_flag: det.reviewFlag ? 1 : 0,
-          deterministic_review_reason: det.reviewReason,
-        },
-      ]);
+      detUpdates.push({
+        lead_id: row.lead_id,
+        deterministic_tier: det.tier,
+        deterministic_reasons_json: JSON.stringify(det.reasons),
+        deterministic_review_flag: det.reviewFlag ? 1 : 0,
+        deterministic_review_reason: det.reviewReason,
+      });
 
       llmContexts.push({
         lead,
@@ -54,6 +59,9 @@ export async function runScoreStage(runId: string) {
         deterministicTier: det.tier,
         deterministicReasons: det.reasons,
       });
+    }
+    if (detUpdates.length > 0) {
+      await upsertLeads(runId, detUpdates);
     }
 
     const batches = chunk(llmContexts, BATCH_SIZE);
@@ -75,23 +83,31 @@ export async function runScoreStage(runId: string) {
     const combined: CsvRecord[] = [];
     let divergenceFlaggedCount = 0;
 
+    const reconcileUpdates: Array<{
+      lead_id: string;
+      llm_score: number | null;
+      llm_rationale: string | null;
+      score_divergence: number | null;
+      scores_aligned: number;
+      score_divergence_flag: number;
+      final_tier: string;
+    }> = [];
+
     for (const row of rows) {
       const det = deterministicResults.get(row.lead_id)!;
       const llm = llmByLead.get(row.lead_id);
       const { scoreDivergence, scoresAligned, divergenceFlag } = reconcileScores(det.tier, llm?.probabilisticScore ?? null);
       if (divergenceFlag) divergenceFlaggedCount++;
 
-      await upsertLeads(runId, [
-        {
-          lead_id: row.lead_id,
-          llm_score: llm?.probabilisticScore ?? null,
-          llm_rationale: llm?.rationale ?? null,
-          score_divergence: scoreDivergence,
-          scores_aligned: scoresAligned ? 1 : 0,
-          score_divergence_flag: divergenceFlag ? 1 : 0,
-          final_tier: det.tier,
-        },
-      ]);
+      reconcileUpdates.push({
+        lead_id: row.lead_id,
+        llm_score: llm?.probabilisticScore ?? null,
+        llm_rationale: llm?.rationale ?? null,
+        score_divergence: scoreDivergence,
+        scores_aligned: scoresAligned ? 1 : 0,
+        score_divergence_flag: divergenceFlag ? 1 : 0,
+        final_tier: det.tier,
+      });
 
       combined.push({
         lead_id: row.lead_id,
@@ -101,6 +117,9 @@ export async function runScoreStage(runId: string) {
         score_divergence: String(scoreDivergence ?? ""),
         scores_aligned: String(scoresAligned),
       });
+    }
+    if (reconcileUpdates.length > 0) {
+      await upsertLeads(runId, reconcileUpdates);
     }
     try { writeCsv(path.join(outDir, "combined-scores.csv"), combined); } catch { /* read-only fs */ }
 

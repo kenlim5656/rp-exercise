@@ -40,6 +40,7 @@ export async function runEnrichStage(runId: string) {
 
     // 4.1.3 intent scoring -- all new-cohort leads.
     const intentScores: Record<string, IntentScoreResult> = {};
+    const allEnrichUpdates: Array<{ lead_id: string; clay_json: string }> = [];
     for (const lead of newCohort) {
       const intent = clayIntentScore(lead.email_normalized);
       intentScores[lead.lead_id] = intent;
@@ -48,7 +49,7 @@ export async function runEnrichStage(runId: string) {
         firmographics: enrichmentByLead.get(lead.lead_id) ?? null,
         intent,
       };
-      await upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
+      allEnrichUpdates.push({ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) });
     }
 
     // 4.3 existing cohort -- use internally-recorded intent score if present, else fall back to Clay.
@@ -66,7 +67,10 @@ export async function runEnrichStage(runId: string) {
         intentScores[lead.lead_id] = intent;
         clayJson = { intent: { ...intent, source: "clay" } };
       }
-      await upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
+      allEnrichUpdates.push({ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) });
+    }
+    if (allEnrichUpdates.length > 0) {
+      await upsertLeads(runId, allEnrichUpdates);
     }
     try { fs.writeFileSync(path.join(outDir, "clay-intent-scores.json"), JSON.stringify(intentScores, null, 2)); } catch { /* read-only fs */ }
 

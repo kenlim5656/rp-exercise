@@ -7,6 +7,8 @@ import { hashUnit, hashId } from "./seed";
 
 const CUSTOMERS_PATH = path.join(MOCK_SEED_ROOT, "bq-customers.json");
 
+let cachedCustomers: MockCustomerRecord[] | null = null;
+
 /**
  * Simulated internal signup/customer database (spec 3.0), since no real BQ
  * table is available for this POC. Generated once, lazily, from whatever
@@ -27,7 +29,9 @@ export interface MockCustomerRecord {
 
 function loadOrInitCustomerTable(sanitizedLeads: CsvRecord[]): MockCustomerRecord[] {
   if (fs.existsSync(CUSTOMERS_PATH)) {
-    return JSON.parse(fs.readFileSync(CUSTOMERS_PATH, "utf-8"));
+    const loaded = JSON.parse(fs.readFileSync(CUSTOMERS_PATH, "utf-8"));
+    cachedCustomers = loaded;
+    return loaded;
   }
   const customers: MockCustomerRecord[] = [];
   for (const lead of sanitizedLeads) {
@@ -51,6 +55,7 @@ function loadOrInitCustomerTable(sanitizedLeads: CsvRecord[]): MockCustomerRecor
   } catch {
     // Filesystem write may fail on Vercel — in-memory generation is sufficient
   }
+  cachedCustomers = customers;
   return customers;
 }
 
@@ -118,7 +123,11 @@ export function bqMatchSignups(sanitizedLeads: CsvRecord[]): {
  * internal records before falling back to Clay). Returns null if the lead
  * isn't a known customer or has no internally-recorded score yet. */
 export function getInternalIntentScore(emailNormalized: string): number | null {
-  if (!fs.existsSync(CUSTOMERS_PATH)) return null;
-  const customers: MockCustomerRecord[] = JSON.parse(fs.readFileSync(CUSTOMERS_PATH, "utf-8"));
-  return customers.find((c) => c.email_normalized === emailNormalized)?.intent_score ?? null;
+  let customers = cachedCustomers;
+  if (!customers) {
+    if (!fs.existsSync(CUSTOMERS_PATH)) return null;
+    customers = JSON.parse(fs.readFileSync(CUSTOMERS_PATH, "utf-8"));
+    cachedCustomers = customers;
+  }
+  return customers!.find((c) => c.email_normalized === emailNormalized)?.intent_score ?? null;
 }

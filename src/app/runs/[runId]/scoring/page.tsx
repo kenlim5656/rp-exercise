@@ -1,9 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -21,31 +19,13 @@ interface ScoredLead {
 
 export default function ScoringPage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = use(params);
-  const router = useRouter();
   const [leads, setLeads] = useState<ScoredLead[] | null>(null);
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/runs/${runId}/score`)
       .then((r) => r.json())
       .then((d) => setLeads(d.leads ?? null));
   }, [runId]);
-
-  async function proceedToRouting() {
-    setBusy(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/runs/${runId}/route`, { method: "POST" });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
-      router.push(`/runs/${runId}/routing`);
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
 
   if (!leads) return <p className="text-muted-foreground">Loading scores...</p>;
   const scored = leads.filter((l) => l.llm_score !== null);
@@ -69,17 +49,6 @@ export default function ScoringPage({ params }: { params: Promise<{ runId: strin
             {leads.length} leads scored &middot; {divergentCount} flagged for score divergence (6.4)
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <Button onClick={proceedToRouting} disabled={busy}>
-            {busy ? "Routing..." : "Proceed to Routing (7.0)"}
-          </Button>
-          {error && (
-            <Alert variant="destructive" className="mt-3">
-              <AlertTitle>Failed</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
-        </CardContent>
       </Card>
 
       <Card>

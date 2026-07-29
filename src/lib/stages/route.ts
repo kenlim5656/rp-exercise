@@ -19,6 +19,13 @@ export async function runRoutingStage(runId: string) {
     const decisions: CsvRecord[] = [];
     const reviewQueue: Array<Record<string, unknown>> = [];
     const counts: Record<string, number> = {};
+    const routeUpdates: Array<{
+      lead_id: string;
+      routing_decision: string;
+      needs_review: number;
+      review_reasons_json: string;
+      review_status: string;
+    }> = [];
 
     for (const row of rows) {
       const result = routeLead({
@@ -34,15 +41,13 @@ export async function runRoutingStage(runId: string) {
 
       counts[result.routingDecision] = (counts[result.routingDecision] ?? 0) + 1;
 
-      await upsertLeads(runId, [
-        {
-          lead_id: row.lead_id,
-          routing_decision: result.routingDecision,
-          needs_review: result.needsReview ? 1 : 0,
-          review_reasons_json: JSON.stringify(result.reviewReasons),
-          review_status: result.needsReview ? "pending" : "none",
-        },
-      ]);
+      routeUpdates.push({
+        lead_id: row.lead_id,
+        routing_decision: result.routingDecision,
+        needs_review: result.needsReview ? 1 : 0,
+        review_reasons_json: JSON.stringify(result.reviewReasons),
+        review_status: result.needsReview ? "pending" : "none",
+      });
 
       decisions.push({
         lead_id: row.lead_id,
@@ -64,6 +69,10 @@ export async function runRoutingStage(runId: string) {
           reasons: result.reviewReasons,
         });
       }
+    }
+
+    if (routeUpdates.length > 0) {
+      await upsertLeads(runId, routeUpdates);
     }
 
     try {

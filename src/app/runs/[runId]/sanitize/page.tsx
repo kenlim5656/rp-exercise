@@ -1,9 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
@@ -16,31 +14,13 @@ interface SanitizeReport {
 
 export default function SanitizePage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = use(params);
-  const router = useRouter();
   const [report, setReport] = useState<SanitizeReport | null>(null);
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch(`/api/runs/${runId}/sanitize`)
       .then((r) => r.json())
       .then((d) => setReport(d.report ?? null));
   }, [runId]);
-
-  async function proceedToMatch() {
-    setBusy(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/runs/${runId}/match`, { method: "POST" });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
-      router.push(`/runs/${runId}/cohorts`);
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
 
   if (!report) {
     return (
@@ -85,24 +65,6 @@ export default function SanitizePage({ params }: { params: Promise<{ runId: stri
             <p className="text-sm text-muted-foreground">Notes: {report.instructions_notes}</p>
           )}
 
-          <div className="flex gap-2">
-            <Button
-              variant="outline"
-              render={<a href={`/api/runs/${runId}/sanitize/download`} />}
-              nativeButton={false}
-            >
-              Download sanitized CSV
-            </Button>
-            <Button onClick={proceedToMatch} disabled={busy}>
-              {busy ? "Matching..." : "Proceed to Matching (3.0)"}
-            </Button>
-          </div>
-          {error && (
-            <Alert variant="destructive">
-              <AlertTitle>Failed</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
         </CardContent>
       </Card>
     </div>
