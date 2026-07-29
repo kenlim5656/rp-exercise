@@ -1,6 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -86,7 +87,7 @@ export default function ReviewPage({ params }: { params: Promise<{ runId: string
             {queue.map((item) => (
               <TableRow key={item.lead_id}>
                 <TableCell>
-                  <div className="font-medium">{item.lead_id}</div>
+                  <Link href={`/runs/${runId}/leads/${item.lead_id}`} className="font-medium text-[var(--accent-pipeline)] underline-offset-2 hover:underline">{item.lead_id}</Link>
                   <div className="text-xs text-muted-foreground">
                     {item.lead?.job_title} @ {item.lead?.company}
                   </div>

@@ -1,12 +1,18 @@
 import { NextResponse } from "next/server";
-import { getLeads, getRun, getStages } from "@/lib/runs";
+import { getLeads, getRun, getStages, setStageStatus } from "@/lib/runs";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
   const run = await getRun(runId);
   if (!run) return NextResponse.json({ error: "not found" }, { status: 404 });
 
-  const stages = await getStages(runId);
+  let stages = await getStages(runId);
+
+  const byKey = new Map(stages.map((s) => [s.stage_key, s]));
+  if (byKey.get("analyze")?.status === "awaiting_approval" && byKey.get("sanitize")?.status === "completed") {
+    await setStageStatus(runId, "analyze", "completed");
+    stages = await getStages(runId);
+  }
   const leads = await getLeads(runId);
   const primary = leads.filter((l) => l.is_duplicate_primary === 1);
 
@@ -21,6 +27,12 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
     if (l.needs_review) needsReviewCount++;
   }
 
+  const tierCounts: Record<string, number> = {};
+  for (const l of primary) {
+    const tier = l.final_tier || l.deterministic_tier;
+    if (tier) tierCounts[tier] = (tierCounts[tier] ?? 0) + 1;
+  }
+
   return NextResponse.json({
     run,
     stages,
@@ -30,6 +42,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
       duplicate_leads: leads.length - primary.length,
       cohorts: cohortCounts,
       routing: routingCounts,
+      tiers: tierCounts,
       needs_review: needsReviewCount,
     },
   });

@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { getRun, getStages, getLeads } from "@/lib/runs";
-import { RunStepper } from "@/components/RunStepper";
+import { LiveRunStepper } from "@/components/LiveRunStepper";
 import { CopilotPanel } from "@/components/CopilotPanel";
-import { RunScorecard } from "@/components/RunScorecard";
-import { StageProgress } from "@/components/StageProgress";
+import { LiveScorecard } from "@/components/LiveScorecard";
+import { LiveStageProgress } from "@/components/LiveStageProgress";
 import { StageActions } from "@/components/StageActions";
 
 export const dynamic = "force-dynamic";
@@ -48,15 +48,28 @@ export default async function RunLayout({
           {run.status}
         </span>
       </div>
-      <RunScorecard leads={leads} />
+      <LiveScorecard
+        runId={runId}
+        initialData={{
+          primaryLeads: leads.filter((l) => l.is_duplicate_primary === 1).length,
+          flagged: leads.filter((l) => l.needs_review).length,
+          tier1: leads.filter((l) => (l.final_tier || l.deterministic_tier) === "tier1").length,
+          tier2: leads.filter((l) => (l.final_tier || l.deterministic_tier) === "tier2").length,
+          tier3: leads.filter((l) => (l.final_tier || l.deterministic_tier) === "tier3").length,
+          humanReview: leads.filter((l) => l.routing_decision === "human_review").length,
+          salesQueue: leads.filter((l) => l.routing_decision === "sales_queue").length,
+          nurture: leads.filter((l) => l.routing_decision === "nurture").length,
+          selfServe: leads.filter((l) => l.routing_decision === "self_serve_newsletter").length,
+        }}
+      />
       <div className="mt-2">
-        <RunStepper runId={runId} stages={stages} />
+        <LiveRunStepper runId={runId} initialStages={stages} />
       </div>
       {/* Side-by-side: main content + copilot */}
       <div className="mx-auto flex w-full max-w-[1600px] gap-6 px-6 py-6">
         <main className="min-w-0 flex-1">{children}</main>
         <aside className="hidden w-[340px] shrink-0 lg:flex lg:flex-col lg:gap-4">
-          <StageProgress stages={stages} />
+          <LiveStageProgress runId={runId} initialStages={stages} />
           <CopilotPanel runId={runId} />
           <StageActions runId={runId} />
         </aside>

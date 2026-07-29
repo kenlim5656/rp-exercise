@@ -68,13 +68,13 @@ export function StageActions({ runId }: { runId: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const [busy, setBusy] = useState(false);
+  const [runningAll, setRunningAll] = useState(false);
+  const [runAllProgress, setRunAllProgress] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [notes, setNotes] = useState("");
 
   const currentStage = pathname.split("/").pop() ?? "";
   const action = STAGE_ACTIONS[currentStage];
-
-  if (!action) return null;
 
   async function proceed() {
     if (!action) return;
@@ -98,12 +98,38 @@ export function StageActions({ runId }: { runId: string }) {
     }
   }
 
+  async function runAll() {
+    setRunningAll(true);
+    setError(null);
+    setRunAllProgress("Starting full pipeline...");
+    try {
+      const res = await fetch(`/api/runs/${runId}/run-all`, { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setRunAllProgress("Pipeline complete!");
+      router.push(`/runs/${runId}/routing`);
+      router.refresh();
+    } catch (err) {
+      setError((err as Error).message);
+    } finally {
+      setRunningAll(false);
+    }
+  }
+
+  const isBusy = busy || runningAll;
+
   return (
     <div className="card-accent-metrics rounded-lg border border-[var(--border)] bg-[var(--card)] p-4">
       <span className="mb-3 block text-xs font-medium uppercase tracking-wider text-muted-foreground">
-        Next step
+        {runningAll ? "Running pipeline" : "Next step"}
       </span>
-      {action.hasNotes && (
+      {runningAll && (
+        <div className="mb-3 flex items-center gap-2 text-sm text-muted-foreground">
+          <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-[var(--status-running)] border-t-transparent" />
+          {runAllProgress}
+        </div>
+      )}
+      {!runningAll && action?.hasNotes && (
         <Textarea
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
@@ -111,7 +137,7 @@ export function StageActions({ runId }: { runId: string }) {
           className="mb-3 min-h-16 text-sm"
         />
       )}
-      {action.downloadLabel && (
+      {!runningAll && action?.downloadLabel && (
         <a
           href={`/api/runs/${runId}/sanitize/download`}
           className="mb-3 inline-block text-xs underline text-muted-foreground hover:text-foreground"
@@ -119,14 +145,34 @@ export function StageActions({ runId }: { runId: string }) {
           {action.downloadLabel}
         </a>
       )}
-      <Button onClick={proceed} disabled={busy} className="w-full">
-        {busy ? (
+      {!runningAll && action && (
+        <Button onClick={proceed} disabled={isBusy} className="w-full">
+          {busy ? (
+            <span className="flex items-center gap-2">
+              <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
+              {action.busyLabel}
+            </span>
+          ) : (
+            action.label
+          )}
+        </Button>
+      )}
+      <Button
+        onClick={runAll}
+        disabled={isBusy}
+        variant="outline"
+        className="mt-2 w-full border-[var(--accent-pipeline)] text-[var(--accent-pipeline)] hover:bg-[var(--accent-pipeline)] hover:text-black"
+      >
+        {runningAll ? (
           <span className="flex items-center gap-2">
             <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
-            {action.busyLabel}
+            Running all stages...
           </span>
         ) : (
-          action.label
+          <>
+            <svg className="mr-1.5 h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z" /></svg>
+            Run All Stages
+          </>
         )}
       </Button>
       {error && (

@@ -1,6 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -13,7 +14,7 @@ interface CsvRow {
   [key: string]: string;
 }
 
-function CohortTable({ rows }: { rows: CsvRow[] }) {
+function CohortTable({ rows, runId }: { rows: CsvRow[]; runId: string }) {
   return (
     <Table>
       <TableHeader>
@@ -27,7 +28,11 @@ function CohortTable({ rows }: { rows: CsvRow[] }) {
       <TableBody>
         {rows.slice(0, 25).map((r) => (
           <TableRow key={r.lead_id}>
-            <TableCell>{r.lead_id}</TableCell>
+            <TableCell>
+              <Link href={`/runs/${runId}/leads/${r.lead_id}`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
+                {r.lead_id}
+              </Link>
+            </TableCell>
             <TableCell>{r.email_normalized}</TableCell>
             <TableCell>{r.company}</TableCell>
             <TableCell>{r.job_title}</TableCell>
@@ -65,7 +70,7 @@ export default function CohortsPage({ params }: { params: Promise<{ runId: strin
           <CardTitle>Cohort: existing users ({cohorts.existing.length})</CardTitle>
         </CardHeader>
         <CardContent>
-          <CohortTable rows={cohorts.existing} />
+          <CohortTable rows={cohorts.existing} runId={runId} />
         </CardContent>
       </Card>
 
@@ -74,7 +79,7 @@ export default function CohortsPage({ params }: { params: Promise<{ runId: strin
           <CardTitle>Cohort: new users ({cohorts.new.length})</CardTitle>
         </CardHeader>
         <CardContent>
-          <CohortTable rows={cohorts.new} />
+          <CohortTable rows={cohorts.new} runId={runId} />
         </CardContent>
       </Card>
     </div>

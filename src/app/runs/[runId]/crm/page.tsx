@@ -1,6 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
@@ -68,7 +69,11 @@ export default function CrmPage({ params }: { params: Promise<{ runId: string }>
             <TableBody>
               {leads.slice(0, 100).map((l) => (
                 <TableRow key={l.lead_id}>
-                  <TableCell>{l.lead_id}</TableCell>
+                  <TableCell>
+                    <Link href={`/runs/${runId}/leads/${l.lead_id}`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
+                      {l.lead_id}
+                    </Link>
+                  </TableCell>
                   <TableCell>{l.is_eu ? "EU" : "-"}</TableCell>
                   <TableCell>
                     {l.eu_consent_flag ? (
