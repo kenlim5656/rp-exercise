@@ -12,7 +12,7 @@ interface Message {
 }
 
 export function CopilotPanel({ runId }: { runId: string }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);

@@ -201,24 +201,21 @@ export async function upsertLeads(runId: string, leads: Array<Partial<LeadRow> &
   const db = getDb();
   const placeholders = LEAD_COLUMNS.map(() => "?").join(", ");
   const updateClause = LEAD_COLUMNS.filter((c) => c !== "run_id" && c !== "lead_id")
-    .map((c) => `${c} = excluded.${c}`)
+    .map((c) => `${c} = COALESCE(excluded.${c}, ${c})`)
     .join(", ");
 
   const sql = `INSERT INTO leads (${LEAD_COLUMNS.join(", ")}) VALUES (${placeholders})
      ON CONFLICT(run_id, lead_id) DO UPDATE SET ${updateClause}`;
 
-  const tx = await db.transaction("write");
-  try {
-    for (const row of leads) {
-      const existing = await getLead(runId, row.lead_id);
-      const merged = { ...existing, ...row, run_id: runId, lead_id: row.lead_id };
+  const BATCH_SIZE = 80;
+  for (let i = 0; i < leads.length; i += BATCH_SIZE) {
+    const batch = leads.slice(i, i + BATCH_SIZE);
+    const stmts = batch.map((row) => {
+      const merged = { ...row, run_id: runId, lead_id: row.lead_id };
       const values = LEAD_COLUMNS.map((c) => (merged as Record<string, unknown>)[c] ?? null) as import("@libsql/client").InValue[];
-      await tx.execute({ sql, args: values });
-    }
-    await tx.commit();
-  } catch (err) {
-    await tx.rollback();
-    throw err;
+      return { sql, args: values };
+    });
+    await db.batch(stmts, "write");
   }
 }
 
