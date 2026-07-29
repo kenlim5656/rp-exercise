@@ -8,15 +8,15 @@ const LOGIN_HTML = `<!DOCTYPE html>
 <title>RP Lead Pipeline - Login</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:system-ui,-apple-system,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fafafa}
-  .card{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:2rem;width:100%;max-width:360px}
-  h1{font-size:1.1rem;font-weight:600;margin-bottom:.25rem}
-  p{font-size:.85rem;color:#666;margin-bottom:1.5rem}
-  input{width:100%;padding:.6rem .75rem;border:1px solid #d4d4d4;border-radius:8px;font-size:.9rem;outline:none}
-  input:focus{border-color:#000}
-  button{width:100%;margin-top:.75rem;padding:.6rem;background:#000;color:#fff;border:none;border-radius:8px;font-size:.9rem;cursor:pointer}
-  button:hover{background:#222}
-  .error{color:#dc2626;font-size:.8rem;margin-top:.5rem}
+  body{font-family:system-ui,-apple-system,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#111;color:#f5f5f5}
+  .card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:2rem;width:100%;max-width:360px}
+  h1{font-size:1.2rem;font-weight:600;margin-bottom:.25rem}
+  p{font-size:.9rem;color:#999;margin-bottom:1.5rem}
+  input{width:100%;padding:.6rem .75rem;border:1px solid #444;border-radius:8px;font-size:.95rem;outline:none;background:#222;color:#f5f5f5}
+  input:focus{border-color:#aaa}
+  button{width:100%;margin-top:.75rem;padding:.6rem;background:#f5f5f5;color:#111;border:none;border-radius:8px;font-size:.95rem;cursor:pointer;font-weight:500}
+  button:hover{background:#ddd}
+  .error{color:#f87171;font-size:.85rem;margin-top:.5rem}
 </style></head><body>
 <div class="card">
   <h1>RP Lead Pipeline</h1>
