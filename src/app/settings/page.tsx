@@ -7,9 +7,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 
 interface Settings {
   score_divergence_threshold: string;
-  slack_workspace: string;
-  slack_channel: string;
-  slack_token: string;
+  slack_webhook_url: string;
   notification_emails: string;
   notify_new_lead_review: string;
   notify_lead_assigned: string;
@@ -18,9 +16,7 @@ interface Settings {
 
 const DEFAULTS: Settings = {
   score_divergence_threshold: "30",
-  slack_workspace: "",
-  slack_channel: "",
-  slack_token: "",
+  slack_webhook_url: "",
   notification_emails: "",
   notify_new_lead_review: "true",
   notify_lead_assigned: "true",
@@ -92,38 +88,21 @@ export default function SettingsPage() {
         {/* Slack */}
         <Card className="card-accent-copilot">
           <CardHeader>
-            <CardTitle className="text-base">Slack notifications</CardTitle>
+            <CardTitle className="text-base">Slack notifications (webhook)</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-col gap-4">
+          <CardContent>
             <label className="flex flex-col gap-1.5">
-              <span className="text-sm text-muted-foreground">Workspace</span>
+              <span className="text-sm text-muted-foreground">Incoming webhook URL</span>
               <input
                 type="text"
-                value={settings.slack_workspace}
-                onChange={(e) => update("slack_workspace", e.target.value)}
-                placeholder="e.g. runpod-team"
+                value={settings.slack_webhook_url}
+                onChange={(e) => update("slack_webhook_url", e.target.value)}
+                placeholder="https://hooks.slack.com/services/..."
                 className="rounded-md border border-[var(--border)] bg-[var(--card)] px-3 py-2 text-sm text-foreground outline-none focus:border-[var(--accent-copilot)]"
               />
-            </label>
-            <label className="flex flex-col gap-1.5">
-              <span className="text-sm text-muted-foreground">Channel</span>
-              <input
-                type="text"
-                value={settings.slack_channel}
-                onChange={(e) => update("slack_channel", e.target.value)}
-                placeholder="e.g. #lead-pipeline-alerts"
-                className="rounded-md border border-[var(--border)] bg-[var(--card)] px-3 py-2 text-sm text-foreground outline-none focus:border-[var(--accent-copilot)]"
-              />
-            </label>
-            <label className="flex flex-col gap-1.5">
-              <span className="text-sm text-muted-foreground">Bot token</span>
-              <input
-                type="password"
-                value={settings.slack_token}
-                onChange={(e) => update("slack_token", e.target.value)}
-                placeholder="xoxb-..."
-                className="rounded-md border border-[var(--border)] bg-[var(--card)] px-3 py-2 text-sm text-foreground outline-none focus:border-[var(--accent-copilot)]"
-              />
+              <span className="text-xs text-muted-foreground">
+                Notifications are sent as Slack messages via this webhook when enabled below.
+              </span>
             </label>
           </CardContent>
         </Card>
