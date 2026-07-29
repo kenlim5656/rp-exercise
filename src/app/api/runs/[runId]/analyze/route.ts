@@ -3,7 +3,7 @@ import { getAnalysisReport, runAnalyzeStage } from "@/lib/stages/analyze";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const report = getAnalysisReport(runId);
+  const report = await getAnalysisReport(runId);
   if (!report) return NextResponse.json({ error: "analysis not yet available" }, { status: 404 });
   return NextResponse.json({ report });
 }

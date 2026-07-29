@@ -13,9 +13,9 @@ const BATCH_SIZE = 30;
 /** Spec 6.0: deterministic tier scoring (6.1) + batched LLM probabilistic
  * scoring (6.2), then reconcile the two (6.3/6.4). */
 export async function runScoreStage(runId: string) {
-  setStageStatus(runId, "score", "running");
+  await setStageStatus(runId, "score", "running");
   try {
-    const rows = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+    const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "score");
     fs.mkdirSync(outDir, { recursive: true });
 
@@ -36,7 +36,7 @@ export async function runScoreStage(runId: string) {
         isSuspiciousFake: lead.is_suspicious_fake === "True",
       });
       deterministicResults.set(row.lead_id, det);
-      upsertLeads(runId, [
+      await upsertLeads(runId, [
         {
           lead_id: row.lead_id,
           deterministic_tier: det.tier,
@@ -79,7 +79,7 @@ export async function runScoreStage(runId: string) {
       const { scoreDivergence, scoresAligned, divergenceFlag } = reconcileScores(det.tier, llm?.probabilisticScore ?? null);
       if (divergenceFlag) divergenceFlaggedCount++;
 
-      upsertLeads(runId, [
+      await upsertLeads(runId, [
         {
           lead_id: row.lead_id,
           llm_score: llm?.probabilisticScore ?? null,
@@ -102,15 +102,15 @@ export async function runScoreStage(runId: string) {
     }
     writeCsv(path.join(outDir, "combined-scores.csv"), combined);
 
-    setStageStatus(runId, "score", "completed", { outputPath: outDir });
-    logAction({
+    await setStageStatus(runId, "score", "completed", { outputPath: outDir });
+    await logAction({
       runId,
       stage: "score",
       action: "scoring_completed",
       detail: { leads_scored: rows.length, llm_batches: batches.length, divergence_flagged_count: divergenceFlaggedCount },
     });
   } catch (err) {
-    setStageStatus(runId, "score", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "score", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

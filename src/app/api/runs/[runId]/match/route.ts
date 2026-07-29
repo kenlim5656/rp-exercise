@@ -3,7 +3,7 @@ import { getCohorts, runMatchStage } from "@/lib/stages/match";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  return NextResponse.json({ cohorts: getCohorts(runId) });
+  return NextResponse.json({ cohorts: await getCohorts(runId) });
 }
 
 export async function POST(_req: Request, { params }: { params: Promise<{ runId: string }> }) {

@@ -33,7 +33,7 @@ export async function runSanitizeStage(
     throw new Error("sanitize requires explicit user approval (spec 2.1)");
   }
 
-  setStageStatus(runId, "sanitize", "running");
+  await setStageStatus(runId, "sanitize", "running");
   try {
     const inputPath = path.join(stageDir(runId, "raw"), "original-upload.csv");
     const outDir = stageDir(runId, "sanitize");
@@ -52,7 +52,7 @@ export async function runSanitizeStage(
     const rawRows = readCsv(inputPath);
     const rawById = new Map(rawRows.map((r) => [r.lead_id, r]));
 
-    upsertLeads(
+    await upsertLeads(
       runId,
       sanitizedRows.map((row) => ({
         lead_id: row.lead_id,
@@ -65,9 +65,9 @@ export async function runSanitizeStage(
     );
 
     const primaryCount = sanitizedRows.filter((r) => r.is_duplicate_primary === "True").length;
-    updateRun(runId, { row_count_sanitized: primaryCount });
-    setStageStatus(runId, "sanitize", "completed", { outputPath: path.join(outDir, "sanitized.csv") });
-    logAction({
+    await updateRun(runId, { row_count_sanitized: primaryCount });
+    await setStageStatus(runId, "sanitize", "completed", { outputPath: path.join(outDir, "sanitized.csv") });
+    await logAction({
       runId,
       stage: "sanitize",
       action: "sanitize_completed",
@@ -80,7 +80,7 @@ export async function runSanitizeStage(
     });
     return report;
   } catch (err) {
-    setStageStatus(runId, "sanitize", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "sanitize", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

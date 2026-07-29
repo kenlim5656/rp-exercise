@@ -16,9 +16,9 @@ import { getInternalIntentScore } from "../mocks/bigquery";
  * for the new-user cohort via the simulated Clay workflows, plus the
  * existing-user cohort's intent-score backfill (4.3). */
 export async function runEnrichStage(runId: string) {
-  setStageStatus(runId, "enrich", "running");
+  await setStageStatus(runId, "enrich", "running");
   try {
-    const rows = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+    const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "enrich");
     fs.mkdirSync(outDir, { recursive: true });
 
@@ -48,7 +48,7 @@ export async function runEnrichStage(runId: string) {
         firmographics: enrichmentByLead.get(lead.lead_id) ?? null,
         intent,
       };
-      upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
+      await upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
     }
 
     // 4.3 existing cohort -- use internally-recorded intent score if present, else fall back to Clay.
@@ -66,12 +66,12 @@ export async function runEnrichStage(runId: string) {
         intentScores[lead.lead_id] = intent;
         clayJson = { intent: { ...intent, source: "clay" } };
       }
-      upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
+      await upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
     }
     fs.writeFileSync(path.join(outDir, "clay-intent-scores.json"), JSON.stringify(intentScores, null, 2));
 
-    setStageStatus(runId, "enrich", "completed", { outputPath: outDir });
-    logAction({
+    await setStageStatus(runId, "enrich", "completed", { outputPath: outDir });
+    await logAction({
       runId,
       stage: "enrich",
       action: "clay_enrichment_completed",
@@ -85,7 +85,7 @@ export async function runEnrichStage(runId: string) {
       },
     });
   } catch (err) {
-    setStageStatus(runId, "enrich", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "enrich", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

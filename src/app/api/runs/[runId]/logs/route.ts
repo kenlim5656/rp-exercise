@@ -3,7 +3,7 @@ import { listAuditLog } from "@/lib/audit";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const rows = listAuditLog(runId).map((r) => ({
+  const rows = (await listAuditLog(runId)).map((r) => ({
     id: r.id,
     stage: r.stage,
     action: r.action,

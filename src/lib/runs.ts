@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { getDb, requireDb } from "./db";
+import { getDb } from "./db";
 
 export const STAGE_ORDER = ["analyze", "sanitize", "match", "enrich", "crm", "score", "route", "log"] as const;
 export type StageKey = (typeof STAGE_ORDER)[number];
@@ -27,91 +27,103 @@ export interface RunStageRow {
   error_message: string | null;
 }
 
-export function createRun(originalFilename: string): RunRow {
-  const db = requireDb();
+export async function createRun(originalFilename: string): Promise<RunRow> {
+  const db = getDb();
   const id = randomUUID();
   const now = new Date().toISOString();
 
-  const insertRun = db.prepare(
-    `INSERT INTO runs (id, created_at, updated_at, original_filename, status, current_stage)
-     VALUES (?, ?, ?, ?, 'created', 'analyze')`,
-  );
-  const insertStage = db.prepare(
-    `INSERT INTO run_stages (run_id, stage_key, status) VALUES (?, ?, 'pending')`,
-  );
+  const tx = await db.transaction("write");
+  try {
+    await tx.execute({
+      sql: `INSERT INTO runs (id, created_at, updated_at, original_filename, status, current_stage)
+            VALUES (?, ?, ?, ?, 'created', 'analyze')`,
+      args: [id, now, now, originalFilename],
+    });
+    for (const stage of STAGE_ORDER) {
+      await tx.execute({
+        sql: `INSERT INTO run_stages (run_id, stage_key, status) VALUES (?, ?, 'pending')`,
+        args: [id, stage],
+      });
+    }
+    await tx.commit();
+  } catch (err) {
+    await tx.rollback();
+    throw err;
+  }
 
-  const tx = db.transaction(() => {
-    insertRun.run(id, now, now, originalFilename);
-    for (const stage of STAGE_ORDER) insertStage.run(id, stage);
-  });
-  tx();
-
-  return getRun(id)!;
+  return (await getRun(id))!;
 }
 
-export function getRun(runId: string): RunRow | undefined {
+export async function getRun(runId: string): Promise<RunRow | undefined> {
   const db = getDb();
-  if (!db) return undefined;
-  return db.prepare(`SELECT * FROM runs WHERE id = ?`).get(runId) as RunRow | undefined;
+  const result = await db.execute({ sql: `SELECT * FROM runs WHERE id = ?`, args: [runId] });
+  return result.rows[0] as unknown as RunRow | undefined;
 }
 
-export function listRuns(): RunRow[] {
+export async function listRuns(): Promise<RunRow[]> {
   const db = getDb();
-  if (!db) return [];
-  return db.prepare(`SELECT * FROM runs ORDER BY created_at DESC`).all() as RunRow[];
+  const result = await db.execute(`SELECT * FROM runs ORDER BY created_at DESC`);
+  return result.rows as unknown as RunRow[];
 }
 
-export function updateRun(runId: string, fields: Partial<Omit<RunRow, "id" | "created_at">>): void {
-  const db = requireDb();
+export async function updateRun(runId: string, fields: Partial<Omit<RunRow, "id" | "created_at">>): Promise<void> {
+  const db = getDb();
   const entries = Object.entries({ ...fields, updated_at: new Date().toISOString() });
   const setClause = entries.map(([key]) => `${key} = ?`).join(", ");
-  const values = entries.map(([, value]) => value);
-  db.prepare(`UPDATE runs SET ${setClause} WHERE id = ?`).run(...values, runId);
+  const values = entries.map(([, value]) => value ?? null);
+  await db.execute({ sql: `UPDATE runs SET ${setClause} WHERE id = ?`, args: [...values, runId] });
 }
 
-export function getStages(runId: string): RunStageRow[] {
+export async function getStages(runId: string): Promise<RunStageRow[]> {
   const db = getDb();
-  if (!db) return [];
-  return db.prepare(`SELECT * FROM run_stages WHERE run_id = ? ORDER BY rowid`).all(runId) as RunStageRow[];
+  const result = await db.execute({
+    sql: `SELECT * FROM run_stages WHERE run_id = ? ORDER BY rowid`,
+    args: [runId],
+  });
+  return result.rows as unknown as RunStageRow[];
 }
 
-export function getStage(runId: string, stageKey: StageKey): RunStageRow | undefined {
+export async function getStage(runId: string, stageKey: StageKey): Promise<RunStageRow | undefined> {
   const db = getDb();
-  if (!db) return undefined;
-  return db.prepare(`SELECT * FROM run_stages WHERE run_id = ? AND stage_key = ?`).get(runId, stageKey) as RunStageRow | undefined;
+  const result = await db.execute({
+    sql: `SELECT * FROM run_stages WHERE run_id = ? AND stage_key = ?`,
+    args: [runId, stageKey],
+  });
+  return result.rows[0] as unknown as RunStageRow | undefined;
 }
 
-export function setStageStatus(
+export async function setStageStatus(
   runId: string,
   stageKey: StageKey,
   status: StageStatus,
   extra: { outputPath?: string; errorMessage?: string } = {},
-): void {
-  const db = requireDb();
+): Promise<void> {
+  const db = getDb();
   const now = new Date().toISOString();
-  const startedAt = status === "running" ? now : undefined;
-  const completedAt = status === "completed" || status === "failed" ? now : undefined;
+  const startedAt = status === "running" ? now : null;
+  const completedAt = status === "completed" || status === "failed" ? now : null;
 
-  db.prepare(
-    `UPDATE run_stages SET
+  await db.execute({
+    sql: `UPDATE run_stages SET
        status = ?,
        started_at = COALESCE(?, started_at),
        completed_at = COALESCE(?, completed_at),
        output_path = COALESCE(?, output_path),
        error_message = ?
      WHERE run_id = ? AND stage_key = ?`,
-  ).run(status, startedAt ?? null, completedAt ?? null, extra.outputPath ?? null, extra.errorMessage ?? null, runId, stageKey);
+    args: [status, startedAt, completedAt, extra.outputPath ?? null, extra.errorMessage ?? null, runId, stageKey],
+  });
 
   if (status === "completed") {
     const idx = STAGE_ORDER.indexOf(stageKey);
     const next = STAGE_ORDER[idx + 1];
-    updateRun(runId, { current_stage: next ?? stageKey, status: next ? "processing" : "completed" });
+    await updateRun(runId, { current_stage: next ?? stageKey, status: next ? "processing" : "completed" });
   } else if (status === "failed") {
-    updateRun(runId, { status: "failed" });
+    await updateRun(runId, { status: "failed" });
   } else if (status === "awaiting_approval") {
-    updateRun(runId, { status: "awaiting_approval", current_stage: stageKey });
+    await updateRun(runId, { status: "awaiting_approval", current_stage: stageKey });
   } else if (status === "running") {
-    updateRun(runId, { status: "processing", current_stage: stageKey });
+    await updateRun(runId, { status: "processing", current_stage: stageKey });
   }
 }
 
@@ -153,101 +165,87 @@ export interface LeadRow {
 }
 
 const LEAD_COLUMNS = [
-  "run_id",
-  "lead_id",
-  "raw_json",
-  "sanitized_json",
-  "dedup_group_id",
-  "is_duplicate_primary",
-  "dedup_conflict_flag",
-  "cohort",
-  "matched_customer_id",
-  "clay_json",
-  "crm_json",
-  "is_eu",
-  "consent_verified",
-  "eu_consent_flag",
-  "deterministic_tier",
-  "deterministic_reasons_json",
-  "deterministic_review_flag",
-  "deterministic_review_reason",
-  "llm_score",
-  "llm_rationale",
-  "score_divergence",
-  "scores_aligned",
-  "score_divergence_flag",
-  "final_tier",
-  "routing_decision",
-  "needs_review",
-  "review_reasons_json",
-  "review_status",
-  "review_actor",
-  "review_at",
+  "run_id", "lead_id", "raw_json", "sanitized_json", "dedup_group_id",
+  "is_duplicate_primary", "dedup_conflict_flag", "cohort", "matched_customer_id",
+  "clay_json", "crm_json", "is_eu", "consent_verified", "eu_consent_flag",
+  "deterministic_tier", "deterministic_reasons_json", "deterministic_review_flag",
+  "deterministic_review_reason", "llm_score", "llm_rationale", "score_divergence",
+  "scores_aligned", "score_divergence_flag", "final_tier", "routing_decision",
+  "needs_review", "review_reasons_json", "review_status", "review_actor", "review_at",
 ] as const;
 
-/** Bulk insert-or-update leads for a run. Each item must include lead_id; any
- * other LeadRow field present will be written, others left untouched on
- * conflict (via SQLite's UPSERT `excluded.` semantics only for supplied
- * columns is not supported directly, so we always write full rows -- callers
- * should read-merge if they need partial updates on top of prior stages). */
-export function upsertLeads(runId: string, leads: Array<Partial<LeadRow> & { lead_id: string }>): void {
-  const db = requireDb();
+export async function upsertLeads(runId: string, leads: Array<Partial<LeadRow> & { lead_id: string }>): Promise<void> {
+  const db = getDb();
   const placeholders = LEAD_COLUMNS.map(() => "?").join(", ");
   const updateClause = LEAD_COLUMNS.filter((c) => c !== "run_id" && c !== "lead_id")
     .map((c) => `${c} = excluded.${c}`)
     .join(", ");
 
-  const stmt = db.prepare(
-    `INSERT INTO leads (${LEAD_COLUMNS.join(", ")}) VALUES (${placeholders})
-     ON CONFLICT(run_id, lead_id) DO UPDATE SET ${updateClause}`,
-  );
+  const sql = `INSERT INTO leads (${LEAD_COLUMNS.join(", ")}) VALUES (${placeholders})
+     ON CONFLICT(run_id, lead_id) DO UPDATE SET ${updateClause}`;
 
-  const tx = db.transaction((rows: Array<Partial<LeadRow> & { lead_id: string }>) => {
-    for (const row of rows) {
-      const existing = getLead(runId, row.lead_id);
+  const tx = await db.transaction("write");
+  try {
+    for (const row of leads) {
+      const existing = await getLead(runId, row.lead_id);
       const merged = { ...existing, ...row, run_id: runId, lead_id: row.lead_id };
-      const values = LEAD_COLUMNS.map((c) => (merged as Record<string, unknown>)[c] ?? null);
-      stmt.run(...values);
+      const values = LEAD_COLUMNS.map((c) => (merged as Record<string, unknown>)[c] ?? null) as import("@libsql/client").InValue[];
+      await tx.execute({ sql, args: values });
     }
+    await tx.commit();
+  } catch (err) {
+    await tx.rollback();
+    throw err;
+  }
+}
+
+export async function getLead(runId: string, leadId: string): Promise<LeadRow | undefined> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT * FROM leads WHERE run_id = ? AND lead_id = ?`,
+    args: [runId, leadId],
   });
-  tx(leads);
+  return result.rows[0] as unknown as LeadRow | undefined;
 }
 
-export function getLead(runId: string, leadId: string): LeadRow | undefined {
+export async function getLeads(runId: string): Promise<LeadRow[]> {
   const db = getDb();
-  if (!db) return undefined;
-  return db.prepare(`SELECT * FROM leads WHERE run_id = ? AND lead_id = ?`).get(runId, leadId) as LeadRow | undefined;
+  const result = await db.execute({ sql: `SELECT * FROM leads WHERE run_id = ?`, args: [runId] });
+  return result.rows as unknown as LeadRow[];
 }
 
-export function getLeads(runId: string): LeadRow[] {
+export async function getReviewQueue(runId: string): Promise<LeadRow[]> {
   const db = getDb();
-  if (!db) return [];
-  return db.prepare(`SELECT * FROM leads WHERE run_id = ?`).all(runId) as LeadRow[];
+  const result = await db.execute({
+    sql: `SELECT * FROM leads WHERE run_id = ? AND needs_review = 1 ORDER BY lead_id`,
+    args: [runId],
+  });
+  return result.rows as unknown as LeadRow[];
 }
 
-export function getReviewQueue(runId: string): LeadRow[] {
-  const db = getDb();
-  if (!db) return [];
-  return db.prepare(`SELECT * FROM leads WHERE run_id = ? AND needs_review = 1 ORDER BY lead_id`).all(runId) as LeadRow[];
-}
-
-export function recordReviewAction(input: {
+export async function recordReviewAction(input: {
   runId: string;
   leadId: string;
   action: "approve" | "reject";
   reason?: string;
   actor: string;
-}): void {
-  const db = requireDb();
+}): Promise<void> {
+  const db = getDb();
   const id = randomUUID();
   const now = new Date().toISOString();
-  const tx = db.transaction(() => {
-    db.prepare(
-      `INSERT INTO review_actions (id, run_id, lead_id, action, reason, actor, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    ).run(id, input.runId, input.leadId, input.action, input.reason ?? null, input.actor, now);
-    db.prepare(
-      `UPDATE leads SET review_status = ?, review_actor = ?, review_at = ? WHERE run_id = ? AND lead_id = ?`,
-    ).run(input.action === "approve" ? "approved" : "rejected", input.actor, now, input.runId, input.leadId);
-  });
-  tx();
+  const tx = await db.transaction("write");
+  try {
+    await tx.execute({
+      sql: `INSERT INTO review_actions (id, run_id, lead_id, action, reason, actor, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      args: [id, input.runId, input.leadId, input.action, input.reason ?? null, input.actor, now],
+    });
+    await tx.execute({
+      sql: `UPDATE leads SET review_status = ?, review_actor = ?, review_at = ? WHERE run_id = ? AND lead_id = ?`,
+      args: [input.action === "approve" ? "approved" : "rejected", input.actor, now, input.runId, input.leadId],
+    });
+    await tx.commit();
+  } catch (err) {
+    await tx.rollback();
+    throw err;
+  }
 }

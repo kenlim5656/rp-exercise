@@ -3,11 +3,11 @@ import { getLeads, getRun, getStages } from "@/lib/runs";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const run = getRun(runId);
+  const run = await getRun(runId);
   if (!run) return NextResponse.json({ error: "not found" }, { status: 404 });
 
-  const stages = getStages(runId);
-  const leads = getLeads(runId);
+  const stages = await getStages(runId);
+  const leads = await getLeads(runId);
   const primary = leads.filter((l) => l.is_duplicate_primary === 1);
 
   const cohortCounts = { existing: 0, new: 0, unassigned: 0 };

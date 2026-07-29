@@ -10,9 +10,9 @@ import { bqMatchSignups } from "../mocks/bigquery";
  * simulated internal signup/customer database and split into the
  * "cohort-existing users" / "cohort-new users" files. */
 export async function runMatchStage(runId: string) {
-  setStageStatus(runId, "match", "running");
+  await setStageStatus(runId, "match", "running");
   try {
-    const rows = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+    const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const leads = rows.map((r) => JSON.parse(r.sanitized_json!) as CsvRecord);
 
     const { response, matchByEmail } = bqMatchSignups(leads);
@@ -23,10 +23,10 @@ export async function runMatchStage(runId: string) {
       const match = matchByEmail.get(lead.email_normalized);
       if (match) {
         existing.push(lead);
-        upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "existing", matched_customer_id: match.customer_id }]);
+        await upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "existing", matched_customer_id: match.customer_id }]);
       } else {
         newCohort.push(lead);
-        upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "new", matched_customer_id: null }]);
+        await upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "new", matched_customer_id: null }]);
       }
     }
 
@@ -43,8 +43,8 @@ export async function runMatchStage(runId: string) {
       JSON.stringify({ bqResponse: response, existing_count: existing.length, new_count: newCohort.length, method_breakdown: methodBreakdown }, null, 2),
     );
 
-    setStageStatus(runId, "match", "completed", { outputPath: outDir });
-    logAction({
+    await setStageStatus(runId, "match", "completed", { outputPath: outDir });
+    await logAction({
       runId,
       stage: "match",
       action: "bq_signup_match",
@@ -52,7 +52,7 @@ export async function runMatchStage(runId: string) {
     });
     return { existing_count: existing.length, new_count: newCohort.length };
   } catch (err) {
-    setStageStatus(runId, "match", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "match", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

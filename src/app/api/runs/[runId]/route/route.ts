@@ -4,7 +4,7 @@ import { getLeads } from "@/lib/runs";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const leads = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+  const leads = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
   return NextResponse.json({
     leads: leads.map((l) => ({
       lead_id: l.lead_id,

@@ -3,7 +3,7 @@ import { getSanitizeReport, runSanitizeStage, type SanitizeInstructions } from "
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const report = getSanitizeReport(runId);
+  const report = await getSanitizeReport(runId);
   if (!report) return NextResponse.json({ error: "sanitize not yet run" }, { status: 404 });
   return NextResponse.json({ report });
 }

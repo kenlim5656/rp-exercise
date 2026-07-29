@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { getDb } from "@/lib/db";
 import { getLead } from "@/lib/runs";
 import type { AuditLogRow } from "@/lib/audit";
 
@@ -8,15 +7,13 @@ export async function GET(
   { params }: { params: Promise<{ runId: string; entryId: string }> },
 ) {
   const { runId, entryId } = await params;
-  const db = getDb();
-  if (!db) return NextResponse.json({ error: "database unavailable" }, { status: 503 });
-  const entry = db.prepare(`SELECT * FROM audit_log WHERE id = ? AND run_id = ?`).get(entryId, runId) as
-    | AuditLogRow
-    | undefined;
+  const db = (await import("@/lib/db")).getDb();
+  const result = await db.execute({sql: "SELECT * FROM audit_log WHERE id = ? AND run_id = ?", args: [entryId, runId]});
+  const entry = result.rows[0] as unknown as AuditLogRow | undefined;
   if (!entry) return NextResponse.json({ error: "log entry not found" }, { status: 404 });
   if (!entry.entity_ref) return NextResponse.json({ error: "log entry has no linked record" }, { status: 404 });
 
-  const lead = getLead(runId, entry.entity_ref);
+  const lead = await getLead(runId, entry.entity_ref);
   if (!lead) return NextResponse.json({ error: "linked record not found" }, { status: 404 });
 
   return NextResponse.json({

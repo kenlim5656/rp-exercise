@@ -17,10 +17,10 @@ export interface AnalysisReport {
  * report. Ends in `awaiting_approval` (not `completed`) -- sanitize (2.1)
  * only proceeds once the user approves. */
 export async function runAnalyzeStage(runId: string): Promise<AnalysisReport> {
-  const run = getRun(runId);
+  const run = await getRun(runId);
   if (!run) throw new Error(`run ${runId} not found`);
 
-  setStageStatus(runId, "analyze", "running");
+  await setStageStatus(runId, "analyze", "running");
   try {
     const inputPath = path.join(stageDir(runId, "raw"), "original-upload.csv");
     const outDir = stageDir(runId, "analysis");
@@ -32,11 +32,11 @@ export async function runAnalyzeStage(runId: string): Promise<AnalysisReport> {
       outDir,
     ]);
 
-    updateRun(runId, { row_count_raw: report.meta.row_count });
-    setStageStatus(runId, "analyze", "awaiting_approval", {
+    await updateRun(runId, { row_count_raw: report.meta.row_count });
+    await setStageStatus(runId, "analyze", "awaiting_approval", {
       outputPath: path.join(outDir, "analysis-report.json"),
     });
-    logAction({
+    await logAction({
       runId,
       stage: "analyze",
       action: "analysis_completed",
@@ -48,7 +48,7 @@ export async function runAnalyzeStage(runId: string): Promise<AnalysisReport> {
     });
     return report;
   } catch (err) {
-    setStageStatus(runId, "analyze", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "analyze", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

@@ -15,9 +15,9 @@ type ConsentVerified = "verified_in" | "verified_out" | "ambiguous";
  * status before any follow-up; ambiguous EU consent gets a dedicated flag
  * consumed unconditionally by the routing stage (7.0). */
 export async function runCrmStage(runId: string) {
-  setStageStatus(runId, "crm", "running");
+  await setStageStatus(runId, "crm", "running");
   try {
-    const rows = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+    const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const leads = rows.map((r) => JSON.parse(r.sanitized_json!) as CsvRecord);
 
     const sf = salesforceLookup(leads);
@@ -75,7 +75,7 @@ export async function runCrmStage(runId: string) {
         dncFlag: sfOptOut === true || hsOptOut === true,
       };
 
-      upsertLeads(runId, [
+      await upsertLeads(runId, [
         {
           lead_id: lead.lead_id,
           crm_json: JSON.stringify(crmJson),
@@ -97,15 +97,15 @@ export async function runCrmStage(runId: string) {
 
     writeCsv(path.join(outDir, "crm-merged.csv"), merged);
 
-    setStageStatus(runId, "crm", "completed", { outputPath: outDir });
-    logAction({
+    await setStageStatus(runId, "crm", "completed", { outputPath: outDir });
+    await logAction({
       runId,
       stage: "crm",
       action: "crm_lookup_completed",
       detail: { sf_matches: sf.records.length, hubspot_matches: hs.results.length, eu_ambiguous_count: euAmbiguousCount },
     });
   } catch (err) {
-    setStageStatus(runId, "crm", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "crm", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

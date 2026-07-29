@@ -18,9 +18,9 @@ const NEXT_PAGE: Record<string, string> = {
 
 export default async function RunOverviewPage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const run = getRun(runId)!;
-  const stages = getStages(runId);
-  const leads = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+  const run = (await getRun(runId))!;
+  const stages = await getStages(runId);
+  const leads = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
 
   const needsReview = leads.filter((l) => l.needs_review).length;
   const nextPage = NEXT_PAGE[run.current_stage] ?? "analysis";

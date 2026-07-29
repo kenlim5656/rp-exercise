@@ -14,9 +14,9 @@ export default async function RunLayout({
   params: Promise<{ runId: string }>;
 }) {
   const { runId } = await params;
-  const run = getRun(runId);
+  const run = await getRun(runId);
   if (!run) notFound();
-  const stages = getStages(runId);
+  const stages = await getStages(runId);
 
   return (
     <div className="flex flex-col">

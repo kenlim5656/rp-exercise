@@ -10,9 +10,9 @@ import type { Tier } from "../scoring/deterministic";
 /** Spec 7.0: final routing decision per lead, including the EU consent hard
  * gate (5.3) and the human-review queue (7.2 consumes `needs_review`). */
 export async function runRoutingStage(runId: string) {
-  setStageStatus(runId, "route", "running");
+  await setStageStatus(runId, "route", "running");
   try {
-    const rows = getLeads(runId).filter((l) => l.is_duplicate_primary === 1);
+    const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "route");
     fs.mkdirSync(outDir, { recursive: true });
 
@@ -34,7 +34,7 @@ export async function runRoutingStage(runId: string) {
 
       counts[result.routingDecision] = (counts[result.routingDecision] ?? 0) + 1;
 
-      upsertLeads(runId, [
+      await upsertLeads(runId, [
         {
           lead_id: row.lead_id,
           routing_decision: result.routingDecision,
@@ -69,8 +69,8 @@ export async function runRoutingStage(runId: string) {
     writeCsv(path.join(outDir, "routing-decisions.csv"), decisions);
     fs.writeFileSync(path.join(outDir, "review-queue.json"), JSON.stringify(reviewQueue, null, 2));
 
-    setStageStatus(runId, "route", "completed", { outputPath: outDir });
-    logAction({
+    await setStageStatus(runId, "route", "completed", { outputPath: outDir });
+    await logAction({
       runId,
       stage: "route",
       action: "routing_completed",
@@ -80,11 +80,11 @@ export async function runRoutingStage(runId: string) {
     // Spec 8.0: the routing stage is the natural point to also mark the
     // logging stage complete, since every prior stage has already been
     // writing to the audit trail throughout.
-    setStageStatus(runId, "log", "completed", { outputPath: stageDir(runId, "log") });
+    await setStageStatus(runId, "log", "completed", { outputPath: stageDir(runId, "log") });
 
     return { counts, reviewQueueSize: reviewQueue.length };
   } catch (err) {
-    setStageStatus(runId, "route", "failed", { errorMessage: (err as Error).message });
+    await setStageStatus(runId, "route", "failed", { errorMessage: (err as Error).message });
     throw err;
   }
 }

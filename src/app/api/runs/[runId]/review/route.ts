@@ -4,7 +4,7 @@ import { logAction } from "@/lib/audit";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
-  const queue = getReviewQueue(runId).map((l) => ({
+  const queue = (await getReviewQueue(runId)).map((l) => ({
     lead_id: l.lead_id,
     cohort: l.cohort,
     deterministic_tier: l.deterministic_tier,
@@ -30,13 +30,13 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ run
     return NextResponse.json({ error: "leadId, action, and actor are required" }, { status: 400 });
   }
 
-  recordReviewAction({ runId, leadId: body.leadId, action: body.action, reason: body.note, actor: body.actor });
+  await recordReviewAction({ runId, leadId: body.leadId, action: body.action, reason: body.note, actor: body.actor });
 
   if (body.action === "reject") {
-    upsertLeads(runId, [{ lead_id: body.leadId, routing_decision: "suppressed" }]);
+    await upsertLeads(runId, [{ lead_id: body.leadId, routing_decision: "suppressed" }]);
   }
 
-  logAction({
+  await logAction({
     runId,
     stage: "review",
     action: `review_${body.action}`,
