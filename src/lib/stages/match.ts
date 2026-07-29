@@ -63,7 +63,21 @@ export async function runMatchStage(runId: string) {
   }
 }
 
-export function getCohorts(runId: string): { existing: CsvRecord[]; new: CsvRecord[] } {
+export async function getCohorts(runId: string): Promise<{ existing: CsvRecord[]; new: CsvRecord[] }> {
+  const { getLeads } = await import("../runs");
+  const leads = await getLeads(runId);
+  const matched = leads.filter((l) => l.is_duplicate_primary === 1 && l.cohort);
+  const existing: CsvRecord[] = [];
+  const newCohort: CsvRecord[] = [];
+  for (const lead of matched) {
+    const parsed = lead.sanitized_json ? (JSON.parse(lead.sanitized_json) as CsvRecord) : null;
+    if (!parsed) continue;
+    if (lead.cohort === "existing") existing.push(parsed);
+    else newCohort.push(parsed);
+  }
+  if (existing.length > 0 || newCohort.length > 0) {
+    return { existing, new: newCohort };
+  }
   try {
     const outDir = stageDir(runId, "match");
     const existingPath = path.join(outDir, "cohort-existing.csv");

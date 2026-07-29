@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import { getRun, getStages } from "@/lib/runs";
+import { getRun, getStages, getLeads } from "@/lib/runs";
 import { RunStepper } from "@/components/RunStepper";
 import { CopilotPanel } from "@/components/CopilotPanel";
-import { Badge } from "@/components/ui/badge";
+import { RunScorecard } from "@/components/RunScorecard";
 
 export const dynamic = "force-dynamic";
 
@@ -31,7 +31,7 @@ export default async function RunLayout({
   const { runId } = await params;
   const run = await getRun(runId);
   if (!run) notFound();
-  const stages = await getStages(runId);
+  const [stages, leads] = await Promise.all([getStages(runId), getLeads(runId)]);
 
   return (
     <div className="flex flex-col">
@@ -46,7 +46,8 @@ export default async function RunLayout({
           {run.status}
         </span>
       </div>
-      <div className="mt-4">
+      <RunScorecard leads={leads} />
+      <div className="mt-2">
         <RunStepper runId={runId} stages={stages} />
       </div>
       {/* Side-by-side: main content + copilot */}
