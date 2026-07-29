@@ -56,15 +56,17 @@ export async function createRun(originalFilename: string): Promise<RunRow> {
   return (await getRun(id))!;
 }
 
+const RUN_COLS = "id, created_at, updated_at, original_filename, status, current_stage, row_count_raw, row_count_sanitized, notes";
+
 export async function getRun(runId: string): Promise<RunRow | undefined> {
   const db = getDb();
-  const result = await db.execute({ sql: `SELECT * FROM runs WHERE id = ?`, args: [runId] });
+  const result = await db.execute({ sql: `SELECT ${RUN_COLS} FROM runs WHERE id = ?`, args: [runId] });
   return result.rows[0] as unknown as RunRow | undefined;
 }
 
 export async function listRuns(): Promise<RunRow[]> {
   const db = getDb();
-  const result = await db.execute(`SELECT * FROM runs ORDER BY created_at DESC`);
+  const result = await db.execute(`SELECT ${RUN_COLS} FROM runs ORDER BY created_at DESC`);
   return result.rows as unknown as RunRow[];
 }
 
