@@ -47,6 +47,7 @@ export async function runSanitizeStage(
     const primaryCount = sanitizedRows.filter((r) => r.is_duplicate_primary === "true").length;
     await updateRun(runId, { row_count_sanitized: primaryCount });
     await setStageOutput(runId, "sanitize", report);
+    await setStageStatus(runId, "analyze", "completed");
     await setStageStatus(runId, "sanitize", "completed");
     await logAction({
       runId,

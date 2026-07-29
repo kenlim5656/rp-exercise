@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getCohorts, runMatchStage } from "@/lib/stages/match";
+import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
@@ -8,6 +9,8 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
 
 export async function POST(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
+  const depErr = await checkStageDep(runId, "match");
+  if (depErr) return NextResponse.json({ error: depErr }, { status: 409 });
   try {
     const result = await runMatchStage(runId);
     return NextResponse.json(result);

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSanitizeReport, runSanitizeStage, type SanitizeInstructions } from "@/lib/stages/sanitize";
+import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
@@ -10,6 +11,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
 
 export async function POST(req: NextRequest, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
+  const depErr = await checkStageDep(runId, "sanitize");
+  if (depErr) return NextResponse.json({ error: depErr }, { status: 409 });
+
   const body = (await req.json().catch(() => ({}))) as { approved?: boolean; instructions?: SanitizeInstructions };
 
   if (!body.approved) {

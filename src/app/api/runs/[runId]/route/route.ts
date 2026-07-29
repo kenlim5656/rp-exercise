@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { runRoutingStage } from "@/lib/stages/route";
 import { getLeads } from "@/lib/runs";
+import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
@@ -18,6 +19,8 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
 
 export async function POST(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
+  const depErr = await checkStageDep(runId, "route");
+  if (depErr) return NextResponse.json({ error: depErr }, { status: 409 });
   try {
     const result = await runRoutingStage(runId);
     return NextResponse.json(result);

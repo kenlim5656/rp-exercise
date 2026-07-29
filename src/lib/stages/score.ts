@@ -8,7 +8,8 @@ import { scoreDeterministic, type DeterministicScoringResult } from "../scoring/
 import { chunk, scoreLlmBatch, type LeadScore, type LlmScoringContext } from "../scoring/llm";
 import { reconcileScores } from "../scoring/reconcile";
 
-const BATCH_SIZE = 30;
+const BATCH_SIZE = 100;
+const CONCURRENCY = 5;
 
 /** Spec 6.0: deterministic tier scoring (6.1) + batched LLM probabilistic
  * scoring (6.2), then reconcile the two (6.3/6.4). */
@@ -67,15 +68,25 @@ export async function runScoreStage(runId: string) {
     const batches = chunk(llmContexts, BATCH_SIZE);
     const llmResults: LeadScore[] = [];
     try { fs.mkdirSync(path.join(outDir, "llm-transcripts"), { recursive: true }); } catch { /* read-only fs */ }
-    for (let i = 0; i < batches.length; i++) {
-      const scores = await scoreLlmBatch(batches[i]);
-      llmResults.push(...scores);
-      try {
-        fs.writeFileSync(
-          path.join(outDir, "llm-transcripts", `batch-${i}.json`),
-          JSON.stringify({ batchIndex: i, input: batches[i], output: scores }, null, 2),
-        );
-      } catch { /* read-only fs */ }
+
+    for (let start = 0; start < batches.length; start += CONCURRENCY) {
+      const window = batches.slice(start, start + CONCURRENCY);
+      const settled = await Promise.allSettled(window.map((b) => scoreLlmBatch(b)));
+      for (let j = 0; j < settled.length; j++) {
+        const i = start + j;
+        const result = settled[j];
+        if (result.status === "fulfilled") {
+          llmResults.push(...result.value);
+          try {
+            fs.writeFileSync(
+              path.join(outDir, "llm-transcripts", `batch-${i}.json`),
+              JSON.stringify({ batchIndex: i, input: window[j], output: result.value }, null, 2),
+            );
+          } catch { /* read-only fs */ }
+        } else {
+          console.error(`LLM batch ${i} failed:`, result.reason);
+        }
+      }
     }
     try { fs.writeFileSync(path.join(outDir, "llm-scores.json"), JSON.stringify(llmResults, null, 2)); } catch { /* read-only fs */ }
 
