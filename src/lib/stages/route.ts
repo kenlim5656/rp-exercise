@@ -14,7 +14,7 @@ export async function runRoutingStage(runId: string) {
   try {
     const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "route");
-    fs.mkdirSync(outDir, { recursive: true });
+    try { fs.mkdirSync(outDir, { recursive: true }); } catch { /* read-only fs */ }
 
     const decisions: CsvRecord[] = [];
     const reviewQueue: Array<Record<string, unknown>> = [];
@@ -66,8 +66,12 @@ export async function runRoutingStage(runId: string) {
       }
     }
 
-    writeCsv(path.join(outDir, "routing-decisions.csv"), decisions);
-    fs.writeFileSync(path.join(outDir, "review-queue.json"), JSON.stringify(reviewQueue, null, 2));
+    try {
+      writeCsv(path.join(outDir, "routing-decisions.csv"), decisions);
+      fs.writeFileSync(path.join(outDir, "review-queue.json"), JSON.stringify(reviewQueue, null, 2));
+    } catch {
+      // Filesystem write may fail on read-only filesystem (Vercel) — DB is authoritative
+    }
 
     await setStageStatus(runId, "route", "completed", { outputPath: outDir });
     await logAction({

@@ -15,6 +15,7 @@ export interface RunRow {
   row_count_raw: number | null;
   row_count_sanitized: number | null;
   notes: string | null;
+  raw_csv: string | null;
 }
 
 export interface RunStageRow {
@@ -24,6 +25,7 @@ export interface RunStageRow {
   started_at: string | null;
   completed_at: string | null;
   output_path: string | null;
+  output_json: string | null;
   error_message: string | null;
 }
 
@@ -125,6 +127,25 @@ export async function setStageStatus(
   } else if (status === "running") {
     await updateRun(runId, { status: "processing", current_stage: stageKey });
   }
+}
+
+export async function setStageOutput(runId: string, stageKey: StageKey, json: unknown): Promise<void> {
+  const db = getDb();
+  await db.execute({
+    sql: `UPDATE run_stages SET output_json = ? WHERE run_id = ? AND stage_key = ?`,
+    args: [JSON.stringify(json), runId, stageKey],
+  });
+}
+
+export async function getStageOutput<T = unknown>(runId: string, stageKey: StageKey): Promise<T | null> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT output_json FROM run_stages WHERE run_id = ? AND stage_key = ?`,
+    args: [runId, stageKey],
+  });
+  const row = result.rows[0] as unknown as { output_json: string | null } | undefined;
+  if (!row?.output_json) return null;
+  return JSON.parse(row.output_json) as T;
 }
 
 // ---------------------------------------------------------------------------

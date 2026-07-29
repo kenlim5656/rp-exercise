@@ -1,41 +1,28 @@
-import fs from "node:fs";
-import path from "node:path";
-import { PYTHON_SCRIPT_PATH, stageDir } from "../paths";
-import { runPythonJson } from "../python-bridge";
-import { getRun, setStageStatus, updateRun } from "../runs";
+import { analyzeLeadsCsv, type AnalysisReport } from "../pipeline/analyze";
+import { getRun, setStageStatus, setStageOutput, getStageOutput, updateRun } from "../runs";
 import { logAction } from "../audit";
 
-export interface AnalysisReport {
-  meta: { input_file: string; row_count: number; column_count: number; generated_at: string };
-  columns: Array<{ name: string; dtype: string; null_count: number; null_pct: number; distinct_count: number }>;
-  duplicates: { exact_email_dupes: number; normalized_email_dupes: number; sample_groups: unknown[] };
-  anomalies: Record<string, unknown>;
-  recommendations: Array<{ field: string; issue: string; proposed_fix: string; affected_rows: number }>;
-}
+export type { AnalysisReport };
 
-/** Spec 1.1/1.2: run the pandas analyze script and surface the anomaly
- * report. Ends in `awaiting_approval` (not `completed`) -- sanitize (2.1)
- * only proceeds once the user approves. */
-export async function runAnalyzeStage(runId: string): Promise<AnalysisReport> {
+export async function runAnalyzeStage(runId: string, csvContent?: string): Promise<AnalysisReport> {
   const run = await getRun(runId);
   if (!run) throw new Error(`run ${runId} not found`);
 
+  if (!csvContent) {
+    const db = (await import("../db")).getDb();
+    const result = await db.execute({ sql: `SELECT raw_csv FROM runs WHERE id = ?`, args: [runId] });
+    const row = result.rows[0] as unknown as { raw_csv: string | null } | undefined;
+    csvContent = row?.raw_csv ?? undefined;
+  }
+  if (!csvContent) throw new Error("No CSV data available for analysis");
+
   await setStageStatus(runId, "analyze", "running");
   try {
-    const inputPath = path.join(stageDir(runId, "raw"), "original-upload.csv");
-    const outDir = stageDir(runId, "analysis");
-    const report = await runPythonJson<AnalysisReport>(PYTHON_SCRIPT_PATH, [
-      "analyze",
-      "--input",
-      inputPath,
-      "--output-dir",
-      outDir,
-    ]);
+    const report = analyzeLeadsCsv(csvContent);
 
     await updateRun(runId, { row_count_raw: report.meta.row_count });
-    await setStageStatus(runId, "analyze", "awaiting_approval", {
-      outputPath: path.join(outDir, "analysis-report.json"),
-    });
+    await setStageOutput(runId, "analyze", report);
+    await setStageStatus(runId, "analyze", "awaiting_approval");
     await logAction({
       runId,
       stage: "analyze",
@@ -53,8 +40,6 @@ export async function runAnalyzeStage(runId: string): Promise<AnalysisReport> {
   }
 }
 
-export function getAnalysisReport(runId: string): AnalysisReport | null {
-  const p = path.join(stageDir(runId, "analysis"), "analysis-report.json");
-  if (!fs.existsSync(p)) return null;
-  return JSON.parse(fs.readFileSync(p, "utf-8"));
+export async function getAnalysisReport(runId: string): Promise<AnalysisReport | null> {
+  return getStageOutput<AnalysisReport>(runId, "analyze");
 }

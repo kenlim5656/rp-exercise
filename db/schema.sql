@@ -13,7 +13,8 @@ CREATE TABLE IF NOT EXISTS runs (
   current_stage TEXT NOT NULL DEFAULT 'analyze',
   row_count_raw INTEGER,
   row_count_sanitized INTEGER,
-  notes TEXT
+  notes TEXT,
+  raw_csv TEXT
 );
 
 CREATE TABLE IF NOT EXISTS run_stages (
@@ -23,6 +24,7 @@ CREATE TABLE IF NOT EXISTS run_stages (
   started_at TEXT,
   completed_at TEXT,
   output_path TEXT,
+  output_json TEXT,
   error_message TEXT,
   PRIMARY KEY (run_id, stage_key)
 );

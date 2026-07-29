@@ -8,7 +8,6 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
   return NextResponse.json({ report });
 }
 
-/** Re-runs analyze on demand (e.g. after the raw file changes). */
 export async function POST(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
   try {

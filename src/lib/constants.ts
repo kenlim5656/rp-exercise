@@ -106,3 +106,45 @@ export const TECHNICAL_IC_TITLE_KEYWORDS = [
 ];
 export const TECHNICAL_IC_FUNCTION_KEYWORDS = ["ml", "machine learning", "ai", "software", "data", "devops", "sre", "research"];
 export const AMBIGUOUS_TITLE_KEYWORDS = ["owner", "consultant", "principal", "advisor", "fractional", "freelancer", "indie hacker"];
+
+export const COUNTRY_ALIASES: Record<string, string> = {
+  "australia": "AU", "au": "AU",
+  "singapore": "SG", "sg": "SG",
+  "japan": "JP", "jp": "JP",
+  "brazil": "BR", "br": "BR",
+  "india": "IN", "in": "IN",
+  "uk": "GB", "gb": "GB", "united kingdom": "GB",
+  "canada": "CA", "ca": "CA",
+  "us": "US", "usa": "US", "united states": "US", "u.s.": "US", "u.s.a.": "US",
+  "sweden": "SE", "se": "SE",
+  "ireland": "IE", "ie": "IE",
+  "netherlands": "NL", "the netherlands": "NL", "nl": "NL",
+  "poland": "PL", "pl": "PL",
+  "germany": "DE", "deutschland": "DE", "de": "DE", "deu": "DE",
+  "espana": "ES", "españa": "ES", "spain": "ES", "es": "ES",
+  "france": "FR", "fr": "FR", "fra": "FR",
+  "italy": "IT", "italia": "IT", "it": "IT",
+};
+
+export const SUSPICIOUS_COUNTRY_VALUES = new Set(["??", "earth", ""]);
+
+export const CONSENT_ALIASES: Record<string, string> = {
+  "granted": "true", "true": "true", "yes": "true", "1": "true", "opted_in": "true",
+  "false": "false", "no": "false", "0": "false", "opted_out": "false", "unsubscribed": "false",
+  "unknown": "unknown", "pending": "unknown", "null": "unknown", "": "unknown",
+};
+
+export const UTM_PLACEHOLDER_VALUES = new Set([
+  "null", "undefined", "test", "test-campaign-delete", "(none)", "(direct)",
+  "{{utm_source}}", "{{utm_medium}}", "{{utm_campaign}}", "",
+]);
+
+export const UTM_VALUE_ALIASES: Record<string, string> = {
+  "fb": "facebook",
+  "facebook ads": "facebook",
+  "fb_paid": "facebook",
+  "paid-social": "paid_social",
+  "e-mail": "email",
+  "email blast": "email_blast",
+  "email%20blast": "email_blast",
+};

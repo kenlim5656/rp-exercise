@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "node:fs";
-import path from "node:path";
-import { createRun, getRun, listRuns } from "@/lib/runs";
-import { stageDir } from "@/lib/paths";
+import { createRun, getRun, listRuns, updateRun } from "@/lib/runs";
 import { runAnalyzeStage } from "@/lib/stages/analyze";
 import { logAction } from "@/lib/audit";
 
@@ -17,16 +14,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "missing 'file' in form data" }, { status: 400 });
   }
 
+  const csvContent = await file.text();
   const run = await createRun(file.name);
-  const rawDir = stageDir(run.id, "raw");
-  fs.mkdirSync(rawDir, { recursive: true });
-  const buffer = Buffer.from(await file.arrayBuffer());
-  fs.writeFileSync(path.join(rawDir, "original-upload.csv"), buffer);
 
-  await logAction({ runId: run.id, stage: "analyze", action: "file_uploaded", detail: { size_bytes: buffer.length } });
+  const db = (await import("@/lib/db")).getDb();
+  await db.execute({
+    sql: `UPDATE runs SET raw_csv = ? WHERE id = ?`,
+    args: [csvContent, run.id],
+  });
+
+  await logAction({ runId: run.id, stage: "analyze", action: "file_uploaded", detail: { size_bytes: csvContent.length } });
 
   try {
-    await runAnalyzeStage(run.id);
+    await runAnalyzeStage(run.id, csvContent);
   } catch (err) {
     return NextResponse.json({ run, error: (err as Error).message }, { status: 500 });
   }

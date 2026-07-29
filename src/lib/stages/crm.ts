@@ -23,9 +23,13 @@ export async function runCrmStage(runId: string) {
     const sf = salesforceLookup(leads);
     const hs = hubspotLookup(leads);
     const outDir = stageDir(runId, "crm");
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, "salesforce-lookup.json"), JSON.stringify(sf, null, 2));
-    fs.writeFileSync(path.join(outDir, "hubspot-lookup.json"), JSON.stringify(hs, null, 2));
+    try {
+      fs.mkdirSync(outDir, { recursive: true });
+      fs.writeFileSync(path.join(outDir, "salesforce-lookup.json"), JSON.stringify(sf, null, 2));
+      fs.writeFileSync(path.join(outDir, "hubspot-lookup.json"), JSON.stringify(hs, null, 2));
+    } catch {
+      // Filesystem write may fail on read-only filesystem (Vercel) — DB is authoritative
+    }
 
     const sfByEmail = new Map(sf.records.map((r) => [r.Email, r]));
     const hsByEmail = new Map(hs.results.map((r) => [r.properties.email, r]));
@@ -95,7 +99,7 @@ export async function runCrmStage(runId: string) {
       });
     }
 
-    writeCsv(path.join(outDir, "crm-merged.csv"), merged);
+    try { writeCsv(path.join(outDir, "crm-merged.csv"), merged); } catch { /* read-only fs */ }
 
     await setStageStatus(runId, "crm", "completed", { outputPath: outDir });
     await logAction({

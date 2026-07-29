@@ -17,7 +17,7 @@ export async function runScoreStage(runId: string) {
   try {
     const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "score");
-    fs.mkdirSync(outDir, { recursive: true });
+    try { fs.mkdirSync(outDir, { recursive: true }); } catch { /* read-only fs */ }
 
     const deterministicResults = new Map<string, DeterministicScoringResult>();
     const llmContexts: LlmScoringContext[] = [];
@@ -58,16 +58,18 @@ export async function runScoreStage(runId: string) {
 
     const batches = chunk(llmContexts, BATCH_SIZE);
     const llmResults: LeadScore[] = [];
-    fs.mkdirSync(path.join(outDir, "llm-transcripts"), { recursive: true });
+    try { fs.mkdirSync(path.join(outDir, "llm-transcripts"), { recursive: true }); } catch { /* read-only fs */ }
     for (let i = 0; i < batches.length; i++) {
       const scores = await scoreLlmBatch(batches[i]);
       llmResults.push(...scores);
-      fs.writeFileSync(
-        path.join(outDir, "llm-transcripts", `batch-${i}.json`),
-        JSON.stringify({ batchIndex: i, input: batches[i], output: scores }, null, 2),
-      );
+      try {
+        fs.writeFileSync(
+          path.join(outDir, "llm-transcripts", `batch-${i}.json`),
+          JSON.stringify({ batchIndex: i, input: batches[i], output: scores }, null, 2),
+        );
+      } catch { /* read-only fs */ }
     }
-    fs.writeFileSync(path.join(outDir, "llm-scores.json"), JSON.stringify(llmResults, null, 2));
+    try { fs.writeFileSync(path.join(outDir, "llm-scores.json"), JSON.stringify(llmResults, null, 2)); } catch { /* read-only fs */ }
 
     const llmByLead = new Map(llmResults.map((s) => [s.leadId, s]));
     const combined: CsvRecord[] = [];
@@ -100,7 +102,7 @@ export async function runScoreStage(runId: string) {
         scores_aligned: String(scoresAligned),
       });
     }
-    writeCsv(path.join(outDir, "combined-scores.csv"), combined);
+    try { writeCsv(path.join(outDir, "combined-scores.csv"), combined); } catch { /* read-only fs */ }
 
     await setStageStatus(runId, "score", "completed", { outputPath: outDir });
     await logAction({

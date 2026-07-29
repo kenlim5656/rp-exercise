@@ -31,17 +31,21 @@ export async function runMatchStage(runId: string) {
     }
 
     const outDir = stageDir(runId, "match");
-    fs.mkdirSync(outDir, { recursive: true });
-    writeCsv(path.join(outDir, "cohort-existing.csv"), existing);
-    writeCsv(path.join(outDir, "cohort-new.csv"), newCohort);
     const methodBreakdown = response.rows.reduce<Record<string, number>>((acc, r) => {
       acc[r.match_method] = (acc[r.match_method] ?? 0) + 1;
       return acc;
     }, {});
-    fs.writeFileSync(
-      path.join(outDir, "match-report.json"),
-      JSON.stringify({ bqResponse: response, existing_count: existing.length, new_count: newCohort.length, method_breakdown: methodBreakdown }, null, 2),
-    );
+    try {
+      fs.mkdirSync(outDir, { recursive: true });
+      writeCsv(path.join(outDir, "cohort-existing.csv"), existing);
+      writeCsv(path.join(outDir, "cohort-new.csv"), newCohort);
+      fs.writeFileSync(
+        path.join(outDir, "match-report.json"),
+        JSON.stringify({ bqResponse: response, existing_count: existing.length, new_count: newCohort.length, method_breakdown: methodBreakdown }, null, 2),
+      );
+    } catch {
+      // Filesystem write may fail on read-only filesystem (Vercel) — DB is authoritative
+    }
 
     await setStageStatus(runId, "match", "completed", { outputPath: outDir });
     await logAction({
@@ -58,11 +62,15 @@ export async function runMatchStage(runId: string) {
 }
 
 export function getCohorts(runId: string): { existing: CsvRecord[]; new: CsvRecord[] } {
-  const outDir = stageDir(runId, "match");
-  const existingPath = path.join(outDir, "cohort-existing.csv");
-  const newPath = path.join(outDir, "cohort-new.csv");
-  return {
-    existing: fs.existsSync(existingPath) ? readCsv(existingPath) : [],
-    new: fs.existsSync(newPath) ? readCsv(newPath) : [],
-  };
+  try {
+    const outDir = stageDir(runId, "match");
+    const existingPath = path.join(outDir, "cohort-existing.csv");
+    const newPath = path.join(outDir, "cohort-new.csv");
+    return {
+      existing: fs.existsSync(existingPath) ? readCsv(existingPath) : [],
+      new: fs.existsSync(newPath) ? readCsv(newPath) : [],
+    };
+  } catch {
+    return { existing: [], new: [] };
+  }
 }

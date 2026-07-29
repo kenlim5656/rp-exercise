@@ -20,7 +20,7 @@ export async function runEnrichStage(runId: string) {
   try {
     const rows = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1);
     const outDir = stageDir(runId, "enrich");
-    fs.mkdirSync(outDir, { recursive: true });
+    try { fs.mkdirSync(outDir, { recursive: true }); } catch { /* read-only fs */ }
 
     const newCohort = rows.filter((r) => r.cohort === "new").map((r) => JSON.parse(r.sanitized_json!) as CsvRecord);
     const existingCohort = rows.filter((r) => r.cohort === "existing").map((r) => JSON.parse(r.sanitized_json!) as CsvRecord);
@@ -28,12 +28,12 @@ export async function runEnrichStage(runId: string) {
     // 4.1.1 identity resolution -- freemail only, work-domain emails skipped.
     const freemail = newCohort.filter((l) => l.email_type === "freemail");
     const identity = clayIdentityResolution(freemail);
-    fs.writeFileSync(path.join(outDir, "clay-identity-resolution.json"), JSON.stringify(identity, null, 2));
+    try { fs.writeFileSync(path.join(outDir, "clay-identity-resolution.json"), JSON.stringify(identity, null, 2)); } catch { /* read-only fs */ }
 
     // 4.1.2 firmographic enrichment -- only for freemail leads identity resolved to an account.
     const resolvedForEnrichment = freemail.map((lead, i) => ({ lead, resolution: identity.matches[i].data }));
     const enrichment = clayFirmographicEnrichment(resolvedForEnrichment);
-    fs.writeFileSync(path.join(outDir, "clay-enrichment.json"), JSON.stringify(enrichment, null, 2));
+    try { fs.writeFileSync(path.join(outDir, "clay-enrichment.json"), JSON.stringify(enrichment, null, 2)); } catch { /* read-only fs */ }
 
     const identityByLead = new Map(identity.matches.map((m) => [m.data.lead_id, m.data]));
     const enrichmentByLead = new Map(enrichment.matches.map((m) => [m.data.lead_id, m.data]));
@@ -68,7 +68,7 @@ export async function runEnrichStage(runId: string) {
       }
       await upsertLeads(runId, [{ lead_id: lead.lead_id, clay_json: JSON.stringify(clayJson) }]);
     }
-    fs.writeFileSync(path.join(outDir, "clay-intent-scores.json"), JSON.stringify(intentScores, null, 2));
+    try { fs.writeFileSync(path.join(outDir, "clay-intent-scores.json"), JSON.stringify(intentScores, null, 2)); } catch { /* read-only fs */ }
 
     await setStageStatus(runId, "enrich", "completed", { outputPath: outDir });
     await logAction({
