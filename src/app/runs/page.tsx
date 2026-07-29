@@ -1,16 +1,22 @@
 import Link from "next/link";
 import { listRuns } from "@/lib/runs";
-import { Badge } from "@/components/ui/badge";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 
 export const dynamic = "force-dynamic";
 
-function statusVariant(status: string): "default" | "secondary" | "destructive" | "outline" {
-  if (status === "completed") return "default";
-  if (status === "failed") return "destructive";
-  if (status === "awaiting_approval") return "secondary";
-  return "outline";
+function statusBadgeClass(status: string) {
+  switch (status) {
+    case "completed":
+      return "badge-completed";
+    case "running":
+      return "badge-running";
+    case "awaiting_approval":
+      return "badge-awaiting";
+    case "failed":
+      return "badge-failed";
+    default:
+      return "badge-pending";
+  }
 }
 
 export default async function RunsPage() {
@@ -26,36 +32,40 @@ export default async function RunsPage() {
       {runs.length === 0 ? (
         <p className="text-muted-foreground">No runs yet. Upload a lead file to get started.</p>
       ) : (
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>File</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Current stage</TableHead>
-              <TableHead>Rows (raw / sanitized)</TableHead>
-              <TableHead>Created</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {runs.map((run) => (
-              <TableRow key={run.id}>
-                <TableCell>
-                  <Link href={`/runs/${run.id}`} className="font-medium hover:underline">
-                    {run.original_filename}
-                  </Link>
-                </TableCell>
-                <TableCell>
-                  <Badge variant={statusVariant(run.status)}>{run.status}</Badge>
-                </TableCell>
-                <TableCell className="text-muted-foreground">{run.current_stage}</TableCell>
-                <TableCell className="text-muted-foreground">
-                  {run.row_count_raw ?? "-"} / {run.row_count_sanitized ?? "-"}
-                </TableCell>
-                <TableCell className="text-muted-foreground">{new Date(run.created_at).toLocaleString()}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        <div className="table-enhanced overflow-auto rounded-lg border border-[var(--border)]">
+          <table className="w-full text-sm">
+            <thead>
+              <tr>
+                <th className="px-4 py-3 text-left">File</th>
+                <th className="px-4 py-3 text-left">Status</th>
+                <th className="px-4 py-3 text-left">Current stage</th>
+                <th className="px-4 py-3 text-left">Rows (raw / sanitized)</th>
+                <th className="px-4 py-3 text-left">Created</th>
+              </tr>
+            </thead>
+            <tbody>
+              {runs.map((run) => (
+                <tr key={run.id} className="border-b border-[var(--border)] last:border-0 transition-colors">
+                  <td className="px-4 py-3">
+                    <Link href={`/runs/${run.id}`} className="font-medium hover:underline" style={{ color: "var(--accent-pipeline)" }}>
+                      {run.original_filename}
+                    </Link>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${statusBadgeClass(run.status)}`}>
+                      {run.status}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 text-muted-foreground">{run.current_stage}</td>
+                  <td className="px-4 py-3 text-muted-foreground tabular-nums">
+                    {run.row_count_raw ?? "-"} / {run.row_count_sanitized ?? "-"}
+                  </td>
+                  <td className="px-4 py-3 text-muted-foreground">{new Date(run.created_at).toLocaleString()}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   );

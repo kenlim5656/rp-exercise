@@ -82,6 +82,29 @@
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.6 0 0);
+
+  /* Accent palette — status colors */
+  --status-completed: oklch(0.72 0.17 155);
+  --status-completed-dim: oklch(0.72 0.17 155 / 15%);
+  --status-running: oklch(0.7 0.15 250);
+  --status-running-dim: oklch(0.7 0.15 250 / 15%);
+  --status-awaiting: oklch(0.78 0.16 75);
+  --status-awaiting-dim: oklch(0.78 0.16 75 / 15%);
+  --status-failed: oklch(0.65 0.2 25);
+  --status-failed-dim: oklch(0.65 0.2 25 / 15%);
+  --status-pending: oklch(0.55 0 0);
+  --status-pending-dim: oklch(0.55 0 0 / 12%);
+
+  /* Section accent borders */
+  --accent-pipeline: oklch(0.7 0.15 250);
+  --accent-history: oklch(0.72 0.17 155);
+  --accent-metrics: oklch(0.78 0.16 75);
+  --accent-copilot: oklch(0.68 0.14 290);
+
+  /* Table */
+  --table-row-alt: oklch(1 0 0 / 3%);
+  --table-row-hover: oklch(1 0 0 / 6%);
+  --table-header-bg: oklch(0.15 0 0);
 }
 
 @layer base {
@@ -95,4 +118,66 @@
     @apply font-sans;
     font-size: 18px;
   }
+}
+
+/* Status badge styles */
+.badge-completed {
+  background: var(--status-completed-dim);
+  color: var(--status-completed);
+  border: 1px solid oklch(0.72 0.17 155 / 25%);
+}
+.badge-running {
+  background: var(--status-running-dim);
+  color: var(--status-running);
+  border: 1px solid oklch(0.7 0.15 250 / 25%);
+}
+.badge-awaiting {
+  background: var(--status-awaiting-dim);
+  color: var(--status-awaiting);
+  border: 1px solid oklch(0.78 0.16 75 / 25%);
+}
+.badge-failed {
+  background: var(--status-failed-dim);
+  color: var(--status-failed);
+  border: 1px solid oklch(0.65 0.2 25 / 25%);
+}
+.badge-pending {
+  background: var(--status-pending-dim);
+  color: var(--status-pending);
+  border: 1px solid oklch(0.55 0 0 / 20%);
+}
+
+/* Card accent borders */
+.card-accent-pipeline {
+  border-left: 3px solid var(--accent-pipeline);
+}
+.card-accent-history {
+  border-left: 3px solid var(--accent-history);
+}
+.card-accent-metrics {
+  border-left: 3px solid var(--accent-metrics);
+}
+.card-accent-copilot {
+  border-left: 3px solid var(--accent-copilot);
+}
+
+/* Table enhancements */
+.table-enhanced tbody tr:nth-child(even) {
+  background: var(--table-row-alt);
+}
+.table-enhanced tbody tr:hover {
+  background: var(--table-row-hover);
+}
+.table-enhanced thead {
+  background: var(--table-header-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.table-enhanced thead th {
+  color: var(--status-running);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }

@@ -19,16 +19,18 @@ export async function runMatchStage(runId: string) {
 
     const existing: CsvRecord[] = [];
     const newCohort: CsvRecord[] = [];
+    const updates: Array<{ lead_id: string; cohort: string; matched_customer_id: string | null }> = [];
     for (const lead of leads) {
       const match = matchByEmail.get(lead.email_normalized);
       if (match) {
         existing.push(lead);
-        await upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "existing", matched_customer_id: match.customer_id }]);
+        updates.push({ lead_id: lead.lead_id, cohort: "existing", matched_customer_id: match.customer_id });
       } else {
         newCohort.push(lead);
-        await upsertLeads(runId, [{ lead_id: lead.lead_id, cohort: "new", matched_customer_id: null }]);
+        updates.push({ lead_id: lead.lead_id, cohort: "new", matched_customer_id: null });
       }
     }
+    await upsertLeads(runId, updates);
 
     const outDir = stageDir(runId, "match");
     const methodBreakdown = response.rows.reduce<Record<string, number>>((acc, r) => {

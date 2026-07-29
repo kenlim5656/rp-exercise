@@ -16,6 +16,21 @@ const NEXT_PAGE: Record<string, string> = {
   log: "logs",
 };
 
+function statusBadgeClass(status: string) {
+  switch (status) {
+    case "completed":
+      return "badge-completed";
+    case "running":
+      return "badge-running";
+    case "awaiting_approval":
+      return "badge-awaiting";
+    case "failed":
+      return "badge-failed";
+    default:
+      return "badge-pending";
+  }
+}
+
 export default async function RunOverviewPage({ params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
   const run = (await getRun(runId))!;
@@ -27,19 +42,35 @@ export default async function RunOverviewPage({ params }: { params: Promise<{ ru
 
   return (
     <div className="flex flex-col gap-6">
-      <Card>
+      <Card className="card-accent-pipeline">
         <CardHeader>
           <CardTitle>Pipeline status</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col gap-2 text-sm">
-          <p>
-            Status: <span className="font-medium">{run.status}</span> &middot; current stage:{" "}
+        <CardContent className="flex flex-col gap-3 text-sm">
+          <div className="flex items-center gap-3">
+            <span className="text-muted-foreground">Status</span>
+            <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${statusBadgeClass(run.status)}`}>
+              {run.status}
+            </span>
+            <span className="text-muted-foreground">&middot;</span>
+            <span className="text-muted-foreground">Stage</span>
             <span className="font-medium">{run.current_stage}</span>
-          </p>
-          <p className="text-muted-foreground">
-            {leads.length} primary leads &middot; {needsReview} flagged for human review
-          </p>
-          <div className="mt-2">
+          </div>
+          <div className="flex items-baseline gap-6">
+            <div>
+              <span className="text-2xl font-semibold tabular-nums" style={{ color: "var(--accent-pipeline)" }}>
+                {leads.length}
+              </span>
+              <span className="ml-1.5 text-muted-foreground">primary leads</span>
+            </div>
+            <div>
+              <span className="text-2xl font-semibold tabular-nums" style={{ color: "var(--status-awaiting)" }}>
+                {needsReview}
+              </span>
+              <span className="ml-1.5 text-muted-foreground">flagged for review</span>
+            </div>
+          </div>
+          <div className="mt-1">
             <Button render={<Link href={`/runs/${runId}/${nextPage}`} />} nativeButton={false}>
               Continue &rarr;
             </Button>
@@ -47,22 +78,37 @@ export default async function RunOverviewPage({ params }: { params: Promise<{ ru
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="card-accent-history">
         <CardHeader>
           <CardTitle>Stage history</CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="flex flex-col gap-1 text-sm">
-            {stages.map((s) => (
-              <li key={s.stage_key} className="flex justify-between border-b py-1 last:border-0">
-                <span>{s.stage_key}</span>
-                <span className="text-muted-foreground">
-                  {s.status}
-                  {s.error_message ? ` -- ${s.error_message}` : ""}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <div className="table-enhanced overflow-auto rounded">
+            <table className="w-full text-sm">
+              <thead>
+                <tr>
+                  <th className="px-3 py-2 text-left">Stage</th>
+                  <th className="px-3 py-2 text-left">Status</th>
+                  <th className="px-3 py-2 text-left">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {stages.map((s) => (
+                  <tr key={s.stage_key} className="border-b border-[var(--border)] last:border-0">
+                    <td className="px-3 py-2 font-medium">{s.stage_key}</td>
+                    <td className="px-3 py-2">
+                      <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${statusBadgeClass(s.status)}`}>
+                        {s.status}
+                      </span>
+                    </td>
+                    <td className="px-3 py-2 text-muted-foreground">
+                      {s.error_message ?? "--"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </CardContent>
       </Card>
     </div>

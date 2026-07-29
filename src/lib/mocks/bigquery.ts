@@ -45,8 +45,12 @@ function loadOrInitCustomerTable(sanitizedLeads: CsvRecord[]): MockCustomerRecor
       });
     }
   }
-  fs.mkdirSync(MOCK_SEED_ROOT, { recursive: true });
-  fs.writeFileSync(CUSTOMERS_PATH, JSON.stringify(customers, null, 2));
+  try {
+    fs.mkdirSync(MOCK_SEED_ROOT, { recursive: true });
+    fs.writeFileSync(CUSTOMERS_PATH, JSON.stringify(customers, null, 2));
+  } catch {
+    // Filesystem write may fail on Vercel — in-memory generation is sufficient
+  }
   return customers;
 }
 

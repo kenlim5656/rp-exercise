@@ -41,8 +41,11 @@ yarn-error.log*
 next-env.d.ts
 
 # app data / local state (POC-specific)
+/db/*.db
 /db/*.db-shm
 /db/*.db-wal
+/auth
+/auth-wal
 /data/runs/*/00_raw/
 /data/runs/*/06_score/llm-transcripts/
 /data/mock-seed/
