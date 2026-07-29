@@ -7,16 +7,16 @@ export function proxy(request: NextRequest) {
   const url = request.nextUrl;
 
   if (url.pathname === "/api/auth") {
-    return undefined;
+    return NextResponse.next();
   }
 
   if (url.pathname.startsWith("/_next") || url.pathname.startsWith("/favicon")) {
-    return undefined;
+    return NextResponse.next();
   }
 
   const cookie = request.cookies.get(COOKIE_NAME);
   if (cookie?.value === PASSWORD) {
-    return undefined;
+    return NextResponse.next();
   }
 
   if (url.pathname.startsWith("/api/")) {
