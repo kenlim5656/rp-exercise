@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface Message {
   role: "user" | "assistant";
@@ -70,7 +69,7 @@ export function CopilotPanel({ runId, mobile }: { runId: string; mobile?: boolea
 
   // Desktop: sticky sidebar
   return (
-    <div className="card-accent-copilot flex flex-col rounded-lg border border-[var(--border)] bg-[var(--card)]" style={{ maxHeight: "400px" }}>
+    <div className="card-accent-copilot flex flex-col overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--card)]" style={{ maxHeight: "400px" }}>
       <CopilotContent
         messages={messages}
         input={input}
@@ -112,7 +111,7 @@ function CopilotContent({
         )}
       </div>
       {/* Messages */}
-      <ScrollArea className="flex-1 p-4">
+      <div className="min-h-0 flex-1 overflow-y-auto p-4">
         {messages.length === 0 && (
           <p className="text-xs text-muted-foreground">
             Ask about a lead, tier, score, cohort, or anything logged in this run.
@@ -139,7 +138,7 @@ function CopilotContent({
             Thinking...
           </div>
         )}
-      </ScrollArea>
+      </div>
       {/* Input */}
       <div className="border-t border-[var(--border)] p-3">
         <div className="flex gap-2">
