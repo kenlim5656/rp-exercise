@@ -228,6 +228,21 @@ export async function getLead(runId: string, leadId: string): Promise<LeadRow | 
   return result.rows[0] as unknown as LeadRow | undefined;
 }
 
+export function leadDisplayFields(l: LeadRow): { email: string; company: string; title: string } {
+  let email = "";
+  let company = "";
+  let title = "";
+  if (l.sanitized_json) {
+    try {
+      const s = JSON.parse(l.sanitized_json);
+      email = s.email_normalized || s.email || "";
+      company = s.company || "";
+      title = s.job_title || "";
+    } catch {}
+  }
+  return { email, company, title };
+}
+
 export async function getLeads(runId: string): Promise<LeadRow[]> {
   const db = getDb();
   const result = await db.execute({ sql: `SELECT * FROM leads WHERE run_id = ?`, args: [runId] });

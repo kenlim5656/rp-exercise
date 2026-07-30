@@ -69,10 +69,14 @@ export default async function RunLayout({
       {/* Side-by-side: main content + copilot */}
       <div className="mx-auto flex w-full max-w-[1600px] gap-6 px-6 py-6">
         <main className="min-w-0 flex-1">{children}</main>
-        <aside className="hidden w-[340px] shrink-0 lg:flex lg:flex-col lg:gap-4">
+        <aside className="hidden w-[340px] shrink-0 lg:flex lg:flex-col lg:gap-4 lg:overflow-hidden">
           <LiveStageProgress runId={runId} initialStages={stages} />
-          <CopilotPanel runId={runId} />
-          <StageActions runId={runId} />
+          <div className="min-h-0 shrink">
+            <CopilotPanel runId={runId} />
+          </div>
+          <div className="shrink-0">
+            <StageActions runId={runId} />
+          </div>
         </aside>
       </div>
       {/* Mobile: copilot as bottom button */}

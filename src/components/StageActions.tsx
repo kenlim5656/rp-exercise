@@ -75,6 +75,7 @@ export function StageActions({ runId }: { runId: string }) {
 
   const currentStage = pathname.split("/").pop() ?? "";
   const action = STAGE_ACTIONS[currentStage];
+  const isFinalStage = ["routing", "review", "logs"].includes(currentStage);
 
   async function proceed() {
     if (!action) return;
@@ -157,24 +158,34 @@ export function StageActions({ runId }: { runId: string }) {
           )}
         </Button>
       )}
-      <Button
-        onClick={runAll}
-        disabled={isBusy}
-        variant="outline"
-        className="mt-2 w-full border-[var(--accent-pipeline)] text-[var(--accent-pipeline)] hover:bg-[var(--accent-pipeline)] hover:text-black"
-      >
-        {runningAll ? (
-          <span className="flex items-center gap-2">
-            <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
-            Running all stages...
-          </span>
-        ) : (
-          <>
-            <svg className="mr-1.5 h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z" /></svg>
-            Run All Stages
-          </>
-        )}
-      </Button>
+      {isFinalStage ? (
+        <Button
+          variant="outline"
+          className="mt-2 w-full"
+          onClick={() => router.push("/runs")}
+        >
+          Return to Runs
+        </Button>
+      ) : (
+        <Button
+          onClick={runAll}
+          disabled={isBusy}
+          variant="outline"
+          className="mt-2 w-full border-[var(--accent-pipeline)] text-[var(--accent-pipeline)] hover:bg-[var(--accent-pipeline)] hover:text-black"
+        >
+          {runningAll ? (
+            <span className="flex items-center gap-2">
+              <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
+              Running all stages...
+            </span>
+          ) : (
+            <>
+              <svg className="mr-1.5 h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z" /></svg>
+              Run All Stages
+            </>
+          )}
+        </Button>
+      )}
       {error && (
         <Alert variant="destructive" className="mt-3">
           <AlertTitle>Failed</AlertTitle>

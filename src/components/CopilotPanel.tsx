@@ -69,7 +69,7 @@ export function CopilotPanel({ runId, mobile }: { runId: string; mobile?: boolea
 
   // Desktop: sticky sidebar
   return (
-    <div className="card-accent-copilot flex flex-col overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--card)]" style={{ maxHeight: "400px" }}>
+    <div className="card-accent-copilot flex min-h-0 flex-col overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--card)]" style={{ maxHeight: "300px" }}>
       <CopilotContent
         messages={messages}
         input={input}

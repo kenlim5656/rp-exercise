@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { runScoreStage } from "@/lib/stages/score";
-import { getLeads } from "@/lib/runs";
+import { getLeads, leadDisplayFields } from "@/lib/runs";
 import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
@@ -9,6 +9,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
   return NextResponse.json({
     leads: leads.map((l) => ({
       lead_id: l.lead_id,
+      ...leadDisplayFields(l),
       deterministic_tier: l.deterministic_tier,
       deterministic_reasons: l.deterministic_reasons_json ? JSON.parse(l.deterministic_reasons_json) : [],
       deterministic_review_flag: !!l.deterministic_review_flag,

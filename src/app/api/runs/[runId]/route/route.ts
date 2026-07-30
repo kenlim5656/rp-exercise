@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { runRoutingStage } from "@/lib/stages/route";
-import { getLeads } from "@/lib/runs";
+import { getLeads, leadDisplayFields } from "@/lib/runs";
 import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
@@ -9,7 +9,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
   return NextResponse.json({
     leads: leads.map((l) => ({
       lead_id: l.lead_id,
+      ...leadDisplayFields(l),
       final_tier: l.final_tier,
+      deterministic_tier: l.deterministic_tier,
       routing_decision: l.routing_decision,
       needs_review: !!l.needs_review,
       review_reasons: l.review_reasons_json ? JSON.parse(l.review_reasons_json) : [],

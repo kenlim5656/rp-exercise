@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { runCrmStage } from "@/lib/stages/crm";
-import { getLeads } from "@/lib/runs";
+import { getLeads, leadDisplayFields } from "@/lib/runs";
 import { checkStageDep } from "@/lib/stage-deps";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
@@ -12,6 +12,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
       is_eu: !!l.is_eu,
       consent_verified: l.consent_verified,
       eu_consent_flag: l.eu_consent_flag,
+      ...leadDisplayFields(l),
       crm: JSON.parse(l.crm_json!),
     })),
   });

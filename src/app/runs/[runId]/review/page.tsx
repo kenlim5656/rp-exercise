@@ -8,6 +8,29 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 
+function SortHead({
+  k,
+  sortKey,
+  sortDir,
+  onSort,
+  children,
+}: {
+  k: string;
+  sortKey: string;
+  sortDir: "asc" | "desc";
+  onSort: (key: string) => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <TableHead className="cursor-pointer select-none" onClick={() => onSort(k)}>
+      <span className="inline-flex items-center gap-1">
+        {children}
+        {sortKey === k && <span className="text-xs">{sortDir === "asc" ? "↑" : "↓"}</span>}
+      </span>
+    </TableHead>
+  );
+}
+
 interface ReviewItem {
   lead_id: string;
   cohort: string | null;
@@ -23,6 +46,18 @@ export default function ReviewPage({ params }: { params: Promise<{ runId: string
   const { runId } = use(params);
   const [queue, setQueue] = useState<ReviewItem[] | null>(null);
   const [actingOn, setActingOn] = useState<string | null>(null);
+  const [sortKey, setSortKey] = useState<string>("lead_id");
+  const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
+  const [tierFilter, setTierFilter] = useState<string>("all");
+  const [statusFilter, setStatusFilter] = useState<string>("all");
+
+  function toggleSort(key: string) {
+    if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    else {
+      setSortKey(key);
+      setSortDir("asc");
+    }
+  }
 
   async function load() {
     const d = await fetch(`/api/runs/${runId}/review`).then((r) => r.json());
@@ -63,6 +98,33 @@ export default function ReviewPage({ params }: { params: Promise<{ runId: string
 
   const pending = queue.filter((q) => q.review_status === "pending" || q.review_status === "none");
 
+  const filtered = queue.filter((q) => {
+    if (tierFilter !== "all" && q.deterministic_tier !== tierFilter) return false;
+    if (statusFilter === "pending" && !(q.review_status === "pending" || q.review_status === "none")) return false;
+    if (statusFilter === "approved" && q.review_status !== "approved") return false;
+    if (statusFilter === "rejected" && q.review_status !== "rejected") return false;
+    return true;
+  });
+
+  const sorted = [...filtered].sort((a, b) => {
+    let av: string | number = "";
+    let bv: string | number = "";
+    if (sortKey === "llm_score") {
+      av = a.llm_score ?? -Infinity;
+      bv = b.llm_score ?? -Infinity;
+    } else if (sortKey === "email" || sortKey === "company" || sortKey === "title") {
+      const key = sortKey === "email" ? "email_normalized" : sortKey === "title" ? "job_title" : "company";
+      av = a.lead?.[key as "email_normalized" | "job_title" | "company"] ?? "";
+      bv = b.lead?.[key as "email_normalized" | "job_title" | "company"] ?? "";
+    } else {
+      av = (a as unknown as Record<string, string>)[sortKey] ?? "";
+      bv = (b as unknown as Record<string, string>)[sortKey] ?? "";
+    }
+    if (av < bv) return sortDir === "asc" ? -1 : 1;
+    if (av > bv) return sortDir === "asc" ? 1 : -1;
+    return 0;
+  });
+
   return (
     <Card>
       <CardHeader>
@@ -73,25 +135,58 @@ export default function ReviewPage({ params }: { params: Promise<{ runId: string
         </CardDescription>
       </CardHeader>
       <CardContent>
+        <div className="flex flex-wrap gap-2 mb-2">
+          {["all", "tier1", "tier2", "tier3"].map((f) => (
+            <button
+              key={f}
+              onClick={() => setTierFilter(f)}
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                tierFilter === f
+                  ? "bg-[var(--accent)] text-foreground"
+                  : "bg-[var(--card)] text-muted-foreground hover:text-foreground border border-[var(--border)]"
+              }`}
+            >
+              {f === "all" ? "All" : f.replace("tier", "Tier ")}
+            </button>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {["all", "pending", "approved", "rejected"].map((f) => (
+            <button
+              key={f}
+              onClick={() => setStatusFilter(f)}
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                statusFilter === f
+                  ? "bg-[var(--accent)] text-foreground"
+                  : "bg-[var(--card)] text-muted-foreground hover:text-foreground border border-[var(--border)]"
+              }`}
+            >
+              {f === "all" ? "All" : f.charAt(0).toUpperCase() + f.slice(1)}
+            </button>
+          ))}
+        </div>
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Lead</TableHead>
-              <TableHead>Tier / score</TableHead>
+              <SortHead k="lead_id" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Lead</SortHead>
+              <SortHead k="email" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Email</SortHead>
+              <SortHead k="company" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Company</SortHead>
+              <SortHead k="title" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Title</SortHead>
+              <SortHead k="deterministic_tier" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Tier / score</SortHead>
               <TableHead>Reasons</TableHead>
-              <TableHead>Status</TableHead>
+              <SortHead k="review_status" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Status</SortHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
-            {queue.map((item) => (
+            {sorted.map((item) => (
               <TableRow key={item.lead_id}>
                 <TableCell>
                   <Link href={`/runs/${runId}/leads/${item.lead_id}?from=review`} className="font-medium text-[var(--accent-pipeline)] underline-offset-2 hover:underline">{item.lead_id}</Link>
-                  <div className="text-xs text-muted-foreground">
-                    {item.lead?.job_title} @ {item.lead?.company}
-                  </div>
                 </TableCell>
+                <TableCell>{item.lead?.email_normalized ?? "-"}</TableCell>
+                <TableCell>{item.lead?.company ?? "-"}</TableCell>
+                <TableCell>{item.lead?.job_title ?? "-"}</TableCell>
                 <TableCell className="text-sm">
                   {item.deterministic_tier} / {item.llm_score ?? "-"}
                 </TableCell>
