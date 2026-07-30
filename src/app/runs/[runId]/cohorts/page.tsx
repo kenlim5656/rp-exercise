@@ -29,7 +29,7 @@ function CohortTable({ rows, runId }: { rows: CsvRow[]; runId: string }) {
         {rows.slice(0, 25).map((r) => (
           <TableRow key={r.lead_id}>
             <TableCell>
-              <Link href={`/runs/${runId}/leads/${r.lead_id}`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
+              <Link href={`/runs/${runId}/leads/${r.lead_id}?from=cohorts`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
                 {r.lead_id}
               </Link>
             </TableCell>

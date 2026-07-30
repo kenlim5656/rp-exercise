@@ -70,7 +70,7 @@ export default function CrmPage({ params }: { params: Promise<{ runId: string }>
               {leads.slice(0, 100).map((l) => (
                 <TableRow key={l.lead_id}>
                   <TableCell>
-                    <Link href={`/runs/${runId}/leads/${l.lead_id}`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
+                    <Link href={`/runs/${runId}/leads/${l.lead_id}?from=crm`} className="text-[var(--accent-pipeline)] underline-offset-2 hover:underline">
                       {l.lead_id}
                     </Link>
                   </TableCell>

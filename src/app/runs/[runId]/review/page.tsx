@@ -87,7 +87,7 @@ export default function ReviewPage({ params }: { params: Promise<{ runId: string
             {queue.map((item) => (
               <TableRow key={item.lead_id}>
                 <TableCell>
-                  <Link href={`/runs/${runId}/leads/${item.lead_id}`} className="font-medium text-[var(--accent-pipeline)] underline-offset-2 hover:underline">{item.lead_id}</Link>
+                  <Link href={`/runs/${runId}/leads/${item.lead_id}?from=review`} className="font-medium text-[var(--accent-pipeline)] underline-offset-2 hover:underline">{item.lead_id}</Link>
                   <div className="text-xs text-muted-foreground">
                     {item.lead?.job_title} @ {item.lead?.company}
                   </div>

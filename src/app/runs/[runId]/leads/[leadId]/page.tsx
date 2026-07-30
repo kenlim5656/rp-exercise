@@ -8,6 +8,7 @@ import { createHash } from "node:crypto";
 
 export const dynamic = "force-dynamic";
 
+
 /* ---------- helpers ---------- */
 
 function safeParse<T = unknown>(json: string | null): T | null {
@@ -103,10 +104,13 @@ function ChannelRow({ name, allowed }: { name: string; allowed: boolean }) {
 
 export default async function LeadDetailPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ runId: string; leadId: string }>;
+  searchParams: Promise<{ from?: string }>;
 }) {
   const { runId, leadId } = await params;
+  const { from } = await searchParams;
   const lead = await getLead(runId, leadId);
   if (!lead) notFound();
 
@@ -204,7 +208,7 @@ export default async function LeadDetailPage({
       {/* Back link */}
       <div>
         <Link
-          href={`/runs/${runId}/scoring`}
+          href={`/runs/${runId}/${from || "crm"}`}
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
           <span aria-hidden="true">&larr;</span> Back to pipeline
