@@ -9,7 +9,15 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
     (l) => l.is_duplicate_primary === 1 && l.routing_decision && l.routing_decision !== "suppressed",
   );
 
+  const totalEligible = leads.filter((l) => l.routing_decision !== "self_serve_newsletter").length;
+  const totalProcessed = leads.filter((l) => {
+    if (!l.followup_json) return false;
+    try { return !JSON.parse(l.followup_json).error; } catch { return false; }
+  }).length;
+
   return NextResponse.json({
+    total_eligible: totalEligible,
+    total_processed: totalProcessed,
     leads: leads.map((l) => ({
       lead_id: l.lead_id,
       routing_decision: l.routing_decision,
@@ -30,8 +38,8 @@ export async function POST(_req: Request, { params }: { params: Promise<{ runId:
   const depErr = await checkStageDep(runId, "followup");
   if (depErr) return NextResponse.json({ error: depErr }, { status: 409 });
   try {
-    await runFollowupStage(runId);
-    return NextResponse.json({ ok: true });
+    const result = await runFollowupStage(runId);
+    return NextResponse.json({ ok: true, ...result });
   } catch (err) {
     return NextResponse.json({ error: (err as Error).message }, { status: 500 });
   }

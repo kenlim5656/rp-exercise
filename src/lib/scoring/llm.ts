@@ -1,8 +1,7 @@
-import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { generateObject } from "ai";
 import { z } from "zod";
 import type { CsvRecord } from "../csv";
 import type { LeadRow } from "../runs";
+import { generateWithFallback } from "../gemini";
 
 const LeadScoreSchema = z.object({
   leadId: z.string(),
@@ -15,12 +14,6 @@ const LeadScoreSchema = z.object({
 const BatchScoreSchema = z.object({ scores: z.array(LeadScoreSchema) });
 
 export type LeadScore = z.infer<typeof LeadScoreSchema>;
-
-function model() {
-  const modelId = process.env.GEMINI_MODEL || "gemini-flash-lite-latest";
-  const google = createGoogleGenerativeAI({ apiKey: process.env.GEMINI_API_KEY });
-  return google(modelId);
-}
 
 export interface LlmScoringContext {
   lead: CsvRecord;
@@ -67,11 +60,7 @@ Return one score object per lead, in the same order, using the provided leadId v
  * latency/cost reasonable across ~1900 rows rather than one call per lead. */
 export async function scoreLlmBatch(batch: LlmScoringContext[]): Promise<LeadScore[]> {
   if (batch.length === 0) return [];
-  const { object } = await generateObject({
-    model: model(),
-    schema: BatchScoreSchema,
-    prompt: buildPrompt(batch),
-  });
+  const object = await generateWithFallback({ schema: BatchScoreSchema, prompt: buildPrompt(batch) });
   return object.scores;
 }
 

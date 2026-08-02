@@ -1,11 +1,15 @@
-import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { generateObject } from "ai";
 import { z } from "zod";
 import { getLeads, getStage, setStageStatus, upsertLeads, leadDisplayFields, type LeadRow } from "../runs";
 import { logAction } from "../audit";
 import { findSimilarLeads, extractSuccessfulTreatments } from "../mocks/historical";
+import { generateWithFallback } from "../gemini";
 
-/** Infers the title type used by the historical similarity engine. */
+const PRIORITY_ORDER: Record<string, number> = {
+  sales_queue: 0,
+  human_review: 1,
+  nurture: 2,
+};
+
 function inferTitleType(title: string | null): string {
   if (!title) return "non_technical";
   const t = title.toLowerCase();
@@ -19,25 +23,31 @@ function inferTitleType(title: string | null): string {
 
 const RecommendationSchema = z.object({
   title: z.string(),
-  type: z.enum([
-    "email_sequence",
-    "sales_outreach",
-    "demo_offer",
-    "content_asset",
-    "webinar_invite",
-    "free_trial_offer",
-    "meeting_request",
-    "nurture_campaign",
-  ]),
-  channel: z.enum(["email", "linkedin", "phone", "hubspot_sequence", "hubspot_deal", "hubspot_task"]),
+  type: z
+    .enum([
+      "email_sequence",
+      "sales_outreach",
+      "demo_offer",
+      "content_asset",
+      "webinar_invite",
+      "free_trial_offer",
+      "meeting_request",
+      "nurture_campaign",
+    ])
+    .catch("email_sequence"),
+  channel: z
+    .enum(["email", "linkedin", "phone", "hubspot_sequence", "hubspot_deal", "hubspot_task"])
+    .catch("email"),
   rationale: z.string(),
   talking_points: z.array(z.string()),
   suggested_content: z.string(),
   hubspot_action: z.object({
-    action_type: z.enum(["create_task", "enroll_in_sequence", "create_deal", "send_email", "create_campaign", "schedule_meeting"]),
+    action_type: z
+      .enum(["create_task", "enroll_in_sequence", "create_deal", "send_email", "create_campaign", "schedule_meeting"])
+      .catch("create_task"),
     params: z.record(z.string(), z.unknown()),
   }),
-  priority: z.enum(["high", "medium", "low"]),
+  priority: z.enum(["high", "medium", "low"]).catch("medium"),
   estimated_conversion_lift: z.string(),
 });
 
@@ -172,7 +182,6 @@ function buildSimilarLeadsContext(lead: LeadRow): string {
     }
   }
 
-  // Add 2-3 example stories
   const converterExamples = similar.filter((l) => l.outcome === "converted").slice(0, 3);
   if (converterExamples.length > 0) {
     lines.push(``, `Example converted leads (anonymised):`);
@@ -184,28 +193,23 @@ function buildSimilarLeadsContext(lead: LeadRow): string {
   return lines.join("\n");
 }
 
-/** Generates follow-up recommendations for a single lead using Gemini. */
 async function generateFollowupForLead(lead: LeadRow): Promise<FollowupOutput> {
-  const google = createGoogleGenerativeAI({ apiKey: process.env.GEMINI_API_KEY });
-  const modelId = process.env.GEMINI_MODEL || "gemini-flash-lite-latest";
-
   const similarContext = buildSimilarLeadsContext(lead);
   const prompt = buildFollowupPrompt(lead, similarContext);
-
-  const { object } = await generateObject({
-    model: google(modelId),
-    schema: FollowupOutputSchema,
-    prompt,
-  });
-
-  return object;
+  return generateWithFallback({ schema: FollowupOutputSchema, prompt });
 }
 
-/** Spec 9.x (v2): Run the follow-up recommendation stage for all routed leads.
- *  Processes leads that have a routing_decision assigned, calls Gemini for each,
- *  and stores the structured recommendations in followup_json on the lead record. */
-export async function runFollowupStage(runId: string): Promise<void> {
-  // Check dependency: routing must be complete
+function hasValidFollowup(lead: LeadRow): boolean {
+  if (!lead.followup_json) return false;
+  try {
+    const parsed = JSON.parse(lead.followup_json);
+    return !parsed.error;
+  } catch {
+    return false;
+  }
+}
+
+export async function runFollowupStage(runId: string): Promise<{ processed: number; remaining: number }> {
   const routeStage = await getStage(runId, "route");
   if (routeStage?.status !== "completed") {
     throw new Error("Routing stage must be completed before generating follow-up recommendations.");
@@ -215,37 +219,45 @@ export async function runFollowupStage(runId: string): Promise<void> {
 
   try {
     const allLeads = await getLeads(runId);
-    const eligibleLeads = allLeads.filter(
-      (l) =>
-        l.is_duplicate_primary === 1 &&
-        l.routing_decision &&
-        l.routing_decision !== "suppressed" &&
-        l.routing_decision !== "self_serve_newsletter",
-    );
+    const eligibleLeads = allLeads
+      .filter(
+        (l) =>
+          l.is_duplicate_primary === 1 &&
+          l.routing_decision &&
+          l.routing_decision !== "suppressed" &&
+          l.routing_decision !== "self_serve_newsletter",
+      )
+      .sort((a, b) => {
+        const ap = PRIORITY_ORDER[a.routing_decision!] ?? 99;
+        const bp = PRIORITY_ORDER[b.routing_decision!] ?? 99;
+        return ap - bp;
+      });
 
-    if (eligibleLeads.length === 0) {
+    const remaining = eligibleLeads.filter((l) => !hasValidFollowup(l));
+    const batchLimit = parseInt(process.env.FOLLOWUP_BATCH_LIMIT || "50", 10);
+    const batch = remaining.slice(0, batchLimit);
+
+    if (batch.length === 0) {
       await setStageStatus(runId, "followup", "completed");
-      return;
+      return { processed: 0, remaining: 0 };
     }
 
     const updates: Array<{ lead_id: string; followup_json: string }> = [];
     let processed = 0;
     let failed = 0;
 
-    // Process in small batches to manage API rate limits
     const BATCH_SIZE = 5;
-    for (let i = 0; i < eligibleLeads.length; i += BATCH_SIZE) {
-      const batch = eligibleLeads.slice(i, i + BATCH_SIZE);
-      const results = await Promise.allSettled(batch.map((l) => generateFollowupForLead(l)));
+    for (let i = 0; i < batch.length; i += BATCH_SIZE) {
+      const chunk = batch.slice(i, i + BATCH_SIZE);
+      const results = await Promise.allSettled(chunk.map((l) => generateFollowupForLead(l)));
 
       for (let j = 0; j < results.length; j++) {
-        const lead = batch[j];
+        const lead = chunk[j];
         const result = results[j];
         if (result.status === "fulfilled") {
           updates.push({ lead_id: lead.lead_id, followup_json: JSON.stringify(result.value) });
           processed++;
         } else {
-          // Store error so UI can show partial results
           updates.push({
             lead_id: lead.lead_id,
             followup_json: JSON.stringify({ error: (result.reason as Error).message }),
@@ -259,13 +271,16 @@ export async function runFollowupStage(runId: string): Promise<void> {
       await upsertLeads(runId, updates);
     }
 
+    const stillRemaining = remaining.length - batch.length;
     await setStageStatus(runId, "followup", "completed");
     await logAction({
       runId,
       stage: "followup",
       action: "followup_recommendations_generated",
-      detail: { total_eligible: eligibleLeads.length, processed, failed },
+      detail: { total_eligible: eligibleLeads.length, processed, failed, still_remaining: stillRemaining },
     });
+
+    return { processed, remaining: stillRemaining };
   } catch (err) {
     await setStageStatus(runId, "followup", "failed", { errorMessage: (err as Error).message });
     throw err;

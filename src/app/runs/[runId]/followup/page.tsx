@@ -68,7 +68,10 @@ const PRIORITY_STYLES: Record<string, string> = {
 export default function FollowupPage({ params }: { params: Promise<{ runId: string }> }) {
   const [runId, setRunId] = useState<string>("");
   const [leads, setLeads] = useState<LeadEntry[]>([]);
+  const [totalEligible, setTotalEligible] = useState(0);
+  const [totalProcessed, setTotalProcessed] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [generating, setGenerating] = useState(false);
   const [expandedLead, setExpandedLead] = useState<string | null>(null);
   const [expandedRec, setExpandedRec] = useState<string | null>(null);
   const [executing, setExecuting] = useState<string | null>(null);
@@ -87,9 +90,22 @@ export default function FollowupPage({ params }: { params: Promise<{ runId: stri
     if (res.ok) {
       const data = await res.json();
       setLeads(data.leads);
+      setTotalEligible(data.total_eligible ?? 0);
+      setTotalProcessed(data.total_processed ?? 0);
     }
     setLoading(false);
   }, [runId]);
+
+  async function generateMore() {
+    if (!runId || generating) return;
+    setGenerating(true);
+    try {
+      await fetch(`/api/runs/${runId}/followup`, { method: "POST" });
+      await load();
+    } finally {
+      setGenerating(false);
+    }
+  }
 
   useEffect(() => {
     if (runId) load();
@@ -121,7 +137,7 @@ export default function FollowupPage({ params }: { params: Promise<{ runId: stri
     acc[l.routing_decision] = (acc[l.routing_decision] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
-  const withRecs = leads.filter((l) => l.followup && !l.followup.error).length;
+  const remaining = totalEligible - totalProcessed;
 
   if (loading) {
     return (
@@ -157,7 +173,26 @@ export default function FollowupPage({ params }: { params: Promise<{ runId: stri
         })}
         <div className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-3">
           <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Recommendations Ready</div>
-          <div className="mt-1 text-2xl font-semibold text-[var(--accent-copilot)]">{withRecs}/{leads.length}</div>
+          <div className="mt-1 text-2xl font-semibold text-[var(--accent-copilot)]">{totalProcessed}/{totalEligible}</div>
+          {remaining > 0 && (
+            <div className="mt-2">
+              <button
+                onClick={generateMore}
+                disabled={generating}
+                className="flex items-center gap-1.5 rounded-md bg-[var(--accent-pipeline)] px-2.5 py-1 text-[11px] font-medium text-black disabled:opacity-60"
+              >
+                {generating ? (
+                  <>
+                    <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                    Generating…
+                  </>
+                ) : (
+                  <>⚡ Generate more ({remaining} remaining)</>
+
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
