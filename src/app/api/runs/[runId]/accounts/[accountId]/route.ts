@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAccount, getAccountLeads, leadDisplayFields } from "@/lib/runs";
+import { getAccount, getAccountLeads, getAccountPropensity, leadDisplayFields } from "@/lib/runs";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string; accountId: string }> }) {
   const { runId, accountId } = await params;
@@ -9,11 +9,28 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
   const leads = await getAccountLeads(runId, accountId);
   const posthog = account.posthog_json ? JSON.parse(account.posthog_json) : null;
 
+  let propensity = null;
+  try {
+    const prop = await getAccountPropensity(accountId);
+    if (prop) {
+      propensity = {
+        propensity_score: prop.propensity_score,
+        propensity_percentile: prop.propensity_percentile,
+        predicted_acv: prop.predicted_acv,
+        next_likely_purchase: prop.next_likely_purchase,
+        purchase_drivers: JSON.parse(prop.purchase_drivers_json),
+        model_source: prop.model_source,
+        model_version: prop.model_version,
+      };
+    }
+  } catch { /* table may not exist */ }
+
   return NextResponse.json({
     account: {
       ...account,
       posthog: posthog,
       posthog_json: undefined,
+      propensity,
       tech_stack: account.tech_stack_json ? JSON.parse(account.tech_stack_json) : null,
       tech_stack_json: undefined,
     },

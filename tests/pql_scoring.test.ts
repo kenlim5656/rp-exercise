@@ -76,14 +76,17 @@ test("time decay: zero days returns full score", () => {
 
 function basePH(): PostHogGroupAnalytics {
   return {
-    group_key: "test.com",
+    domain: "test.com",
+    group_id: "test.com",
+    total_bandwidth_gb: 50,
+    plan: "free_developer",
     active_member_count: 1,
     total_compute_hours: 10,
     quota_used_pct: 20,
     environments: ["staging"],
     has_prod_deployment: false,
     sso_initiated: false,
-    weekly_growth: { compute_hours_delta_pct: 5, member_delta: 0, deployment_delta: 0 },
+    weekly_growth: { compute_hours_delta_pct: 5, seats_delta: 0, deployments_delta: 0 },
     events: [],
   };
 }
@@ -110,7 +113,7 @@ test("AQL: large company + target industry + high usage = aql_account", () => {
   ph.sso_initiated = true;
   ph.total_compute_hours = 200;
   ph.events = [recentEvent("resource_deployed"), recentEvent("resource_deployed"), recentEvent("resource_deployed")];
-  ph.weekly_growth = { compute_hours_delta_pct: 50, member_delta: 2, deployment_delta: 1 };
+  ph.weekly_growth = { compute_hours_delta_pct: 50, seats_delta: 2, deployments_delta: 1 };
 
   const result = scoreAQL({
     domain: "bigcorp.ai",

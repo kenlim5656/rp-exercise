@@ -11,6 +11,8 @@ import {
   type IntentScoreResult,
 } from "../mocks/clay";
 import { getInternalIntentScore } from "../mocks/bigquery";
+import { getAccounts, getAccountPropensities, upsertAccounts } from "../runs";
+import { createMockProvider } from "../propensity/providers/mock_google_bqml";
 
 /** Spec 4.0: identity resolution + firmographic enrichment + intent scoring
  * for the new-user cohort via the simulated Clay workflows, plus the
@@ -74,6 +76,26 @@ export async function runEnrichStage(runId: string) {
     }
     try { fs.writeFileSync(path.join(outDir, "clay-intent-scores.json"), JSON.stringify(intentScores, null, 2)); } catch { /* read-only fs */ }
 
+    // ── Propensity enrichment (v3-propensity) ──
+    let propensityAttached = 0;
+    try {
+      const accounts = await getAccounts(runId);
+      if (accounts.length > 0) {
+        const provider = createMockProvider();
+        const propensityRecords = [];
+        for (const account of accounts) {
+          const record = await provider.getPropensityForAccount(account.id, account.domain);
+          if (record) propensityRecords.push(record);
+        }
+        if (propensityRecords.length > 0) {
+          await provider.batchUpsertPropensityData(propensityRecords);
+          propensityAttached = propensityRecords.length;
+        }
+      }
+    } catch (propErr) {
+      console.error("Propensity enrichment failed (non-fatal):", (propErr as Error).message);
+    }
+
     await setStageStatus(runId, "enrich", "completed", { outputPath: outDir });
     await logAction({
       runId,
@@ -86,6 +108,7 @@ export async function runEnrichStage(runId: string) {
         existing_cohort_count: existingCohort.length,
         existing_intent_from_internal: existingFromInternal,
         existing_intent_from_clay: existingFromClay,
+        propensity_attached: propensityAttached,
       },
     });
   } catch (err) {

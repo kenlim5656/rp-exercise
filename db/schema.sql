@@ -104,6 +104,25 @@ CREATE TABLE IF NOT EXISTS accounts (
 CREATE INDEX IF NOT EXISTS idx_accounts_run ON accounts(run_id);
 CREATE INDEX IF NOT EXISTS idx_accounts_domain ON accounts(run_id, domain);
 
+-- v3-propensity: account propensity scores from ML models
+CREATE TABLE IF NOT EXISTS account_propensity (
+  id TEXT PRIMARY KEY,
+  account_id TEXT NOT NULL REFERENCES accounts(id) ON DELETE CASCADE,
+  domain TEXT NOT NULL,
+  propensity_score REAL NOT NULL,
+  propensity_percentile INTEGER NOT NULL,
+  predicted_acv INTEGER NOT NULL,
+  next_likely_purchase TEXT NOT NULL,
+  purchase_drivers_json TEXT NOT NULL,
+  model_source TEXT NOT NULL,
+  model_version TEXT NOT NULL,
+  last_updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(account_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_propensity_account ON account_propensity(account_id);
+CREATE INDEX IF NOT EXISTS idx_propensity_percentile ON account_propensity(propensity_percentile);
+
 CREATE TABLE IF NOT EXISTS audit_log (
   id TEXT PRIMARY KEY,
   run_id TEXT NOT NULL REFERENCES runs(id),

@@ -9,6 +9,16 @@ interface EventEntry {
   properties: Record<string, unknown>;
 }
 
+interface PropensityData {
+  propensity_score: number;
+  propensity_percentile: number;
+  predicted_acv: number;
+  next_likely_purchase: string;
+  purchase_drivers: string[];
+  model_source: string;
+  model_version: string;
+}
+
 interface AccountDetail {
   id: string;
   domain: string;
@@ -22,6 +32,7 @@ interface AccountDetail {
   usage_score: number | null;
   aql_status: string;
   routing_decision: string | null;
+  propensity: PropensityData | null;
   posthog: {
     active_member_count: number;
     total_compute_hours: number;
@@ -135,6 +146,52 @@ export default function AccountDetailPage({ params }: { params: Promise<{ runId:
           <div className="mt-1 text-sm font-semibold capitalize text-[var(--status-awaiting)]">{account.routing_decision?.replace(/_/g, " ") ?? "-"}</div>
         </div>
       </div>
+
+      {/* Propensity & NLP */}
+      {account.propensity && (
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
+          <h3 className="mb-3 text-sm font-semibold">Propensity & Next Likely Purchase</h3>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div>
+              <div className="text-[10px] uppercase text-muted-foreground">Propensity Percentile</div>
+              <div
+                className="text-2xl font-bold"
+                style={{ color: account.propensity.propensity_percentile >= 80 ? "var(--status-completed)" : account.propensity.propensity_percentile >= 50 ? "var(--status-awaiting)" : "var(--status-pending)" }}
+              >
+                {account.propensity.propensity_percentile}th
+                <span className="ml-1 text-xs font-normal">
+                  ({account.propensity.propensity_percentile >= 80 ? "High" : account.propensity.propensity_percentile >= 50 ? "Medium" : "Low"})
+                </span>
+              </div>
+            </div>
+            <div>
+              <div className="text-[10px] uppercase text-muted-foreground">Estimated ACV</div>
+              <div className="text-2xl font-bold text-[var(--status-completed)]">
+                ${account.propensity.predicted_acv.toLocaleString()}
+              </div>
+            </div>
+            <div className="col-span-2">
+              <div className="text-[10px] uppercase text-muted-foreground">Next Likely Purchase</div>
+              <div className="mt-1 inline-flex rounded-full border border-[var(--accent-pipeline)]/40 bg-[var(--accent-pipeline)]/10 px-3 py-1 text-sm font-medium text-[var(--accent-pipeline)]">
+                NLP: {account.propensity.next_likely_purchase}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-3 border-t border-[var(--border)] pt-3">
+            <div className="text-[10px] uppercase text-muted-foreground mb-2">Key Purchase Drivers</div>
+            <div className="flex flex-wrap gap-2">
+              {account.propensity.purchase_drivers.map((d, i) => (
+                <span key={i} className="rounded border border-[var(--border)] px-2 py-0.5 text-xs font-mono">{d}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-2 text-[10px] text-muted-foreground">
+            Model: {account.propensity.model_source} {account.propensity.model_version} · Score: {account.propensity.propensity_score}
+          </div>
+        </div>
+      )}
 
       {/* PostHog telemetry */}
       {ph && (

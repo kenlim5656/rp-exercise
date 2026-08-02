@@ -22,6 +22,12 @@ export interface LlmScoringContext {
   crmSummary: Record<string, unknown> | null;
   deterministicTier: string;
   deterministicReasons: string[];
+  propensity?: {
+    propensity_percentile: number;
+    predicted_acv: string;
+    next_likely_purchase: string;
+    top_drivers: string[];
+  } | null;
 }
 
 function buildPrompt(batch: LlmScoringContext[]): string {
@@ -38,6 +44,7 @@ function buildPrompt(batch: LlmScoringContext[]): string {
     crm: c.crmSummary,
     deterministicTier: c.deterministicTier,
     deterministicReasons: c.deterministicReasons,
+    propensity: c.propensity ?? null,
   }));
 
   return `You are scoring inbound leads for RP, an AI Developer Cloud selling GPU infrastructure for

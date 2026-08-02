@@ -1,6 +1,6 @@
 # Architecture & Design Decisions
 
-This document records key decisions made during the design and build of the RP Lead Pipeline POC, v1 and v2. Decisions are recorded at the time they were made; where v2 changes or supersedes a v1 decision, both are noted.
+This document records key decisions made during the design and build of the RP Lead Pipeline POC, v1 through v3. Decisions are recorded at the time they were made; where a later version changes or supersedes an earlier decision, both are noted.
 
 ---
 
@@ -77,3 +77,35 @@ This document records key decisions made during the design and build of the RP L
 ### PII-free audit log
 **Decision**: The `audit_log` table and JSONL file strip any key matching a PII pattern (email, name, phone, address, company, website, job_title) from the `detail_json` field. The full lead record is accessible via a separate drill-down link (`/api/runs/[runId]/logs/[entryId]/record`) that requires an explicit click.
 **Rationale**: Audit logs are often forwarded to SIEM systems, shared with compliance teams, or aggregated at scale. Keeping PII out of the log body by default prevents accidental PII leakage while still allowing authorised drill-down. This mirrors best-practice in real compliance tooling (Segment Protocols, Snowplow, etc.).
+
+---
+
+## v3-specific decisions
+
+### Account-centric data model (v3)
+**Decision**: Group leads into accounts by email domain. Each account gets its own AQL score, PostHog telemetry profile, and propensity data. Leads retain individual PQL scores and are linked to their account via `account_id`.
+**Rationale**: PLG motions need to evaluate accounts holistically — one ML Engineer at a company isn't interesting, but three engineers all hitting quota limits on the same domain is an enterprise signal. The domain-based grouping mirrors how PostHog, Pocus, and 6sense model accounts.
+**Trade-off**: Domain extraction uses a freemail-filter (gmail, hotmail, etc. → skip), which means freemail-only companies get no account rollup. This matches PLG reality: freemail users are individual signals, not account signals, until identity-resolved.
+
+### PQL/AQL dual scoring (v3)
+**Decision**: Score individual users (PQL: 0-100) based on role + product events with time decay, then score accounts (AQL: 0-100) combining firmographic fit + product usage from PostHog. AQL status thresholds: `aql_account` (≥80), `pql_user` (avg PQL ≥50), `unqualified`.
+**Rationale**: PQL captures individual activation depth (did this user actually *use* the product?), while AQL captures team-level signals (multi-seat adoption, quota growth, enterprise features like SSO). Together they catch both bottom-up (individual champion) and top-down (company-wide adoption) PLG motions.
+**Trade-off**: The configurable weights in `pql_config.ts` need tuning per deployment. Defaults are reasonable for a GPU-compute IaaS but would need adjustment for different product categories.
+
+### Source-agnostic propensity adapter pattern (v3-propensity)
+**Decision**: Define a `PropensityDataProvider` interface (`getPropensityForAccount`, `batchUpsertPropensityData`) and implement it as a pluggable adapter. The app never calls a specific ML toolkit directly — it consumes standardized `AccountPropensityRecord` objects through the adapter.
+**Rationale**: Propensity data can originate from many sources — Google BQML, MindsDB, custom Python XGBoost pipelines, or third-party vendors like 6sense/Pocus. Coupling the app to one source would require rewriting the pipeline when switching vendors. The adapter pattern means swapping data sources requires implementing one interface (two methods), not touching any pipeline or UI code.
+**Implementation**: Reference provider (`mock_google_bqml.ts`) simulates GA4/IaaS BQML propensity outputs with deterministic hash-seeded scores. A webhook endpoint (`POST /api/ingest/propensity`) allows external ML workflows to push pre-computed propensity records directly into Turso.
+
+### Propensity AQL boost (+15 for 80th+ percentile) (v3-propensity)
+**Decision**: Accounts in the 80th+ propensity percentile receive a +15 point AQL score boost in the scoring stage. This can push borderline accounts from `unqualified` to `aql_account` status.
+**Rationale**: High-propensity accounts are statistically more likely to convert, so they should receive prioritized routing even if their raw AQL score is slightly below threshold. The +15 boost is calibrated to bridge a borderline gap without overwhelming the base AQL signal. The 80th percentile cutoff ensures only top-quintile accounts get the boost.
+**Trade-off**: The boost is additive and non-configurable in this version. A production deployment should make both the percentile threshold and boost magnitude configurable (e.g. via env vars or the Settings page).
+
+### Propensity data in LLM prompts (v3-propensity)
+**Decision**: Inject propensity metrics (percentile, predicted ACV, next likely purchase, drivers) into the Gemini prompts for both scoring and follow-up generation.
+**Rationale**: The LLM needs all available context to produce useful recommendations. Without propensity data, it can't suggest "offer a technical architecture review for Dedicated VPC ($35k ACV)" — it would fall back to generic compute-platform talking points. Including the propensity prediction grounds the recommendation in a specific expansion opportunity.
+
+### Graceful degradation when propensity data is missing (v3-propensity)
+**Decision**: If propensity data is unavailable for an account (provider returns null, table doesn't exist, or external ingest hasn't run), all pipeline stages proceed normally. Propensity fields in the UI show as absent, not as errors. The AQL boost is simply not applied.
+**Rationale**: Propensity is an enrichment layer, not a prerequisite. The pipeline should work identically to v3 without propensity data. Existing runs that haven't been re-processed shouldn't break when the table is added.

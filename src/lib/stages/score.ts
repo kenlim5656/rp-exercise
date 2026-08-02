@@ -9,6 +9,7 @@ import { chunk, scoreLlmBatch, type LeadScore, type LlmScoringContext } from "..
 import { reconcileScores } from "../scoring/reconcile";
 import { scorePQL, scoreAQL } from "../scoring/pql";
 import { posthogBatchLookup } from "../mocks/posthog";
+import { getAccountPropensities } from "../runs";
 
 const BATCH_SIZE = 100;
 const CONCURRENCY = 5;
@@ -63,6 +64,7 @@ export async function runScoreStage(runId: string) {
         crmSummary: row.crm_json ? JSON.parse(row.crm_json) : null,
         deterministicTier: det.tier,
         deterministicReasons: det.reasons,
+        propensity: null,
       });
     }
     if (detUpdates.length > 0) {
@@ -228,6 +230,31 @@ export async function runScoreStage(runId: string) {
       await upsertAccounts(accountUpdates);
     }
 
+    // ── Phase 3: Propensity-based AQL boost (v3-propensity) ──
+    let propensityBoosted = 0;
+    try {
+      const accountIds = accounts.map((a) => a.id);
+      const propensityMap = await getAccountPropensities(accountIds);
+
+      const boostUpdates: Array<{ id: string; run_id: string; domain: string; aql_score: number; aql_status: string }> = [];
+      for (const upd of accountUpdates) {
+        const prop = propensityMap.get(upd.id);
+        if (!prop || prop.propensity_percentile < 80) continue;
+
+        const boostedScore = Math.min(100, upd.aql_score + 15);
+        const newStatus = boostedScore >= 80 ? "aql_account" : upd.aql_status;
+        if (boostedScore !== upd.aql_score) {
+          boostUpdates.push({ id: upd.id, run_id: runId, domain: upd.domain, aql_score: boostedScore, aql_status: newStatus });
+          propensityBoosted++;
+        }
+      }
+      if (boostUpdates.length > 0) {
+        await upsertAccounts(boostUpdates);
+      }
+    } catch (propErr) {
+      console.error("Propensity AQL boost failed (non-fatal):", (propErr as Error).message);
+    }
+
     await setStageStatus(runId, "score", "completed", { outputPath: outDir });
     await logAction({
       runId,
@@ -240,6 +267,7 @@ export async function runScoreStage(runId: string) {
         accounts_scored: accountUpdates.length,
         aql_qualified: accountUpdates.filter((a) => a.aql_status === "aql_account").length,
         pql_qualified: accountUpdates.filter((a) => a.aql_status === "pql_user").length,
+        propensity_boosted: propensityBoosted,
       },
     });
   } catch (err) {

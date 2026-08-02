@@ -343,6 +343,132 @@ export async function getAccountLeads(runId: string, accountId: string): Promise
   return result.rows as unknown as LeadRow[];
 }
 
+// ---------------------------------------------------------------------------
+// account propensity
+// ---------------------------------------------------------------------------
+
+export interface AccountPropensityRow {
+  id: string;
+  account_id: string;
+  domain: string;
+  propensity_score: number;
+  propensity_percentile: number;
+  predicted_acv: number;
+  next_likely_purchase: string;
+  purchase_drivers_json: string;
+  model_source: string;
+  model_version: string;
+  last_updated_at: string;
+}
+
+export async function getAccountPropensity(accountId: string): Promise<AccountPropensityRow | undefined> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT * FROM account_propensity WHERE account_id = ?`,
+    args: [accountId],
+  });
+  return result.rows[0] as unknown as AccountPropensityRow | undefined;
+}
+
+export async function getAccountPropensities(accountIds: string[]): Promise<Map<string, AccountPropensityRow>> {
+  const db = getDb();
+  const map = new Map<string, AccountPropensityRow>();
+  if (accountIds.length === 0) return map;
+  const placeholders = accountIds.map(() => "?").join(", ");
+  const result = await db.execute({
+    sql: `SELECT * FROM account_propensity WHERE account_id IN (${placeholders})`,
+    args: accountIds as import("@libsql/client").InValue[],
+  });
+  for (const row of result.rows) {
+    const r = row as unknown as AccountPropensityRow;
+    map.set(r.account_id, r);
+  }
+  return map;
+}
+
+export async function getHighPropensityAccounts(runId: string, minPercentile: number = 75): Promise<Array<AccountRow & { propensity: AccountPropensityRow }>> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT a.*, ap.id as prop_id, ap.account_id as prop_account_id, ap.domain as prop_domain,
+            ap.propensity_score, ap.propensity_percentile, ap.predicted_acv,
+            ap.next_likely_purchase, ap.purchase_drivers_json, ap.model_source, ap.model_version, ap.last_updated_at as prop_updated
+          FROM accounts a
+          INNER JOIN account_propensity ap ON a.id = ap.account_id
+          WHERE a.run_id = ? AND ap.propensity_percentile >= ?
+          ORDER BY ap.propensity_percentile DESC`,
+    args: [runId, minPercentile],
+  });
+  return result.rows.map((row) => {
+    const r = row as unknown as Record<string, unknown>;
+    return {
+      id: r.id as string,
+      run_id: r.run_id as string,
+      domain: r.domain as string,
+      name: r.name as string | null,
+      employee_count: r.employee_count as number | null,
+      industry: r.industry as string | null,
+      funding_stage: r.funding_stage as string | null,
+      tech_stack_json: r.tech_stack_json as string | null,
+      plan_tier: r.plan_tier as string,
+      aql_score: r.aql_score as number | null,
+      fit_score: r.fit_score as number | null,
+      usage_score: r.usage_score as number | null,
+      aql_status: r.aql_status as string,
+      posthog_json: r.posthog_json as string | null,
+      routing_decision: r.routing_decision as string | null,
+      followup_json: r.followup_json as string | null,
+      followup_executed_json: r.followup_executed_json as string | null,
+      created_at: r.created_at as string,
+      propensity: {
+        id: r.prop_id as string,
+        account_id: r.prop_account_id as string,
+        domain: r.prop_domain as string,
+        propensity_score: r.propensity_score as number,
+        propensity_percentile: r.propensity_percentile as number,
+        predicted_acv: r.predicted_acv as number,
+        next_likely_purchase: r.next_likely_purchase as string,
+        purchase_drivers_json: r.purchase_drivers_json as string,
+        model_source: r.model_source as string,
+        model_version: r.model_version as string,
+        last_updated_at: r.prop_updated as string,
+      },
+    };
+  });
+}
+
+export async function getRevenuePotentialSummary(runId: string): Promise<{ totalAccounts: number; accountsWithPropensity: number; totalEstimatedAcv: number; avgPropensityScore: number; byStatus: Record<string, { count: number; totalAcv: number }> }> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT a.aql_status, ap.predicted_acv, ap.propensity_score
+          FROM accounts a
+          INNER JOIN account_propensity ap ON a.id = ap.account_id
+          WHERE a.run_id = ?`,
+    args: [runId],
+  });
+  const totalAccounts = (await db.execute({ sql: `SELECT COUNT(*) as c FROM accounts WHERE run_id = ?`, args: [runId] })).rows[0] as unknown as { c: number };
+  const rows = result.rows as unknown as Array<{ aql_status: string; predicted_acv: number; propensity_score: number }>;
+
+  const byStatus: Record<string, { count: number; totalAcv: number }> = {};
+  let totalAcv = 0;
+  let totalScore = 0;
+
+  for (const r of rows) {
+    totalAcv += r.predicted_acv;
+    totalScore += r.propensity_score;
+    if (!byStatus[r.aql_status]) byStatus[r.aql_status] = { count: 0, totalAcv: 0 };
+    byStatus[r.aql_status].count++;
+    byStatus[r.aql_status].totalAcv += r.predicted_acv;
+  }
+
+  return {
+    totalAccounts: totalAccounts.c,
+    accountsWithPropensity: rows.length,
+    totalEstimatedAcv: totalAcv,
+    avgPropensityScore: rows.length > 0 ? Math.round((totalScore / rows.length) * 100) / 100 : 0,
+    byStatus,
+  };
+}
+
 export async function recordReviewAction(input: {
   runId: string;
   leadId: string;

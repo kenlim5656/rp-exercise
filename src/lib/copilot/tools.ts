@@ -1,6 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
-import { getLead, getLeads, getRun, getStages, getAccounts, getAccount, getAccountLeads } from "../runs";
+import { getLead, getLeads, getRun, getStages, getAccounts, getAccount, getAccountLeads, getHighPropensityAccounts, getRevenuePotentialSummary } from "../runs";
 import { listAuditLog } from "../audit";
 
 /**
@@ -122,6 +122,49 @@ export function buildCopilotTools(runId: string) {
             routing_decision: m.routing_decision,
           })),
         };
+      },
+    }),
+
+    getHighPropensityAccounts: tool({
+      description: "Get accounts with high purchase propensity (75th+ percentile by default). Shows predicted ACV, next likely purchase, and key drivers.",
+      inputSchema: z.object({
+        minPercentile: z.number().min(1).max(100).default(75),
+        limit: z.number().min(1).max(50).default(20),
+      }),
+      execute: async ({ minPercentile, limit }) => {
+        try {
+          const results = await getHighPropensityAccounts(runId, minPercentile);
+          return {
+            total: results.length,
+            accounts: results.slice(0, limit).map((r) => ({
+              id: r.id,
+              domain: r.domain,
+              name: r.name,
+              aql_score: r.aql_score,
+              aql_status: r.aql_status,
+              propensity_percentile: r.propensity.propensity_percentile,
+              propensity_score: r.propensity.propensity_score,
+              predicted_acv: r.propensity.predicted_acv,
+              next_likely_purchase: r.propensity.next_likely_purchase,
+              purchase_drivers: JSON.parse(r.propensity.purchase_drivers_json),
+              model_source: r.propensity.model_source,
+            })),
+          };
+        } catch {
+          return { total: 0, accounts: [], note: "Propensity data not yet available for this run" };
+        }
+      },
+    }),
+
+    getRevenuePotentialSummary: tool({
+      description: "Get aggregated revenue potential across all accounts: total estimated expansion ACV, average propensity, breakdown by AQL status.",
+      inputSchema: z.object({}),
+      execute: async () => {
+        try {
+          return await getRevenuePotentialSummary(runId);
+        } catch {
+          return { totalAccounts: 0, accountsWithPropensity: 0, totalEstimatedAcv: 0, avgPropensityScore: 0, byStatus: {}, note: "Propensity data not yet available" };
+        }
       },
     }),
 

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { getLeads, getAccounts, getStage, setStageStatus, upsertLeads, upsertAccounts, leadDisplayFields, type LeadRow } from "../runs";
+import { getLeads, getAccounts, getStage, setStageStatus, upsertLeads, upsertAccounts, leadDisplayFields, getAccountPropensities, type LeadRow } from "../runs";
 import { logAction } from "../audit";
 import { findSimilarLeads, extractSuccessfulTreatments } from "../mocks/historical";
 import { generateWithFallback } from "../gemini";
@@ -63,7 +63,7 @@ const FollowupOutputSchema = z.object({
 export type FollowupRecommendation = z.infer<typeof RecommendationSchema>;
 export type FollowupOutput = z.infer<typeof FollowupOutputSchema>;
 
-function buildFollowupPrompt(lead: LeadRow, similarLeadsContext: string, accountContext?: string): string {
+function buildFollowupPrompt(lead: LeadRow, similarLeadsContext: string, accountContext?: string, propensityContext?: string): string {
   const fields = leadDisplayFields(lead);
   const sanitized = lead.sanitized_json ? JSON.parse(lead.sanitized_json) : {};
   const crm = lead.crm_json ? JSON.parse(lead.crm_json) : {};
@@ -123,6 +123,7 @@ ${JSON.stringify({
 - **Role**: ${lead.role || "unknown"}
 - **Product signals**: ${eventSummary ? JSON.stringify(eventSummary.signals) : "none"}
 ${accountContext ? `\n## Account-level context\n${accountContext}` : ""}
+${propensityContext ? `\n## Propensity & Next Likely Purchase\n${propensityContext}` : ""}
 
 ## Historical similar leads — what worked
 ${similarLeadsContext}
@@ -208,9 +209,9 @@ function buildSimilarLeadsContext(lead: LeadRow): string {
   return lines.join("\n");
 }
 
-async function generateFollowupForLead(lead: LeadRow, accountContext?: string): Promise<FollowupOutput> {
+async function generateFollowupForLead(lead: LeadRow, accountContext?: string, propensityContext?: string): Promise<FollowupOutput> {
   const similarContext = buildSimilarLeadsContext(lead);
-  const prompt = buildFollowupPrompt(lead, similarContext, accountContext);
+  const prompt = buildFollowupPrompt(lead, similarContext, accountContext, propensityContext);
   return generateWithFallback({ schema: FollowupOutputSchema, prompt });
 }
 
@@ -264,6 +265,12 @@ export async function runFollowupStage(runId: string): Promise<{ processed: numb
       if (l.account_id) leadsByAccount.set(l.account_id, (leadsByAccount.get(l.account_id) ?? 0) + 1);
     }
 
+    const accountIds = accounts.map((a) => a.id);
+    let propensityMap = new Map<string, import("../runs").AccountPropensityRow>();
+    try {
+      propensityMap = await getAccountPropensities(accountIds);
+    } catch { /* table may not exist yet */ }
+
     const eligibleLeads = allLeads
       .filter(
         (l) =>
@@ -297,7 +304,23 @@ export async function runFollowupStage(runId: string): Promise<{ processed: numb
       const results = await Promise.allSettled(chunk.map((l) => {
         const account = l.account_id ? accountById.get(l.account_id) : null;
         const acctCtx = account ? buildAccountContext(account, leadsByAccount.get(account.id) ?? 1) : undefined;
-        return generateFollowupForLead(l, acctCtx);
+        let propCtx: string | undefined;
+        if (account) {
+          const prop = propensityMap.get(account.id);
+          if (prop) {
+            const drivers: string[] = JSON.parse(prop.purchase_drivers_json);
+            propCtx = [
+              `- **Propensity Percentile**: ${prop.propensity_percentile}th (score: ${prop.propensity_score})`,
+              `- **Predicted Expansion ACV**: $${prop.predicted_acv.toLocaleString()}`,
+              `- **Next Likely Purchase**: ${prop.next_likely_purchase}`,
+              `- **Key Purchase Drivers**: ${drivers.join(", ")}`,
+              `- **Model**: ${prop.model_source} ${prop.model_version}`,
+              ``,
+              `Use the next likely purchase and predicted ACV to draft specific pitch angles. For example: "Account is in the ${prop.propensity_percentile}th percentile to buy ${prop.next_likely_purchase} ($${(prop.predicted_acv / 1000).toFixed(0)}k ACV). Offer a technical architecture review."`,
+            ].join("\n");
+          }
+        }
+        return generateFollowupForLead(l, acctCtx, propCtx);
       }));
 
       for (let j = 0; j < results.length; j++) {

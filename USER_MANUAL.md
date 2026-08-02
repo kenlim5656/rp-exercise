@@ -1,4 +1,4 @@
-# User Manual — RP Lead Pipeline v2
+# User Manual — RP Lead Pipeline v3
 
 ## What you need
 
@@ -32,7 +32,10 @@ GEMINI_API_KEY=AIza...
 
 # Optional — defaults shown
 GEMINI_MODEL=gemini-flash-lite-latest
+KIMI_API_KEY=                          # Backup LLM (Moonshot AI)
+KIMI_MODEL=moonshot-v1-32k
 SCORE_DIVERGENCE_THRESHOLD=30
+FOLLOWUP_BATCH_LIMIT=50
 APP_PASSWORD=yourpassword
 ```
 
@@ -50,10 +53,17 @@ APP_PASSWORD=yourpassword
 
 ### Initialise the database
 
-The database schema is applied automatically on first use. If you are upgrading from v1, run the migration first:
+The database schema is applied automatically on first use. If you are upgrading from an earlier version, run all applicable migrations:
 
 ```bash
+# v2 migration (adds followup columns)
 TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate.ts
+
+# v3 migration (adds accounts table + PQL/AQL columns)
+TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate_v3.ts
+
+# v3-propensity migration (adds account_propensity table)
+TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate_v3_propensity.ts
 ```
 
 ### Start the dev server
@@ -103,32 +113,53 @@ From the Cohorts page onwards, you can either:
 
 Run All Stages executes Sanitize → Cohorts → Enrichment → CRM → Scoring → Routing → Follow-up in sequence with automatic approvals. It takes 1-5 minutes depending on CSV size (the LLM scoring and follow-up stages are the slowest steps).
 
+### Step 4: Enrichment *(v3 additions)*
+
+In addition to Clay identity resolution, firmographics, and intent scoring, the enrichment stage now attaches **propensity data** to each account. The propensity adapter generates:
+- A propensity score (0.0–1.0) and percentile rank (1–99)
+- A predicted expansion ACV ($10k–$75k)
+- A next likely purchase prediction
+- Key behavioral drivers
+
+This data is used in later stages (scoring + follow-up) and displayed in the account detail views.
+
 ### Step 5: CRM / MAP (HubSpot)
 
 This page shows each lead's HubSpot status: lifecycle stage, open deals, email opt-out, DNC flag, and HubSpot lead score. EU leads with ambiguous consent are highlighted — these cannot be contacted until the flag is resolved in the human review queue.
 
-### Step 6: Scoring
+### Step 6: Scoring *(v3 additions)*
 
-The scoring page shows both engines' outputs side by side:
+The scoring page now shows three scoring layers:
+
+**MQL scoring** (deterministic + LLM):
 - **Deterministic tier** (rules-based, from the ICP memo)
 - **LLM score** (0-100, Gemini probabilistic)
 - **Divergence** (highlighted in amber if > threshold)
-- **Final tier** (what routing will use)
+
+**PQL/AQL scoring** *(v3)*:
+- **PQL score** (per-user): role relevance + product event signals with time decay
+- **AQL score** (per-account): firmographic fit + PostHog product usage
+- **AQL status**: `aql_account` (≥80), `pql_user` (avg PQL ≥50), or `unqualified`
+
+**Propensity AQL boost** *(v3)*:
+- Accounts in the 80th+ propensity percentile get +15 AQL points
+- This can promote borderline accounts from `unqualified` to `aql_account`
 
 Click any lead ID to see the full scoring rationale.
 
-### Step 7: Routing
+### Step 7: Routing *(v3 additions)*
 
 The routing page shows the final routing decision for each lead:
 - **Sales queue**: hot leads going to a rep
-- **Nurture**: leads needing more time
+- **Enterprise sales** *(v3)*: AQL-qualified accounts routed to enterprise reps
+- **Nurture**: leads needing more time (high-PQL users may be upgraded to sales queue)
 - **Human review**: flagged leads (divergence, EU consent, edge cases)
 - **Self-serve / newsletter**: low-intent, self-directed
 - **Suppressed**: invalid, competitor, or DNC
 
-### Step 8: Follow-up Recommendations *(v2 feature)*
+### Step 8: Follow-up Recommendations *(v2+v3)*
 
-This is the key new page in v2. For each lead in the sales queue, nurture track, or human review queue, the LLM generates 2-4 specific, actionable follow-up recommendations.
+For each lead in the sales queue, nurture track, or human review queue, the LLM generates 2-4 specific, actionable follow-up recommendations.
 
 **Reading a recommendation card:**
 - The **title** and **channel** tell you what kind of action it is
@@ -136,6 +167,13 @@ This is the key new page in v2. For each lead in the sales queue, nurture track,
 - **Talking points** are specific to this person's role, company, and signals
 - **Suggested content** is a draft email or message you can customise
 - **Estimated conversion lift** gives context on expected impact
+
+**v3 propensity-grounded recommendations:**
+When propensity data is available for a lead's account, recommendations include:
+- Specific product pitch based on the next likely purchase prediction
+- Dollar-value context ("$35k estimated ACV for Dedicated VPC")
+- Behavioral driver insights ("Account showing compute_growth_100_pct and sso_settings_viewed signals")
+- Concrete next steps ("Offer a technical architecture review for VPC migration")
 
 **Executing a recommendation:**
 Click **Execute in HubSpot** to run the recommended action. The system creates the task, deal, or sequence enrollment in HubSpot (currently mocked — see deployment notes for production wiring) and shows you the confirmation with a link to the object.
@@ -156,7 +194,39 @@ The Logs page shows the PII-free audit trail for this run. Click any entry's "fu
 
 ---
 
-## 3. The copilot
+## 3. Account view *(v3)*
+
+The **Accounts** page (linked from the pipeline stepper) provides an account-centric view of your leads.
+
+### Account list
+
+Each account card shows:
+- **Domain** and **company name**
+- **AQL status badge**: `AQL Account`, `PQL User`, or `Unqualified`
+- **AQL score** (0-100)
+- **Lead count**: how many individual leads belong to this account
+- **Propensity badge** *(v3)*: percentile rank labeled High (≥75), Medium (50-74), or Low (<50)
+- **Estimated ACV** *(v3)*: predicted expansion value (e.g. "$35k Est. ACV")
+
+Click any account card to expand it and see team members, or click through to the full account detail page.
+
+### Account detail
+
+The full account detail page shows:
+- **Account overview**: domain, industry, employee count, funding stage, AQL score/status
+- **PostHog telemetry**: compute hours, active seats, quota usage, environments, SSO status, weekly growth metrics
+- **Product event timeline**: chronological list of product events with details
+- **Propensity & Next Likely Purchase** *(v3)*:
+  - **Propensity Percentile**: color-coded with High/Medium/Low label
+  - **Estimated ACV**: formatted dollar amount
+  - **Next Likely Purchase**: styled product tag (e.g. "Dedicated VPC & Network Isolation")
+  - **Key Purchase Drivers**: behavioral signal chips (e.g. "compute_growth_100_pct", "sso_settings_viewed")
+  - **Model info**: source and version of the propensity model
+- **Team members**: all leads associated with this account, with their PQL scores
+
+---
+
+## 4. The copilot *(v3 additions)*
 
 The copilot panel (right sidebar on desktop, slide-up button on mobile) lets you ask free-form questions about the current run. Examples:
 
@@ -166,11 +236,83 @@ The copilot panel (right sidebar on desktop, slide-up button on mobile) lets you
 - *"List all leads from companies with more than 200 employees"*
 - *"What's the breakdown of routing decisions by industry?"*
 
-The copilot is grounded in that run's actual data — it uses database query tools rather than guessing.
+**v3 propensity queries:**
+- *"Which accounts have the highest propensity to buy?"*
+- *"Show me accounts in the 90th+ propensity percentile"*
+- *"What's the total revenue potential for AQL-qualified accounts?"*
+- *"Which accounts are most likely to buy SSO/SAML integration?"*
+- *"Summarize the revenue potential breakdown by AQL status"*
+
+The copilot is grounded in that run's actual data — it uses database query tools rather than guessing. The v3 copilot has two additional tools:
+- **getHighPropensityAccounts**: finds accounts above a given propensity percentile threshold
+- **getRevenuePotentialSummary**: aggregates total predicted ACV, average propensity, and breakdown by AQL status
 
 ---
 
-## 4. Lead CSV format
+## 5. Propensity ingestion webhook *(v3)*
+
+External ML pipelines can push pre-computed propensity data into the platform via a webhook endpoint.
+
+### Endpoint
+
+```
+POST /api/ingest/propensity
+Content-Type: application/json
+```
+
+### Payload format
+
+```json
+{
+  "source": "google_bqml",
+  "records": [
+    {
+      "accountId": "acct_123",
+      "domain": "bigcorp.ai",
+      "propensityScore": 0.88,
+      "propensityPercentile": 88,
+      "predictedAcv": 35000,
+      "nextLikelyPurchase": "Dedicated VPC & SOC2 Compliance",
+      "purchaseDrivers": ["compute_growth_100_pct", "security_docs_visited"],
+      "modelSource": "google_bqml",
+      "modelVersion": "v1.2-2026-08"
+    }
+  ]
+}
+```
+
+### Fields
+
+| Field | Type | Range | Description |
+|---|---|---|---|
+| `accountId` | string | — | Internal account ID |
+| `domain` | string | — | Company domain |
+| `propensityScore` | number | 0.0–1.0 | Raw propensity score |
+| `propensityPercentile` | number | 0–100 | Percentile rank |
+| `predictedAcv` | number | — | Predicted annual contract value (dollars) |
+| `nextLikelyPurchase` | string | — | Predicted next product purchase |
+| `purchaseDrivers` | string[] | — | Behavioral signals driving the prediction |
+| `modelSource` | string | — | ML pipeline identifier |
+| `modelVersion` | string | — | Model version identifier |
+
+### Response
+
+```json
+{ "success": true, "source": "google_bqml", "ingested": 1 }
+```
+
+### Error responses
+
+- **400**: Invalid payload (missing fields, wrong types). Returns `{ error: "<details>" }`.
+- **500**: Server error. Returns `{ error: "Internal server error" }`.
+
+### Usage
+
+Call this endpoint after your ML pipeline produces new propensity predictions. The data is upserted (existing records are updated by account ID). The next pipeline run that includes the enrichment or scoring stages will use the updated propensity data.
+
+---
+
+## 6. Lead CSV format
 
 The pipeline expects a CSV with these columns (extra columns are ignored):
 
@@ -194,7 +336,7 @@ The pipeline expects a CSV with these columns (extra columns are ignored):
 
 ---
 
-## 5. Settings
+## 7. Settings
 
 Go to **Settings** to configure:
 - **Score divergence threshold**: how many points apart the deterministic and LLM scores need to be before a lead is flagged for review (default: 30)
@@ -203,7 +345,7 @@ Go to **Settings** to configure:
 
 ---
 
-## 6. Deployment to Vercel
+## 8. Deployment to Vercel
 
 ### Pre-deployment checklist
 
@@ -226,14 +368,19 @@ During the first deploy, Vercel will prompt for environment variables. Add:
 - `GEMINI_API_KEY`
 - `APP_PASSWORD` (if you want the password gate)
 - `GEMINI_MODEL` (optional — defaults to `gemini-flash-lite-latest`)
+- `KIMI_API_KEY` (optional — backup LLM)
+- `KIMI_MODEL` (optional — defaults to `moonshot-v1-32k`)
 - `SCORE_DIVERGENCE_THRESHOLD` (optional — defaults to `30`)
+- `FOLLOWUP_BATCH_LIMIT` (optional — defaults to `50`)
 
 ### Post-deploy
 
 1. The database schema is applied automatically on first request
-2. If upgrading from v1: run the migration once after deploy:
+2. If upgrading from an earlier version, run all applicable migrations:
    ```bash
    TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate.ts
+   TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate_v3.ts
+   TURSO_DATABASE_URL=... TURSO_AUTH_TOKEN=... npx tsx scripts/migrate_v3_propensity.ts
    ```
 3. Visit your Vercel URL to confirm the app loads and the password gate works
 
@@ -247,20 +394,23 @@ Or push to the connected GitHub branch if you've set up Vercel's GitHub integrat
 
 ---
 
-## 7. Running tests
+## 9. Running tests
 
 ```bash
 npm test
 ```
 
-Runs unit tests for the deterministic ICP scoring engine (`src/lib/scoring/deterministic.ts`) against known rows. Tests cover:
-- All three tiers (Tier 1, Tier 2, Tier 3)
-- All suppress rules (competitor domains, invalid emails)
-- All named edge cases (missing title, personal email + Tier 1 signals, etc.)
+Unit tests cover:
+- **Deterministic ICP scoring**: all three tiers, suppress rules, named edge cases
+- **PQL scoring** *(v3)*: target roles, time decay, event signals, score capping
+- **AQL scoring** *(v3)*: firmographic fit, PostHog usage, status thresholds
+- **Propensity engine** *(v3)*: deterministic generation, range validation, ACV rounding, graceful degradation, score boost logic, interface conformance
+
+26 tests total (14 PQL/AQL + 12 propensity).
 
 ---
 
-## 8. Troubleshooting
+## 10. Troubleshooting
 
 **The app shows "TURSO_DATABASE_URL is not set"**
 → Check your `.env.local` file exists in the project root and contains the correct variable names (no extra spaces, no quotes around values).
@@ -274,5 +424,14 @@ Runs unit tests for the deterministic ICP scoring engine (`src/lib/scoring/deter
 **Follow-up recommendations not generating**
 → (1) Ensure the routing stage has completed first. (2) Check that `GEMINI_API_KEY` is set and valid. (3) Check the server logs for Gemini API errors.
 
+**Propensity data not showing in account views**
+→ (1) Ensure the v3-propensity migration has been run (`npx tsx scripts/migrate_v3_propensity.ts`). (2) Run the enrichment stage — propensity data is generated during enrichment. (3) If using the ingestion webhook, verify the POST payload matches the schema above.
+
+**Propensity AQL boost not applied**
+→ The boost only applies to accounts in the 80th+ propensity percentile. Re-run the scoring stage after propensity data has been attached during enrichment.
+
 **Turso "too many connections" error**
 → The libSQL client is module-level-singleton in `src/lib/db.ts`. This should not happen in practice — if it does, check for multiple `getDb()` import paths causing multiple client instances.
+
+**Kimi/Moonshot backup LLM not working**
+→ Ensure `KIMI_API_KEY` is set in `.env.local`. The backup LLM is only used when Gemini returns a quota error (429). Check server logs for Moonshot API errors.

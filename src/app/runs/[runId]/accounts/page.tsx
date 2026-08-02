@@ -15,6 +15,15 @@ interface AccountLead {
   llm_score: number | null;
 }
 
+interface PropensityData {
+  propensity_score: number;
+  propensity_percentile: number;
+  predicted_acv: number;
+  next_likely_purchase: string;
+  purchase_drivers: string[];
+  model_source: string;
+}
+
 interface AccountEntry {
   id: string;
   domain: string;
@@ -29,6 +38,7 @@ interface AccountEntry {
   routing_decision: string | null;
   lead_count: number;
   leads: AccountLead[];
+  propensity: PropensityData | null;
 }
 
 const AQL_STATUS_STYLES: Record<string, { label: string; color: string }> = {
@@ -176,11 +186,27 @@ export default function AccountsPage({ params }: { params: Promise<{ runId: stri
                         {account.lead_count} members
                       </span>
                     )}
+                    {account.propensity && (
+                      <span
+                        className="rounded-full border px-2 py-0.5 text-[10px] font-medium"
+                        style={{
+                          color: account.propensity.propensity_percentile >= 80 ? "var(--status-completed)" : account.propensity.propensity_percentile >= 50 ? "var(--status-awaiting)" : "var(--status-pending)",
+                          borderColor: (account.propensity.propensity_percentile >= 80 ? "var(--status-completed)" : account.propensity.propensity_percentile >= 50 ? "var(--status-awaiting)" : "var(--status-pending)") + "50",
+                          background: (account.propensity.propensity_percentile >= 80 ? "var(--status-completed)" : account.propensity.propensity_percentile >= 50 ? "var(--status-awaiting)" : "var(--status-pending)") + "15",
+                        }}
+                      >
+                        {account.propensity.propensity_percentile}th Pctl
+                        {account.propensity.propensity_percentile >= 80 ? " (High)" : account.propensity.propensity_percentile >= 50 ? " (Med)" : " (Low)"}
+                      </span>
+                    )}
                   </div>
                   <div className="flex gap-4 text-xs text-muted-foreground">
                     {account.industry && <span>{account.industry}</span>}
                     {account.employee_count && <span>{account.employee_count} employees</span>}
                     <span style={{ color: routing.color }}>{routing.label}</span>
+                    {account.propensity && (
+                      <span className="text-[var(--status-completed)]">${(account.propensity.predicted_acv / 1000).toFixed(0)}k Est. ACV</span>
+                    )}
                   </div>
                 </div>
                 <div className="flex shrink-0 flex-col items-end gap-1">
@@ -201,7 +227,7 @@ export default function AccountsPage({ params }: { params: Promise<{ runId: stri
 
               {isExpanded && (
                 <div className="border-t border-[var(--border)] p-4">
-                  <div className="mb-3 grid grid-cols-3 gap-3">
+                  <div className="mb-3 grid grid-cols-3 gap-3 sm:grid-cols-6">
                     <div className="rounded-md border border-[var(--border)] p-2 text-center">
                       <div className="text-[10px] uppercase text-muted-foreground">Fit Score</div>
                       <div className="text-lg font-semibold text-[var(--accent-pipeline)]">{account.fit_score ?? "-"}</div>
@@ -214,6 +240,24 @@ export default function AccountsPage({ params }: { params: Promise<{ runId: stri
                       <div className="text-[10px] uppercase text-muted-foreground">AQL Score</div>
                       <div className="text-lg font-semibold text-[var(--status-completed)]">{account.aql_score ?? "-"}</div>
                     </div>
+                    {account.propensity && (
+                      <>
+                        <div className="rounded-md border border-[var(--border)] p-2 text-center">
+                          <div className="text-[10px] uppercase text-muted-foreground">Propensity</div>
+                          <div className="text-lg font-semibold" style={{ color: account.propensity.propensity_percentile >= 80 ? "var(--status-completed)" : "var(--status-awaiting)" }}>
+                            {account.propensity.propensity_percentile}%
+                          </div>
+                        </div>
+                        <div className="rounded-md border border-[var(--border)] p-2 text-center">
+                          <div className="text-[10px] uppercase text-muted-foreground">Est. ACV</div>
+                          <div className="text-lg font-semibold text-[var(--status-completed)]">${(account.propensity.predicted_acv / 1000).toFixed(0)}k</div>
+                        </div>
+                        <div className="rounded-md border border-[var(--border)] p-2 text-center">
+                          <div className="text-[10px] uppercase text-muted-foreground">NLP</div>
+                          <div className="text-[11px] font-medium text-[var(--accent-pipeline)] leading-tight mt-0.5">{account.propensity.next_likely_purchase}</div>
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   <div className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground mb-2">
