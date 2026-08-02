@@ -6,6 +6,7 @@ import { runEnrichStage } from "@/lib/stages/enrich";
 import { runCrmStage } from "@/lib/stages/crm";
 import { runScoreStage } from "@/lib/stages/score";
 import { runRoutingStage } from "@/lib/stages/route";
+import { runFollowupStage } from "@/lib/stages/followup";
 
 const PIPELINE: Array<{
   key: string;
@@ -17,6 +18,7 @@ const PIPELINE: Array<{
   { key: "crm", run: runCrmStage },
   { key: "score", run: runScoreStage },
   { key: "route", run: runRoutingStage },
+  { key: "followup", run: runFollowupStage },
 ];
 
 export async function POST(_req: Request, { params }: { params: Promise<{ runId: string }> }) {

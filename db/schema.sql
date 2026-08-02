@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS runs (
 
 CREATE TABLE IF NOT EXISTS run_stages (
   run_id TEXT NOT NULL REFERENCES runs(id),
-  stage_key TEXT NOT NULL,                        -- analyze|sanitize|match|enrich|crm|score|route|log
+  stage_key TEXT NOT NULL,                        -- analyze|sanitize|match|enrich|crm|score|route|followup|log
   status TEXT NOT NULL DEFAULT 'pending',          -- pending|running|completed|failed|awaiting_approval
   started_at TEXT,
   completed_at TEXT,
@@ -60,6 +60,8 @@ CREATE TABLE IF NOT EXISTS leads (
   review_status TEXT DEFAULT 'none',                   -- none | pending | approved | rejected
   review_actor TEXT,
   review_at TEXT,
+  followup_json TEXT,                                   -- JSON array of LLM-generated follow-up recommendations
+  followup_executed_json TEXT,                          -- JSON object tracking which recommendations were executed
   PRIMARY KEY (run_id, lead_id)
 );
 

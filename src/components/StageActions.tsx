@@ -62,6 +62,13 @@ const STAGE_ACTIONS: Record<string, StageAction> = {
     method: "POST",
     nextPage: "routing",
   },
+  routing: {
+    label: "Generate Follow-up Recommendations",
+    busyLabel: "Analysing leads...",
+    endpoint: "followup",
+    method: "POST",
+    nextPage: "followup",
+  },
 };
 
 export function StageActions({ runId }: { runId: string }) {
@@ -75,7 +82,7 @@ export function StageActions({ runId }: { runId: string }) {
 
   const currentStage = pathname.split("/").pop() ?? "";
   const action = STAGE_ACTIONS[currentStage];
-  const isFinalStage = ["routing", "review", "logs"].includes(currentStage);
+  const isFinalStage = ["followup", "review", "logs"].includes(currentStage);
 
   async function proceed() {
     if (!action) return;

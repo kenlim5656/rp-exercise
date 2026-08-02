@@ -40,9 +40,12 @@ interface CrmLead {
   eu_consent_flag: string | null;
   crm: {
     isExistingCustomer: boolean;
+    isActiveOpportunity: boolean;
     isLead: boolean;
     isChurned: boolean;
     dncFlag: boolean;
+    leadScore: number | null;
+    ownerAssigned: boolean;
     campaignHistory: unknown[];
   };
 }
@@ -95,7 +98,7 @@ export default function CrmPage({ params }: { params: Promise<{ runId: string }>
     <div className="flex flex-col gap-6">
       <Card>
         <CardHeader>
-          <CardTitle>Salesforce & HubSpot lookup (5.0)</CardTitle>
+          <CardTitle>HubSpot CRM / MAP lookup (5.0)</CardTitle>
           <CardDescription>
             {leads.length} leads checked &middot; {euAmbiguous} EU leads with ambiguous consent (hard rule 5.3)
           </CardDescription>
@@ -128,7 +131,8 @@ export default function CrmPage({ params }: { params: Promise<{ runId: string }>
                 <SortHead k="title" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>Title</SortHead>
                 <SortHead k="is_eu" sortKey={sortKey} sortDir={sortDir} onSort={toggleSort}>EU</SortHead>
                 <TableHead>Consent</TableHead>
-                <TableHead>Customer / Lead / Churned</TableHead>
+                <TableHead>CRM Status</TableHead>
+                <TableHead>HS Score</TableHead>
                 <TableHead>DNC</TableHead>
               </TableRow>
             </TableHeader>
@@ -152,8 +156,9 @@ export default function CrmPage({ params }: { params: Promise<{ runId: string }>
                     )}
                   </TableCell>
                   <TableCell className="text-muted-foreground">
-                    {l.crm.isExistingCustomer ? "Customer" : l.crm.isChurned ? "Churned" : l.crm.isLead ? "Lead" : "Unknown"}
+                    {l.crm.isExistingCustomer ? "Customer" : l.crm.isActiveOpportunity ? "Open Opp" : l.crm.isChurned ? "Churned" : l.crm.isLead ? "Lead" : "Net-new"}
                   </TableCell>
+                  <TableCell>{l.crm.leadScore !== null ? l.crm.leadScore : "-"}</TableCell>
                   <TableCell>{l.crm.dncFlag ? <Badge variant="destructive">DNC</Badge> : "-"}</TableCell>
                 </TableRow>
               ))}

@@ -7,14 +7,26 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
   const { runId } = await params;
   const leads = (await getLeads(runId)).filter((l) => l.is_duplicate_primary === 1 && l.crm_json);
   return NextResponse.json({
-    leads: leads.map((l) => ({
-      lead_id: l.lead_id,
-      is_eu: !!l.is_eu,
-      consent_verified: l.consent_verified,
-      eu_consent_flag: l.eu_consent_flag,
-      ...leadDisplayFields(l),
-      crm: JSON.parse(l.crm_json!),
-    })),
+    leads: leads.map((l) => {
+      const crm = JSON.parse(l.crm_json!);
+      return {
+        lead_id: l.lead_id,
+        is_eu: !!l.is_eu,
+        consent_verified: l.consent_verified,
+        eu_consent_flag: l.eu_consent_flag,
+        ...leadDisplayFields(l),
+        crm: {
+          isExistingCustomer: crm.isExistingCustomer,
+          isActiveOpportunity: crm.isActiveOpportunity ?? false,
+          isLead: crm.isLead,
+          isChurned: crm.isChurned,
+          dncFlag: crm.dncFlag,
+          leadScore: crm.leadScore ?? null,
+          ownerAssigned: crm.ownerAssigned ?? false,
+          campaignHistory: crm.campaignHistory ?? [],
+        },
+      };
+    }),
   });
 }
 

@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { getDb } from "./db";
 
-export const STAGE_ORDER = ["analyze", "sanitize", "match", "enrich", "crm", "score", "route", "log"] as const;
+export const STAGE_ORDER = ["analyze", "sanitize", "match", "enrich", "crm", "score", "route", "followup", "log"] as const;
 export type StageKey = (typeof STAGE_ORDER)[number];
 export type StageStatus = "pending" | "running" | "completed" | "failed" | "awaiting_approval";
 
@@ -185,6 +185,8 @@ export interface LeadRow {
   review_status: string;
   review_actor: string | null;
   review_at: string | null;
+  followup_json: string | null;
+  followup_executed_json: string | null;
 }
 
 const LEAD_COLUMNS = [
@@ -195,6 +197,7 @@ const LEAD_COLUMNS = [
   "deterministic_review_reason", "llm_score", "llm_rationale", "score_divergence",
   "scores_aligned", "score_divergence_flag", "final_tier", "routing_decision",
   "needs_review", "review_reasons_json", "review_status", "review_actor", "review_at",
+  "followup_json", "followup_executed_json",
 ] as const;
 
 export async function upsertLeads(runId: string, leads: Array<Partial<LeadRow> & { lead_id: string }>): Promise<void> {

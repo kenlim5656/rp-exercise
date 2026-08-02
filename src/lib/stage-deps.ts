@@ -7,6 +7,7 @@ const PREREQUISITES: Partial<Record<StageKey, StageKey>> = {
   crm: "enrich",
   score: "crm",
   route: "score",
+  followup: "route",
 };
 
 export async function checkStageDep(runId: string, stage: StageKey): Promise<string | null> {

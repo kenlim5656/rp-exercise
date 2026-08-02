@@ -49,64 +49,71 @@
 }
 
 :root {
-  /* Dark mode as default with high-contrast colors */
-  --background: oklch(0.13 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.17 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.17 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.95 0 0);
-  --primary-foreground: oklch(0.13 0 0);
-  --secondary: oklch(0.24 0 0);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.72 0 0);
-  --accent: oklch(0.24 0 0);
-  --accent-foreground: oklch(0.95 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.6 0 0);
-  --chart-1: oklch(0.75 0.15 250);
-  --chart-2: oklch(0.7 0.18 150);
-  --chart-3: oklch(0.65 0.2 30);
-  --chart-4: oklch(0.72 0.16 320);
-  --chart-5: oklch(0.68 0.14 80);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.15 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.2 250);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.24 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.6 0 0);
+  /* ── Core palette: near-black bg, off-white fg ─────────────────────── */
+  --background:        oklch(0.10 0.005 240);
+  --foreground:        oklch(0.97 0.003 240);
+  --card:              oklch(0.14 0.005 240);
+  --card-foreground:   oklch(0.97 0.003 240);
+  --popover:           oklch(0.14 0.005 240);
+  --popover-foreground: oklch(0.97 0.003 240);
+  --primary:           oklch(0.78 0.22 196);   /* vivid cyan/teal */
+  --primary-foreground: oklch(0.10 0.005 240);
+  --secondary:         oklch(0.20 0.008 240);
+  --secondary-foreground: oklch(0.90 0.003 240);
+  --muted:             oklch(0.18 0.006 240);
+  --muted-foreground:  oklch(0.62 0.010 240);
+  --accent:            oklch(0.20 0.008 240);
+  --accent-foreground: oklch(0.93 0.003 240);
+  --destructive:       oklch(0.65 0.22 22);
+  --border:            oklch(1 0 0 / 10%);
+  --input:             oklch(1 0 0 / 12%);
+  --ring:              oklch(0.78 0.22 196 / 50%);
 
-  /* Accent palette — status colors */
-  --status-completed: oklch(0.72 0.17 155);
-  --status-completed-dim: oklch(0.72 0.17 155 / 15%);
-  --status-running: oklch(0.7 0.15 250);
-  --status-running-dim: oklch(0.7 0.15 250 / 15%);
-  --status-awaiting: oklch(0.78 0.16 75);
-  --status-awaiting-dim: oklch(0.78 0.16 75 / 15%);
-  --status-failed: oklch(0.65 0.2 25);
-  --status-failed-dim: oklch(0.65 0.2 25 / 15%);
-  --status-pending: oklch(0.55 0 0);
-  --status-pending-dim: oklch(0.55 0 0 / 12%);
+  /* Charts */
+  --chart-1: oklch(0.78 0.22 196);
+  --chart-2: oklch(0.73 0.19 155);
+  --chart-3: oklch(0.76 0.18 75);
+  --chart-4: oklch(0.70 0.16 290);
+  --chart-5: oklch(0.72 0.20 22);
 
-  /* Section accent borders */
-  --accent-pipeline: oklch(0.7 0.15 250);
-  --accent-history: oklch(0.72 0.17 155);
-  --accent-metrics: oklch(0.78 0.16 75);
-  --accent-copilot: oklch(0.68 0.14 290);
+  --radius: 0.5rem;
 
-  /* Table */
-  --table-row-alt: oklch(1 0 0 / 3%);
-  --table-row-hover: oklch(1 0 0 / 6%);
-  --table-header-bg: oklch(0.15 0 0);
+  /* Sidebar */
+  --sidebar:            oklch(0.11 0.006 240);
+  --sidebar-foreground: oklch(0.97 0.003 240);
+  --sidebar-primary:    oklch(0.78 0.22 196);
+  --sidebar-primary-foreground: oklch(0.10 0.005 240);
+  --sidebar-accent:     oklch(0.18 0.008 240);
+  --sidebar-accent-foreground: oklch(0.97 0.003 240);
+  --sidebar-border:     oklch(1 0 0 / 8%);
+  --sidebar-ring:       oklch(0.78 0.22 196 / 50%);
+
+  /* ── Status palette ────────────────────────────────────────────────── */
+  --status-completed:      oklch(0.76 0.19 155);   /* emerald green */
+  --status-completed-dim:  oklch(0.76 0.19 155 / 12%);
+  --status-running:        oklch(0.78 0.22 196);   /* cyan */
+  --status-running-dim:    oklch(0.78 0.22 196 / 12%);
+  --status-awaiting:       oklch(0.82 0.18 75);    /* amber */
+  --status-awaiting-dim:   oklch(0.82 0.18 75 / 12%);
+  --status-failed:         oklch(0.65 0.22 22);    /* red */
+  --status-failed-dim:     oklch(0.65 0.22 22 / 12%);
+  --status-pending:        oklch(0.48 0.010 240);
+  --status-pending-dim:    oklch(0.48 0.010 240 / 10%);
+
+  /* ── Section accent borders ─────────────────────────────────────────── */
+  --accent-pipeline: oklch(0.78 0.22 196);   /* cyan — pipeline stage indicators */
+  --accent-history:  oklch(0.76 0.19 155);   /* emerald — completed/history */
+  --accent-metrics:  oklch(0.82 0.18 75);    /* amber — scorecard metrics */
+  --accent-copilot:  oklch(0.72 0.18 290);   /* violet — copilot AI */
+  --accent-followup: oklch(0.74 0.20 160);   /* teal-green — follow-up actions */
+
+  /* ── Table ──────────────────────────────────────────────────────────── */
+  --table-row-alt:    oklch(1 0 0 / 2%);
+  --table-row-hover:  oklch(1 0 0 / 5%);
+  --table-header-bg:  oklch(0.12 0.006 240);
 }
 
+/* ── Base ──────────────────────────────────────────────────────────────── */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -116,38 +123,48 @@
   }
   html {
     @apply font-sans;
-    font-size: 18px;
+    font-size: 16px;
   }
+  /* Sharper scrollbars */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 15%); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: oklch(1 0 0 / 25%); }
 }
 
-/* Status badge styles */
+/* ── Status badges ──────────────────────────────────────────────────────── */
 .badge-completed {
   background: var(--status-completed-dim);
   color: var(--status-completed);
-  border: 1px solid oklch(0.72 0.17 155 / 25%);
+  border: 1px solid oklch(0.76 0.19 155 / 22%);
+  font-weight: 500;
 }
 .badge-running {
   background: var(--status-running-dim);
   color: var(--status-running);
-  border: 1px solid oklch(0.7 0.15 250 / 25%);
+  border: 1px solid oklch(0.78 0.22 196 / 22%);
+  font-weight: 500;
 }
 .badge-awaiting {
   background: var(--status-awaiting-dim);
   color: var(--status-awaiting);
-  border: 1px solid oklch(0.78 0.16 75 / 25%);
+  border: 1px solid oklch(0.82 0.18 75 / 22%);
+  font-weight: 500;
 }
 .badge-failed {
   background: var(--status-failed-dim);
   color: var(--status-failed);
-  border: 1px solid oklch(0.65 0.2 25 / 25%);
+  border: 1px solid oklch(0.65 0.22 22 / 22%);
+  font-weight: 500;
 }
 .badge-pending {
   background: var(--status-pending-dim);
   color: var(--status-pending);
-  border: 1px solid oklch(0.55 0 0 / 20%);
+  border: 1px solid oklch(0.48 0.010 240 / 18%);
+  font-weight: 500;
 }
 
-/* Card accent borders */
+/* ── Card accent left-borders ──────────────────────────────────────────── */
 .card-accent-pipeline {
   border-left: 3px solid var(--accent-pipeline);
 }
@@ -160,8 +177,21 @@
 .card-accent-copilot {
   border-left: 3px solid var(--accent-copilot);
 }
+.card-accent-followup {
+  border-left: 3px solid var(--accent-followup);
+}
 
-/* Table enhancements */
+/* ── Glowing card variant for highlighted sections ─────────────────────── */
+.card-glow-cyan {
+  box-shadow: 0 0 0 1px oklch(0.78 0.22 196 / 20%),
+              0 0 20px -4px oklch(0.78 0.22 196 / 15%);
+}
+.card-glow-green {
+  box-shadow: 0 0 0 1px oklch(0.76 0.19 155 / 20%),
+              0 0 20px -4px oklch(0.76 0.19 155 / 15%);
+}
+
+/* ── Table enhancements ────────────────────────────────────────────────── */
 .table-enhanced tbody tr:nth-child(even) {
   background: var(--table-row-alt);
 }
@@ -175,9 +205,66 @@
   z-index: 1;
 }
 .table-enhanced thead th {
-  color: var(--status-running);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  color: var(--accent-pipeline);
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
+  border-bottom: 1px solid oklch(0.78 0.22 196 / 25%);
+}
+
+/* ── Gradient dividers ─────────────────────────────────────────────────── */
+.divider-gradient {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    oklch(0.78 0.22 196 / 30%),
+    transparent
+  );
+}
+
+/* ── Nav/top bar ────────────────────────────────────────────────────────── */
+.top-bar {
+  background: oklch(0.11 0.006 240 / 90%);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid oklch(1 0 0 / 8%);
+}
+
+/* ── Chip / filter pill ─────────────────────────────────────────────────── */
+.chip-active {
+  background: oklch(0.78 0.22 196 / 15%);
+  color: oklch(0.78 0.22 196);
+  border-color: oklch(0.78 0.22 196 / 40%);
+}
+.chip-inactive {
+  background: transparent;
+  color: var(--muted-foreground);
+  border-color: oklch(1 0 0 / 10%);
+}
+.chip-inactive:hover {
+  border-color: oklch(0.78 0.22 196 / 30%);
+  color: oklch(0.78 0.22 196);
+}
+
+/* ── Score bar ─────────────────────────────────────────────────────────── */
+.score-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: oklch(1 0 0 / 8%);
+  overflow: hidden;
+}
+.score-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* ── Pulse ring animation ──────────────────────────────────────────────── */
+@keyframes ping-soft {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.0; transform: scale(1.8); }
+}
+.animate-ping-soft {
+  animation: ping-soft 2s ease-in-out infinite;
 }

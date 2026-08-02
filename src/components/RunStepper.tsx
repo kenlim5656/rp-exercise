@@ -9,7 +9,8 @@ const STEPS: Array<{ key: string; label: string; shortLabel: string; href: (id: 
   { key: "crm", label: "CRM/MAP", shortLabel: "5", href: (id) => `/runs/${id}/crm` },
   { key: "score", label: "Scoring", shortLabel: "6", href: (id) => `/runs/${id}/scoring` },
   { key: "route", label: "Routing", shortLabel: "7", href: (id) => `/runs/${id}/routing` },
-  { key: "log", label: "Logs", shortLabel: "8", href: (id) => `/runs/${id}/logs` },
+  { key: "followup", label: "Follow-up", shortLabel: "8", href: (id) => `/runs/${id}/followup` },
+  { key: "log", label: "Logs", shortLabel: "9", href: (id) => `/runs/${id}/logs` },
 ];
 
 function dotStyle(status: StageStatus | undefined) {

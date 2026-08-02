@@ -18,7 +18,7 @@ function scrubDetail(detail: Record<string, unknown>): Record<string, unknown> {
   return clean;
 }
 
-export type StageKey = "analyze" | "sanitize" | "match" | "enrich" | "crm" | "score" | "route" | "review" | "log";
+export type StageKey = "analyze" | "sanitize" | "match" | "enrich" | "crm" | "score" | "route" | "followup" | "review" | "log";
 
 export interface LogActionInput {
   runId: string;
