@@ -13,6 +13,7 @@ const NEXT_PAGE: Record<string, string> = {
   crm: "crm",
   score: "scoring",
   route: "routing",
+  followup: "followup",
   log: "logs",
 };
 

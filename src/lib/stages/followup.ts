@@ -1,13 +1,14 @@
 import { z } from "zod";
-import { getLeads, getStage, setStageStatus, upsertLeads, leadDisplayFields, type LeadRow } from "../runs";
+import { getLeads, getAccounts, getStage, setStageStatus, upsertLeads, upsertAccounts, leadDisplayFields, type LeadRow } from "../runs";
 import { logAction } from "../audit";
 import { findSimilarLeads, extractSuccessfulTreatments } from "../mocks/historical";
 import { generateWithFallback } from "../gemini";
 
 const PRIORITY_ORDER: Record<string, number> = {
-  sales_queue: 0,
-  human_review: 1,
-  nurture: 2,
+  enterprise_sales: 0,
+  sales_queue: 1,
+  human_review: 2,
+  nurture: 3,
 };
 
 function inferTitleType(title: string | null): string {
@@ -62,7 +63,7 @@ const FollowupOutputSchema = z.object({
 export type FollowupRecommendation = z.infer<typeof RecommendationSchema>;
 export type FollowupOutput = z.infer<typeof FollowupOutputSchema>;
 
-function buildFollowupPrompt(lead: LeadRow, similarLeadsContext: string): string {
+function buildFollowupPrompt(lead: LeadRow, similarLeadsContext: string, accountContext?: string): string {
   const fields = leadDisplayFields(lead);
   const sanitized = lead.sanitized_json ? JSON.parse(lead.sanitized_json) : {};
   const crm = lead.crm_json ? JSON.parse(lead.crm_json) : {};
@@ -71,7 +72,9 @@ function buildFollowupPrompt(lead: LeadRow, similarLeadsContext: string): string
   const routingReasons: string[] = lead.review_reasons_json ? JSON.parse(lead.review_reasons_json) : [];
   const deterministicReasons: string[] = lead.deterministic_reasons_json ? JSON.parse(lead.deterministic_reasons_json) : [];
 
-  return `You are a B2B marketing and sales strategist for RP, an AI Developer Cloud (GPU infrastructure for AI/ML training, fine-tuning, and serving). You specialise in designing highly personalised follow-up treatments for inbound leads.
+  const eventSummary = lead.event_summary_json ? JSON.parse(lead.event_summary_json) : null;
+
+  return `You are a Technical Product Specialist and PLG Sales Engineer for RP, an AI Developer Cloud (GPU infrastructure for AI/ML training, fine-tuning, and serving). You specialise in designing highly personalised, technically-grounded follow-up treatments for developers and technical buyers.
 
 ## Your task
 Analyse this lead's full profile, their routing outcome, and historical data from similar leads who were in the same situation. Then produce 2-4 specific, actionable follow-up recommendations.
@@ -115,11 +118,23 @@ ${JSON.stringify({
   company_type: clay.companyType,
 }, null, 2)}
 
+## PQL/AQL scoring (v3)
+- **PQL score**: ${lead.pql_score !== null ? lead.pql_score + "/100" : "not scored"}
+- **Role**: ${lead.role || "unknown"}
+- **Product signals**: ${eventSummary ? JSON.stringify(eventSummary.signals) : "none"}
+${accountContext ? `\n## Account-level context\n${accountContext}` : ""}
+
 ## Historical similar leads — what worked
 ${similarLeadsContext}
 
 ## Context by routing decision
-${lead.routing_decision === "sales_queue" ? `
+${lead.routing_decision === "enterprise_sales" ? `
+**ENTERPRISE SALES (AQL QUALIFIED)**: This account has crossed the AQL threshold — multiple team members, significant compute usage, and enterprise signals. Your recommendations should:
+1. Focus on the ACCOUNT, not just this individual. Reference team adoption patterns and usage velocity.
+2. Suggest enterprise-specific outreach: SOC2 documentation, dedicated infrastructure, volume pricing, SLA guarantees.
+3. Recommend a multi-threaded approach — engage the technical champion AND the economic buyer.
+4. Reference specific usage patterns (compute hours, deployments, quota usage) in talking points.
+` : lead.routing_decision === "sales_queue" ? `
 **SALES QUEUE**: This is a hot lead. A sales rep will receive a notification. Your recommendations should:
 1. Give the rep specific talking points based on this person's exact title, company, and signals.
 2. Suggest an outreach message (email or LinkedIn) tailored to their background.
@@ -193,9 +208,9 @@ function buildSimilarLeadsContext(lead: LeadRow): string {
   return lines.join("\n");
 }
 
-async function generateFollowupForLead(lead: LeadRow): Promise<FollowupOutput> {
+async function generateFollowupForLead(lead: LeadRow, accountContext?: string): Promise<FollowupOutput> {
   const similarContext = buildSimilarLeadsContext(lead);
-  const prompt = buildFollowupPrompt(lead, similarContext);
+  const prompt = buildFollowupPrompt(lead, similarContext, accountContext);
   return generateWithFallback({ schema: FollowupOutputSchema, prompt });
 }
 
@@ -209,6 +224,29 @@ function hasValidFollowup(lead: LeadRow): boolean {
   }
 }
 
+function buildAccountContext(account: { domain: string; employee_count: number | null; aql_score: number | null; fit_score: number | null; usage_score: number | null; aql_status: string; posthog_json: string | null }, leadCount: number): string {
+  const ph = account.posthog_json ? JSON.parse(account.posthog_json) : null;
+  const lines = [
+    `- **Domain**: ${account.domain}`,
+    `- **Employees**: ${account.employee_count ?? "unknown"}`,
+    `- **AQL score**: ${account.aql_score ?? "N/A"}/100 (fit: ${account.fit_score ?? "?"}, usage: ${account.usage_score ?? "?"})`,
+    `- **AQL status**: ${account.aql_status}`,
+    `- **Team members in this run**: ${leadCount}`,
+  ];
+  if (ph) {
+    lines.push(
+      `- **Active workspace members**: ${ph.active_member_count}`,
+      `- **Compute hours**: ${ph.total_compute_hours}`,
+      `- **Quota used**: ${ph.quota_used_pct}%`,
+      `- **Environments**: ${ph.environments?.join(", ")}`,
+      `- **Has prod deployment**: ${ph.has_prod_deployment}`,
+      `- **SSO initiated**: ${ph.sso_initiated}`,
+      `- **Weekly growth**: compute +${ph.weekly_growth?.compute_hours_delta_pct}%, seats +${ph.weekly_growth?.seats_delta}`,
+    );
+  }
+  return lines.join("\n");
+}
+
 export async function runFollowupStage(runId: string): Promise<{ processed: number; remaining: number }> {
   const routeStage = await getStage(runId, "route");
   if (routeStage?.status !== "completed") {
@@ -219,6 +257,13 @@ export async function runFollowupStage(runId: string): Promise<{ processed: numb
 
   try {
     const allLeads = await getLeads(runId);
+    const accounts = await getAccounts(runId);
+    const accountById = new Map(accounts.map((a) => [a.id, a]));
+    const leadsByAccount = new Map<string, number>();
+    for (const l of allLeads) {
+      if (l.account_id) leadsByAccount.set(l.account_id, (leadsByAccount.get(l.account_id) ?? 0) + 1);
+    }
+
     const eligibleLeads = allLeads
       .filter(
         (l) =>
@@ -249,7 +294,11 @@ export async function runFollowupStage(runId: string): Promise<{ processed: numb
     const BATCH_SIZE = 5;
     for (let i = 0; i < batch.length; i += BATCH_SIZE) {
       const chunk = batch.slice(i, i + BATCH_SIZE);
-      const results = await Promise.allSettled(chunk.map((l) => generateFollowupForLead(l)));
+      const results = await Promise.allSettled(chunk.map((l) => {
+        const account = l.account_id ? accountById.get(l.account_id) : null;
+        const acctCtx = account ? buildAccountContext(account, leadsByAccount.get(account.id) ?? 1) : undefined;
+        return generateFollowupForLead(l, acctCtx);
+      }));
 
       for (let j = 0; j < results.length; j++) {
         const lead = chunk[j];

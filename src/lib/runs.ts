@@ -187,6 +187,10 @@ export interface LeadRow {
   review_at: string | null;
   followup_json: string | null;
   followup_executed_json: string | null;
+  account_id: string | null;
+  pql_score: number | null;
+  role: string | null;
+  event_summary_json: string | null;
 }
 
 const LEAD_COLUMNS = [
@@ -198,6 +202,7 @@ const LEAD_COLUMNS = [
   "scores_aligned", "score_divergence_flag", "final_tier", "routing_decision",
   "needs_review", "review_reasons_json", "review_status", "review_actor", "review_at",
   "followup_json", "followup_executed_json",
+  "account_id", "pql_score", "role", "event_summary_json",
 ] as const;
 
 export async function upsertLeads(runId: string, leads: Array<Partial<LeadRow> & { lead_id: string }>): Promise<void> {
@@ -257,6 +262,83 @@ export async function getReviewQueue(runId: string): Promise<LeadRow[]> {
   const result = await db.execute({
     sql: `SELECT * FROM leads WHERE run_id = ? AND needs_review = 1 ORDER BY lead_id`,
     args: [runId],
+  });
+  return result.rows as unknown as LeadRow[];
+}
+
+// ---------------------------------------------------------------------------
+// accounts (v3 PQL/AQL)
+// ---------------------------------------------------------------------------
+
+export interface AccountRow {
+  id: string;
+  run_id: string;
+  domain: string;
+  name: string | null;
+  employee_count: number | null;
+  industry: string | null;
+  funding_stage: string | null;
+  tech_stack_json: string | null;
+  plan_tier: string;
+  aql_score: number | null;
+  fit_score: number | null;
+  usage_score: number | null;
+  aql_status: string;
+  posthog_json: string | null;
+  routing_decision: string | null;
+  followup_json: string | null;
+  followup_executed_json: string | null;
+  created_at: string;
+}
+
+const ACCOUNT_COLUMNS = [
+  "id", "run_id", "domain", "name", "employee_count", "industry",
+  "funding_stage", "tech_stack_json", "plan_tier", "aql_score", "fit_score",
+  "usage_score", "aql_status", "posthog_json", "routing_decision",
+  "followup_json", "followup_executed_json", "created_at",
+] as const;
+
+export async function upsertAccounts(accounts: Array<Partial<AccountRow> & { id: string; run_id: string; domain: string }>): Promise<void> {
+  const db = getDb();
+  const placeholders = ACCOUNT_COLUMNS.map(() => "?").join(", ");
+  const updateClause = ACCOUNT_COLUMNS.filter((c) => c !== "id" && c !== "run_id")
+    .map((c) => `${c} = COALESCE(excluded.${c}, ${c})`)
+    .join(", ");
+
+  const sql = `INSERT INTO accounts (${ACCOUNT_COLUMNS.join(", ")}) VALUES (${placeholders})
+     ON CONFLICT(id) DO UPDATE SET ${updateClause}`;
+
+  const BATCH_SIZE = 80;
+  for (let i = 0; i < accounts.length; i += BATCH_SIZE) {
+    const batch = accounts.slice(i, i + BATCH_SIZE);
+    const stmts = batch.map((row) => {
+      const values = ACCOUNT_COLUMNS.map((c) => (row as Record<string, unknown>)[c] ?? null) as import("@libsql/client").InValue[];
+      return { sql, args: values };
+    });
+    await db.batch(stmts, "write");
+  }
+}
+
+export async function getAccounts(runId: string): Promise<AccountRow[]> {
+  const db = getDb();
+  const result = await db.execute({ sql: `SELECT * FROM accounts WHERE run_id = ?`, args: [runId] });
+  return result.rows as unknown as AccountRow[];
+}
+
+export async function getAccount(runId: string, accountId: string): Promise<AccountRow | undefined> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT * FROM accounts WHERE run_id = ? AND id = ?`,
+    args: [runId, accountId],
+  });
+  return result.rows[0] as unknown as AccountRow | undefined;
+}
+
+export async function getAccountLeads(runId: string, accountId: string): Promise<LeadRow[]> {
+  const db = getDb();
+  const result = await db.execute({
+    sql: `SELECT * FROM leads WHERE run_id = ? AND account_id = ?`,
+    args: [runId, accountId],
   });
   return result.rows as unknown as LeadRow[];
 }

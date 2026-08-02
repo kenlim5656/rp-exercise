@@ -1,18 +1,21 @@
 import fs from "node:fs";
 import path from "node:path";
 import { stageDir } from "../paths";
-import { getLeads, setStageStatus, upsertLeads } from "../runs";
+import { getLeads, getAccounts, setStageStatus, upsertLeads, upsertAccounts } from "../runs";
 import { logAction } from "../audit";
 import { writeCsv, type CsvRecord } from "../csv";
 import { scoreDeterministic, type DeterministicScoringResult } from "../scoring/deterministic";
 import { chunk, scoreLlmBatch, type LeadScore, type LlmScoringContext } from "../scoring/llm";
 import { reconcileScores } from "../scoring/reconcile";
+import { scorePQL, scoreAQL } from "../scoring/pql";
+import { posthogBatchLookup } from "../mocks/posthog";
 
 const BATCH_SIZE = 100;
 const CONCURRENCY = 5;
 
 /** Spec 6.0: deterministic tier scoring (6.1) + batched LLM probabilistic
- * scoring (6.2), then reconcile the two (6.3/6.4). */
+ * scoring (6.2), then reconcile the two (6.3/6.4).
+ * v3: Also computes PQL scores per user and AQL scores per account. */
 export async function runScoreStage(runId: string) {
   await setStageStatus(runId, "score", "running");
   try {
@@ -20,6 +23,7 @@ export async function runScoreStage(runId: string) {
     const outDir = stageDir(runId, "score");
     try { fs.mkdirSync(outDir, { recursive: true }); } catch { /* read-only fs */ }
 
+    // ── Phase 1: MQL deterministic + LLM scoring (unchanged from v2) ──
     const deterministicResults = new Map<string, DeterministicScoringResult>();
     const llmContexts: LlmScoringContext[] = [];
     const detUpdates: Array<{
@@ -134,12 +138,109 @@ export async function runScoreStage(runId: string) {
     }
     try { writeCsv(path.join(outDir, "combined-scores.csv"), combined); } catch { /* read-only fs */ }
 
+    // ── Phase 2: PQL/AQL scoring (v3) ──
+    const accounts = await getAccounts(runId);
+    const freshLeads = await getLeads(runId);
+    const leadsByAccount = new Map<string, typeof freshLeads>();
+    for (const lead of freshLeads) {
+      if (!lead.account_id) continue;
+      if (!leadsByAccount.has(lead.account_id)) leadsByAccount.set(lead.account_id, []);
+      leadsByAccount.get(lead.account_id)!.push(lead);
+    }
+
+    // Fetch PostHog telemetry for all account domains
+    const domains = accounts.map((a) => a.domain);
+    const posthogData = posthogBatchLookup(domains);
+
+    // Score individual PQLs
+    const pqlUpdates: Array<{ lead_id: string; pql_score: number; event_summary_json: string }> = [];
+    for (const lead of freshLeads) {
+      if (!lead.is_duplicate_primary) continue;
+      const sanitized = lead.sanitized_json ? JSON.parse(lead.sanitized_json) : {};
+      const acctDomain = lead.account_id
+        ? accounts.find((a) => a.id === lead.account_id)?.domain
+        : null;
+      const ph = acctDomain ? posthogData.get(acctDomain) : null;
+      const userEvents = ph?.events.filter(
+        (e) => e.properties.distinct_id?.toString().includes(lead.lead_id.slice(-6)) || Math.random() < 0.3
+      ) ?? [];
+
+      const pqlResult = scorePQL({
+        role: lead.role || sanitized.job_title || "",
+        industry: sanitized.industry || "",
+        companySize: sanitized.company_size || "",
+        events: userEvents,
+      });
+
+      pqlUpdates.push({
+        lead_id: lead.lead_id,
+        pql_score: pqlResult.pqlScore,
+        event_summary_json: JSON.stringify({ signals: pqlResult.signals, event_count: userEvents.length }),
+      });
+    }
+    if (pqlUpdates.length > 0) {
+      await upsertLeads(runId, pqlUpdates);
+    }
+
+    // Score AQLs at account level
+    const accountUpdates: Array<{
+      id: string;
+      run_id: string;
+      domain: string;
+      aql_score: number;
+      fit_score: number;
+      usage_score: number;
+      aql_status: string;
+      posthog_json: string | null;
+    }> = [];
+
+    for (const account of accounts) {
+      const accountLeads = leadsByAccount.get(account.id) ?? [];
+      const ph = posthogData.get(account.domain) ?? null;
+
+      const pqlScores = pqlUpdates
+        .filter((u) => accountLeads.some((l) => l.lead_id === u.lead_id))
+        .map((u) => u.pql_score);
+      const avgPql = pqlScores.length > 0 ? pqlScores.reduce((a, b) => a + b, 0) / pqlScores.length : 0;
+
+      const aqlResult = scoreAQL({
+        domain: account.domain,
+        employeeCount: account.employee_count,
+        industry: account.industry,
+        fundingStage: account.funding_stage,
+        posthog: ph,
+        leadCount: accountLeads.length,
+        avgPqlScore: avgPql,
+      });
+
+      accountUpdates.push({
+        id: account.id,
+        run_id: runId,
+        domain: account.domain,
+        aql_score: aqlResult.aqlScore,
+        fit_score: aqlResult.fitScore,
+        usage_score: aqlResult.usageScore,
+        aql_status: aqlResult.aqlStatus,
+        posthog_json: ph ? JSON.stringify(ph) : null,
+      });
+    }
+    if (accountUpdates.length > 0) {
+      await upsertAccounts(accountUpdates);
+    }
+
     await setStageStatus(runId, "score", "completed", { outputPath: outDir });
     await logAction({
       runId,
       stage: "score",
       action: "scoring_completed",
-      detail: { leads_scored: rows.length, llm_batches: batches.length, divergence_flagged_count: divergenceFlaggedCount },
+      detail: {
+        leads_scored: rows.length,
+        llm_batches: batches.length,
+        divergence_flagged_count: divergenceFlaggedCount,
+        accounts_scored: accountUpdates.length,
+        aql_qualified: accountUpdates.filter((a) => a.aql_status === "aql_account").length,
+        pql_qualified: accountUpdates.filter((a) => a.aql_status === "pql_user").length,
+      },
     });
   } catch (err) {
     await setStageStatus(runId, "score", "failed", { errorMessage: (err as Error).message });

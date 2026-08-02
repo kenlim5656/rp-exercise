@@ -62,6 +62,10 @@ CREATE TABLE IF NOT EXISTS leads (
   review_at TEXT,
   followup_json TEXT,                                   -- JSON array of LLM-generated follow-up recommendations
   followup_executed_json TEXT,                          -- JSON object tracking which recommendations were executed
+  account_id TEXT,                                      -- v3: FK to accounts.id
+  pql_score INTEGER,                                    -- v3: product-qualified lead score (0-100)
+  role TEXT,                                            -- v3: inferred role (DevOps, CTO, Software Engineer, etc.)
+  event_summary_json TEXT,                              -- v3: PostHog event summary
   PRIMARY KEY (run_id, lead_id)
 );
 
@@ -74,6 +78,31 @@ CREATE TABLE IF NOT EXISTS review_actions (
   actor TEXT,
   created_at TEXT NOT NULL
 );
+
+-- v3: accounts table for PQL/AQL scoring
+CREATE TABLE IF NOT EXISTS accounts (
+  id TEXT PRIMARY KEY,
+  run_id TEXT NOT NULL REFERENCES runs(id),
+  domain TEXT NOT NULL,
+  name TEXT,
+  employee_count INTEGER,
+  industry TEXT,
+  funding_stage TEXT,
+  tech_stack_json TEXT,
+  plan_tier TEXT DEFAULT 'free_developer',      -- free_developer | pro | enterprise
+  aql_score INTEGER,
+  fit_score INTEGER,
+  usage_score INTEGER,
+  aql_status TEXT DEFAULT 'unqualified',        -- unqualified | pql_user | aql_account | customer
+  posthog_json TEXT,
+  routing_decision TEXT,
+  followup_json TEXT,
+  followup_executed_json TEXT,
+  created_at TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_accounts_run ON accounts(run_id);
+CREATE INDEX IF NOT EXISTS idx_accounts_domain ON accounts(run_id, domain);
 
 CREATE TABLE IF NOT EXISTS audit_log (
   id TEXT PRIMARY KEY,

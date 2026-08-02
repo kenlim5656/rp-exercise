@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getRun, getStages, getLeads } from "@/lib/runs";
+import { getRun, getStages, getLeads, getAccounts } from "@/lib/runs";
 import { LiveRunStepper } from "@/components/LiveRunStepper";
 import { CopilotPanel } from "@/components/CopilotPanel";
 import { LiveScorecard } from "@/components/LiveScorecard";
@@ -33,7 +33,7 @@ export default async function RunLayout({
   const { runId } = await params;
   const run = await getRun(runId);
   if (!run) notFound();
-  const [rawStages, leads] = await Promise.all([getStages(runId), getLeads(runId)]);
+  const [rawStages, leads, accounts] = await Promise.all([getStages(runId), getLeads(runId), getAccounts(runId)]);
   const stages = rawStages.map((s) => ({ ...s }));
 
   return (
@@ -61,6 +61,10 @@ export default async function RunLayout({
           salesQueue: leads.filter((l) => l.routing_decision === "sales_queue").length,
           nurture: leads.filter((l) => l.routing_decision === "nurture").length,
           selfServe: leads.filter((l) => l.routing_decision === "self_serve_newsletter").length,
+          enterpriseSales: leads.filter((l) => l.routing_decision === "enterprise_sales").length,
+          totalAccounts: accounts.length,
+          aqlQualified: accounts.filter((a) => a.aql_status === "aql_account").length,
+          pqlActive: accounts.filter((a) => a.aql_status === "pql_user").length,
         }}
       />
       <div className="mt-2">

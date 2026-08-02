@@ -120,8 +120,21 @@ export function RunStepper({ runId, stages }: { runId: string; stages: RunStageR
               </div>
             );
           })}
-          {/* Review queue as a separate item */}
-          <div className="ml-4 flex items-center border-l border-[var(--border)] pl-4">
+          {/* Accounts + Review queue as separate items */}
+          <div className="ml-4 flex items-center gap-4 border-l border-[var(--border)] pl-4">
+            <Link
+              href={`/runs/${runId}/accounts`}
+              className="group flex flex-col items-center gap-1.5"
+            >
+              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--status-running)] transition-all group-hover:scale-110">
+                <svg className="h-3 w-3 text-black" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M6 1c2.2 0 4 1.3 4 3s-1.8 3-4 3-4-1.3-4-3 1.8-3 4-3zM2 8.5c0 1.1 1.8 2 4 2s4-.9 4-2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <span className="text-[0.65rem] font-medium leading-none text-[var(--status-running)] transition-colors group-hover:text-foreground">
+                Accounts
+              </span>
+            </Link>
             <Link
               href={`/runs/${runId}/review`}
               className="group flex flex-col items-center gap-1.5"

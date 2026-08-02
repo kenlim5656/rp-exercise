@@ -37,7 +37,7 @@ export default function RootLayout({
               <span className="text-sm font-semibold tracking-tight text-foreground">
                 Lead Pipeline
                 <span className="ml-1.5 rounded-sm bg-[var(--accent-pipeline)]/15 px-1 py-0.5 text-[9px] font-bold uppercase tracking-widest text-[var(--accent-pipeline)]">
-                  v2
+                  v3
                 </span>
               </span>
             </Link>

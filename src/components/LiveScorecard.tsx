@@ -13,9 +13,14 @@ interface ScorecardData {
   salesQueue: number;
   nurture: number;
   selfServe: number;
+  enterpriseSales: number;
+  totalAccounts: number;
+  aqlQualified: number;
+  pqlActive: number;
 }
 
 function Tile({ label, value, color }: { label: string; value: number; color: string }) {
+  if (value === 0 && !["Primary Leads", "Flagged"].includes(label)) return null;
   return (
     <div className="flex flex-col items-center gap-1 rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-3 min-w-[100px]">
       <span className="text-2xl font-semibold tabular-nums" style={{ color }}>
@@ -48,6 +53,10 @@ export function LiveScorecard({ runId, initialData }: { runId: string; initialDa
         salesQueue: s.routing?.sales_queue ?? 0,
         nurture: s.routing?.nurture ?? 0,
         selfServe: s.routing?.self_serve_newsletter ?? 0,
+        enterpriseSales: s.routing?.enterprise_sales ?? 0,
+        totalAccounts: s.accounts?.total ?? 0,
+        aqlQualified: s.accounts?.aql_qualified ?? 0,
+        pqlActive: s.accounts?.pql_active ?? 0,
       });
     } catch {}
   }, [runId]);
@@ -68,8 +77,12 @@ export function LiveScorecard({ runId, initialData }: { runId: string; initialDa
         <Tile label="Tier 3" value={data.tier3} color="var(--status-pending)" />
         <Tile label="Human Review" value={data.humanReview} color="var(--status-failed)" />
         <Tile label="Sales Queue" value={data.salesQueue} color="var(--status-completed)" />
+        <Tile label="Enterprise Sales" value={data.enterpriseSales} color="var(--status-completed)" />
         <Tile label="Nurture / CSM" value={data.nurture} color="var(--accent-copilot)" />
         <Tile label="Return to Mktg" value={data.selfServe} color="var(--status-pending)" />
+        <Tile label="Accounts" value={data.totalAccounts} color="var(--status-running)" />
+        <Tile label="AQL Qualified" value={data.aqlQualified} color="var(--status-completed)" />
+        <Tile label="PQL Active" value={data.pqlActive} color="var(--accent-pipeline)" />
       </div>
     </div>
   );

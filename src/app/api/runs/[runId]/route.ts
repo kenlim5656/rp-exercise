@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getLeads, getRun, getStages, setStageStatus } from "@/lib/runs";
+import { getLeads, getAccounts, getRun, getStages, setStageStatus } from "@/lib/runs";
 
 export async function GET(_req: Request, { params }: { params: Promise<{ runId: string }> }) {
   const { runId } = await params;
@@ -33,6 +33,14 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
     if (tier) tierCounts[tier] = (tierCounts[tier] ?? 0) + 1;
   }
 
+  const accounts = await getAccounts(runId);
+  const accountStats = {
+    total: accounts.length,
+    aql_qualified: accounts.filter((a) => a.aql_status === "aql_account").length,
+    pql_active: accounts.filter((a) => a.aql_status === "pql_user").length,
+    customers: accounts.filter((a) => a.aql_status === "customer").length,
+  };
+
   return NextResponse.json({
     run,
     stages,
@@ -44,6 +52,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ runId: 
       routing: routingCounts,
       tiers: tierCounts,
       needs_review: needsReviewCount,
+      accounts: accountStats,
     },
   });
 }

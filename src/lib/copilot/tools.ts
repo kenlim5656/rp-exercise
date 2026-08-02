@@ -1,6 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
-import { getLead, getLeads, getRun, getStages } from "../runs";
+import { getLead, getLeads, getRun, getStages, getAccounts, getAccount, getAccountLeads } from "../runs";
 import { listAuditLog } from "../audit";
 
 /**
@@ -56,7 +56,7 @@ export function buildCopilotTools(runId: string) {
         tier: z.enum(["tier1", "tier2", "tier3", "suppress"]).optional(),
         cohort: z.enum(["existing", "new"]).optional(),
         needsReview: z.boolean().optional(),
-        routingDecision: z.enum(["sales_queue", "nurture", "self_serve_newsletter", "suppressed", "human_review"]).optional(),
+        routingDecision: z.enum(["sales_queue", "nurture", "self_serve_newsletter", "suppressed", "human_review", "enterprise_sales"]).optional(),
         limit: z.number().min(1).max(200).default(50),
       }),
       execute: async ({ tier, cohort, needsReview, routingDecision, limit }) => {
@@ -74,6 +74,52 @@ export function buildCopilotTools(runId: string) {
             llm_score: l.llm_score,
             routing_decision: l.routing_decision,
             needs_review: !!l.needs_review,
+          })),
+        };
+      },
+    }),
+
+    getAccountSummary: tool({
+      description: "Get all accounts in this run with AQL scores, status, and member counts.",
+      inputSchema: z.object({
+        aqlStatus: z.enum(["aql_account", "pql_user", "unqualified", "customer"]).optional(),
+        limit: z.number().min(1).max(100).default(25),
+      }),
+      execute: async ({ aqlStatus, limit }) => {
+        let accounts = await getAccounts(runId);
+        if (aqlStatus) accounts = accounts.filter((a) => a.aql_status === aqlStatus);
+        return {
+          total: accounts.length,
+          accounts: accounts.slice(0, limit).map((a) => ({
+            id: a.id,
+            domain: a.domain,
+            name: a.name,
+            industry: a.industry,
+            employee_count: a.employee_count,
+            aql_score: a.aql_score,
+            aql_status: a.aql_status,
+            plan_tier: a.plan_tier,
+          })),
+        };
+      },
+    }),
+
+    getAccountDetail: tool({
+      description: "Get detailed account info including PostHog telemetry, scores, and team members.",
+      inputSchema: z.object({ accountId: z.string() }),
+      execute: async ({ accountId }) => {
+        const account = await getAccount(runId, accountId);
+        if (!account) return { error: `account ${accountId} not found in this run` };
+        const members = await getAccountLeads(runId, accountId);
+        return {
+          ...account,
+          posthog: account.posthog_json ? JSON.parse(account.posthog_json) : null,
+          tech_stack: account.tech_stack_json ? JSON.parse(account.tech_stack_json) : null,
+          members: members.map((m) => ({
+            lead_id: m.lead_id,
+            role: m.role,
+            pql_score: m.pql_score,
+            routing_decision: m.routing_decision,
           })),
         };
       },
